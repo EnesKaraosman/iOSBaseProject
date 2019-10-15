@@ -7,10 +7,31 @@
 //
 
 import UIKit
+import ObjectMapper
+import SnapKit
 
-class NetworkViewController: UIViewController {
+class NetworkViewController: UIViewController, ActivityIndicatorView {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.systemOrange
+        activityIndicatorTest()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
+    private func activityIndicatorTest() {
+        
+        APIClient.instance.executeGET(endPoint: "articles", success: { (response) in
+            let articles = Mapper<Article>().mapArray(JSONObject: response.arrayObject) ?? []
+            print(articles.count)
+        }, failure: { error in
+            // TODO: Add alert ctrl util
+        })
+        
+    }
+    
 }

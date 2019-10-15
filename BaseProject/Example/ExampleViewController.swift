@@ -51,7 +51,7 @@ class ExampleViewController: UIViewController, UITableViewDelegate, Identifiable
     
     let samplePages = Observable.just([
         SamplePage(
-            name: "Network Sample",
+            name: "Network".localized(),
             systemIconName: "network",
             page: NetworkViewController.self
         )
@@ -75,6 +75,7 @@ class ExampleViewController: UIViewController, UITableViewDelegate, Identifiable
         samplePages
             .bind(to: tableView.rx.items(cellIdentifier: "SampleCell", cellType: ExampleTableViewCell.self)) { (row, element, cell) in
                 cell.setCell(sampleView: element)
+                cell.selectionStyle = .none
             }
             .disposed(by: disposeBag)
         

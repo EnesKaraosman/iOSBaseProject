@@ -23,6 +23,10 @@
 		F45B88FD2337150F00E5A6F9 /* DummyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B88FC2337150F00E5A6F9 /* DummyResponse.swift */; };
 		F45B89002337322F00E5A6F9 /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B88FF2337322F00E5A6F9 /* ExampleTableViewCell.swift */; };
 		F45B89022337367E00E5A6F9 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B89012337367E00E5A6F9 /* NetworkViewController.swift */; };
+		F48EC1F82354B904002E36D3 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48EC1F72354B904002E36D3 /* Article.swift */; };
+		F48EC1FC2355E2F8002E36D3 /* NetworkUsage.md in Resources */ = {isa = PBXBuildFile; fileRef = F48EC1FB2355E2F8002E36D3 /* NetworkUsage.md */; };
+		F4DCBC492355F52300C3D892 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4DCBC472355F52300C3D892 /* Localizable.strings */; };
+		F4DCBC4D2355F66B00C3D892 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DCBC4C2355F66B00C3D892 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +49,11 @@
 		F45B88FC2337150F00E5A6F9 /* DummyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyResponse.swift; sourceTree = "<group>"; };
 		F45B88FF2337322F00E5A6F9 /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
 		F45B89012337367E00E5A6F9 /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
+		F48EC1F72354B904002E36D3 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		F48EC1FB2355E2F8002E36D3 /* NetworkUsage.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = NetworkUsage.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
+		F4DCBC482355F52300C3D892 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F4DCBC4B2355F56300C3D892 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F4DCBC4C2355F66B00C3D892 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		FBE8AE2B618C3A9A2641B9C9 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +89,7 @@
 		F45B88C92335406300E5A6F9 = {
 			isa = PBXGroup;
 			children = (
+				F4DCBC472355F52300C3D892 /* Localizable.strings */,
 				F45B88D42335406300E5A6F9 /* BaseProject */,
 				F45B88D32335406300E5A6F9 /* Products */,
 				B7587A93EC06C128722C81AA /* Pods */,
@@ -103,6 +113,7 @@
 				F45B88E02335406400E5A6F9 /* LaunchScreen.storyboard */,
 				F45B88E32335406400E5A6F9 /* Info.plist */,
 				F45B88FE2337320000E5A6F9 /* Example */,
+				F48EC1F62354B8F3002E36D3 /* Model */,
 				F45B88EC2336382200E5A6F9 /* Helpers */,
 				F45B88EB2336381B00E5A6F9 /* Network */,
 			);
@@ -112,6 +123,7 @@
 		F45B88EB2336381B00E5A6F9 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				F48EC1FB2355E2F8002E36D3 /* NetworkUsage.md */,
 				F45B88EF23364C3D00E5A6F9 /* APIClient.swift */,
 				F45B88F123364D9600E5A6F9 /* Request.swift */,
 				F45B88F323364E1E00E5A6F9 /* Error.swift */,
@@ -128,6 +140,7 @@
 				F45B88ED23363AAB00E5A6F9 /* Log.swift */,
 				F45B88E9233559EE00E5A6F9 /* Identifiable.swift */,
 				F45B88F523364F8A00E5A6F9 /* ActivityIndicator.swift */,
+				F4DCBC4C2355F66B00C3D892 /* String+Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -148,6 +161,14 @@
 				F45B89012337367E00E5A6F9 /* NetworkViewController.swift */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		F48EC1F62354B8F3002E36D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F48EC1F72354B904002E36D3 /* Article.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +215,7 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = F45B88C92335406300E5A6F9;
 			productRefGroup = F45B88D32335406300E5A6F9 /* Products */;
@@ -211,6 +233,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F45B88E22335406400E5A6F9 /* LaunchScreen.storyboard in Resources */,
+				F4DCBC492355F52300C3D892 /* Localizable.strings in Resources */,
+				F48EC1FC2355E2F8002E36D3 /* NetworkUsage.md in Resources */,
 				F45B88DF2335406400E5A6F9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48EC1F82354B904002E36D3 /* Article.swift in Sources */,
 				F45B88FA2337107400E5A6F9 /* Session.swift in Sources */,
 				F45B88F023364C3D00E5A6F9 /* APIClient.swift in Sources */,
 				F45B88F223364D9600E5A6F9 /* Request.swift in Sources */,
@@ -273,6 +298,7 @@
 				F45B88F623364F8A00E5A6F9 /* ActivityIndicator.swift in Sources */,
 				F45B88EE23363AAB00E5A6F9 /* Log.swift in Sources */,
 				F45B89002337322F00E5A6F9 /* ExampleTableViewCell.swift in Sources */,
+				F4DCBC4D2355F66B00C3D892 /* String+Extensions.swift in Sources */,
 				F45B88F423364E1E00E5A6F9 /* Error.swift in Sources */,
 				F45B89022337367E00E5A6F9 /* NetworkViewController.swift in Sources */,
 				F45B88D62335406300E5A6F9 /* AppDelegate.swift in Sources */,
@@ -291,6 +317,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		F4DCBC472355F52300C3D892 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4DCBC482355F52300C3D892 /* en */,
+				F4DCBC4B2355F56300C3D892 /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -298,6 +333,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -358,6 +394,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

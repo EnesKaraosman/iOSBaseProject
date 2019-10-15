@@ -8,16 +8,17 @@
 
 import NVActivityIndicatorView
 
+/// Add to any view controller you want. (Single Instance)
 protocol ActivityIndicatorView: class {
-    func startLoading()
-    func startLoading(message: String?)
-    func stopLoading()
-    func setMessage(message: String)
+    func startActivityIndicatorLoading()
+    func startActivityIndicatorLoading(message: String?)
+    func stopActivityIndicatorLoading()
+    func setActivityIndicatorMessage(message: String)
 }
 
 extension ActivityIndicatorView {
     
-    func startLoading(message: String?) {
+    func startActivityIndicatorLoading(message: String?) {
 
         if NVActivityIndicatorPresenter.sharedInstance.isAnimating {
             return
@@ -43,11 +44,11 @@ extension ActivityIndicatorView {
         
     }
     
-    func startLoading() {
-        startLoading(message: nil)
+    func startActivityIndicatorLoading() {
+        startActivityIndicatorLoading(message: nil)
     }
     
-    func stopLoading() {
+    func stopActivityIndicatorLoading() {
         
         if !NVActivityIndicatorPresenter.sharedInstance.isAnimating {
             return
@@ -59,7 +60,7 @@ extension ActivityIndicatorView {
         
     }
     
-    func setMessage(message: String) {
+    func setActivityIndicatorMessage(message: String) {
         
         if !NVActivityIndicatorPresenter.sharedInstance.isAnimating {
             return

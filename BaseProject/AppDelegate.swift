@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Bagel
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,11 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        self.setupWindow()
+        
+        Bagel.start()
+        
+        APIClient.instance.environment = NetworkEnvironment(baseUrl: "https://5da476a3a6593f001407a7af.mockapi.io/")
+        
+        return true
+    }
+    
+    private func setupWindow() {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = UINavigationController(rootViewController: ExampleViewController())
         window?.makeKeyAndVisible()
-        
-        return true
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

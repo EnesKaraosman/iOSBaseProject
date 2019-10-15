@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  BaseProject
+
+  Created by Enes Karaosman on 15.10.2019.
+  Copyright © 2019 Enes Karaosman. All rights reserved.
+*/
+
+// Example Table View Items
+"Network"="Network";
