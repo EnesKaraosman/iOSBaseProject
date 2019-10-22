@@ -54,6 +54,11 @@ class ExampleViewController: UIViewController, UITableViewDelegate, Identifiable
             name: "Network".localized(),
             systemIconName: "network",
             page: NetworkViewController.self
+        ),
+        SamplePage(
+            name: "Generic TableViewController".localized(),
+            systemIconName: "arrows",
+            page: GenericDemoController.self
         )
     ])
 
@@ -83,7 +88,10 @@ class ExampleViewController: UIViewController, UITableViewDelegate, Identifiable
             .modelSelected(SamplePage.self)
             .subscribe(onNext:  { value in
                 Log.i("\(value.name) tapped")
-                self.present(value.page.init(), animated: true, completion: nil)
+                DispatchQueue.main.async {
+                    let nv = UINavigationController(rootViewController: value.page.init())
+                    self.present(nv, animated: true, completion: nil)
+                }
             })
             .disposed(by: disposeBag)
         
