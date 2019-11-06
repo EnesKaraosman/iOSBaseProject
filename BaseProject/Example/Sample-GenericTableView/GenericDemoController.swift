@@ -8,12 +8,13 @@
 
 import UIKit
 import Kingfisher
+import LBTATools
 
-class GenericDemoController: GenericTableViewController<ArticleCell, Article> {
-    
+class GenericDemoController: LBTAListController<ArticleCell, Article>, UICollectionViewDelegateFlowLayout {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // You can initialize whenever you want!.
         items = [
             Article(name: "Dr. Lessie Lesch", avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/evanshajed/128.jpg"),
@@ -22,19 +23,19 @@ class GenericDemoController: GenericTableViewController<ArticleCell, Article> {
             Article(name: "Krista Williamson", avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/thekevinjones/128.jpg"),
             Article(name: "Jovanny Crist", avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/craigrcoles/128.jpg")
         ]
-        
+
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return .init(width: self.view.frame.width, height: 80)
     }
     
 }
 
 // Your custom GenericTableViewCell with it's model.
-class ArticleCell: GenericTableViewCell<Article> {
+class ArticleCell: LBTAListCell<Article> {
     
-    private lazy var articleImageView: UIImageView = {
-        let iv = UIImageView()
-        iv.contentMode = .scaleAspectFit
-        return iv
-    }()
+    private lazy var articleImageView = CircularImageView(width: 50)
     
     private lazy var titleLabel: UILabel = {
         let lbl = UILabel()
@@ -50,15 +51,14 @@ class ArticleCell: GenericTableViewCell<Article> {
         }
     }
     
-    override func commonInit() {
-        super.commonInit()
+    override func setupViews() {
+        super.setupViews()
         
-        container.addSubview(titleLabel)
-        container.addSubview(articleImageView)
-        
+        self.addSubview(titleLabel)
+        self.addSubview(articleImageView)
+
         articleImageView.snp.makeConstraints {
-            $0.left.bottom.top.equalToSuperview()
-            $0.width.height.equalTo(80)
+            $0.left.bottom.top.equalToSuperview().inset(8)
         }
         
         titleLabel.snp.makeConstraints {

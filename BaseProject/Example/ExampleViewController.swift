@@ -28,10 +28,10 @@ import SnapKit
 
 // MARK: - Helper, Util
 // Logger (May be used with analitycs services) ✅
-// Localization
+// Localization ✅
 // Styler (TextStyle, FontManager)
 // Reusable (Identifiable)
-// Loading Indicator integration
+// Loading Indicator integration ✅
 // Extensions
 // Bottom bar vc, PagerStripVC
 // Constants
@@ -45,6 +45,7 @@ struct SamplePage {
     let name: String
     let systemIconName: String
     let page: UIViewController.Type
+    let rawPage: UIViewController
 }
 
 class ExampleViewController: UIViewController, UITableViewDelegate, Identifiable {
@@ -53,12 +54,14 @@ class ExampleViewController: UIViewController, UITableViewDelegate, Identifiable
         SamplePage(
             name: "Network".localized(),
             systemIconName: "network",
-            page: NetworkViewController.self
+            page: NetworkViewController.self,
+            rawPage: NetworkViewController()
         ),
         SamplePage(
             name: "Generic TableViewController".localized(),
             systemIconName: "arrows",
-            page: GenericDemoController.self
+            page: GenericDemoController.self,
+            rawPage: GenericDemoController()
         )
     ])
 
@@ -89,7 +92,8 @@ class ExampleViewController: UIViewController, UITableViewDelegate, Identifiable
             .subscribe(onNext:  { value in
                 Log.i("\(value.name) tapped")
                 DispatchQueue.main.async {
-                    let nv = UINavigationController(rootViewController: value.page.init())
+                    let nv = UINavigationController(rootViewController: value.rawPage)
+//                    let nv = UINavigationController(rootViewController: value.page.init())
                     self.present(nv, animated: true, completion: nil)
                 }
             })

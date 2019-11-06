@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E1010DD2216F5F86A3CB35BD /* Pods_BaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10597F97009A2EC1A100AC08 /* Pods_BaseProject.framework */; };
-		F41295BD235DDE2A00DD6D8C /* GenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41295BC235DDE2A00DD6D8C /* GenericTableViewController.swift */; };
-		F41295C0235DDE6800DD6D8C /* GenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41295BF235DDE6800DD6D8C /* GenericTableViewCell.swift */; };
 		F41295C2235DDFBF00DD6D8C /* GenericDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41295C1235DDFBF00DD6D8C /* GenericDemoController.swift */; };
 		F45B88D62335406300E5A6F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B88D52335406300E5A6F9 /* AppDelegate.swift */; };
 		F45B88DA2335406300E5A6F9 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B88D92335406300E5A6F9 /* ExampleViewController.swift */; };
@@ -35,8 +33,6 @@
 /* Begin PBXFileReference section */
 		10597F97009A2EC1A100AC08 /* Pods_BaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD1D797168504577404381D /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
-		F41295BC235DDE2A00DD6D8C /* GenericTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewController.swift; sourceTree = "<group>"; };
-		F41295BF235DDE6800DD6D8C /* GenericTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewCell.swift; sourceTree = "<group>"; };
 		F41295C1235DDFBF00DD6D8C /* GenericDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDemoController.swift; sourceTree = "<group>"; };
 		F45B88D22335406300E5A6F9 /* BaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45B88D52335406300E5A6F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,15 +99,6 @@
 		F41295BB235DD58800DD6D8C /* UI */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		F41295BE235DDE5A00DD6D8C /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				F41295BC235DDE2A00DD6D8C /* GenericTableViewController.swift */,
-				F41295BF235DDE6800DD6D8C /* GenericTableViewCell.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -184,7 +171,6 @@
 		F45B88EC2336382200E5A6F9 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				F41295BE235DDE5A00DD6D8C /* UI */,
 				F45B88ED23363AAB00E5A6F9 /* Log.swift */,
 				F45B88E9233559EE00E5A6F9 /* Identifiable.swift */,
 				F45B88F523364F8A00E5A6F9 /* ActivityIndicator.swift */,
@@ -340,7 +326,6 @@
 				F48EC1F82354B904002E36D3 /* Article.swift in Sources */,
 				F45B88FA2337107400E5A6F9 /* Session.swift in Sources */,
 				F45B88F023364C3D00E5A6F9 /* APIClient.swift in Sources */,
-				F41295C0235DDE6800DD6D8C /* GenericTableViewCell.swift in Sources */,
 				F45B88F223364D9600E5A6F9 /* Request.swift in Sources */,
 				F45B88DA2335406300E5A6F9 /* ExampleViewController.swift in Sources */,
 				F41295C2235DDFBF00DD6D8C /* GenericDemoController.swift in Sources */,
@@ -353,7 +338,6 @@
 				F45B88F423364E1E00E5A6F9 /* Error.swift in Sources */,
 				F45B89022337367E00E5A6F9 /* NetworkViewController.swift in Sources */,
 				F45B88D62335406300E5A6F9 /* AppDelegate.swift in Sources */,
-				F41295BD235DDE2A00DD6D8C /* GenericTableViewController.swift in Sources */,
 				F45B88FD2337150F00E5A6F9 /* DummyResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
