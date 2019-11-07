@@ -58,10 +58,10 @@ class ExampleViewController: UIViewController, UITableViewDelegate, Identifiable
             rawPage: NetworkViewController()
         ),
         SamplePage(
-            name: "Generic TableViewController".localized(),
+            name: "Generic ListController".localized(),
             systemIconName: "arrows",
-            page: GenericDemoController.self,
-            rawPage: GenericDemoController()
+            page: GenericListController.self,
+            rawPage: GenericListController()
         )
     ])
 

@@ -10,7 +10,7 @@ import UIKit
 import Kingfisher
 import LBTATools
 
-class GenericDemoController: LBTAListController<ArticleCell, Article>, UICollectionViewDelegateFlowLayout {
+class GenericListController: LBTAListController<ArticleCell, Article>, UICollectionViewDelegateFlowLayout {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,13 +58,15 @@ class ArticleCell: LBTAListCell<Article> {
         self.addSubview(articleImageView)
 
         articleImageView.snp.makeConstraints {
-            $0.left.bottom.top.equalToSuperview().inset(8)
+            $0.left.centerY.equalToSuperview().inset(8)
         }
         
         titleLabel.snp.makeConstraints {
             $0.left.equalTo(articleImageView.snp.right).offset(16)
             $0.right.bottom.top.equalToSuperview()
         }
+        
+        addSeparatorView(leadingAnchor: titleLabel.leadingAnchor)
         
     }
     

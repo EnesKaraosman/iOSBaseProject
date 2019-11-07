@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E1010DD2216F5F86A3CB35BD /* Pods_BaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10597F97009A2EC1A100AC08 /* Pods_BaseProject.framework */; };
-		F41295C2235DDFBF00DD6D8C /* GenericDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41295C1235DDFBF00DD6D8C /* GenericDemoController.swift */; };
+		F41295C2235DDFBF00DD6D8C /* GenericListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41295C1235DDFBF00DD6D8C /* GenericListController.swift */; };
 		F45B88D62335406300E5A6F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B88D52335406300E5A6F9 /* AppDelegate.swift */; };
 		F45B88DA2335406300E5A6F9 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B88D92335406300E5A6F9 /* ExampleViewController.swift */; };
 		F45B88DF2335406400E5A6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45B88DE2335406400E5A6F9 /* Assets.xcassets */; };
@@ -33,7 +33,7 @@
 /* Begin PBXFileReference section */
 		10597F97009A2EC1A100AC08 /* Pods_BaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD1D797168504577404381D /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
-		F41295C1235DDFBF00DD6D8C /* GenericDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDemoController.swift; sourceTree = "<group>"; };
+		F41295C1235DDFBF00DD6D8C /* GenericListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericListController.swift; sourceTree = "<group>"; };
 		F45B88D22335406300E5A6F9 /* BaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45B88D52335406300E5A6F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F45B88D92335406300E5A6F9 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
@@ -111,12 +111,12 @@
 			path = "Sample-Network";
 			sourceTree = "<group>";
 		};
-		F41295C4235EE1FC00DD6D8C /* Sample-GenericTableView */ = {
+		F41295C4235EE1FC00DD6D8C /* Sample-GenericListView */ = {
 			isa = PBXGroup;
 			children = (
-				F41295C1235DDFBF00DD6D8C /* GenericDemoController.swift */,
+				F41295C1235DDFBF00DD6D8C /* GenericListController.swift */,
 			);
-			path = "Sample-GenericTableView";
+			path = "Sample-GenericListView";
 			sourceTree = "<group>";
 		};
 		F45B88C92335406300E5A6F9 = {
@@ -193,7 +193,7 @@
 				F45B88D92335406300E5A6F9 /* ExampleViewController.swift */,
 				F45B88FF2337322F00E5A6F9 /* ExampleTableViewCell.swift */,
 				F41295C3235DE94900DD6D8C /* Sample-Network */,
-				F41295C4235EE1FC00DD6D8C /* Sample-GenericTableView */,
+				F41295C4235EE1FC00DD6D8C /* Sample-GenericListView */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -328,7 +328,7 @@
 				F45B88F023364C3D00E5A6F9 /* APIClient.swift in Sources */,
 				F45B88F223364D9600E5A6F9 /* Request.swift in Sources */,
 				F45B88DA2335406300E5A6F9 /* ExampleViewController.swift in Sources */,
-				F41295C2235DDFBF00DD6D8C /* GenericDemoController.swift in Sources */,
+				F41295C2235DDFBF00DD6D8C /* GenericListController.swift in Sources */,
 				F45B88EA233559EE00E5A6F9 /* Identifiable.swift in Sources */,
 				F45B88F82336559D00E5A6F9 /* Environment.swift in Sources */,
 				F45B88F623364F8A00E5A6F9 /* ActivityIndicator.swift in Sources */,
