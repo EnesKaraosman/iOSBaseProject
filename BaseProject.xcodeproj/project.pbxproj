@@ -24,6 +24,7 @@
 		F45B88FD2337150F00E5A6F9 /* DummyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B88FC2337150F00E5A6F9 /* DummyResponse.swift */; };
 		F45B89002337322F00E5A6F9 /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B88FF2337322F00E5A6F9 /* ExampleTableViewCell.swift */; };
 		F45B89022337367E00E5A6F9 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B89012337367E00E5A6F9 /* NetworkViewController.swift */; };
+		F488D9BC237D358B0031D7FB /* BaseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488D9BB237D358B0031D7FB /* BaseTextView.swift */; };
 		F48EC1F82354B904002E36D3 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48EC1F72354B904002E36D3 /* Article.swift */; };
 		F48EC1FC2355E2F8002E36D3 /* NetworkUsage.md in Resources */ = {isa = PBXBuildFile; fileRef = F48EC1FB2355E2F8002E36D3 /* NetworkUsage.md */; };
 		F4DCBC492355F52300C3D892 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4DCBC472355F52300C3D892 /* Localizable.strings */; };
@@ -51,6 +52,8 @@
 		F45B88FC2337150F00E5A6F9 /* DummyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyResponse.swift; sourceTree = "<group>"; };
 		F45B88FF2337322F00E5A6F9 /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
 		F45B89012337367E00E5A6F9 /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
+		F488D9BA237D2D460031D7FB /* BasePlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = BasePlayground.playground; path = "../../Library/Autosave Information/BasePlayground.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F488D9BB237D358B0031D7FB /* BaseTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextView.swift; sourceTree = "<group>"; };
 		F48EC1F72354B904002E36D3 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		F48EC1FB2355E2F8002E36D3 /* NetworkUsage.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = NetworkUsage.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
 		F4DCBC482355F52300C3D892 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -99,6 +102,7 @@
 		F41295BB235DD58800DD6D8C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F488D9BB237D358B0031D7FB /* BaseTextView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -122,6 +126,7 @@
 		F45B88C92335406300E5A6F9 = {
 			isa = PBXGroup;
 			children = (
+				F488D9BA237D2D460031D7FB /* BasePlayground.playground */,
 				F4DCBC472355F52300C3D892 /* Localizable.strings */,
 				F45B88D42335406300E5A6F9 /* BaseProject */,
 				F45B88D32335406300E5A6F9 /* Products */,
@@ -224,6 +229,8 @@
 			dependencies = (
 			);
 			name = BaseProject;
+			packageProductDependencies = (
+			);
 			productName = BaseProject;
 			productReference = F45B88D22335406300E5A6F9 /* BaseProject.app */;
 			productType = "com.apple.product-type.application";
@@ -253,6 +260,8 @@
 				tr,
 			);
 			mainGroup = F45B88C92335406300E5A6F9;
+			packageReferences = (
+			);
 			productRefGroup = F45B88D32335406300E5A6F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -331,6 +340,7 @@
 				F41295C2235DDFBF00DD6D8C /* GenericListController.swift in Sources */,
 				F45B88EA233559EE00E5A6F9 /* Identifiable.swift in Sources */,
 				F45B88F82336559D00E5A6F9 /* Environment.swift in Sources */,
+				F488D9BC237D358B0031D7FB /* BaseTextView.swift in Sources */,
 				F45B88F623364F8A00E5A6F9 /* ActivityIndicator.swift in Sources */,
 				F45B88EE23363AAB00E5A6F9 /* Log.swift in Sources */,
 				F45B89002337322F00E5A6F9 /* ExampleTableViewCell.swift in Sources */,

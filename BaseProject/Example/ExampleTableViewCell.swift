@@ -8,9 +8,17 @@
 
 import UIKit
 import SnapKit
+import LBTATools
 
-class ExampleTableViewCell: UITableViewCell {
+class ExampleTableViewCell: LBTAListCell<SamplePage> {
 
+    override var item: SamplePage! {
+        didSet {
+            self.imageName = item.systemIconName
+            self.titleLabel.text = item.name
+        }
+    }
+    
     private lazy var iconImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit
@@ -29,18 +37,8 @@ class ExampleTableViewCell: UITableViewCell {
         }
     }
     
-    public func setCell(sampleView: SamplePage) {
-        self.imageName = sampleView.systemIconName
-        self.titleLabel.text = sampleView.name
-    }
-    
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        commonInit()
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
+    override func setupViews() {
+        super.setupViews()
         commonInit()
     }
     
