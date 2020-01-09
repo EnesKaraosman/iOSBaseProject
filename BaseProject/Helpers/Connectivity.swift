@@ -7,6 +7,8 @@
 //
 
 import Alamofire
+// If you dont want this helper class to depend on Alamofire, find new one :D
+// You can switch to this one https://github.com/ashleymills/Reachability.swift
 
 class Connectivity {
     
