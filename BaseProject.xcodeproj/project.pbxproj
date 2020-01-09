@@ -24,9 +24,12 @@
 		F45B88FD2337150F00E5A6F9 /* DummyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B88FC2337150F00E5A6F9 /* DummyResponse.swift */; };
 		F45B89002337322F00E5A6F9 /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B88FF2337322F00E5A6F9 /* ExampleTableViewCell.swift */; };
 		F45B89022337367E00E5A6F9 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B89012337367E00E5A6F9 /* NetworkViewController.swift */; };
+		F469A2F123C7489900B68D27 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F023C7489900B68D27 /* Connectivity.swift */; };
 		F488D9BC237D358B0031D7FB /* BaseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488D9BB237D358B0031D7FB /* BaseTextView.swift */; };
+		F48CE0A623C4A747004D23CD /* KeyValueStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48CE0A523C4A747004D23CD /* KeyValueStorage.swift */; };
 		F48EC1F82354B904002E36D3 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48EC1F72354B904002E36D3 /* Article.swift */; };
 		F48EC1FC2355E2F8002E36D3 /* NetworkUsage.md in Resources */ = {isa = PBXBuildFile; fileRef = F48EC1FB2355E2F8002E36D3 /* NetworkUsage.md */; };
+		F4C4439F23827B8000D33E75 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4439E23827B8000D33E75 /* BaseButton.swift */; };
 		F4DCBC492355F52300C3D892 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4DCBC472355F52300C3D892 /* Localizable.strings */; };
 		F4DCBC4D2355F66B00C3D892 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DCBC4C2355F66B00C3D892 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
@@ -52,10 +55,12 @@
 		F45B88FC2337150F00E5A6F9 /* DummyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyResponse.swift; sourceTree = "<group>"; };
 		F45B88FF2337322F00E5A6F9 /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
 		F45B89012337367E00E5A6F9 /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
-		F488D9BA237D2D460031D7FB /* BasePlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = BasePlayground.playground; path = "../../Library/Autosave Information/BasePlayground.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F469A2F023C7489900B68D27 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		F488D9BB237D358B0031D7FB /* BaseTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextView.swift; sourceTree = "<group>"; };
+		F48CE0A523C4A747004D23CD /* KeyValueStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStorage.swift; sourceTree = "<group>"; };
 		F48EC1F72354B904002E36D3 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		F48EC1FB2355E2F8002E36D3 /* NetworkUsage.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = NetworkUsage.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
+		F4C4439E23827B8000D33E75 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		F4DCBC482355F52300C3D892 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4DCBC4B2355F56300C3D892 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4DCBC4C2355F66B00C3D892 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
@@ -103,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				F488D9BB237D358B0031D7FB /* BaseTextView.swift */,
+				F4C4439E23827B8000D33E75 /* BaseButton.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -126,7 +132,6 @@
 		F45B88C92335406300E5A6F9 = {
 			isa = PBXGroup;
 			children = (
-				F488D9BA237D2D460031D7FB /* BasePlayground.playground */,
 				F4DCBC472355F52300C3D892 /* Localizable.strings */,
 				F45B88D42335406300E5A6F9 /* BaseProject */,
 				F45B88D32335406300E5A6F9 /* Products */,
@@ -180,6 +185,8 @@
 				F45B88E9233559EE00E5A6F9 /* Identifiable.swift */,
 				F45B88F523364F8A00E5A6F9 /* ActivityIndicator.swift */,
 				F4DCBC4C2355F66B00C3D892 /* String+Extensions.swift */,
+				F48CE0A523C4A747004D23CD /* KeyValueStorage.swift */,
+				F469A2F023C7489900B68D27 /* Connectivity.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -336,6 +343,8 @@
 				F45B88FA2337107400E5A6F9 /* Session.swift in Sources */,
 				F45B88F023364C3D00E5A6F9 /* APIClient.swift in Sources */,
 				F45B88F223364D9600E5A6F9 /* Request.swift in Sources */,
+				F469A2F123C7489900B68D27 /* Connectivity.swift in Sources */,
+				F4C4439F23827B8000D33E75 /* BaseButton.swift in Sources */,
 				F45B88DA2335406300E5A6F9 /* ExampleViewController.swift in Sources */,
 				F41295C2235DDFBF00DD6D8C /* GenericListController.swift in Sources */,
 				F45B88EA233559EE00E5A6F9 /* Identifiable.swift in Sources */,
@@ -346,6 +355,7 @@
 				F45B89002337322F00E5A6F9 /* ExampleTableViewCell.swift in Sources */,
 				F4DCBC4D2355F66B00C3D892 /* String+Extensions.swift in Sources */,
 				F45B88F423364E1E00E5A6F9 /* Error.swift in Sources */,
+				F48CE0A623C4A747004D23CD /* KeyValueStorage.swift in Sources */,
 				F45B89022337367E00E5A6F9 /* NetworkViewController.swift in Sources */,
 				F45B88D62335406300E5A6F9 /* AppDelegate.swift in Sources */,
 				F45B88FD2337150F00E5A6F9 /* DummyResponse.swift in Sources */,
