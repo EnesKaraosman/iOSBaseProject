@@ -65,7 +65,7 @@ class ExampleViewController: LBTAListController<ExampleTableViewCell, SamplePage
                 name: "Generic ListController".localized(),
                 systemIconName: "arrows",
                 page: GenericListController.self,
-                rawPage: GenericListController()
+                rawPage: GenericListController(viewModel: GenericListViewModel())
             )
         ]
         

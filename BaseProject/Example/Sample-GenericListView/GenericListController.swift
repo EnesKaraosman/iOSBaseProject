@@ -12,20 +12,29 @@ import LBTATools
 
 class GenericListController: LBTAListController<ArticleCell, Article>, UICollectionViewDelegateFlowLayout {
 
+    var viewModel: GenericListViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // You can initialize whenever you want!.
-        items = [
-            Article(name: "Dr. Lessie Lesch", avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/evanshajed/128.jpg"),
-            Article(name: "Raina Douglas", avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/digitalmaverick/128.jpg"),
-            Article(name: "Rosetta Parker", avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/overra/128.jpg"),
-            Article(name: "Krista Williamson", avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/thekevinjones/128.jpg"),
-            Article(name: "Jovanny Crist", avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/craigrcoles/128.jpg")
-        ]
-
+        viewModel?.getList(articles: { (articles) in
+            self.items = articles
+//            Timer.setTimeout(delay: 2) {
+//                self.viewModel?.showSuccess(message: "Yeey!")
+//            }
+        })
+        
     }
-
+    
+    init(viewModel: BaseViewModel) {
+        self.viewModel = viewModel as? GenericListViewModel
+        super.init()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return .init(width: self.view.frame.width, height: 80)
     }
