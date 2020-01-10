@@ -25,6 +25,12 @@
 		F45B89002337322F00E5A6F9 /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B88FF2337322F00E5A6F9 /* ExampleTableViewCell.swift */; };
 		F45B89022337367E00E5A6F9 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B89012337367E00E5A6F9 /* NetworkViewController.swift */; };
 		F469A2F123C7489900B68D27 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F023C7489900B68D27 /* Connectivity.swift */; };
+		F469A2F323C8602400B68D27 /* BaseViewModelBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F223C8602400B68D27 /* BaseViewModelBehaviour.swift */; };
+		F469A2F523C864DB00B68D27 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F423C864DB00B68D27 /* BaseViewModel.swift */; };
+		F469A2F923C869AE00B68D27 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F823C869AE00B68D27 /* Configurations.swift */; };
+		F469A2FB23C86A3B00B68D27 /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2FA23C86A3B00B68D27 /* AlertPresenter.swift */; };
+		F469A2FD23C86C9200B68D27 /* GenericListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2FC23C86C9200B68D27 /* GenericListViewModel.swift */; };
+		F469A2FF23C873B500B68D27 /* Timer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2FE23C873B500B68D27 /* Timer+Extensions.swift */; };
 		F488D9BC237D358B0031D7FB /* BaseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488D9BB237D358B0031D7FB /* BaseTextView.swift */; };
 		F48CE0A623C4A747004D23CD /* KeyValueStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48CE0A523C4A747004D23CD /* KeyValueStorage.swift */; };
 		F48EC1F82354B904002E36D3 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48EC1F72354B904002E36D3 /* Article.swift */; };
@@ -56,6 +62,12 @@
 		F45B88FF2337322F00E5A6F9 /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
 		F45B89012337367E00E5A6F9 /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
 		F469A2F023C7489900B68D27 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		F469A2F223C8602400B68D27 /* BaseViewModelBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelBehaviour.swift; sourceTree = "<group>"; };
+		F469A2F423C864DB00B68D27 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		F469A2F823C869AE00B68D27 /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
+		F469A2FA23C86A3B00B68D27 /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
+		F469A2FC23C86C9200B68D27 /* GenericListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericListViewModel.swift; sourceTree = "<group>"; };
+		F469A2FE23C873B500B68D27 /* Timer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer+Extensions.swift"; sourceTree = "<group>"; };
 		F488D9BB237D358B0031D7FB /* BaseTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextView.swift; sourceTree = "<group>"; };
 		F48CE0A523C4A747004D23CD /* KeyValueStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStorage.swift; sourceTree = "<group>"; };
 		F48EC1F72354B904002E36D3 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
@@ -99,6 +111,8 @@
 		F41295BA235DD57A00DD6D8C /* BaseClasses */ = {
 			isa = PBXGroup;
 			children = (
+				F469A2F223C8602400B68D27 /* BaseViewModelBehaviour.swift */,
+				F469A2F423C864DB00B68D27 /* BaseViewModel.swift */,
 				F41295BB235DD58800DD6D8C /* UI */,
 			);
 			path = BaseClasses;
@@ -125,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				F41295C1235DDFBF00DD6D8C /* GenericListController.swift */,
+				F469A2FC23C86C9200B68D27 /* GenericListViewModel.swift */,
 			);
 			path = "Sample-GenericListView";
 			sourceTree = "<group>";
@@ -151,14 +166,16 @@
 		F45B88D42335406300E5A6F9 /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
-				F41295BA235DD57A00DD6D8C /* BaseClasses */,
 				F45B88D52335406300E5A6F9 /* AppDelegate.swift */,
 				F45B88DE2335406400E5A6F9 /* Assets.xcassets */,
-				F45B88E02335406400E5A6F9 /* LaunchScreen.storyboard */,
-				F45B88E32335406400E5A6F9 /* Info.plist */,
+				F41295BA235DD57A00DD6D8C /* BaseClasses */,
+				F469A2F723C8699700B68D27 /* Configurations */,
 				F45B88FE2337320000E5A6F9 /* Example */,
-				F48EC1F62354B8F3002E36D3 /* Model */,
+				F469A2F623C8674F00B68D27 /* Extensions */,
 				F45B88EC2336382200E5A6F9 /* Helpers */,
+				F45B88E32335406400E5A6F9 /* Info.plist */,
+				F45B88E02335406400E5A6F9 /* LaunchScreen.storyboard */,
+				F48EC1F62354B8F3002E36D3 /* Model */,
 				F45B88EB2336381B00E5A6F9 /* Network */,
 			);
 			path = BaseProject;
@@ -181,12 +198,12 @@
 		F45B88EC2336382200E5A6F9 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				F45B88ED23363AAB00E5A6F9 /* Log.swift */,
-				F45B88E9233559EE00E5A6F9 /* Identifiable.swift */,
 				F45B88F523364F8A00E5A6F9 /* ActivityIndicator.swift */,
-				F4DCBC4C2355F66B00C3D892 /* String+Extensions.swift */,
-				F48CE0A523C4A747004D23CD /* KeyValueStorage.swift */,
+				F469A2FA23C86A3B00B68D27 /* AlertPresenter.swift */,
 				F469A2F023C7489900B68D27 /* Connectivity.swift */,
+				F45B88E9233559EE00E5A6F9 /* Identifiable.swift */,
+				F48CE0A523C4A747004D23CD /* KeyValueStorage.swift */,
+				F45B88ED23363AAB00E5A6F9 /* Log.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -208,6 +225,23 @@
 				F41295C4235EE1FC00DD6D8C /* Sample-GenericListView */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		F469A2F623C8674F00B68D27 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F4DCBC4C2355F66B00C3D892 /* String+Extensions.swift */,
+				F469A2FE23C873B500B68D27 /* Timer+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F469A2F723C8699700B68D27 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				F469A2F823C869AE00B68D27 /* Configurations.swift */,
+			);
+			path = Configurations;
 			sourceTree = "<group>";
 		};
 		F48EC1F62354B8F3002E36D3 /* Model */ = {
@@ -340,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F48EC1F82354B904002E36D3 /* Article.swift in Sources */,
+				F469A2F523C864DB00B68D27 /* BaseViewModel.swift in Sources */,
 				F45B88FA2337107400E5A6F9 /* Session.swift in Sources */,
 				F45B88F023364C3D00E5A6F9 /* APIClient.swift in Sources */,
 				F45B88F223364D9600E5A6F9 /* Request.swift in Sources */,
@@ -351,14 +386,19 @@
 				F45B88F82336559D00E5A6F9 /* Environment.swift in Sources */,
 				F488D9BC237D358B0031D7FB /* BaseTextView.swift in Sources */,
 				F45B88F623364F8A00E5A6F9 /* ActivityIndicator.swift in Sources */,
+				F469A2FF23C873B500B68D27 /* Timer+Extensions.swift in Sources */,
 				F45B88EE23363AAB00E5A6F9 /* Log.swift in Sources */,
 				F45B89002337322F00E5A6F9 /* ExampleTableViewCell.swift in Sources */,
+				F469A2FD23C86C9200B68D27 /* GenericListViewModel.swift in Sources */,
 				F4DCBC4D2355F66B00C3D892 /* String+Extensions.swift in Sources */,
 				F45B88F423364E1E00E5A6F9 /* Error.swift in Sources */,
 				F48CE0A623C4A747004D23CD /* KeyValueStorage.swift in Sources */,
 				F45B89022337367E00E5A6F9 /* NetworkViewController.swift in Sources */,
+				F469A2F323C8602400B68D27 /* BaseViewModelBehaviour.swift in Sources */,
+				F469A2F923C869AE00B68D27 /* Configurations.swift in Sources */,
 				F45B88D62335406300E5A6F9 /* AppDelegate.swift in Sources */,
 				F45B88FD2337150F00E5A6F9 /* DummyResponse.swift in Sources */,
+				F469A2FB23C86A3B00B68D27 /* AlertPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,7 +549,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9DND36YTU;
 				INFOPLIST_FILE = BaseProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -529,7 +569,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L9DND36YTU;
 				INFOPLIST_FILE = BaseProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
