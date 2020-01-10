@@ -20,7 +20,7 @@ extension Timer {
      ``Timer.invalidate()``
      
      Example:
-     let timer = setTimeout(0.3) {
+     let timer = Timer.setTimeout(0.3) {
      // do something
      }
      timer.invalidate()      // cancel it.
@@ -32,7 +32,7 @@ extension Timer {
     /**
      setInternval()
      
-     Similar to setTimeout() this method will return ``Timer`` instance however, this
+     Similar to Timer.setTimeout() this method will return ``Timer`` instance however, this
      method will execute repeatedly.
      
      Warning using this method with caution, it is recommended that the block to utilise
