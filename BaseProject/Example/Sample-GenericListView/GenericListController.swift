@@ -19,7 +19,7 @@ class GenericListController: LBTAListController<ArticleCell, Article>, UICollect
 
         viewModel?.getList(articles: { (articles) in
             self.items = articles
-//            Timer.setTimeout(delay: 2) {
+//            Timer.setTimeout(delay: 5) {
 //                self.viewModel?.showSuccess(message: "Yeey!")
 //            }
         })

@@ -10,15 +10,15 @@ import NVActivityIndicatorView
 
 /// Add to any view controller you want. (Single Instance)
 protocol ActivityIndicatorView: class {
-    func startActivityIndicatorLoading()
-    func startActivityIndicatorLoading(message: String?)
-    func stopActivityIndicatorLoading()
-    func setActivityIndicatorMessage(message: String)
+    func showLoading()
+    func showLoading(message: String?)
+    func hideLoading()
+    func setLoaderMessage(message: String)
 }
 
 extension ActivityIndicatorView {
     
-    func startActivityIndicatorLoading(message: String?) {
+    func showLoading(message: String?) {
 
         if NVActivityIndicatorPresenter.sharedInstance.isAnimating {
             return
@@ -34,7 +34,7 @@ extension ActivityIndicatorView {
             padding: nil,
             displayTimeThreshold: nil,
             minimumDisplayTime: nil,
-            backgroundColor: .lightGray,
+            backgroundColor: #colorLiteral(red: 1, green: 0.8756536828, blue: 0.8383180645, alpha: 0.5043075771),
             textColor: .black
         )
         
@@ -44,11 +44,11 @@ extension ActivityIndicatorView {
         
     }
     
-    func startActivityIndicatorLoading() {
-        startActivityIndicatorLoading(message: nil)
+    func showLoading() {
+        showLoading(message: nil)
     }
     
-    func stopActivityIndicatorLoading() {
+    func hideLoading() {
         
         if !NVActivityIndicatorPresenter.sharedInstance.isAnimating {
             return
@@ -60,7 +60,7 @@ extension ActivityIndicatorView {
         
     }
     
-    func setActivityIndicatorMessage(message: String) {
+    func setLoaderMessage(message: String) {
         
         if !NVActivityIndicatorPresenter.sharedInstance.isAnimating {
             return

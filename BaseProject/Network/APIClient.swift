@@ -39,7 +39,7 @@ class APIClient: ActivityIndicatorView {
         let path = environment.baseUrl.appending(request.endPoint)
         let parameters = Mapper<T>().toJSON(request)
         
-        self.startActivityIndicatorLoading()
+        self.showLoading()
         sessionManager.request(
             path,
             method: request.httpMethod,
@@ -50,7 +50,7 @@ class APIClient: ActivityIndicatorView {
             .validate()
             .responseJSON { responseObject in
                 
-                self.stopActivityIndicatorLoading()
+                self.hideLoading()
                 self.updateAuthorizationToken(response: responseObject.response)
                 
                 switch responseObject.result {
@@ -83,7 +83,7 @@ class APIClient: ActivityIndicatorView {
         
         let path = environment.baseUrl.appending(endPoint)
         
-        self.startActivityIndicatorLoading()
+        self.showLoading()
         sessionManager.request(
             path,
             method: .get,
@@ -92,7 +92,7 @@ class APIClient: ActivityIndicatorView {
             )
             .responseJSON { responseObject in
                 
-                self.stopActivityIndicatorLoading()
+                self.hideLoading()
                 self.updateAuthorizationToken(response: responseObject.response)
                 
                 switch responseObject.result {
@@ -122,7 +122,7 @@ class APIClient: ActivityIndicatorView {
         let path = environment.baseUrl.appending(request.endPoint)
         let parameters = Mapper<T>().toJSON(request)
         
-        self.startActivityIndicatorLoading()
+        self.showLoading()
         sessionManager.request(
             path,
             method: request.httpMethod,
@@ -132,7 +132,7 @@ class APIClient: ActivityIndicatorView {
             )
             .responseJSON { responseObject in
                 
-                self.stopActivityIndicatorLoading()
+                self.hideLoading()
                 self.updateAuthorizationToken(response: responseObject.response)
                 
                 switch responseObject.result {
@@ -172,7 +172,7 @@ extension APIClient {
             return Observable.error(APIError.custom(message: "URL is not correct!"))
         }
         
-        self.startActivityIndicatorLoading()
+        self.showLoading()
         return sessionManager.rx.request(
             request.httpMethod,
             url,
@@ -184,7 +184,7 @@ extension APIClient {
             .responseJSON()
             .flatMap { (responseObject: DataResponse<Any>) -> Observable<T.Response> in
                 
-                self.stopActivityIndicatorLoading()
+                self.hideLoading()
                 self.updateAuthorizationToken(response: responseObject.response)
                 
                 switch responseObject.result {
