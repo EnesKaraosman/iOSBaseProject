@@ -8,22 +8,21 @@
 
 import UIKit
 
-class ___VARIABLE_ModuleName___ViewController: UIViewController {
-
-    var viewModel: ___VARIABLE_ModuleName___ViewModel?
+class ___VARIABLE_ModuleName___ViewController: BaseViewController<BaseViewModel> {
     
-    init(viewModel: BaseViewModel) {
-        self.viewModel = viewModel as? ___VARIABLE_ModuleName___ViewModel
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = #colorLiteral(red: 0.2641104293, green: 0.6212216815, blue: 0.9411764741, alpha: 1)
+    }
+    
+    override func setupUI() {
+        super.setupUI()
+        // TODO: You can add subviews here, it goes inside viewDidLoad.
+    }
+    
+    override func setupBinding() {
+        super.setupBinding()
+        // TODO: You can bind viewModel parameters here.
     }
     
 }

@@ -7,11 +7,8 @@
 //
 
 import UIKit
-import SnapKit
 
-class TemplateViewController: UIViewController {
-
-    var viewModel: TemplateViewModel?
+class TemplateViewController: BaseViewController<BaseViewModel> {
     
     private lazy var descriptionLabel: UILabel = {
         let lbl = UILabel()
@@ -44,9 +41,10 @@ class TemplateViewController: UIViewController {
         return lbl
     }()
     
-    init(viewModel: BaseViewModel) {
-        self.viewModel = viewModel as? TemplateViewModel
-        super.init(nibName: nil, bundle: nil)
+    override func setupUI() {
+        super.setupUI()
+        
+        self.view.backgroundColor = #colorLiteral(red: 0.2641104293, green: 0.6212216815, blue: 0.9411764741, alpha: 1)
         
         self.view.addSubview(descriptionLabel)
         self.descriptionLabel.snp.makeConstraints {
@@ -54,10 +52,6 @@ class TemplateViewController: UIViewController {
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = #colorLiteral(red: 0.2641104293, green: 0.6212216815, blue: 0.9411764741, alpha: 1)

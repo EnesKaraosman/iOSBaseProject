@@ -12,7 +12,7 @@ import SnapKit
 import Toast_Swift
 import Highlightr
 
-class NetworkViewController: BaseViewController {
+class NetworkViewController: BaseViewController<BaseViewModel> {
     
     private lazy var codeLabel: UILabel = {
         
@@ -55,7 +55,7 @@ class NetworkViewController: BaseViewController {
     
     private func networkTest() {
         
-        APIClient.instance.executeGET(endPoint: "articles", success: { (response) in
+        self.viewModel?.api?.executeGET(endPoint: "articles", success: { (response) in
             let articles = Mapper<Article>().mapArray(JSONObject: response.arrayObject) ?? []
             self.view.makeToast("\(articles.count) Articles downloaded")
             print(#function)
