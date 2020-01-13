@@ -9,13 +9,13 @@
 import UIKit
 import SCLAlertView
 
-protocol AlertPresenter {
+protocol AlertPresentable {
 //    var appearance: SCLAlertView.SCLAppearance { get set }
     func showSuccess(message: String, title: String, appearance: SCLAlertView.SCLAppearance)
     func showError(message: String, title: String, appearance: SCLAlertView.SCLAppearance)
 }
 
-extension AlertPresenter {
+extension AlertPresentable {
     
     func showSuccess(message: String, title: String = "", appearance: SCLAlertView.SCLAppearance = .init()) {
         let appearance = appearance

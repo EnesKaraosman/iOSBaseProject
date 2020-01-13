@@ -10,7 +10,7 @@ import Foundation
 
 class BaseViewModel: BaseViewModelBehaviour {
     
-    private var api: APIClient?
+    var api: APIClient?
     
     init(api: APIClient? = nil) {
         self.api = api

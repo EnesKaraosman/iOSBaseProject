@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import NVActivityIndicatorView
 
-protocol BaseViewModelBehaviour: ActivityIndicatorView, AlertPresenter {
+protocol BaseViewModelBehaviour: LoaderPresentable, AlertPresentable {
     
 }
 

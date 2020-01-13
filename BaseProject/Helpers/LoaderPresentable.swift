@@ -9,14 +9,14 @@
 import NVActivityIndicatorView
 
 /// Add to any view controller you want. (Single Instance)
-protocol ActivityIndicatorView: class {
+protocol LoaderPresentable: class {
     func showLoading()
     func showLoading(message: String?)
     func hideLoading()
     func setLoaderMessage(message: String)
 }
 
-extension ActivityIndicatorView {
+extension LoaderPresentable {
     
     func showLoading(message: String?) {
 

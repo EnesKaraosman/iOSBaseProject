@@ -12,7 +12,7 @@ import SwiftyJSON
 import RxSwift
 import RxAlamofire
 
-class APIClient: ActivityIndicatorView {
+class APIClient: LoaderPresentable {
     
     static var instance = APIClient()
     private let sessionManager: SessionManager

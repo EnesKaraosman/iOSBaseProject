@@ -12,7 +12,7 @@ import SnapKit
 import Toast_Swift
 import Highlightr
 
-class NetworkViewController: UIViewController, ActivityIndicatorView {
+class NetworkViewController: UIViewController, LoaderPresentable {
     
     private lazy var codeLabel: UILabel = {
         
