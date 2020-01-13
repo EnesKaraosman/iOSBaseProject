@@ -7,10 +7,13 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
 class BaseViewModel: BaseViewModelBehaviour {
     
     var api: APIClient?
+    var error = BehaviorRelay<String?>(value: nil)
     
     init(api: APIClient? = nil) {
         self.api = api
