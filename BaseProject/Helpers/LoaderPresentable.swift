@@ -10,6 +10,7 @@ import NVActivityIndicatorView
 
 /// Add to any view controller you want. (Single Instance)
 protocol LoaderPresentable: class {
+    var isLoading: Bool { get }
     func showLoading()
     func showLoading(message: String?)
     func hideLoading()
@@ -18,9 +19,13 @@ protocol LoaderPresentable: class {
 
 extension LoaderPresentable {
     
+    var isLoading: Bool {
+        return NVActivityIndicatorPresenter.sharedInstance.isAnimating
+    }
+    
     func showLoading(message: String?) {
 
-        if NVActivityIndicatorPresenter.sharedInstance.isAnimating {
+        if isLoading {
             return
         }
         
@@ -50,7 +55,7 @@ extension LoaderPresentable {
     
     func hideLoading() {
         
-        if !NVActivityIndicatorPresenter.sharedInstance.isAnimating {
+        if !isLoading {
             return
         }
         
@@ -62,7 +67,7 @@ extension LoaderPresentable {
     
     func setLoaderMessage(message: String) {
         
-        if !NVActivityIndicatorPresenter.sharedInstance.isAnimating {
+        if !isLoading {
             return
         }
         
