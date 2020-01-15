@@ -14,7 +14,7 @@ import Bagel
 // MARK: - Network
 /// Network (Rx, Plain), JSON Parsing (ObjectMapper, SwiftyJSON, Default JSONDecoder)
 /// Consider using enumeration cases for api (service interfaces) ref: ios-base-swift-master/Services
-/// You can track network activities with Bagel framework
+/// You can track network activities with Bagel framework ✅
 
 // MARK: - Design Pattern
 /// Design Pattern (MVP, MVVM),
@@ -34,6 +34,7 @@ import Bagel
 // Bottom bar vc, PagerStripVC
 // Constants
 // Configuration File (May include all primary fonts, colors, urls.. ?)
+// SwiftLint
 
 /// BaseClasses, BaseComponents (BaseViews, Dark mode support)
 /// Component Factory (UI components)
