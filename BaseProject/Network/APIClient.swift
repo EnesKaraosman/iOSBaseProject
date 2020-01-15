@@ -17,6 +17,7 @@ class APIClient: LoaderPresentable {
     static var instance = APIClient()
     private let sessionManager: SessionManager
     var environment: NetworkEnvironment?
+    var printNetworkActivity = true
     
     private init() {
         let configuration = URLSessionConfiguration.default
@@ -29,7 +30,7 @@ class APIClient: LoaderPresentable {
         request: T,
         success: @escaping (T.Response) -> Void,
         failure: @escaping (APIError) -> Void
-        ) where T : Request {
+    ) where T : Request {
         
         guard let environment = environment, environment.baseUrl.isEmpty == false else {
             Log.e("Environment not configured!")
@@ -39,6 +40,8 @@ class APIClient: LoaderPresentable {
         let path = environment.baseUrl.appending(request.endPoint)
         let parameters = Mapper<T>().toJSON(request)
         
+        self.handleRequestPrinting(request: request)
+        
         self.showLoading()
         sessionManager.request(
             path,
@@ -46,10 +49,11 @@ class APIClient: LoaderPresentable {
             parameters: parameters.isEmpty ? nil : parameters,
             encoding: JSONEncoding.default,
             headers: Session.sharedInstance.getHeaders()
-            )
+        )
             .validate()
             .responseJSON { responseObject in
                 
+                self.handleResponsePrinting(responseObject: responseObject)
                 self.hideLoading()
                 self.updateAuthorizationToken(response: responseObject.response)
                 
@@ -74,7 +78,7 @@ class APIClient: LoaderPresentable {
         endPoint: String,
         success: @escaping (JSON) -> Void,
         failure: @escaping (APIError) -> Void
-        ) {
+    ) {
         
         guard let environment = environment, environment.baseUrl.isEmpty == false else {
             Log.e("Environment not configured!")
@@ -83,15 +87,18 @@ class APIClient: LoaderPresentable {
         
         let path = environment.baseUrl.appending(endPoint)
         
+        self.handleGetRequestPrinting(endPoint: endPoint)
+        
         self.showLoading()
         sessionManager.request(
             path,
             method: .get,
             encoding: JSONEncoding.default,
             headers: Session.sharedInstance.getHeaders()
-            )
+        )
             .responseJSON { responseObject in
                 
+                self.handleResponsePrinting(responseObject: responseObject)
                 self.hideLoading()
                 self.updateAuthorizationToken(response: responseObject.response)
                 
@@ -112,7 +119,7 @@ class APIClient: LoaderPresentable {
         request: T,
         success: @escaping (JSON) -> Void,
         failure: @escaping (APIError) -> Void
-        ) {
+    ) {
         
         guard let environment = environment, environment.baseUrl.isEmpty == false else {
             Log.e("Environment not configured!")
@@ -122,6 +129,7 @@ class APIClient: LoaderPresentable {
         let path = environment.baseUrl.appending(request.endPoint)
         let parameters = Mapper<T>().toJSON(request)
         
+        self.handleRequestPrinting(request: request)
         self.showLoading()
         sessionManager.request(
             path,
@@ -129,9 +137,10 @@ class APIClient: LoaderPresentable {
             parameters: parameters.isEmpty ? nil : parameters,
             encoding: JSONEncoding.default,
             headers: Session.sharedInstance.getHeaders()
-            )
+        )
             .responseJSON { responseObject in
                 
+                self.handleResponsePrinting(responseObject: responseObject)
                 self.hideLoading()
                 self.updateAuthorizationToken(response: responseObject.response)
                 
@@ -172,6 +181,7 @@ extension APIClient {
             return Observable.error(APIError.custom(message: "URL is not correct!"))
         }
         
+        self.handleRequestPrinting(request: request)
         self.showLoading()
         return sessionManager.rx.request(
             request.httpMethod,
@@ -179,11 +189,12 @@ extension APIClient {
             parameters: parameters,
             encoding: JSONEncoding.default,
             headers: Session.sharedInstance.getHeaders()
-            )
+        )
             .validate()
             .responseJSON()
             .flatMap { (responseObject: DataResponse<Any>) -> Observable<T.Response> in
                 
+                self.handleResponsePrinting(responseObject: responseObject)
                 self.hideLoading()
                 self.updateAuthorizationToken(response: responseObject.response)
                 
@@ -207,6 +218,51 @@ extension APIClient {
                 
         }
         
+    }
+    
+}
+
+// MARK: - Network Activity Logger
+extension APIClient {
+    
+    private func handleGetRequestPrinting(endPoint: String) {
+        if !self.printNetworkActivity { return }
+        
+        Log.d("NETWORK REQUEST")
+        debugPrint("==========================================")
+        debugPrint("GET: \(environment!.baseUrl.appending(endPoint))")
+        debugPrint("==========================================")
+        
+    }
+    
+    private func handleRequestPrinting<T: Request>(request: T) {
+        if !self.printNetworkActivity { return }
+        
+        Log.d("NETWORK REQUEST")
+        debugPrint("==========================================")
+        debugPrint("\(request.endPoint.uppercased()): \(environment!.baseUrl.appending(request.endPoint))")
+        debugPrint(request.toJSONString(prettyPrint: true) ?? "")
+        debugPrint("==========================================")
+    }
+    
+    private func handleResponsePrinting(responseObject: DataResponse<Any>) {
+        if !self.printNetworkActivity { return }
+        
+        Log.d("NETWORK RESPONSE")
+        debugPrint("==========================================")
+        if let response = responseObject.response {
+            debugPrint("HEADERS: \(response.allHeaderFields)")
+        }
+        switch responseObject.result {
+        case .success(let value):
+            let json = JSON(value)
+            debugPrint("== SUCCESS RESULT ==")
+            debugPrint(json.rawString(.utf8, options: .init(rawValue: 0)) ?? "")
+        case .failure(let error):
+            debugPrint("== FAILURE RESULT ==")
+            debugPrint(error.localizedDescription)
+        }
+        debugPrint("==========================================")
     }
     
 }
