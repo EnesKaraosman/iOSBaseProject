@@ -29,13 +29,17 @@ class ExampleViewController: LBTAListController<ExampleTableViewCell, SamplePage
                 name: "Network".localized(),
                 systemIconName: "network",
                 page: NetworkViewController.self,
-                rawPage: NetworkViewController()
+                rawPage: NetworkViewController(
+                    viewModel: BaseViewModel(api: APIClient.instance)
+                )
             ),
             SamplePage(
                 name: "Generic ListController".localized(),
                 systemIconName: "arrows",
                 page: GenericListController.self,
-                rawPage: GenericListController(viewModel: GenericListViewModel())
+                rawPage: GenericListController(
+                    viewModel: GenericListViewModel(api: APIClient.instance)
+                )
             ),
             SamplePage(
                 name: "Template Controller".localized(),
