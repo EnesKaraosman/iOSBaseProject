@@ -38,7 +38,9 @@ import Bagel
 /// XCoordinator for presenting ViewController (consider bottom popup to reflect iOS 13's default behaviour)
 
 // MARK: - Database
-// Local Database (Realm, NSUserDefault-ForBasicThings)
+/// UserDefaults (propertyWrapper) ✅
+/// CoreData ⁉️
+/// Realm    ⁉️
 
 // MARK: - Helper, Util
 // Logger (May be used with analitycs services) ✅
