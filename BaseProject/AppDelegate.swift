@@ -13,14 +13,29 @@ import Bagel
 // MARK: TODO
 
 // MARK: - Network
-/// Network (Rx, Plain), JSON Parsing (ObjectMapper, SwiftyJSON, Default JSONDecoder)
-/// Consider using enumeration cases for api (service interfaces) ref: ios-base-swift-master/Services
-/// You can track network activities with Bagel (external app), also with AlamofireNetworkActivityLogger (internal, printing) ✅
 
-// MARK: - Design Pattern
-/// Design Pattern (MVP, MVVM),
-/// Coordinator (XCoordinator) For presenting ViewController, consider bottom popup to reflect iOS 13's default behaviour
-/// Leave at least one example in this project for design patterns
+// Parsing
+/// ObjectMapper, SwiftyJSON ✅
+/// Codable Protocol ❌
+
+// Reactive
+/// Rx Extensions (versions) ✅
+/// Moya: Consider using enumeration cases for api (service interfaces) ref: ios-base-swift-master/Services ❌⁉️
+
+// Tracking network activities
+///  External app: Bagel ✅
+///  Internal pod: AlamofireNetworkActivityLogger ✅
+
+/******************************************/
+
+// MARK: - Clean Architecture
+
+// Design Pattern
+/// MVVM ✅
+/// MVP  ⁉️
+
+// Coordinator
+/// XCoordinator for presenting ViewController (consider bottom popup to reflect iOS 13's default behaviour)
 
 // MARK: - Database
 // Local Database (Realm, NSUserDefault-ForBasicThings)
@@ -34,14 +49,17 @@ import Bagel
 // Extensions
 // Bottom bar vc, PagerStripVC
 // Constants
-// Configuration File (May include all primary fonts, colors, urls.. ?)
+// Configuration File (May include all primary fonts, colors, urls.. ?) ✅
 // Permissions (https://github.com/ivanvorobei/SPPermissions)
 // SwiftLint
+// ThemeManager
 
 /// BaseClasses, BaseComponents (BaseViews, Dark mode support)
 /// Component Factory (UI components)
 
 // MARK: - Analytics
+
+/// Crahslytics, Fabric ?
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
