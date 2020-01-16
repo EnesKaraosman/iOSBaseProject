@@ -14,4 +14,7 @@ struct Configurations {
         static let title: UIFont = .monospacedSystemFont(ofSize: 21, weight: .bold)
         static let text: UIFont = .monospacedSystemFont(ofSize: 17, weight: .regular)
     }
+    struct Network {
+        static let logNetworkActivity = true
+    }
 }

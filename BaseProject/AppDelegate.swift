@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireNetworkActivityLogger
 import Bagel
 
 // MARK: TODO
@@ -14,7 +15,7 @@ import Bagel
 // MARK: - Network
 /// Network (Rx, Plain), JSON Parsing (ObjectMapper, SwiftyJSON, Default JSONDecoder)
 /// Consider using enumeration cases for api (service interfaces) ref: ios-base-swift-master/Services
-/// You can track network activities with Bagel framework ✅
+/// You can track network activities with Bagel (external app), also with AlamofireNetworkActivityLogger (internal, printing) ✅
 
 // MARK: - Design Pattern
 /// Design Pattern (MVP, MVVM),
@@ -34,6 +35,7 @@ import Bagel
 // Bottom bar vc, PagerStripVC
 // Constants
 // Configuration File (May include all primary fonts, colors, urls.. ?)
+// Permissions (https://github.com/ivanvorobei/SPPermissions)
 // SwiftLint
 
 /// BaseClasses, BaseComponents (BaseViews, Dark mode support)
@@ -51,10 +53,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.setupWindow()
         
-        Bagel.start()
-        
         APIClient.instance.environment = NetworkEnvironment(baseUrl: "https://5da476a3a6593f001407a7af.mockapi.io/")
-        
+
+        self.handleNetworkActivityLogging()
+        Bagel.start()
+                
         Connectivity.shared.listener = { state in
             guard let nv = self.window?.rootViewController as? UINavigationController else { return }
             nv.viewControllers.first?.view.makeToast(Connectivity.shared.isConnectedToInternet ? "Connected to Internet": "Connection Lost")
@@ -68,10 +71,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = UINavigationController(rootViewController: ExampleViewController())
         window?.makeKeyAndVisible()
     }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // We can schedule background tasks here.
+    
+    private func handleNetworkActivityLogging() {
+        #if DEBUG
+        if Configurations.Network.logNetworkActivity {
+            NetworkActivityLogger.shared.level = .debug
+            NetworkActivityLogger.shared.startLogging()
+        }
+        #endif
     }
 
 }
-
