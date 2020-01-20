@@ -26,7 +26,9 @@ import Bagel
 ///  External app: Bagel ✅
 ///  Internal pod: AlamofireNetworkActivityLogger ✅
 
-/******************************************/
+// Environment switching like PROD, PREPROD, TEST
+
+/********************************************************************/
 
 // MARK: - Clean Architecture
 
@@ -37,10 +39,14 @@ import Bagel
 // Coordinator
 /// XCoordinator for presenting ViewController (consider bottom popup to reflect iOS 13's default behaviour)
 
+/********************************************************************/
+
 // MARK: - Database
 /// UserDefaults (propertyWrapper) ✅
 /// CoreData ⁉️
 /// Realm    ⁉️
+
+/********************************************************************/
 
 // MARK: - Helper, Util
 // Logger (May be used with analitycs services) ✅
@@ -55,6 +61,7 @@ import Bagel
 // Permissions (https://github.com/ivanvorobei/SPPermissions)
 // SwiftLint
 // ThemeManager
+// Plist manager
 
 /// BaseClasses, BaseComponents (BaseViews, Dark mode support)
 /// Component Factory (UI components)
@@ -62,6 +69,8 @@ import Bagel
 // MARK: - Analytics
 
 /// Crahslytics, Fabric ?
+
+/********************************************************************/
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
