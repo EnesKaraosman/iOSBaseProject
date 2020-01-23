@@ -39,6 +39,9 @@ import Bagel
 // Coordinator
 /// XCoordinator for presenting ViewController (consider bottom popup to reflect iOS 13's default behaviour)
 
+// Dependency Injection
+/// Resolver: https://github.com/hmlongco/Resolver
+
 /********************************************************************/
 
 // MARK: - Database
@@ -82,7 +85,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.setupWindow()
         
-        APIClient.instance.environment = NetworkEnvironment(baseUrl: "https://5da476a3a6593f001407a7af.mockapi.io/")
+        APIClient.instance.environment = NetworkEnvironment(baseUrl: Configurations.Environment.prod.rawValue)
 
         self.handleNetworkActivityLogging()
         Bagel.start()

@@ -17,4 +17,8 @@ struct Configurations {
     struct Network {
         static let logNetworkActivity = true
     }
+    enum Environment: String {
+        case prod = "https://5da476a3a6593f001407a7af.mockapi.io/"
+        case dev = ""
+    }
 }
