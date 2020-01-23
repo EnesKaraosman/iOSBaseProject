@@ -2,38 +2,39 @@
 You're gonna start to a new project and fed up doing same initialization every time.
 
 
+
 # *TODO LIST*
 
 ## - Network
-
-### Parsing
+Network.md file exist in project's network module, for detail usage you can play with it.
+#### Parsing
 
 * ObjectMapper, SwiftyJSON ✅
-* Codable Protocol ❌
+* Codable Protocol❌
 
-### Reactive
+#### Reactive
 * Rx Extensions (versions) ✅
 * Moya: Consider using enumeration cases for api (service interfaces) ref: ios-base-swift-master/Services ❌
 
-### Tracking network activities
+#### Tracking network activities
 *  External app: Bagel ✅
 *  Internal pod: AlamofireNetworkActivityLogger ✅
 
-### Environment switching like PROD, PREPROD, TEST
+#### Environment switching like PROD, PREPROD, TEST
 * Add support for switching from iOS > Settings > App > Environments
 
 ------
 
 ## - Clean Architecture
 
-### Design Pattern
+#### Design Pattern
 * MVVM ✅
 * MVP  
 
-### Coordinator
+#### Coordinator
 * XCoordinator for presenting ViewController (consider bottom popup to reflect iOS 13's default behaviour)
 
-### Dependency Injection
+#### Dependency Injection
 * Resolver: https://github.com/hmlongco/Resolver
 
 ------
@@ -61,6 +62,8 @@ You're gonna start to a new project and fed up doing same initialization every t
 * Plist manager
 * BaseClasses, BaseComponents (BaseViews, Dark mode support)
 * Component Factory (UI components)
+
+------
 
 ## - Analytics
 * Crahslytics
