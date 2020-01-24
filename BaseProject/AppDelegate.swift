@@ -26,7 +26,7 @@ import Bagel
 ///  External app: Bagel ✅
 ///  Internal pod: AlamofireNetworkActivityLogger ✅
 
-// Environment switching like PROD, PREPROD, TEST
+// Settings Bundle Environment switching like Production, Development ✅
 
 /********************************************************************/
 
@@ -85,7 +85,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.setupWindow()
         
-        APIClient.instance.environment = NetworkEnvironment(baseUrl: Configurations.Environment.prod.rawValue)
+        self.setupNetworkEnvironment()
 
         self.handleNetworkActivityLogging()
         Bagel.start()
@@ -102,6 +102,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = UINavigationController(rootViewController: ExampleViewController())
         window?.makeKeyAndVisible()
+    }
+    
+    private func setupNetworkEnvironment() {
+        let baseUrl = Configurations.Environment.selected.url
+        Log.i(baseUrl)
+        APIClient.instance.environment = NetworkEnvironment(baseUrl: baseUrl)
     }
     
     private func handleNetworkActivityLogging() {

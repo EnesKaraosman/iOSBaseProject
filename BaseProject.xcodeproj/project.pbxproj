@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E1010DD2216F5F86A3CB35BD /* Pods_BaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10597F97009A2EC1A100AC08 /* Pods_BaseProject.framework */; };
 		F41295C2235DDFBF00DD6D8C /* GenericListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41295C1235DDFBF00DD6D8C /* GenericListController.swift */; };
+		F4307D3E23DACA3D0016C8AA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4307D3D23DACA3D0016C8AA /* Settings.bundle */; };
 		F436132D23CC6AF80065DC57 /* TemplateIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F436132723CC6AF80065DC57 /* TemplateIcon@2x.png */; };
 		F436132E23CC6AF80065DC57 /* ___FILEBASENAME___ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436132823CC6AF80065DC57 /* ___FILEBASENAME___ViewController.swift */; };
 		F436132F23CC6AF80065DC57 /* ___FILEBASENAME___Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436132923CC6AF80065DC57 /* ___FILEBASENAME___Builder.swift */; };
@@ -57,6 +58,7 @@
 		10597F97009A2EC1A100AC08 /* Pods_BaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD1D797168504577404381D /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F41295C1235DDFBF00DD6D8C /* GenericListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericListController.swift; sourceTree = "<group>"; };
+		F4307D3D23DACA3D0016C8AA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F436132723CC6AF80065DC57 /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
 		F436132823CC6AF80065DC57 /* ___FILEBASENAME___ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewController.swift"; sourceTree = "<group>"; };
 		F436132923CC6AF80065DC57 /* ___FILEBASENAME___Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Builder.swift"; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 		F45B88C92335406300E5A6F9 = {
 			isa = PBXGroup;
 			children = (
+				F4307D3D23DACA3D0016C8AA /* Settings.bundle */,
 				F4DCBC472355F52300C3D892 /* Localizable.strings */,
 				F45B88D42335406300E5A6F9 /* BaseProject */,
 				F45B88D32335406300E5A6F9 /* Products */,
@@ -319,6 +322,7 @@
 				F45B88CF2335406300E5A6F9 /* Frameworks */,
 				F45B88D02335406300E5A6F9 /* Resources */,
 				4A7DFD82C86B789D813AA006 /* [CP] Embed Pods Frameworks */,
+				F4307D3F23DADEC10016C8AA /* Configure Settings Bundle */,
 			);
 			buildRules = (
 			);
@@ -372,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4307D3E23DACA3D0016C8AA /* Settings.bundle in Resources */,
 				F436133123CC6AF80065DC57 /* TemplateIcon.png in Resources */,
 				F45B88E22335406400E5A6F9 /* LaunchScreen.storyboard in Resources */,
 				F4DCBC492355F52300C3D892 /* Localizable.strings in Resources */,
@@ -423,6 +428,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		F4307D3F23DADEC10016C8AA /* Configure Settings Bundle */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Configure Settings Bundle";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nBUILD_APP_DIR=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\n\nif [\"$CONFIGURATION\" == \"Release\"]; then\nrm -Rf $BUILD_APP_DIR/Settings.bundle\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
