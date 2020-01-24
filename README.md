@@ -10,7 +10,7 @@ Network.md file exist in project's network module, for detail usage you can play
 #### Parsing
 
 * ObjectMapper, SwiftyJSON ✅
-* Codable Protocol❌
+* Codable Protocol ❌
 
 #### Reactive
 * Rx Extensions (versions) ✅
@@ -20,8 +20,8 @@ Network.md file exist in project's network module, for detail usage you can play
 *  External app: Bagel ✅
 *  Internal pod: AlamofireNetworkActivityLogger ✅
 
-#### Environment switching like PROD, PREPROD, TEST
-* Add support for switching from iOS > Settings > App > Environments
+#### Settings.bundle custom settings
+* Add support for switching Environment from iOS > Settings > App > Environments ✅
 
 ------
 
