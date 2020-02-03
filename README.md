@@ -6,11 +6,12 @@ You're gonna start to a new project and fed up doing same initialization every t
 # *TODO LIST*
 
 ## - Network
-Network.md file exist in project's network module, for detail usage you can play with it.
+
+[Network.md](https://github.com/EnesKaraosman/iOSBaseProject/blob/master/BaseProject/Network/NetworkUsage.md) file exist in project's network module, for detail usage you can play with it.
 #### Parsing
 
-* ObjectMapper, SwiftyJSON ✅
-* Codable Protocol ❌
+* SwiftyJSON ✅
+* Codable ✅
 
 #### Reactive
 * Rx Extensions (versions) ✅
@@ -29,7 +30,8 @@ Network.md file exist in project's network module, for detail usage you can play
 
 #### Design Pattern
 * MVVM ✅
-* MVP  
+* MVP
+* VIPER
 
 #### Coordinator
 * XCoordinator for presenting ViewController (consider bottom popup to reflect iOS 13's default behaviour)
