@@ -35,6 +35,7 @@ import Bagel
 // Design Pattern
 /// MVVM ✅
 /// MVP  ⁉️
+/// VIPER ⁉️
 
 // Coordinator
 /// XCoordinator for presenting ViewController (consider bottom popup to reflect iOS 13's default behaviour)
