@@ -13,7 +13,6 @@ target 'BaseProject' do
   pod 'Kingfisher'
   pod 'LBTATools'
   pod 'NVActivityIndicatorView'
-  pod 'ObjectMapper'
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxAlamofire'
