@@ -13,7 +13,6 @@ PODS:
   - NVActivityIndicatorView (4.8.0):
     - NVActivityIndicatorView/Presenter (= 4.8.0)
   - NVActivityIndicatorView/Presenter (4.8.0)
-  - ObjectMapper (3.5.1)
   - RxAlamofire (5.1.0):
     - RxAlamofire/Core (= 5.1.0)
   - RxAlamofire/Core (5.1.0):
@@ -42,7 +41,6 @@ DEPENDENCIES:
   - Kingfisher
   - LBTATools
   - NVActivityIndicatorView
-  - ObjectMapper
   - RxAlamofire
   - RxCocoa
   - RxSwift
@@ -63,7 +61,6 @@ SPEC REPOS:
     - Kingfisher
     - LBTATools
     - NVActivityIndicatorView
-    - ObjectMapper
     - RxAlamofire
     - RxCocoa
     - RxRelay
@@ -84,7 +81,6 @@ SPEC CHECKSUMS:
   Kingfisher: dc6e0f53bb5b12c3e75bedb0e01bbd7a640eea69
   LBTATools: 389a901a01b9a56bea5682c40cd6e23530f40015
   NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
-  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   RxAlamofire: a2d7621de4c23a0c6e7b476b504acc32838ee341
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
@@ -96,6 +92,6 @@ SPEC CHECKSUMS:
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
   XCoordinator: 67772bf463acec002a920ab5eb04f46835dcf123
 
-PODFILE CHECKSUM: 6a15bd74785c88d4194ba6e49fd6412c884ee63b
+PODFILE CHECKSUM: dcf7f0599404b04f09e4aaf35c3a14cf4d674a8e
 
 COCOAPODS: 1.8.4
