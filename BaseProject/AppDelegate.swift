@@ -15,8 +15,8 @@ import Bagel
 // MARK: - Network
 
 // Parsing
-/// ObjectMapper, SwiftyJSON ✅
-/// Codable Protocol ❌
+/// SwiftyJSON ✅
+/// Codable Protocol ✅
 
 // Reactive
 /// Rx Extensions (versions) ✅

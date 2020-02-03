@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ObjectMapper
 import SnapKit
 import Toast_Swift
 import Highlightr
@@ -21,13 +20,12 @@ class NetworkViewController: BaseViewController<BaseViewModel> {
         
         let lbl = UILabel()
         lbl.attributedText = v?.highlight("""
-        APIClient.instance.executeGET(
+        self.viewModel?.api?.executeGET(
             endPoint: "articles",
-            success: { (response) in
-                let articles = Mapper<Article>().mapArray(JSONObject: response.arrayObject) ?? []
-            },
-            failure: { error in
-                // Error Handling
+            success: { (articles: [Article]) in
+                print(articles.count)
+            }, failure: { (error) in
+                print(error.localizedDescription)
             }
         )
         """, as: "Swift", fastRender: true)
@@ -55,15 +53,16 @@ class NetworkViewController: BaseViewController<BaseViewModel> {
     
     private func networkTest() {
         
-        self.viewModel?.api?.executeGET(endPoint: "articles", success: { (response) in
-            let articles = Mapper<Article>().mapArray(JSONObject: response.arrayObject) ?? []
-            self.view.makeToast("\(articles.count) Articles downloaded")
-            print(#function)
-        }, failure: { error in
-            self.view.makeToast(error.localizedDescription)
-            // TODO: Add alert ctrl util
-        })
-        
+        self.viewModel?.api?.executeGET(
+            endPoint: "articles",
+            success: { (articles: [Article]) in
+                self.view.makeToast("\(articles.count)")
+            }, failure: { (error) in
+                self.view.makeToast(error.localizedDescription)
+                self.viewModel?.showError(message: error.localizedDescription)
+            }
+        )
+
     }
     
 }
