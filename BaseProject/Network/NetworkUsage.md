@@ -11,7 +11,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
        baseUrl: "https://www.mybaseurl.com/"
     )
 
-	return true
+    return true
 }
 ```
 
@@ -27,7 +27,7 @@ Assume you have a JSON like below.
 
 ```json
 {
-	"customerKey": {
+    "customerKey": {
     	"custId": 22022163
     }
 }
