@@ -38,8 +38,7 @@ import Bagel
 /// VIPER ⁉️
 
 // Coordinator
-/// XCoordinator for presenting ViewController (consider bottom popup to reflect iOS 13's default behaviour)
-/// https://github.com/quickbirdstudios/XCoordinator
+/// XCoordinator ✅ https://github.com/quickbirdstudios/XCoordinator
 
 // Dependency Injection
 /// Resolver: https://github.com/hmlongco/Resolver
