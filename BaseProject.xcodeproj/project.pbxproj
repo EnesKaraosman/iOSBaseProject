@@ -21,6 +21,9 @@
 		F436133A23CCAF110065DC57 /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436133723CCAF110065DC57 /* TemplateViewController.swift */; };
 		F436133B23CCAF110065DC57 /* TemplateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436133823CCAF110065DC57 /* TemplateBuilder.swift */; };
 		F436133C23CCAF110065DC57 /* TemplateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436133923CCAF110065DC57 /* TemplateViewModel.swift */; };
+		F439F10323EBE2A500231A89 /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F439F10223EBE2A500231A89 /* NSAttributedString+Extensions.swift */; };
+		F439F10523EBE37000231A89 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F439F10423EBE37000231A89 /* UIView+Extensions.swift */; };
+		F439F10723EBE41C00231A89 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F439F10623EBE41C00231A89 /* UIViewController+Extensions.swift */; };
 		F45B88D62335406300E5A6F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B88D52335406300E5A6F9 /* AppDelegate.swift */; };
 		F45B88DA2335406300E5A6F9 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B88D92335406300E5A6F9 /* ExampleViewController.swift */; };
 		F45B88DF2335406400E5A6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45B88DE2335406400E5A6F9 /* Assets.xcassets */; };
@@ -48,6 +51,12 @@
 		F48CE0A623C4A747004D23CD /* KeyValueStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48CE0A523C4A747004D23CD /* KeyValueStorage.swift */; };
 		F48EC1F82354B904002E36D3 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48EC1F72354B904002E36D3 /* Article.swift */; };
 		F48EC1FC2355E2F8002E36D3 /* NetworkUsage.md in Resources */ = {isa = PBXBuildFile; fileRef = F48EC1FB2355E2F8002E36D3 /* NetworkUsage.md */; };
+		F4ABB48723E8573400005E7B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ABB48623E8573400005E7B /* AppCoordinator.swift */; };
+		F4ABB48A23E859FB00005E7B /* NetworkBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ABB48823E859FB00005E7B /* NetworkBuilder.swift */; };
+		F4ABB48B23E859FB00005E7B /* NetworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ABB48923E859FB00005E7B /* NetworkViewModel.swift */; };
+		F4ABB48F23E85A5100005E7B /* GenericListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ABB48D23E85A5100005E7B /* GenericListBuilder.swift */; };
+		F4ABB49123E85B5600005E7B /* ExampleContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ABB49023E85B5600005E7B /* ExampleContainerBuilder.swift */; };
+		F4ABB49323E85BC200005E7B /* ExampleContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ABB49223E85BC200005E7B /* ExampleContainerViewModel.swift */; };
 		F4BAC71223CC632B005014EB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BAC71123CC632B005014EB /* BaseViewController.swift */; };
 		F4C4439F23827B8000D33E75 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4439E23827B8000D33E75 /* BaseButton.swift */; };
 		F4DCBC492355F52300C3D892 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4DCBC472355F52300C3D892 /* Localizable.strings */; };
@@ -70,6 +79,9 @@
 		F436133723CCAF110065DC57 /* TemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
 		F436133823CCAF110065DC57 /* TemplateBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateBuilder.swift; sourceTree = "<group>"; };
 		F436133923CCAF110065DC57 /* TemplateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewModel.swift; sourceTree = "<group>"; };
+		F439F10223EBE2A500231A89 /* NSAttributedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extensions.swift"; sourceTree = "<group>"; };
+		F439F10423EBE37000231A89 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		F439F10623EBE41C00231A89 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		F45B88D22335406300E5A6F9 /* BaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45B88D52335406300E5A6F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F45B88D92335406300E5A6F9 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +111,12 @@
 		F48CE0A523C4A747004D23CD /* KeyValueStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStorage.swift; sourceTree = "<group>"; };
 		F48EC1F72354B904002E36D3 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		F48EC1FB2355E2F8002E36D3 /* NetworkUsage.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = NetworkUsage.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
+		F4ABB48623E8573400005E7B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F4ABB48823E859FB00005E7B /* NetworkBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBuilder.swift; sourceTree = "<group>"; };
+		F4ABB48923E859FB00005E7B /* NetworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewModel.swift; sourceTree = "<group>"; };
+		F4ABB48D23E85A5100005E7B /* GenericListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericListBuilder.swift; sourceTree = "<group>"; };
+		F4ABB49023E85B5600005E7B /* ExampleContainerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleContainerBuilder.swift; sourceTree = "<group>"; };
+		F4ABB49223E85BC200005E7B /* ExampleContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleContainerViewModel.swift; sourceTree = "<group>"; };
 		F4BAC71123CC632B005014EB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F4C4439E23827B8000D33E75 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		F4DCBC482355F52300C3D892 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -160,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				F45B89012337367E00E5A6F9 /* NetworkViewController.swift */,
+				F4ABB48823E859FB00005E7B /* NetworkBuilder.swift */,
+				F4ABB48923E859FB00005E7B /* NetworkViewModel.swift */,
 			);
 			path = "Sample-Network";
 			sourceTree = "<group>";
@@ -167,6 +187,7 @@
 		F41295C4235EE1FC00DD6D8C /* Sample-GenericListView */ = {
 			isa = PBXGroup;
 			children = (
+				F4ABB48D23E85A5100005E7B /* GenericListBuilder.swift */,
 				F41295C1235DDFBF00DD6D8C /* GenericListController.swift */,
 				F469A2FC23C86C9200B68D27 /* GenericListViewModel.swift */,
 			);
@@ -213,6 +234,7 @@
 				F45B88DE2335406400E5A6F9 /* Assets.xcassets */,
 				F41295BA235DD57A00DD6D8C /* BaseClasses */,
 				F469A2F723C8699700B68D27 /* Configurations */,
+				F4ABB48523E8571600005E7B /* Coordinators */,
 				F45B88FE2337320000E5A6F9 /* Example */,
 				F469A2F623C8674F00B68D27 /* Extensions */,
 				F45B88EC2336382200E5A6F9 /* Helpers */,
@@ -263,6 +285,8 @@
 		F45B88FE2337320000E5A6F9 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				F4ABB49023E85B5600005E7B /* ExampleContainerBuilder.swift */,
+				F4ABB49223E85BC200005E7B /* ExampleContainerViewModel.swift */,
 				F45B88FF2337322F00E5A6F9 /* ExampleTableViewCell.swift */,
 				F45B88D92335406300E5A6F9 /* ExampleViewController.swift */,
 				F41295C4235EE1FC00DD6D8C /* Sample-GenericListView */,
@@ -275,10 +299,13 @@
 		F469A2F623C8674F00B68D27 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F439F10223EBE2A500231A89 /* NSAttributedString+Extensions.swift */,
+				F436133523CC8B2D0065DC57 /* NSMutableAttributedString+Extensions.swift */,
 				F4DCBC4C2355F66B00C3D892 /* String+Extensions.swift */,
 				F469A2FE23C873B500B68D27 /* Timer+Extensions.swift */,
 				F469A30023C8BADD00B68D27 /* UIApplication+Extensions.swift */,
-				F436133523CC8B2D0065DC57 /* NSMutableAttributedString+Extensions.swift */,
+				F439F10423EBE37000231A89 /* UIView+Extensions.swift */,
+				F439F10623EBE41C00231A89 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -297,6 +324,14 @@
 				F48EC1F72354B904002E36D3 /* Article.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F4ABB48523E8571600005E7B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				F4ABB48623E8573400005E7B /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		F4BAC71323CC6637005014EB /* Sample-Template */ = {
@@ -455,12 +490,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F48EC1F82354B904002E36D3 /* Article.swift in Sources */,
+				F4ABB49123E85B5600005E7B /* ExampleContainerBuilder.swift in Sources */,
+				F4ABB48723E8573400005E7B /* AppCoordinator.swift in Sources */,
 				F469A2F523C864DB00B68D27 /* BaseViewModel.swift in Sources */,
 				F45B88FA2337107400E5A6F9 /* Session.swift in Sources */,
 				F45B88F023364C3D00E5A6F9 /* APIClient.swift in Sources */,
 				F45B88F223364D9600E5A6F9 /* Request.swift in Sources */,
 				F436133B23CCAF110065DC57 /* TemplateBuilder.swift in Sources */,
 				F436133023CC6AF80065DC57 /* ___FILEBASENAME___ViewModel.swift in Sources */,
+				F4ABB48A23E859FB00005E7B /* NetworkBuilder.swift in Sources */,
+				F439F10523EBE37000231A89 /* UIView+Extensions.swift in Sources */,
 				F4BAC71223CC632B005014EB /* BaseViewController.swift in Sources */,
 				F469A2F123C7489900B68D27 /* Connectivity.swift in Sources */,
 				F4C4439F23827B8000D33E75 /* BaseButton.swift in Sources */,
@@ -472,8 +511,11 @@
 				F45B88F623364F8A00E5A6F9 /* LoaderPresentable.swift in Sources */,
 				F469A2FF23C873B500B68D27 /* Timer+Extensions.swift in Sources */,
 				F436133623CC8B2D0065DC57 /* NSMutableAttributedString+Extensions.swift in Sources */,
+				F439F10723EBE41C00231A89 /* UIViewController+Extensions.swift in Sources */,
+				F4ABB49323E85BC200005E7B /* ExampleContainerViewModel.swift in Sources */,
 				F45B88EE23363AAB00E5A6F9 /* Log.swift in Sources */,
 				F45B89002337322F00E5A6F9 /* ExampleTableViewCell.swift in Sources */,
+				F4ABB48B23E859FB00005E7B /* NetworkViewModel.swift in Sources */,
 				F469A2FD23C86C9200B68D27 /* GenericListViewModel.swift in Sources */,
 				F4DCBC4D2355F66B00C3D892 /* String+Extensions.swift in Sources */,
 				F436133C23CCAF110065DC57 /* TemplateViewModel.swift in Sources */,
@@ -482,7 +524,9 @@
 				F436132E23CC6AF80065DC57 /* ___FILEBASENAME___ViewController.swift in Sources */,
 				F436133423CC87650065DC57 /* Constants.swift in Sources */,
 				F48CE0A623C4A747004D23CD /* KeyValueStorage.swift in Sources */,
+				F439F10323EBE2A500231A89 /* NSAttributedString+Extensions.swift in Sources */,
 				F436133A23CCAF110065DC57 /* TemplateViewController.swift in Sources */,
+				F4ABB48F23E85A5100005E7B /* GenericListBuilder.swift in Sources */,
 				F469A30123C8BADD00B68D27 /* UIApplication+Extensions.swift in Sources */,
 				F45B89022337367E00E5A6F9 /* NetworkViewController.swift in Sources */,
 				F469A2F323C8602400B68D27 /* BaseViewModelBehaviour.swift in Sources */,

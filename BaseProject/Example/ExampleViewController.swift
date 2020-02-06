@@ -15,11 +15,21 @@ import LBTATools
 struct SamplePage {
     let name: String
     let systemIconName: String
-    let page: UIViewController.Type
-    let rawPage: UIViewController
+    let route: AppRoute
 }
 
 class ExampleViewController: LBTAListController<ExampleTableViewCell, SamplePage>, UICollectionViewDelegateFlowLayout {
+    
+    var viewModel: ExampleContainerViewModel?
+    
+    init(viewModel: BaseViewModel) {
+       self.viewModel = viewModel as? ExampleContainerViewModel
+       super.init()
+    }
+       
+    required init?(coder aDecoder: NSCoder) {
+       super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,24 +38,17 @@ class ExampleViewController: LBTAListController<ExampleTableViewCell, SamplePage
             SamplePage(
                 name: "Network".localized(),
                 systemIconName: "network",
-                page: NetworkViewController.self,
-                rawPage: NetworkViewController(
-                    viewModel: BaseViewModel(api: APIClient.instance)
-                )
+                route: .networkSample
             ),
             SamplePage(
                 name: "Generic ListController".localized(),
                 systemIconName: "arrows",
-                page: GenericListController.self,
-                rawPage: GenericListController(
-                    viewModel: GenericListViewModel(api: APIClient.instance)
-                )
+                route: .genericListSample
             ),
             SamplePage(
                 name: "Template Controller".localized(),
                 systemIconName: "arrows",
-                page: TemplateViewController.self,
-                rawPage: TemplateBuilder.build()
+                route: .templateSample
             )
         ]
         
@@ -54,14 +57,14 @@ class ExampleViewController: LBTAListController<ExampleTableViewCell, SamplePage
             configuration.includeFaces = true
             let fontPicker = UIFontPickerViewController(configuration: configuration)
             fontPicker.delegate = self
-            items.append(
-                SamplePage(
-                    name: "FontProvider".localized(),
-                    systemIconName: "arrows",
-                    page: UIFontPickerViewController.self,
-                    rawPage: fontPicker
-                )
-            )
+//            items.append(
+//                SamplePage(
+//                    name: "FontProvider".localized(),
+//                    systemIconName: "arrows",
+//                    page: UIFontPickerViewController.self,
+//                    rawPage: fontPicker
+//                )
+//            )
         }
         
     }
@@ -74,9 +77,7 @@ class ExampleViewController: LBTAListController<ExampleTableViewCell, SamplePage
         let page = items[indexPath.row]
         Log.i("\(page.name) tapped")
         DispatchQueue.main.async {
-            let nv = UINavigationController(rootViewController: page.rawPage)
-            // let nv = UINavigationController(rootViewController: value.page.init())
-            self.present(nv, animated: true, completion: nil)
+            self.viewModel?.routeSelected(route: page.route)
         }
     }
     

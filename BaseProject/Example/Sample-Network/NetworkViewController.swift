@@ -11,7 +11,7 @@ import SnapKit
 import Toast_Swift
 import Highlightr
 
-class NetworkViewController: BaseViewController<BaseViewModel> {
+class NetworkViewController: BaseViewController<NetworkViewModel> {
     
     private lazy var codeLabel: UILabel = {
         

@@ -39,6 +39,7 @@ import Bagel
 
 // Coordinator
 /// XCoordinator for presenting ViewController (consider bottom popup to reflect iOS 13's default behaviour)
+/// https://github.com/quickbirdstudios/XCoordinator
 
 // Dependency Injection
 /// Resolver: https://github.com/hmlongco/Resolver
@@ -80,6 +81,8 @@ import Bagel
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    private let router = AppCoordinator().strongRouter
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -101,8 +104,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func setupWindow() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: ExampleViewController())
-        window?.makeKeyAndVisible()
+        router.setRoot(for: window!)
     }
     
     private func setupNetworkEnvironment() {

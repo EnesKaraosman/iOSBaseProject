@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TemplateViewController: BaseViewController<BaseViewModel> {
+class TemplateViewController: BaseViewController<TemplateViewModel> {
     
     private lazy var descriptionLabel: UILabel = {
         let lbl = UILabel()
