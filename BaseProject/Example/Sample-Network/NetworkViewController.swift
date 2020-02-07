@@ -36,7 +36,9 @@ class NetworkViewController: BaseViewController<NetworkViewModel> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.networkTest()
+        self.viewModel?.networkTest(onSuccess: { (articles) in
+//            self.view.makeToast("\(articles.count)")
+        })
     }
     
     override func setupUI() {
@@ -49,20 +51,6 @@ class NetworkViewController: BaseViewController<NetworkViewModel> {
             $0.left.right.equalToSuperview().inset(16)
         }
         
-    }
-    
-    private func networkTest() {
-        
-        self.viewModel?.api?.executeGET(
-            endPoint: "articles",
-            success: { (articles: [Article]) in
-                self.view.makeToast("\(articles.count)")
-            }, failure: { (error) in
-                self.view.makeToast(error.localizedDescription)
-                self.viewModel?.showError(message: error.localizedDescription)
-            }
-        )
-
     }
     
 }

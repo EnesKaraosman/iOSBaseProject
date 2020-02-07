@@ -13,7 +13,7 @@ import RxCocoa
 class BaseViewModel: BaseViewModelBehaviour {
     
     var api: APIClient?
-    var error = BehaviorRelay<String?>(value: nil)
+    var error = BehaviorRelay<(String?, ErrorPresentationType)>(value: (nil, .alert))
     
     init(api: APIClient? = nil) {
         self.api = api

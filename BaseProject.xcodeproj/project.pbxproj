@@ -24,6 +24,7 @@
 		F439F10323EBE2A500231A89 /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F439F10223EBE2A500231A89 /* NSAttributedString+Extensions.swift */; };
 		F439F10523EBE37000231A89 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F439F10423EBE37000231A89 /* UIView+Extensions.swift */; };
 		F439F10723EBE41C00231A89 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F439F10623EBE41C00231A89 /* UIViewController+Extensions.swift */; };
+		F439F10923ED36C600231A89 /* ErrorPresentationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F439F10823ED36C600231A89 /* ErrorPresentationType.swift */; };
 		F45B88D62335406300E5A6F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B88D52335406300E5A6F9 /* AppDelegate.swift */; };
 		F45B88DA2335406300E5A6F9 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B88D92335406300E5A6F9 /* ExampleViewController.swift */; };
 		F45B88DF2335406400E5A6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45B88DE2335406400E5A6F9 /* Assets.xcassets */; };
@@ -82,6 +83,7 @@
 		F439F10223EBE2A500231A89 /* NSAttributedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extensions.swift"; sourceTree = "<group>"; };
 		F439F10423EBE37000231A89 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		F439F10623EBE41C00231A89 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		F439F10823ED36C600231A89 /* ErrorPresentationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPresentationType.swift; sourceTree = "<group>"; };
 		F45B88D22335406300E5A6F9 /* BaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45B88D52335406300E5A6F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F45B88D92335406300E5A6F9 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				F48CE0A523C4A747004D23CD /* KeyValueStorage.swift */,
 				F45B88ED23363AAB00E5A6F9 /* Log.swift */,
 				F436133323CC87650065DC57 /* Constants.swift */,
+				F439F10823ED36C600231A89 /* ErrorPresentationType.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 				F41295C2235DDFBF00DD6D8C /* GenericListController.swift in Sources */,
 				F45B88EA233559EE00E5A6F9 /* Identifiable.swift in Sources */,
 				F45B88F82336559D00E5A6F9 /* Environment.swift in Sources */,
+				F439F10923ED36C600231A89 /* ErrorPresentationType.swift in Sources */,
 				F488D9BC237D358B0031D7FB /* BaseTextView.swift in Sources */,
 				F45B88F623364F8A00E5A6F9 /* LoaderPresentable.swift in Sources */,
 				F469A2FF23C873B500B68D27 /* Timer+Extensions.swift in Sources */,
