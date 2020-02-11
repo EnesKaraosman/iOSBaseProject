@@ -11,9 +11,8 @@ import Foundation
 class NetworkViewModel: BaseViewModel {
     
     func networkTest(onSuccess: @escaping (([Article]) -> Void)) {
-        self.error.accept(("Balon Batladi!", .alert))
         self.api?.executeGET(
-            endPoint: "articles",
+            endPoint: EndPoints.articles,
             success: onSuccess,
             failure: { (error) in
                 self.error.accept((error.localizedDescription, .alert))

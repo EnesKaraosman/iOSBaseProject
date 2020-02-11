@@ -8,6 +8,8 @@
 
 import UIKit
 
+extension UIViewController: LoaderPresentable, AlertPresentable { }
+
 extension UIViewController {
     
     func embed(_ vc: UIViewController, padding: CGFloat = 0, in containerView: UIView? = nil) {
@@ -26,6 +28,12 @@ extension UIViewController {
         vc.view.translatesAutoresizingMaskIntoConstraints = false
         addChild(vc)
         vc.didMove(toParent: self)
+    }
+    
+    func removeFromParentVC() {
+      self.willMove(toParent: nil)
+      self.view.removeFromSuperview()
+      self.removeFromParent()
     }
     
 }

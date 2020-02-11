@@ -14,6 +14,7 @@ class BaseViewModel: BaseViewModelBehaviour {
     
     var api: APIClient?
     var error = BehaviorRelay<(String?, ErrorPresentationType)>(value: (nil, .alert))
+    let disposeBag = DisposeBag()
     
     init(api: APIClient? = nil) {
         self.api = api

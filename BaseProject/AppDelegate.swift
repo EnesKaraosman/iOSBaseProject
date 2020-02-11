@@ -58,7 +58,10 @@ import Bagel
 // Styler (TextStyle, FontManager)
 // Reusable (Identifiable)
 // Loading Indicator integration ✅
-// Extensions
+/// Extensions
+// UITableView extensions, register
+// UICollectionView extensions, register
+
 // Bottom bar vc, PagerStripVC
 // Constants
 // Configuration File (May include all primary fonts, colors, urls.. ?) ✅
@@ -66,6 +69,8 @@ import Bagel
 // SwiftLint
 // ThemeManager
 // Plist manager
+// Pagination (Serviced based & UIBased) view nextable protocol in bookmark project
+// Push Notification Manager
 
 /// BaseClasses, BaseComponents (BaseViews, Dark mode support)
 /// Component Factory (UI components)

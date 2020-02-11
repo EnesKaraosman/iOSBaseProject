@@ -42,6 +42,7 @@ class BaseViewController<VM: BaseViewModel>: UIViewController {
     }
     
     func errorStateBinding() {
+        Log.i("BASE: errorStateBinding")
         
         var errorToastStyle = ToastStyle()
         errorToastStyle.backgroundColor = UIColor.red.withAlphaComponent(0.7)

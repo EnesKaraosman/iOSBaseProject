@@ -37,7 +37,7 @@ class NetworkViewController: BaseViewController<NetworkViewModel> {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewModel?.networkTest(onSuccess: { (articles) in
-//            self.view.makeToast("\(articles.count)")
+            self.view.makeToast("\(articles.count)")
         })
     }
     

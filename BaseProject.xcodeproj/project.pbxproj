@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E1010DD2216F5F86A3CB35BD /* Pods_BaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10597F97009A2EC1A100AC08 /* Pods_BaseProject.framework */; };
 		F41295C2235DDFBF00DD6D8C /* GenericListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41295C1235DDFBF00DD6D8C /* GenericListController.swift */; };
+		F42F7CA623F28E18001FCA6C /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F7CA523F28E18001FCA6C /* EndPoints.swift */; };
+		F42F7CA823F2BC2D001FCA6C /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F7CA723F2BC2D001FCA6C /* UIColor+Extensions.swift */; };
 		F4307D3E23DACA3D0016C8AA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4307D3D23DACA3D0016C8AA /* Settings.bundle */; };
 		F436132D23CC6AF80065DC57 /* TemplateIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F436132723CC6AF80065DC57 /* TemplateIcon@2x.png */; };
 		F436132E23CC6AF80065DC57 /* ___FILEBASENAME___ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436132823CC6AF80065DC57 /* ___FILEBASENAME___ViewController.swift */; };
@@ -68,6 +70,8 @@
 		10597F97009A2EC1A100AC08 /* Pods_BaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD1D797168504577404381D /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F41295C1235DDFBF00DD6D8C /* GenericListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericListController.swift; sourceTree = "<group>"; };
+		F42F7CA523F28E18001FCA6C /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		F42F7CA723F2BC2D001FCA6C /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		F4307D3D23DACA3D0016C8AA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F436132723CC6AF80065DC57 /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
 		F436132823CC6AF80065DC57 /* ___FILEBASENAME___ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewController.swift"; sourceTree = "<group>"; };
@@ -281,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				F45B88FC2337150F00E5A6F9 /* DummyResponse.swift */,
+				F42F7CA523F28E18001FCA6C /* EndPoints.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 				F469A30023C8BADD00B68D27 /* UIApplication+Extensions.swift */,
 				F439F10423EBE37000231A89 /* UIView+Extensions.swift */,
 				F439F10623EBE41C00231A89 /* UIViewController+Extensions.swift */,
+				F42F7CA723F2BC2D001FCA6C /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -525,6 +531,7 @@
 				F436133C23CCAF110065DC57 /* TemplateViewModel.swift in Sources */,
 				F436132F23CC6AF80065DC57 /* ___FILEBASENAME___Builder.swift in Sources */,
 				F45B88F423364E1E00E5A6F9 /* Error.swift in Sources */,
+				F42F7CA623F28E18001FCA6C /* EndPoints.swift in Sources */,
 				F436132E23CC6AF80065DC57 /* ___FILEBASENAME___ViewController.swift in Sources */,
 				F436133423CC87650065DC57 /* Constants.swift in Sources */,
 				F48CE0A623C4A747004D23CD /* KeyValueStorage.swift in Sources */,
@@ -534,6 +541,7 @@
 				F469A30123C8BADD00B68D27 /* UIApplication+Extensions.swift in Sources */,
 				F45B89022337367E00E5A6F9 /* NetworkViewController.swift in Sources */,
 				F469A2F323C8602400B68D27 /* BaseViewModelBehaviour.swift in Sources */,
+				F42F7CA823F2BC2D001FCA6C /* UIColor+Extensions.swift in Sources */,
 				F469A2F923C869AE00B68D27 /* Configurations.swift in Sources */,
 				F45B88D62335406300E5A6F9 /* AppDelegate.swift in Sources */,
 				F45B88FD2337150F00E5A6F9 /* DummyResponse.swift in Sources */,
