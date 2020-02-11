@@ -11,29 +11,7 @@ import SwiftyJSON
 import RxSwift
 import RxAlamofire
 
-protocol NetworkClient: class {
-    
-    func execute<T: Request>(
-        request: T,
-        success: @escaping (T.Response) -> Void,
-        failure: @escaping (APIError) -> Void
-    )
-    
-    func executeGET<T: Decodable>(
-        endPoint: String,
-        success: @escaping (T) -> Void,
-        failure: @escaping (APIError) -> Void
-    )
-    
-    func executeWithoutMapping<T: Request>(
-        request: T,
-        success: @escaping (JSON) -> Void,
-        failure: @escaping (APIError) -> Void
-    )
-    
-}
-
-class APIClient: NetworkClient, LoaderPresentable {
+class APIClient: APIClientProtocol, LoaderPresentable {
     
     static var instance = APIClient()
     private let sessionManager: SessionManager

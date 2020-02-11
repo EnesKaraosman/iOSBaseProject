@@ -14,15 +14,15 @@ import Toast_Swift
 class BaseViewController<VM: BaseViewModel>: UIViewController {
     
     var disposeBag = DisposeBag()
-    var viewModel: VM?
+    let viewModel: VM
     
-    init(viewModel: VM? = nil) {
+    init(viewModel: VM) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder: NSCoder) {
-        super.init(coder: coder)
+        fatalError("init(coder:) has not been implemented")
     }
     
     override func viewDidLoad() {
@@ -47,14 +47,14 @@ class BaseViewController<VM: BaseViewModel>: UIViewController {
         var errorToastStyle = ToastStyle()
         errorToastStyle.backgroundColor = UIColor.red.withAlphaComponent(0.7)
         
-        self.viewModel?.error
+        self.viewModel.error
             .asDriver()
             .filter({ $0.0 != nil })
             .drive(onNext: { (args) in
                 let (errorMessage, errorPresentationType) = args
                 switch errorPresentationType {
                 case .alert:
-                    self.viewModel?.showError(message: errorMessage!)
+                    self.viewModel.showError(message: errorMessage!)
                 case .toast:
                     self.view.makeToast(errorMessage, duration: 2, position: .bottom, title: nil, image: nil, style: errorToastStyle)
                 }

@@ -12,11 +12,11 @@ import RxCocoa
 
 class BaseViewModel: BaseViewModelBehaviour {
     
-    var api: APIClient?
+    var api: APIClientProtocol?
     var error = BehaviorRelay<(String?, ErrorPresentationType)>(value: (nil, .alert))
     let disposeBag = DisposeBag()
     
-    init(api: APIClient? = nil) {
+    init(api: APIClientProtocol? = nil) {
         self.api = api
     }
     
