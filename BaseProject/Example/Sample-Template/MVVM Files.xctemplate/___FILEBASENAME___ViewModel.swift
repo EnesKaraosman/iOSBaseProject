@@ -8,6 +8,18 @@
 
 import Foundation
 
-class ___VARIABLE_ModuleName___ViewModel: BaseViewModel {
+class ___VARIABLE_ModuleName___ViewModel: BaseViewModel, ViewModelContract {
+    
+    struct Input { }
+    struct Output { }
+    
+    let input: Input
+    let output: Output
+    
+    override init(api: APIClientProtocol? = nil) {
+       input = Input()
+       output = Output()
+       super.init(api: api)
+    }
 
 }

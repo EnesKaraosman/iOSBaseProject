@@ -17,3 +17,10 @@ protocol BaseViewModelBehaviour: LoaderPresentable, AlertPresentable {
 extension BaseViewModelBehaviour {
     
 }
+
+protocol ViewModelContract where Self: BaseViewModel {
+    /// Input that is ViewModel process.
+    associatedtype Input
+    /// Output that is Controller about to subscribe.
+    associatedtype Output
+}

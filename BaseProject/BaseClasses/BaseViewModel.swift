@@ -12,10 +12,13 @@ import RxCocoa
 
 class BaseViewModel: BaseViewModelBehaviour {
     
-    var api: APIClientProtocol?
-    var error = BehaviorRelay<(String?, ErrorPresentationType)>(value: (nil, .alert))
     let disposeBag = DisposeBag()
+
+    var api: APIClientProtocol?
     
+    var error = BehaviorRelay<(String?, ErrorPresentationType)>(value: (nil, .alert))
+//    var noDataFoundScreen: BehaviorRelay<Bool>
+
     init(api: APIClientProtocol? = nil) {
         self.api = api
     }
