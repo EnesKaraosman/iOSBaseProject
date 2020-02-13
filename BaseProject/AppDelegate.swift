@@ -58,6 +58,7 @@ import Bagel
 // Styler (TextStyle, FontManager)
 // Reusable (Identifiable)
 // Loading Indicator integration ✅
+
 /// Extensions
 // UITableView extensions, register
 // UICollectionView extensions, register
@@ -70,6 +71,7 @@ import Bagel
 // ThemeManager
 // Plist manager
 // Pagination (Serviced based & UIBased) view nextable protocol in bookmark project
+// Onboarding: https://github.com/Ramotion/paper-onboarding
 // Push Notification Manager
 
 /// BaseClasses, BaseComponents (BaseViews, Dark mode support)
