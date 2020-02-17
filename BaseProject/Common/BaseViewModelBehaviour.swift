@@ -23,4 +23,6 @@ protocol ViewModelContract where Self: BaseViewModel {
     associatedtype Input
     /// Output that is Controller about to subscribe.
     associatedtype Output
+    
+    func transform(input: Input) -> Output
 }

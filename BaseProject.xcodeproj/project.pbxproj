@@ -162,26 +162,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F41295BA235DD57A00DD6D8C /* BaseClasses */ = {
-			isa = PBXGroup;
-			children = (
-				F4BAC71123CC632B005014EB /* BaseViewController.swift */,
-				F469A2F223C8602400B68D27 /* BaseViewModelBehaviour.swift */,
-				F469A2F423C864DB00B68D27 /* BaseViewModel.swift */,
-				F41295BB235DD58800DD6D8C /* UI */,
-			);
-			path = BaseClasses;
-			sourceTree = "<group>";
-		};
-		F41295BB235DD58800DD6D8C /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				F488D9BB237D358B0031D7FB /* BaseTextView.swift */,
-				F4C4439E23827B8000D33E75 /* BaseButton.swift */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
 		F41295C3235DE94900DD6D8C /* Sample-Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,12 +220,11 @@
 			children = (
 				F45B88D52335406300E5A6F9 /* AppDelegate.swift */,
 				F45B88DE2335406400E5A6F9 /* Assets.xcassets */,
-				F41295BA235DD57A00DD6D8C /* BaseClasses */,
 				F469A2F723C8699700B68D27 /* Configurations */,
 				F4ABB48523E8571600005E7B /* Coordinators */,
 				F45B88FE2337320000E5A6F9 /* Example */,
 				F469A2F623C8674F00B68D27 /* Extensions */,
-				F45B88EC2336382200E5A6F9 /* Helpers */,
+				F45B88EC2336382200E5A6F9 /* Common */,
 				F45B88E32335406400E5A6F9 /* Info.plist */,
 				F45B88E02335406400E5A6F9 /* LaunchScreen.storyboard */,
 				F48EC1F62354B8F3002E36D3 /* Model */,
@@ -269,9 +248,13 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		F45B88EC2336382200E5A6F9 /* Helpers */ = {
+		F45B88EC2336382200E5A6F9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F469A2F223C8602400B68D27 /* BaseViewModelBehaviour.swift */,
+				F469A2F423C864DB00B68D27 /* BaseViewModel.swift */,
+				F47E14D523FA8D770050C2A1 /* UI */,
+				F48B284423F56C2500EE4325 /* Theme */,
 				F45B88F523364F8A00E5A6F9 /* LoaderPresentable.swift */,
 				F469A2FA23C86A3B00B68D27 /* AlertPresentable.swift */,
 				F469A2F023C7489900B68D27 /* Connectivity.swift */,
@@ -281,7 +264,7 @@
 				F436133323CC87650065DC57 /* Constants.swift */,
 				F439F10823ED36C600231A89 /* ErrorPresentationType.swift */,
 			);
-			path = Helpers;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		F45B88FB2337145F00E5A6F9 /* Util */ = {
@@ -328,6 +311,23 @@
 				F469A2F823C869AE00B68D27 /* Configurations.swift */,
 			);
 			path = Configurations;
+			sourceTree = "<group>";
+		};
+		F47E14D523FA8D770050C2A1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F4C4439E23827B8000D33E75 /* BaseButton.swift */,
+				F488D9BB237D358B0031D7FB /* BaseTextView.swift */,
+				F4BAC71123CC632B005014EB /* BaseViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F48B284423F56C2500EE4325 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 		F48EC1F62354B8F3002E36D3 /* Model */ = {

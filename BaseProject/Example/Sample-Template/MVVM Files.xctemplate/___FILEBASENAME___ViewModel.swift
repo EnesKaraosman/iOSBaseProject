@@ -21,5 +21,9 @@ class ___VARIABLE_ModuleName___ViewModel: BaseViewModel, ViewModelContract {
        output = Output()
        super.init(api: api)
     }
+    
+    func transform(input: Input) -> Output {
+        return Output()
+    }
 
 }

@@ -78,8 +78,15 @@ import Bagel
 /// Component Factory (UI components)
 
 // MARK: - Analytics
-
-/// Crahslytics, Fabric ?
+/// In case you want to use multiple provider, consider abstraction via https://github.com/devxoul/Umbrella
+/// AmplitudeProvider (Amplitude-iOS)
+/// AnswersProvider (Answers)
+/// AppboyProvider (Appboy-iOS-SDK)
+/// AppsFlyerProvider (AppsFlyerFramework)
+/// FirebaseProvider (Firebase/Analytics)
+/// FlurryProvider (Flurry-iOS-SDK/FabricSDK)
+/// LocalyticsProvider (Localytics)
+/// MixpanelProvider (Mixpanel)
 
 /********************************************************************/
 
@@ -104,6 +111,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             guard let nv = self.window?.rootViewController as? UINavigationController else { return }
             nv.viewControllers.first?.view.makeToast(Connectivity.shared.isConnectedToInternet ? "Connected to Internet": "Connection Lost")
         }
+        
+        // If initialization gets crowded here, consider using LibsManager & Configuration in a seperate place
         
         return true
     }
