@@ -59,10 +59,16 @@ import Bagel
 // Reusable (Identifiable)
 // Loading Indicator integration ✅
 
-/// Extensions
-// UITableView extensions, register
-// UICollectionView extensions, register
+/// Common & Extensions
 
+/// Extensions
+// https://github.com/SwifterSwift/SwifterSwift
+// A handy collection of more than 500 native Swift extensions to boost your productivity.
+
+/// Initial
+// What's new in this version: https://github.com/SvenTiigi/WhatsNewKit
+
+// Date - Helper https://github.com/malcommac/SwiftDate
 // Bottom bar vc, PagerStripVC
 // Constants
 // Configuration File (May include all primary fonts, colors, urls.. ?) ✅
