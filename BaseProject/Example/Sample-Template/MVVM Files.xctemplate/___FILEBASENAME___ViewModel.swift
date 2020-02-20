@@ -16,7 +16,7 @@ class ___VARIABLE_ModuleName___ViewModel: BaseViewModel, ViewModelContract {
     let input: Input
     let output: Output
     
-    override init(api: APIClientProtocol? = nil) {
+    override init(api: IAPIClient? = nil) {
        input = Input()
        output = Output()
        super.init(api: api)

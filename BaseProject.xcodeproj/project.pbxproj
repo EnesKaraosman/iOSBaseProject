@@ -11,7 +11,7 @@
 		F41295C2235DDFBF00DD6D8C /* GenericListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41295C1235DDFBF00DD6D8C /* GenericListController.swift */; };
 		F42F7CA623F28E18001FCA6C /* EndPointConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F7CA523F28E18001FCA6C /* EndPointConstants.swift */; };
 		F42F7CA823F2BC2D001FCA6C /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F7CA723F2BC2D001FCA6C /* UIColor+Extensions.swift */; };
-		F42F7CAA23F2D6AA001FCA6C /* APIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F7CA923F2D6AA001FCA6C /* APIClientProtocol.swift */; };
+		F42F7CAA23F2D6AA001FCA6C /* IAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F7CA923F2D6AA001FCA6C /* IAPIClient.swift */; };
 		F4307D3E23DACA3D0016C8AA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4307D3D23DACA3D0016C8AA /* Settings.bundle */; };
 		F436132D23CC6AF80065DC57 /* TemplateIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F436132723CC6AF80065DC57 /* TemplateIcon@2x.png */; };
 		F436132E23CC6AF80065DC57 /* ___FILEBASENAME___ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436132823CC6AF80065DC57 /* ___FILEBASENAME___ViewController.swift */; };
@@ -61,6 +61,8 @@
 		F4ABB48F23E85A5100005E7B /* GenericListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ABB48D23E85A5100005E7B /* GenericListBuilder.swift */; };
 		F4ABB49123E85B5600005E7B /* ExampleContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ABB49023E85B5600005E7B /* ExampleContainerBuilder.swift */; };
 		F4ABB49323E85BC200005E7B /* ExampleContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ABB49223E85BC200005E7B /* ExampleContainerViewModel.swift */; };
+		F4B6977A23FE9218007585BC /* INetworkInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6977923FE9218007585BC /* INetworkInterceptor.swift */; };
+		F4B6977C23FE928C007585BC /* NetworkInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B6977B23FE928C007585BC /* NetworkInterceptor.swift */; };
 		F4BAC71223CC632B005014EB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BAC71123CC632B005014EB /* BaseViewController.swift */; };
 		F4C4439F23827B8000D33E75 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C4439E23827B8000D33E75 /* BaseButton.swift */; };
 		F4DCBC492355F52300C3D892 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4DCBC472355F52300C3D892 /* Localizable.strings */; };
@@ -73,7 +75,7 @@
 		F41295C1235DDFBF00DD6D8C /* GenericListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericListController.swift; sourceTree = "<group>"; };
 		F42F7CA523F28E18001FCA6C /* EndPointConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointConstants.swift; sourceTree = "<group>"; };
 		F42F7CA723F2BC2D001FCA6C /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
-		F42F7CA923F2D6AA001FCA6C /* APIClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientProtocol.swift; sourceTree = "<group>"; };
+		F42F7CA923F2D6AA001FCA6C /* IAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPIClient.swift; sourceTree = "<group>"; };
 		F4307D3D23DACA3D0016C8AA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F436132723CC6AF80065DC57 /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
 		F436132823CC6AF80065DC57 /* ___FILEBASENAME___ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewController.swift"; sourceTree = "<group>"; };
@@ -125,6 +127,8 @@
 		F4ABB48D23E85A5100005E7B /* GenericListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericListBuilder.swift; sourceTree = "<group>"; };
 		F4ABB49023E85B5600005E7B /* ExampleContainerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleContainerBuilder.swift; sourceTree = "<group>"; };
 		F4ABB49223E85BC200005E7B /* ExampleContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleContainerViewModel.swift; sourceTree = "<group>"; };
+		F4B6977923FE9218007585BC /* INetworkInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INetworkInterceptor.swift; sourceTree = "<group>"; };
+		F4B6977B23FE928C007585BC /* NetworkInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptor.swift; sourceTree = "<group>"; };
 		F4BAC71123CC632B005014EB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F4C4439E23827B8000D33E75 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		F4DCBC482355F52300C3D892 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -237,9 +241,11 @@
 			isa = PBXGroup;
 			children = (
 				F48EC1FB2355E2F8002E36D3 /* NetworkUsage.md */,
+				F42F7CA923F2D6AA001FCA6C /* IAPIClient.swift */,
+				F4B6977923FE9218007585BC /* INetworkInterceptor.swift */,
+				F4B6977B23FE928C007585BC /* NetworkInterceptor.swift */,
 				F45B88EF23364C3D00E5A6F9 /* APIClient.swift */,
 				F45B88F123364D9600E5A6F9 /* Request.swift */,
-				F42F7CA923F2D6AA001FCA6C /* APIClientProtocol.swift */,
 				F45B88F323364E1E00E5A6F9 /* Error.swift */,
 				F45B88F72336559D00E5A6F9 /* Environment.swift */,
 				F45B88F92337107400E5A6F9 /* Session.swift */,
@@ -505,6 +511,7 @@
 				F4ABB49123E85B5600005E7B /* ExampleContainerBuilder.swift in Sources */,
 				F4ABB48723E8573400005E7B /* AppCoordinator.swift in Sources */,
 				F469A2F523C864DB00B68D27 /* BaseViewModel.swift in Sources */,
+				F4B6977A23FE9218007585BC /* INetworkInterceptor.swift in Sources */,
 				F45B88FA2337107400E5A6F9 /* Session.swift in Sources */,
 				F45B88F023364C3D00E5A6F9 /* APIClient.swift in Sources */,
 				F45B88F223364D9600E5A6F9 /* Request.swift in Sources */,
@@ -524,7 +531,7 @@
 				F45B88F623364F8A00E5A6F9 /* LoaderPresentable.swift in Sources */,
 				F469A2FF23C873B500B68D27 /* Timer+Extensions.swift in Sources */,
 				F436133623CC8B2D0065DC57 /* NSMutableAttributedString+Extensions.swift in Sources */,
-				F42F7CAA23F2D6AA001FCA6C /* APIClientProtocol.swift in Sources */,
+				F42F7CAA23F2D6AA001FCA6C /* IAPIClient.swift in Sources */,
 				F439F10723EBE41C00231A89 /* UIViewController+Extensions.swift in Sources */,
 				F4ABB49323E85BC200005E7B /* ExampleContainerViewModel.swift in Sources */,
 				F45B88EE23363AAB00E5A6F9 /* Log.swift in Sources */,
@@ -538,6 +545,7 @@
 				F42F7CA623F28E18001FCA6C /* EndPointConstants.swift in Sources */,
 				F436132E23CC6AF80065DC57 /* ___FILEBASENAME___ViewController.swift in Sources */,
 				F436133423CC87650065DC57 /* Constants.swift in Sources */,
+				F4B6977C23FE928C007585BC /* NetworkInterceptor.swift in Sources */,
 				F48CE0A623C4A747004D23CD /* KeyValueStorage.swift in Sources */,
 				F439F10323EBE2A500231A89 /* NSAttributedString+Extensions.swift in Sources */,
 				F436133A23CCAF110065DC57 /* TemplateViewController.swift in Sources */,

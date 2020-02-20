@@ -11,16 +11,22 @@ import SwiftyJSON
 import RxSwift
 import RxAlamofire
 
-class APIClient: APIClientProtocol, LoaderPresentable {
+public class APIClient: IAPIClient {
     
-    static var instance = APIClient()
+    var timoutInterval: TimeInterval = 20
+    
+    var networkInterceptor: INetworkInterceptor?
+    
+    static var instance = APIClient(networkInterceptor: MyNetworkInterceptor())
+    
     private let sessionManager: SessionManager
     var environment: NetworkEnvironment?
     
-    private init() {
+    required init(networkInterceptor: INetworkInterceptor?) {
+        self.networkInterceptor = networkInterceptor
         let configuration = URLSessionConfiguration.default
-        configuration.timeoutIntervalForRequest = 280
-        sessionManager = SessionManager(configuration: URLSessionConfiguration.default)
+        configuration.timeoutIntervalForRequest = self.timoutInterval
+        sessionManager = SessionManager(configuration: configuration)
     }
     
     /// Simply create your request by confirming Request protocol, then execute.
@@ -43,27 +49,34 @@ class APIClient: APIClientProtocol, LoaderPresentable {
             return
         }
         
-        self.showLoading()
-        sessionManager.request(
-            path, method:
-            request.httpMethod,
+        self.networkInterceptor?.onBeforeRequest()
+        var _request = sessionManager.request(
+            path,
+            method: request.httpMethod,
             parameters: parameters,
             encoding: JSONEncoding.default,
             headers: Session.sharedInstance.getHeaders()
-        ).validate()
+        )
+    
+        _request = self.networkInterceptor?.onRequest(request: _request) ?? _request
+        
+        _request
+            .validate()
             .responseData { (response) in
                 
-                self.hideLoading()
                 self.updateAuthorizationToken(response: response.response)
+                self.networkInterceptor?.onRequestComplete(response: response)
                 
                 switch response.result {
                 case .success(let data):
-                    guard let value = try? JSONDecoder().decode(T.Response.self, from: data) else {
+                    let _data = self.networkInterceptor?.onRequestSuccess(data: data) ?? data
+                    guard let value = try? JSONDecoder().decode(T.Response.self, from: _data) else {
                         return failure(.custom(message: "Response Serialization Error"))
                     }
                     success(value)
                 case .failure(let error):
-                    failure(.network(internal: error))
+                    let _error = self.networkInterceptor?.onRequestFailure(error: error) ?? error
+                    failure(.network(internal: _error))
                 }
         }
         
@@ -84,26 +97,33 @@ class APIClient: APIClientProtocol, LoaderPresentable {
 
         let path = environment.baseUrl.appending(endPoint)
 
-        self.showLoading()
-        sessionManager.request(
+        self.networkInterceptor?.onBeforeRequest()
+        var _request = sessionManager.request(
             path,
             method: .get,
             encoding: JSONEncoding.default,
             headers: Session.sharedInstance.getHeaders()
         )
+        
+        _request = self.networkInterceptor?.onRequest(request: _request) ?? _request
+        
+        _request
+            .validate()
             .responseData(completionHandler: { (response) in
                 
-                self.hideLoading()
                 self.updateAuthorizationToken(response: response.response)
+                self.networkInterceptor?.onRequestComplete(response: response)
 
                 switch response.result {
                 case .success(let data):
-                    guard let value = try? JSONDecoder().decode(T.self, from: data) else {
+                    let _data = self.networkInterceptor?.onRequestSuccess(data: data) ?? data
+                    guard let value = try? JSONDecoder().decode(T.self, from: _data) else {
                         return failure(.custom(message: "Response Serialization Error"))
                     }
                     success(value)
                 case .failure(let error):
-                    failure(.network(internal: error))
+                    let _error = self.networkInterceptor?.onRequestFailure(error: error) ?? error
+                    failure(.network(internal: _error))
                 }
                 
             })
@@ -130,25 +150,32 @@ class APIClient: APIClientProtocol, LoaderPresentable {
             return
         }
 
-        self.showLoading()
-        sessionManager.request(
+        self.networkInterceptor?.onBeforeRequest()
+        var _request = sessionManager.request(
             path,
             method: request.httpMethod,
             parameters: parameters,
             encoding: JSONEncoding.default,
             headers: Session.sharedInstance.getHeaders()
         )
+            
+        _request = self.networkInterceptor?.onRequest(request: _request) ?? _request
+        
+        _request
+            .validate()
             .responseJSON { responseObject in
 
-                self.hideLoading()
+                self.networkInterceptor?.onRequestComplete(response: responseObject)
                 self.updateAuthorizationToken(response: responseObject.response)
 
                 switch responseObject.result {
                 case .success(let value):
                     let json = JSON(value)
-                    success(json)
+                    let _json = self.networkInterceptor?.onRequestSuccess(json: json) ?? json
+                    success(_json)
                 case .failure(let error):
-                    failure(.network(internal: error))
+                    let _error = self.networkInterceptor?.onRequestFailure(error: error) ?? error
+                    failure(.network(internal: _error))
                 }
         }
     }
@@ -194,7 +221,6 @@ extension APIClient {
             return Observable.error(APIError.custom(message: "URL is not correct!"))
         }
 
-        self.showLoading()
         return sessionManager.rx.request(
             request.httpMethod,
             url,
@@ -206,7 +232,6 @@ extension APIClient {
             .responseData()
             .flatMap({ (response: HTTPURLResponse, data: Data) -> Observable<T.Response> in
                     
-                self.hideLoading()
                 self.updateAuthorizationToken(response: response)
                 
                 guard let result = try? JSONDecoder().decode(T.Response.self, from: data) else {

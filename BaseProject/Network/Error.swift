@@ -11,6 +11,5 @@ import Foundation
 public enum APIError: Error {
     case serialization( message: String )
     case network(internal: Error)
-//    case service( errorModel: ErrorModel )
     case custom( message: String )
 }

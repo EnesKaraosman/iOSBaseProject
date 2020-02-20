@@ -8,8 +8,13 @@
 
 import Foundation
 import SwiftyJSON
+import Alamofire
 
-protocol APIClientProtocol: class {
+protocol IAPIClient: class {
+    
+    var timoutInterval: TimeInterval { get }
+    
+    var networkInterceptor: INetworkInterceptor? { get set }
     
     func execute<T: Request>(
         request: T,
@@ -29,4 +34,6 @@ protocol APIClientProtocol: class {
         failure: @escaping (APIError) -> Void
     )
     
+    init(networkInterceptor: INetworkInterceptor?)
+
 }

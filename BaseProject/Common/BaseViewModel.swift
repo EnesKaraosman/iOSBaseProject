@@ -14,12 +14,12 @@ class BaseViewModel: BaseViewModelBehaviour {
     
     let disposeBag = DisposeBag()
 
-    var api: APIClientProtocol?
+    var api: IAPIClient?
     
     var error = BehaviorRelay<(String?, ErrorPresentationType)>(value: (nil, .alert))
 //    var noDataFoundScreen: BehaviorRelay<Bool>
 
-    init(api: APIClientProtocol? = nil) {
+    init(api: IAPIClient? = nil) {
         self.api = api
     }
     
