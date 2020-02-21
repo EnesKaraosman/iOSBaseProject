@@ -45,10 +45,11 @@ import Bagel
 
 /********************************************************************/
 
-// MARK: - Database
-/// UserDefaults (propertyWrapper) ✅
-/// CoreData ⁉️
-/// Realm    ⁉️
+// MARK: - Storage
+/// UserDefaults (propertyWrapper) ✅ (Recomended max. limit is 1MB)
+/// Databases (CoreData, Realm)
+/// Keychain (OAuth token, User’s sensitive, secret data) https://github.com/kishikawakatsumi/KeychainAccess
+/// Files on disk (Images, videos, PDF..)
 
 /********************************************************************/
 
