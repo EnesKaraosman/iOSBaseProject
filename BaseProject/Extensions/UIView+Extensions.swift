@@ -20,4 +20,8 @@ extension UIView {
         return superview as? T ?? superview.flatMap { $0.superview(of: type) }
     }
     
+    public func addSubviews(_ views: UIView...) {
+        views.forEach(addSubview)
+    }
+    
 }

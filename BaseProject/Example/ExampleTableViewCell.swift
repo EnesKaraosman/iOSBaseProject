@@ -43,8 +43,7 @@ class ExampleTableViewCell: LBTAListCell<SamplePage> {
     }
     
     func commonInit() {
-        self.addSubview(iconImageView)
-        self.addSubview(titleLabel)
+        self.addSubviews(iconImageView, titleLabel)
         
         iconImageView.snp.makeConstraints {
             $0.left.top.bottom.equalToSuperview().inset(16)

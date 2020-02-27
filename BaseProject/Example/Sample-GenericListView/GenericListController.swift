@@ -63,8 +63,7 @@ class ArticleCell: LBTAListCell<Article> {
     override func setupViews() {
         super.setupViews()
         
-        self.addSubview(titleLabel)
-        self.addSubview(articleImageView)
+        self.addSubviews(titleLabel, articleImageView)
 
         articleImageView.snp.makeConstraints {
             $0.left.centerY.equalToSuperview().inset(8)
