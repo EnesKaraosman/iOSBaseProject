@@ -44,6 +44,9 @@
 		F45B88FD2337150F00E5A6F9 /* DummyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B88FC2337150F00E5A6F9 /* DummyResponse.swift */; };
 		F45B89002337322F00E5A6F9 /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B88FF2337322F00E5A6F9 /* ExampleTableViewCell.swift */; };
 		F45B89022337367E00E5A6F9 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45B89012337367E00E5A6F9 /* NetworkViewController.swift */; };
+		F464D0ED240D490300C9F783 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0EA240D490300C9F783 /* SettingsViewController.swift */; };
+		F464D0EE240D490300C9F783 /* SettingsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0EB240D490300C9F783 /* SettingsBuilder.swift */; };
+		F464D0EF240D490300C9F783 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0EC240D490300C9F783 /* SettingsViewModel.swift */; };
 		F469A2F123C7489900B68D27 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F023C7489900B68D27 /* Connectivity.swift */; };
 		F469A2F323C8602400B68D27 /* BaseViewModelBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F223C8602400B68D27 /* BaseViewModelBehaviour.swift */; };
 		F469A2F523C864DB00B68D27 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F423C864DB00B68D27 /* BaseViewModel.swift */; };
@@ -112,6 +115,9 @@
 		F45B88FC2337150F00E5A6F9 /* DummyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyResponse.swift; sourceTree = "<group>"; };
 		F45B88FF2337322F00E5A6F9 /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
 		F45B89012337367E00E5A6F9 /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
+		F464D0EA240D490300C9F783 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F464D0EB240D490300C9F783 /* SettingsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBuilder.swift; sourceTree = "<group>"; };
+		F464D0EC240D490300C9F783 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		F469A2F023C7489900B68D27 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		F469A2F223C8602400B68D27 /* BaseViewModelBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelBehaviour.swift; sourceTree = "<group>"; };
 		F469A2F423C864DB00B68D27 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
@@ -297,8 +303,19 @@
 				F41295C4235EE1FC00DD6D8C /* Sample-GenericListView */,
 				F41295C3235DE94900DD6D8C /* Sample-Network */,
 				F4BAC71323CC6637005014EB /* Sample-Template */,
+				F464D0E3240D47B000C9F783 /* Sample-Settings */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		F464D0E3240D47B000C9F783 /* Sample-Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F464D0EA240D490300C9F783 /* SettingsViewController.swift */,
+				F464D0EB240D490300C9F783 /* SettingsBuilder.swift */,
+				F464D0EC240D490300C9F783 /* SettingsViewModel.swift */,
+			);
+			path = "Sample-Settings";
 			sourceTree = "<group>";
 		};
 		F469A2F623C8674F00B68D27 /* Extensions */ = {
@@ -514,6 +531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F48EC1F82354B904002E36D3 /* Article.swift in Sources */,
+				F464D0EE240D490300C9F783 /* SettingsBuilder.swift in Sources */,
 				F4ABB49123E85B5600005E7B /* ExampleContainerBuilder.swift in Sources */,
 				F4ABB48723E8573400005E7B /* AppCoordinator.swift in Sources */,
 				F469A2F523C864DB00B68D27 /* BaseViewModel.swift in Sources */,
@@ -566,6 +584,8 @@
 				F45B88D62335406300E5A6F9 /* AppDelegate.swift in Sources */,
 				F45B88FD2337150F00E5A6F9 /* DummyResponse.swift in Sources */,
 				F469A2FB23C86A3B00B68D27 /* AlertPresentable.swift in Sources */,
+				F464D0ED240D490300C9F783 /* SettingsViewController.swift in Sources */,
+				F464D0EF240D490300C9F783 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
