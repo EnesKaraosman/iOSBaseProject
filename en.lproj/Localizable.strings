@@ -8,3 +8,6 @@
 
 // Example Table View Items
 "Network"="Network";
+"FontProvider" = "FontProvider";
+"Generic ListController" = "Generic ListController";
+"Template Controller" = "Template Controller";

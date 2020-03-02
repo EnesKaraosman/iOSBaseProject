@@ -10,6 +10,7 @@ PODS:
     - Kingfisher/Core (= 5.12.0)
   - Kingfisher/Core (5.12.0)
   - LBTATools (1.0.12)
+  - Localize-Swift (2.0.0)
   - NVActivityIndicatorView (4.8.0):
     - NVActivityIndicatorView/Presenter (= 4.8.0)
   - NVActivityIndicatorView/Presenter (4.8.0)
@@ -40,6 +41,7 @@ DEPENDENCIES:
   - Highlightr
   - Kingfisher
   - LBTATools
+  - Localize-Swift (~> 2.0)
   - NVActivityIndicatorView
   - RxAlamofire
   - RxCocoa
@@ -60,6 +62,7 @@ SPEC REPOS:
     - Highlightr
     - Kingfisher
     - LBTATools
+    - Localize-Swift
     - NVActivityIndicatorView
     - RxAlamofire
     - RxCocoa
@@ -80,6 +83,7 @@ SPEC CHECKSUMS:
   Highlightr: 595f3e100737c8de41113385da8bd0b5b65212c6
   Kingfisher: dc6e0f53bb5b12c3e75bedb0e01bbd7a640eea69
   LBTATools: 389a901a01b9a56bea5682c40cd6e23530f40015
+  Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
   NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
   RxAlamofire: a2d7621de4c23a0c6e7b476b504acc32838ee341
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
@@ -92,6 +96,6 @@ SPEC CHECKSUMS:
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
   XCoordinator: 67772bf463acec002a920ab5eb04f46835dcf123
 
-PODFILE CHECKSUM: dcf7f0599404b04f09e4aaf35c3a14cf4d674a8e
+PODFILE CHECKSUM: e51445b296dea2ddcffa6ea67c93fac11fa4856e
 
 COCOAPODS: 1.8.4

@@ -12,6 +12,7 @@ target 'BaseProject' do
   pod 'Highlightr'
   pod 'Kingfisher'
   pod 'LBTATools'
+  pod 'Localize-Swift', '~> 2.0'
   pod 'NVActivityIndicatorView'
   pod 'RxSwift'
   pod 'RxCocoa'

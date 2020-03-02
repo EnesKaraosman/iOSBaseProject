@@ -8,3 +8,6 @@
 
 // Example Table View Items
 "Network"="Ağ";
+"FontProvider" = "Font Sağlayıcı";
+"Generic ListController" = "Jenerik ListController";
+"Template Controller" = "Template Kontrollör";
