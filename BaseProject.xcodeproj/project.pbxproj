@@ -52,6 +52,7 @@
 		F464D0F5240E6C6800C9F783 /* MyThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0F4240E6C6800C9F783 /* MyThemes.swift */; };
 		F464D0F7240E75BF00C9F783 /* GlobalPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0F6240E75BF00C9F783 /* GlobalPicker.swift */; };
 		F464D0F9240E7A8B00C9F783 /* CommonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0F8240E7A8B00C9F783 /* CommonLabel.swift */; };
+		F464D101240E992C00C9F783 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F464D100240E992C00C9F783 /* .swiftlint.yml */; };
 		F469A2F123C7489900B68D27 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F023C7489900B68D27 /* Connectivity.swift */; };
 		F469A2F323C8602400B68D27 /* BaseViewModelBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F223C8602400B68D27 /* BaseViewModelBehaviour.swift */; };
 		F469A2F523C864DB00B68D27 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F423C864DB00B68D27 /* BaseViewModel.swift */; };
@@ -128,6 +129,7 @@
 		F464D0F4240E6C6800C9F783 /* MyThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyThemes.swift; sourceTree = "<group>"; };
 		F464D0F6240E75BF00C9F783 /* GlobalPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalPicker.swift; sourceTree = "<group>"; };
 		F464D0F8240E7A8B00C9F783 /* CommonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonLabel.swift; sourceTree = "<group>"; };
+		F464D100240E992C00C9F783 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		F469A2F023C7489900B68D27 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		F469A2F223C8602400B68D27 /* BaseViewModelBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelBehaviour.swift; sourceTree = "<group>"; };
 		F469A2F423C864DB00B68D27 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 		F45B88D42335406300E5A6F9 /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				F464D0FA240E96E100C9F783 /* Resources */,
 				F45B88D52335406300E5A6F9 /* AppDelegate.swift */,
 				F45B88DE2335406400E5A6F9 /* Assets.xcassets */,
 				F469A2F723C8699700B68D27 /* Configurations */,
@@ -329,6 +332,14 @@
 			path = "Sample-Settings";
 			sourceTree = "<group>";
 		};
+		F464D0FA240E96E100C9F783 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F464D100240E992C00C9F783 /* .swiftlint.yml */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F469A2F623C8674F00B68D27 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,6 +425,7 @@
 				F45B88D02335406300E5A6F9 /* Resources */,
 				4A7DFD82C86B789D813AA006 /* [CP] Embed Pods Frameworks */,
 				F4307D3F23DADEC10016C8AA /* Configure Settings Bundle */,
+				F464D0FD240E972400C9F783 /* SwiftLint Script */,
 			);
 			buildRules = (
 			);
@@ -467,6 +479,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F464D101240E992C00C9F783 /* .swiftlint.yml in Resources */,
 				F4307D3E23DACA3D0016C8AA /* Settings.bundle in Resources */,
 				F436133123CC6AF80065DC57 /* TemplateIcon.png in Resources */,
 				F45B88E22335406400E5A6F9 /* LaunchScreen.storyboard in Resources */,
@@ -537,6 +550,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nBUILD_APP_DIR=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\n\nif [\"$CONFIGURATION\" == \"Release\"]; then\nrm -Rf $BUILD_APP_DIR/Settings.bundle\nfi\n";
+		};
+		F464D0FD240E972400C9F783 /* SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

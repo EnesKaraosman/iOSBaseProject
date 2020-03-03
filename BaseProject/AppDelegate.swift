@@ -55,15 +55,8 @@ import SwiftTheme
 /********************************************************************/
 
 // MARK: - Helper, Util
-// Logger (May be used with analitycs services) ✅
+/// Logger (May be used with analitycs services) ✅
 /// Localization ✅
-// Use "".localized() any string you want to localize. Then you can follow helper scripts.
-
-// https://github.com/marmelroy/Localize-Swift
-// (This will print the collected strings in the terminal. Select and copy to your default Localizable.strings.)
-
-// https://github.com/JiriTrecak/Laurine
-// (Scans your Localizable.strings then generates Helper struct to use, Localizations.MainTitle)
 
 // Styler (TextStyle, FontManager)
 // Reusable (Identifiable)
@@ -83,8 +76,8 @@ import SwiftTheme
 // Constants
 // Configuration File (May include all primary fonts, colors, urls.. ?) ✅
 // Permissions (https://github.com/ivanvorobei/SPPermissions)
-// SwiftLint
-// ThemeManager
+/// SwiftLint ✅
+/// ThemeManager ✅
 // Plist manager
 // Pagination (Serviced based & UIBased) view nextable protocol in bookmark project
 // Onboarding: https://github.com/Ramotion/paper-onboarding

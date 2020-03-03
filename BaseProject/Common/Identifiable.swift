@@ -40,4 +40,3 @@ extension Identifiable where Self: UICollectionViewCell {
     return Self.identifier
   }
 }
-

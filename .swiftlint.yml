@@ -1,0 +1,35 @@
+
+line_length:
+- 5000 # warning
+- 10000 # error
+cyclomatic_complexity:
+- 20
+
+function_body_length:
+- 20
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+- Carthage
+- Pods
+- Source/ExcludedFolder
+- Source/ExcludedFile.swift
+- Source/Frameworks
+- genstrings.swift
+
+disabled_rules:
+- trailing_whitespace
+- identifier_name
+- redundant_string_enum_value
+- force_cast
+- cyclomatic_complexity
+- type_name
+- multiple_closures_with_trailing_closure
+- legacy_hashing
+
+type_body_length:
+- 3000 # warning
+- 4000 # error
+
+file_length: 3200
+warning: 2000
+error: 5000

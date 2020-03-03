@@ -36,7 +36,7 @@ class SettingsViewController: BaseViewController<SettingsViewModel> {
                 preferredStyle: UIAlertController.Style.actionSheet
             )
             
-            Localize.availableLanguages().filter{ $0 != "Base" }.forEach { language in
+            Localize.availableLanguages().filter { $0 != "Base" }.forEach { language in
                 actionSheet.addAction(.init(title: language, style: .default, handler: { (action) in
                     row.valueLabel.text = language
                     Localize.setCurrentLanguage(language)
@@ -88,11 +88,6 @@ class SettingsViewController: BaseViewController<SettingsViewModel> {
             $0.edges.equalToSuperview().inset(Spacing.tiny)
         }
         
-    }
-    
-    override func setupBinding() {
-        super.setupBinding()
-        // TODO: You can bind viewModel parameters here.
     }
     
 }

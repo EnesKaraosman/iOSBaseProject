@@ -69,7 +69,6 @@ class ExampleViewController: LBTAListController<ExampleTableViewCell, SamplePage
     
 }
 
-
 @available(iOS 13.0, *)
 extension ExampleViewController: UIFontPickerViewControllerDelegate {
     func fontPickerViewControllerDidPickFont(_ viewController: UIFontPickerViewController) {
