@@ -9,6 +9,7 @@
 import UIKit
 import AlamofireNetworkActivityLogger
 import Bagel
+import SwiftTheme
 
 // MARK: TODO
 
@@ -115,6 +116,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        self.setupTheme()
+        
         self.setupWindow()
         
         self.setupNetworkEnvironment()
@@ -132,6 +135,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+}
+
+extension AppDelegate {
+    
     private func setupWindow() {
         window = UIWindow(frame: UIScreen.main.bounds)
         router.setRoot(for: window!)
@@ -143,6 +150,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         APIClient.instance.environment = NetworkEnvironment(baseUrl: baseUrl)
     }
     
+    private func setupTheme() {
+        MyThemes.restoreLastTheme()
+        
+        UINavigationBar.appearance().theme_tintColor = GlobalPicker.barTextColor
+        UINavigationBar.appearance().theme_barTintColor = GlobalPicker.barTintColor
+        UIApplication.shared.theme_setStatusBarStyle(GlobalPicker.statusBarStyle, animated: true)
+    }
+    
     private func handleNetworkActivityLogging() {
         #if DEBUG
         if Configurations.Network.logNetworkActivity {
@@ -151,5 +166,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         #endif
     }
-
+    
 }

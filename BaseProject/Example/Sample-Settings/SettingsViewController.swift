@@ -16,8 +16,11 @@ class SettingsViewController: BaseViewController<SettingsViewModel> {
     
     private lazy var stackView: AloeStackView = {
         let sv = AloeStackView()
+        sv.backgroundColor = .clear
         sv.addRow(self.languageRow)
         sv.setInset(forRow: self.languageRow, inset: .small_all_edges)
+        sv.addRow(self.themeRow)
+        sv.setInset(forRow: self.themeRow, inset: .small_all_edges)
         return sv
     }()
     
@@ -46,10 +49,35 @@ class SettingsViewController: BaseViewController<SettingsViewModel> {
         }
         return row
     }()
+    
+    private lazy var themeRow: SelectionRow = {
+        let row = SelectionRow()
+        row.titleLabel.text = "Theme".localized()
+        row.valueLabel.text = MyThemes.current.title
+        row.tapHandler = { [weak self] in
+            
+            let actionSheet = UIAlertController(
+                title: "Theme".localized(),
+                message: "Choose preferred theme".localized(),
+                preferredStyle: UIAlertController.Style.actionSheet
+            )
+            
+            MyThemes.allCases.forEach { theme in
+                actionSheet.addAction(.init(title: theme.title, style: .default, handler: { (action) in
+                    row.valueLabel.text = theme.title
+                    MyThemes.switchTo(theme: theme)
+                }))
+            }
+            actionSheet.addAction(.init(title: "Cancel".localized(), style: .cancel, handler: nil))
+            
+            self?.present(actionSheet, animated: true, completion: nil)
+        }
+        return row
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = #colorLiteral(red: 0.2641104293, green: 0.6212216815, blue: 0.9411764741, alpha: 1)
+        self.view.theme_backgroundColor = GlobalPicker.backgroundColor
     }
     
     override func setupUI() {
@@ -71,14 +99,14 @@ class SettingsViewController: BaseViewController<SettingsViewModel> {
 
 class SelectionRow: CommonView {
     
-    lazy var titleLabel: UILabel = {
-        let lbl = UILabel()
+    lazy var titleLabel: CommonLabel = {
+        let lbl = CommonLabel()
         lbl.font = .monospacedSystemFont(ofSize: 18, weight: .semibold)
         return lbl
     }()
     
-    lazy var valueLabel: UILabel = {
-        let lbl = UILabel()
+    lazy var valueLabel: CommonLabel = {
+        let lbl = CommonLabel()
         lbl.font = .monospacedSystemFont(ofSize: 18, weight: .bold)
         return lbl
     }()

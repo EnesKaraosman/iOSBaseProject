@@ -16,6 +16,8 @@ class GenericListController: LBTAListController<ArticleCell, Article>, UICollect
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.collectionView.theme_backgroundColor = GlobalPicker.backgroundColor
 
         viewModel?.getList(articles: { (articles) in
             self.items = articles
@@ -47,7 +49,7 @@ class ArticleCell: LBTAListCell<Article> {
     private lazy var articleImageView = CircularImageView(width: 50)
     
     private lazy var titleLabel: UILabel = {
-        let lbl = UILabel()
+        let lbl = CommonLabel()
         lbl.font = .systemFont(ofSize: 17, weight: .bold)
         return lbl
     }()
@@ -63,12 +65,13 @@ class ArticleCell: LBTAListCell<Article> {
     override func setupViews() {
         super.setupViews()
         
+        self.backgroundColor = .clear
         self.addSubviews(titleLabel, articleImageView)
 
         articleImageView.snp.makeConstraints {
             $0.left.centerY.equalToSuperview().inset(8)
         }
-        
+
         titleLabel.snp.makeConstraints {
             $0.left.equalTo(articleImageView.snp.right).offset(16)
             $0.right.bottom.top.equalToSuperview()

@@ -14,5 +14,12 @@
 
 "Language" = "Dil";
 "Settings" = "Ayarlar";
-"Choose preferred language" = "Tercih ettiğiniz dili seçin";
+"Choose preferred language" = "Tercih ettiğiniz dili seçiniz";
 "To apply changes restart app!" = "Değişiklikleri uygulamak için uygulamayı yeniden başlatın!";
+
+"Cancel" = "Vazgeç";
+"Choose preferred theme" = "Tema tercihinizi seçiniz";
+"Theme" = "Tema";
+
+"Light" = "Açık";
+"Dark" = "Koyu";

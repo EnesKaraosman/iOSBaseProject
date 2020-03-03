@@ -33,6 +33,7 @@ class BaseViewController<VM: BaseViewModel>: UIViewController {
     
     func setupUI() {
         Log.i("BASE: setupUI")
+        self.view.theme_backgroundColor = GlobalPicker.backgroundColor
     }
     
     func setupBinding() {

@@ -34,6 +34,8 @@ class ExampleViewController: LBTAListController<ExampleTableViewCell, SamplePage
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.collectionView.theme_backgroundColor = GlobalPicker.backgroundColor
+        
         items = viewModel!.getSamplePages()
         
         if #available(iOS 13.0, *) {

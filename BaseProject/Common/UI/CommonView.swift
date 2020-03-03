@@ -27,6 +27,8 @@ class CommonView: UIView {
     }
     
     func commonInit() {
+        self.backgroundColor = .clear
+        
         let tapGR = UITapGestureRecognizer(target: self, action: #selector(selfTapped))
         self.addGestureRecognizer(tapGR)
     }

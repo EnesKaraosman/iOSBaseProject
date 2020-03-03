@@ -25,11 +25,7 @@ class ExampleTableViewCell: LBTAListCell<SamplePage> {
         return iv
     }()
     
-    private lazy var titleLabel: UILabel = {
-        let lbl = UILabel()
-        lbl.font = .systemFont(ofSize: 17, weight: .bold)
-        return lbl
-    }()
+    private lazy var titleLabel = CommonLabel()
     
     public var imageName: String? {
         didSet {
@@ -43,6 +39,8 @@ class ExampleTableViewCell: LBTAListCell<SamplePage> {
     }
     
     func commonInit() {
+        self.backgroundColor = .clear
+        
         self.addSubviews(iconImageView, titleLabel)
         
         iconImageView.snp.makeConstraints {

@@ -22,6 +22,7 @@ target 'BaseProject' do
   pod 'SnapKit'
   pod 'SwiftyJSON'
   pod 'SwiftLint'
+  pod 'SwiftTheme' # https://github.com/wxxsw/SwiftTheme
   pod 'Toast-Swift', '~> 5.0.0'
   pod 'XCoordinator'
 

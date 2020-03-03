@@ -1,5 +1,5 @@
 //
-//  BaseTextView.swift
+//  CommonTextView.swift
 //  BaseProject
 //
 //  Created by Enes Karaosman on 14.11.2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseTextView: UITextView {
+class CommonTextView: UITextView {
     
     convenience init() {
         self.init()

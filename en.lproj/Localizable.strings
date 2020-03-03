@@ -7,11 +7,17 @@
 */
 
 // Example Table View Items
-"Network"="Network";
+"Cancel" = "Cancel";
+"Choose preferred language" = "Choose preferred language";
+"Choose preferred theme" = "Choose preferred theme";
 "FontProvider" = "FontProvider";
 "Generic ListController" = "Generic ListController";
-"Template Controller" = "Template Controller";
-
 "Language" = "Language";
+"Network" = "Network";
 "Settings" = "Settings";
-"Choose preferred language" = "Choose preferred language";
+"Template Controller" = "Template Controller";
+"Theme" = "Theme";
+"To apply changes restart app!" = "To apply changes restart app!";
+
+"Light" = "Light";
+"Dark" = "Dark";
