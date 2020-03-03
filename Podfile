@@ -6,24 +6,24 @@ target 'BaseProject' do
   use_frameworks!
 
   # Pods for BaseProject
-  pod 'Alamofire'
-  pod 'AlamofireNetworkActivityLogger', '~> 2.0'
-  pod 'AloeStackView'
-  pod 'Bagel', '~>  1.3.2'
-  pod 'Highlightr'
-  pod 'Kingfisher'
-  pod 'LBTATools'
-  pod 'Localize-Swift', '~> 2.0'
-  pod 'NVActivityIndicatorView'
-  pod 'RxSwift'
+  pod 'Alamofire' # https://github.com/Alamofire/Alamofire
+  pod 'AlamofireNetworkActivityLogger', '~> 2.0' # https://github.com/konkab/AlamofireNetworkActivityLogger
+  pod 'AloeStackView' # https://github.com/airbnb/AloeStackView
+  pod 'Bagel', '~>  1.3.2' # https://github.com/yagiz/Bagel
+  pod 'Highlightr' # https://github.com/raspu/Highlightr
+  pod 'Kingfisher' # https://github.com/onevcat/Kingfisher
+  pod 'LBTATools'  # https://github.com/bhlvoong/LBTATools
+  pod 'Localize-Swift', '~> 2.0' # https://github.com/marmelroy/Localize-Swift
+  pod 'NVActivityIndicatorView' # https://github.com/ninjaprox/NVActivityIndicatorView
+  pod 'RxSwift' # https://github.com/ReactiveX/RxSwift
   pod 'RxCocoa'
   pod 'RxAlamofire'
-  pod 'SCLAlertView'
-  pod 'SnapKit'
-  pod 'SwiftyJSON'
-  pod 'SwiftLint'
+  pod 'SCLAlertView' # https://github.com/vikmeup/SCLAlertView-Swift
+  pod 'SnapKit' # https://github.com/SnapKit/SnapKit
+  pod 'SwiftyJSON' # https://github.com/SwiftyJSON/SwiftyJSON
+  pod 'SwiftLint' # https://github.com/realm/SwiftLint
   pod 'SwiftTheme' # https://github.com/wxxsw/SwiftTheme
-  pod 'Toast-Swift', '~> 5.0.0'
-  pod 'XCoordinator'
+  pod 'Toast-Swift', '~> 5.0.0' # https://github.com/scalessec/Toast-Swift
+  pod 'XCoordinator' # https://github.com/quickbirdstudios/XCoordinator
 
 end
