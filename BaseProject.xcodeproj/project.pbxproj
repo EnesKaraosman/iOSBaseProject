@@ -48,6 +48,7 @@
 		F464D0EE240D490300C9F783 /* SettingsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0EB240D490300C9F783 /* SettingsBuilder.swift */; };
 		F464D0EF240D490300C9F783 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0EC240D490300C9F783 /* SettingsViewModel.swift */; };
 		F464D0F1240E329B00C9F783 /* UIEdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0F0240E329B00C9F783 /* UIEdgeInsets+Extensions.swift */; };
+		F464D0F3240E4A2400C9F783 /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0F2240E4A2400C9F783 /* CommonView.swift */; };
 		F469A2F123C7489900B68D27 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F023C7489900B68D27 /* Connectivity.swift */; };
 		F469A2F323C8602400B68D27 /* BaseViewModelBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F223C8602400B68D27 /* BaseViewModelBehaviour.swift */; };
 		F469A2F523C864DB00B68D27 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F423C864DB00B68D27 /* BaseViewModel.swift */; };
@@ -120,6 +121,7 @@
 		F464D0EB240D490300C9F783 /* SettingsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBuilder.swift; sourceTree = "<group>"; };
 		F464D0EC240D490300C9F783 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		F464D0F0240E329B00C9F783 /* UIEdgeInsets+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
+		F464D0F2240E4A2400C9F783 /* CommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
 		F469A2F023C7489900B68D27 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		F469A2F223C8602400B68D27 /* BaseViewModelBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelBehaviour.swift; sourceTree = "<group>"; };
 		F469A2F423C864DB00B68D27 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
@@ -351,6 +353,7 @@
 				F4C4439E23827B8000D33E75 /* BaseButton.swift */,
 				F488D9BB237D358B0031D7FB /* BaseTextView.swift */,
 				F4BAC71123CC632B005014EB /* BaseViewController.swift */,
+				F464D0F2240E4A2400C9F783 /* CommonView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 				F469A2FD23C86C9200B68D27 /* GenericListViewModel.swift in Sources */,
 				F4DCBC4D2355F66B00C3D892 /* String+Extensions.swift in Sources */,
 				F436133C23CCAF110065DC57 /* TemplateViewModel.swift in Sources */,
+				F464D0F3240E4A2400C9F783 /* CommonView.swift in Sources */,
 				F436132F23CC6AF80065DC57 /* ___FILEBASENAME___Builder.swift in Sources */,
 				F45B88F423364E1E00E5A6F9 /* Error.swift in Sources */,
 				F44B9B992407931300B0C36E /* UIImage+Extensions.swift in Sources */,

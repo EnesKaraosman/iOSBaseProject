@@ -69,7 +69,7 @@ class SettingsViewController: BaseViewController<SettingsViewModel> {
     
 }
 
-class SelectionRow: UIView {
+class SelectionRow: CommonView {
     
     lazy var titleLabel: UILabel = {
         let lbl = UILabel()
@@ -83,26 +83,9 @@ class SelectionRow: UIView {
         return lbl
     }()
     
-    var tapHandler: (() -> Void)?
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        commonInit()
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        commonInit()
-    }
-    
-    @objc private func selfTapped() {
-        self.tapHandler?()
-    }
-    
-    func commonInit() {
-        let tapGR = UITapGestureRecognizer(target: self, action: #selector(selfTapped))
-        self.addGestureRecognizer(tapGR)
-        
+    override func commonInit() {
+        super.commonInit()
+
         hstack(titleLabel, UIView(), valueLabel)
     }
     

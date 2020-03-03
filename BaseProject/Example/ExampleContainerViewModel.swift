@@ -34,12 +34,12 @@ class ExampleContainerViewModel: BaseViewModel {
             ),
             SamplePage(
                 name: "Template Controller".localized(),
-                systemIconName: "arrows",
+                systemIconName: "template",
                 route: .templateSample
             ),
             SamplePage(
                 name: "Settings".localized(),
-                systemIconName: "arrows",
+                systemIconName: "settings",
                 route: .settingsSample
             )
         ]
