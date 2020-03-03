@@ -47,6 +47,7 @@
 		F464D0ED240D490300C9F783 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0EA240D490300C9F783 /* SettingsViewController.swift */; };
 		F464D0EE240D490300C9F783 /* SettingsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0EB240D490300C9F783 /* SettingsBuilder.swift */; };
 		F464D0EF240D490300C9F783 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0EC240D490300C9F783 /* SettingsViewModel.swift */; };
+		F464D0F1240E329B00C9F783 /* UIEdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0F0240E329B00C9F783 /* UIEdgeInsets+Extensions.swift */; };
 		F469A2F123C7489900B68D27 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F023C7489900B68D27 /* Connectivity.swift */; };
 		F469A2F323C8602400B68D27 /* BaseViewModelBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F223C8602400B68D27 /* BaseViewModelBehaviour.swift */; };
 		F469A2F523C864DB00B68D27 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F423C864DB00B68D27 /* BaseViewModel.swift */; };
@@ -118,6 +119,7 @@
 		F464D0EA240D490300C9F783 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F464D0EB240D490300C9F783 /* SettingsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBuilder.swift; sourceTree = "<group>"; };
 		F464D0EC240D490300C9F783 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		F464D0F0240E329B00C9F783 /* UIEdgeInsets+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
 		F469A2F023C7489900B68D27 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		F469A2F223C8602400B68D27 /* BaseViewModelBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelBehaviour.swift; sourceTree = "<group>"; };
 		F469A2F423C864DB00B68D27 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
@@ -330,6 +332,7 @@
 				F439F10623EBE41C00231A89 /* UIViewController+Extensions.swift */,
 				F42F7CA723F2BC2D001FCA6C /* UIColor+Extensions.swift */,
 				F44B9B982407931300B0C36E /* UIImage+Extensions.swift */,
+				F464D0F0240E329B00C9F783 /* UIEdgeInsets+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -569,6 +572,7 @@
 				F45B88F423364E1E00E5A6F9 /* Error.swift in Sources */,
 				F44B9B992407931300B0C36E /* UIImage+Extensions.swift in Sources */,
 				F42F7CA623F28E18001FCA6C /* EndPointConstants.swift in Sources */,
+				F464D0F1240E329B00C9F783 /* UIEdgeInsets+Extensions.swift in Sources */,
 				F436132E23CC6AF80065DC57 /* ___FILEBASENAME___ViewController.swift in Sources */,
 				F436133423CC87650065DC57 /* Constants.swift in Sources */,
 				F4B6977C23FE928C007585BC /* NetworkInterceptor.swift in Sources */,

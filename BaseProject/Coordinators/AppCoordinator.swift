@@ -13,6 +13,7 @@ enum AppRoute: Route {
     case networkSample
     case genericListSample
     case templateSample
+    case settingsSample
 }
 
 class AppCoordinator: NavigationCoordinator<AppRoute> {
@@ -34,6 +35,8 @@ class AppCoordinator: NavigationCoordinator<AppRoute> {
             return .present(GenericListBuilder.build())
         case .templateSample:
             return .present(TemplateBuilder.build())
+        case .settingsSample:
+            return .present(SettingsBuilder.build())
         }
     }
     

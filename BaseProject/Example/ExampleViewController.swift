@@ -34,23 +34,7 @@ class ExampleViewController: LBTAListController<ExampleTableViewCell, SamplePage
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        items = [
-            SamplePage(
-                name: "Network".localized(),
-                systemIconName: "network",
-                route: .networkSample
-            ),
-            SamplePage(
-                name: "Generic ListController".localized(),
-                systemIconName: "arrows",
-                route: .genericListSample
-            ),
-            SamplePage(
-                name: "Template Controller".localized(),
-                systemIconName: "arrows",
-                route: .templateSample
-            )
-        ]
+        items = viewModel!.getSamplePages()
         
         if #available(iOS 13.0, *) {
             let configuration = UIFontPickerViewController.Configuration()

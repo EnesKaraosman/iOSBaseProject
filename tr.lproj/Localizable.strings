@@ -11,3 +11,8 @@
 "FontProvider" = "Font Sağlayıcı";
 "Generic ListController" = "Jenerik ListController";
 "Template Controller" = "Template Kontrollör";
+
+"Language" = "Dil";
+"Settings" = "Ayarlar";
+"Choose preferred language" = "Tercih ettiğiniz dili seçin";
+"To apply changes restart app!" = "Değişiklikleri uygulamak için uygulamayı yeniden başlatın!";

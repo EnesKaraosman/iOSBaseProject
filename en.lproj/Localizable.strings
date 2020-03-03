@@ -11,3 +11,7 @@
 "FontProvider" = "FontProvider";
 "Generic ListController" = "Generic ListController";
 "Template Controller" = "Template Controller";
+
+"Language" = "Language";
+"Settings" = "Settings";
+"Choose preferred language" = "Choose preferred language";

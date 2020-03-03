@@ -8,6 +8,7 @@ target 'BaseProject' do
   # Pods for BaseProject
   pod 'Alamofire'
   pod 'AlamofireNetworkActivityLogger', '~> 2.0'
+  pod 'AloeStackView'
   pod 'Bagel', '~>  1.3.2'
   pod 'Highlightr'
   pod 'Kingfisher'

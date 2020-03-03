@@ -20,4 +20,29 @@ class ExampleContainerViewModel: BaseViewModel {
         router.trigger(route)
     }
     
+    func getSamplePages() -> [SamplePage] {
+        return [
+            SamplePage(
+                name: "Network".localized(),
+                systemIconName: "network",
+                route: .networkSample
+            ),
+            SamplePage(
+                name: "Generic ListController".localized(),
+                systemIconName: "arrows",
+                route: .genericListSample
+            ),
+            SamplePage(
+                name: "Template Controller".localized(),
+                systemIconName: "arrows",
+                route: .templateSample
+            ),
+            SamplePage(
+                name: "Settings".localized(),
+                systemIconName: "arrows",
+                route: .settingsSample
+            )
+        ]
+    }
+    
 }
