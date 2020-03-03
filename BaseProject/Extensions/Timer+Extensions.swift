@@ -26,7 +26,13 @@ extension Timer {
      timer.invalidate()      // cancel it.
      */
     static func setTimeout(delay: TimeInterval, block: @escaping () -> Void) -> Timer {
-        return Timer.scheduledTimer(timeInterval: delay, target: BlockOperation(block: block), selector: #selector(Operation.main), userInfo: nil, repeats: false)
+        return Timer.scheduledTimer(
+            timeInterval: delay,
+            target: BlockOperation(block: block),
+            selector: #selector(Operation.main),
+            userInfo: nil,
+            repeats: false
+        )
     }
     
     /**
@@ -43,7 +49,13 @@ extension Timer {
      when the block no longer required. such as deinit, or viewDidDisappear()
      */
     static func setInterval(interval: TimeInterval, block: @escaping () -> Void) -> Timer {
-        return Timer.scheduledTimer(timeInterval: interval, target: BlockOperation(block: block), selector: #selector(Operation.main), userInfo: nil, repeats: true)
+        return Timer.scheduledTimer(
+            timeInterval: interval,
+            target: BlockOperation(block: block),
+            selector: #selector(Operation.main),
+            userInfo: nil,
+            repeats: true
+        )
     }
     
 }

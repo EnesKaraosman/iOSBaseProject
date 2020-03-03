@@ -8,7 +8,9 @@
 
 import UIKit
 
-class BaseButton: UIButton {
+class CommonButton: UIButton {
+    
+    var tapHandler: ((UIButton) -> Void)?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,10 +23,11 @@ class BaseButton: UIButton {
     }
     
     func initialize() {
-        addTarget(self, action: #selector(baseAction), for: .touchUpInside)
+        addTarget(self, action: #selector(baseAction(sender:)), for: .touchUpInside)
     }
     
-    @objc func baseAction() {
+    @objc func baseAction(sender: UIButton) {
+        tapHandler?(sender)
         Log.i("BaseButton Action")
     }
     
