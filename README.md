@@ -59,6 +59,17 @@ This will print the collected strings in the terminal. Select and copy to your d
 [Laurine](https://github.com/JiriTrecak/Laurine)
 Scans your Localizable.strings then generates Helper struct to use, ex: Localizations.MainTitle
 
+------
+
+#### Theming ✅
+
+Preferred library: [SwiftTheme](https://github.com/wxxsw/SwiftTheme)
+
+Use Common/Base UI components to avoid setting colors everywhere in app.
+In project, review files under Common/Theme folder.
+
+------
+
 * Logger (May be used with analitycs services) ✅
 * Styler (TextStyle, FontManager)
 * Reusable (Identifiable)
@@ -69,7 +80,7 @@ Scans your Localizable.strings then generates Helper struct to use, ex: Localiza
 * Configuration File (May include all primary fonts, colors, urls.. ?) ✅
 * Permissions (https://github.com/ivanvorobei/SPPermissions)
 * SwiftLint ✅
-* ThemeManager
+
 * Plist manager
 * BaseClasses, BaseComponents (BaseViews, Dark mode support)
 * Component Factory (UI components)
