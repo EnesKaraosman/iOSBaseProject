@@ -70,6 +70,16 @@ In project, review files under Common/Theme folder.
 
 ------
 
+#### SwiftLint ✅
+
+[SwiftLint](https://github.com/realm/SwiftLint)
+
+Add `"${PODS_ROOT}/SwiftLint/swiftlint"` script to Build Phases
+
+Make sure .swiftlint.yml file must be on the root path of your project.
+
+------
+
 * Logger (May be used with analitycs services) ✅
 * Styler (TextStyle, FontManager)
 * Reusable (Identifiable)
@@ -79,7 +89,6 @@ In project, review files under Common/Theme folder.
 * Constants
 * Configuration File (May include all primary fonts, colors, urls.. ?) ✅
 * Permissions (https://github.com/ivanvorobei/SPPermissions)
-* SwiftLint ✅
 
 * Plist manager
 * BaseClasses, BaseComponents (BaseViews, Dark mode support)
