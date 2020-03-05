@@ -10,7 +10,8 @@ import UIKit
 
 struct Configurations {
     struct Fonts {
-        static let primary: FontFamily = .raleway
+        @KeyValueStorage("Preferred_Font", defaultValue: FontFamily.raleway)
+        static var primary: FontFamily
     }
     struct Network {
         static let logNetworkActivity = true

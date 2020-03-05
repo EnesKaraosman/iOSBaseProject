@@ -10,7 +10,7 @@ import UIKit
 
 class CommonView: UIView {
     
-    var tapHandler: (() -> Void)?
+    var tapHandler: ((UIView) -> Void)?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,7 +23,7 @@ class CommonView: UIView {
     }
         
     @objc private func selfTapped() {
-        self.tapHandler?()
+        self.tapHandler?(self)
     }
     
     func commonInit() {

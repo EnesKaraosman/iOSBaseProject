@@ -10,7 +10,19 @@ import UIKit
 
 class CommonButton: UIButton {
     
-    var tapHandler: ((UIButton) -> Void)?
+    var tapHandler: ((UIButton) -> Void)? {
+        didSet {
+            self.removeTarget(self, action: #selector(selfTapped(sender:)), for: .touchUpInside)
+            guard tapHandler != nil else { return }
+            self.addTarget(self, action: #selector(selfTapped(sender:)), for: .touchUpInside)
+        }
+    }
+    
+    init(text: String, textColor: UIColor) {
+        super.init(frame: .zero)
+        self.setTitle(text, for: .normal)
+        self.setTitleColor(textColor, for: .normal)
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,12 +35,11 @@ class CommonButton: UIButton {
     }
     
     func initialize() {
-        addTarget(self, action: #selector(baseAction(sender:)), for: .touchUpInside)
+        titleLabel?.font = .init(.body, .semiBold)
     }
     
-    @objc func baseAction(sender: UIButton) {
+    @objc private func selfTapped(sender: UIButton) {
         tapHandler?(sender)
-        Log.i("BaseButton Action")
     }
     
 }

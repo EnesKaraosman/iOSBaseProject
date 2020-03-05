@@ -11,35 +11,31 @@ import AlamofireNetworkActivityLogger
 import Bagel
 import SwiftTheme
 
-// MARK: TODO
-
 // MARK: - Network
 
 // Parsing
-/// SwiftyJSON ✅
-/// Codable Protocol ✅
+/// ✅ SwiftyJSON
+/// ✅ Codable
 
 // Reactive
-/// Rx Extensions (versions) ✅
-/// Moya: Consider using enumeration cases for api (service interfaces) ref: ios-base-swift-master/Services ❌⁉️
+/// ✅ Rx Extensions (versions)
+/// ⁉️ Moya: Consider using enumeration cases for api (service interfaces) ref: ios-base-swift-master/Services
 
 // Tracking network activities
-///  External app: Bagel ✅
-///  Internal pod: AlamofireNetworkActivityLogger ✅
+///  ✅ External app: Bagel
+///  ✅ Internal pod: AlamofireNetworkActivityLogger
 
-// Settings Bundle Environment switching like Production, Development ✅
+// ✅ Settings Bundle Environment switching like Production, Development
 
 /********************************************************************/
 
 // MARK: - Clean Architecture
 
 // Design Pattern
-/// MVVM ✅
-/// MVP  ⁉️
-/// VIPER ⁉️
+/// ✅ MVVM
 
 // Coordinator
-/// XCoordinator ✅ https://github.com/quickbirdstudios/XCoordinator
+/// ✅ XCoordinator https://github.com/quickbirdstudios/XCoordinator
 
 // Dependency Injection
 /// Resolver: https://github.com/hmlongco/Resolver
@@ -47,7 +43,7 @@ import SwiftTheme
 /********************************************************************/
 
 // MARK: - Storage
-/// UserDefaults (propertyWrapper) ✅ (Recomended max. limit is 1MB)
+/// ✅ UserDefaults (propertyWrapper) (Recomended max. limit is 1MB)
 /// Databases (CoreData, Realm)
 /// Keychain (OAuth token, User’s sensitive, secret data) https://github.com/kishikawakatsumi/KeychainAccess
 /// Files on disk (Images, videos, PDF..)
@@ -55,14 +51,16 @@ import SwiftTheme
 /********************************************************************/
 
 // MARK: - Helper, Util
-/// Logger (May be used with analitycs services) ✅
-/// Localization ✅
+/// ✅ Logger (May be used with analitycs services)
+/// ✅ Localization
+/// ✅ Styler (TextStyle, FontManager)
+/// ✅ Reusable (Identifiable)
+/// ✅ Loading Indicator integration
+/// ✅ SwiftLint
+/// ✅ ThemeManager
+/// ✅ Configuration File (Fonts, Colors, EnvironmentURLs..)
 
-// Styler (TextStyle, FontManager)
-// Reusable (Identifiable)
-// Loading Indicator integration ✅
-
-/// Common & Extensions
+// Common & Extensions
 
 /// Extensions
 // https://github.com/SwifterSwift/SwifterSwift
@@ -74,16 +72,13 @@ import SwiftTheme
 // Date - Helper https://github.com/malcommac/SwiftDate
 // Bottom bar vc, PagerStripVC
 // Constants
-// Configuration File (May include all primary fonts, colors, urls.. ?) ✅
 // Permissions (https://github.com/ivanvorobei/SPPermissions)
-/// SwiftLint ✅
-/// ThemeManager ✅
 // Plist manager
 // Pagination (Serviced based & UIBased) view nextable protocol in bookmark project
 // Onboarding: https://github.com/Ramotion/paper-onboarding
 // Push Notification Manager
+// Icons: https://github.com/ranesr/SwiftIcons
 
-/// BaseClasses, BaseComponents (BaseViews, Dark mode support)
 /// Component Factory (UI components)
 
 // MARK: - Analytics

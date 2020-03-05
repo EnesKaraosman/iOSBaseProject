@@ -13,10 +13,11 @@ class CommonLabel: UILabel {
     static var title = CommonLabel(font: .title)
     static var body = CommonLabel(font: .body)
     
-    init(font: UIFont = .body, text: String? = nil, alignment: NSTextAlignment = .left) {
+    init(font: UIFont = .body, text: String? = nil, color: UIColor = #colorLiteral(red: 0.06934740394, green: 0.06894309819, blue: 0.06966326386, alpha: 1),alignment: NSTextAlignment = .left) {
         super.init(frame: .zero)
         self.font = font
         self.text = text
+        self.textColor = color
         self.textAlignment = alignment
     }
     

@@ -8,11 +8,16 @@
 
 import UIKit
 
-enum FontFamily: String {
+enum FontFamily: String, CaseIterable, Codable {
     case raleway = "Raleway"
     case menlo = "Menlo"
-    //easy to change default app fonts family
-    static let defaultFamily = Configurations.Fonts.primary
+    
+    // TODO: How to combo with UIFont.families
+    
+    // Changable Font from settings.
+    static var defaultFamily: FontFamily {
+        return Configurations.Fonts.primary
+    }
 }
 
 enum FontWeight: String {
@@ -72,7 +77,7 @@ enum FontSize {
     }
 }
 
-// Provides you the option to list incompatible Font Family and Weight.
+// Provides you the option to fallback incompatible Font Family and Weight.
 private func stringName(_ family: FontFamily, _ weight: FontWeight) -> String {
     let fontWeight: String
     switch (family, weight) {
@@ -83,6 +88,7 @@ private func stringName(_ family: FontFamily, _ weight: FontWeight) -> String {
     }
     let familyName = family.rawValue
     return fontWeight.isEmpty ? "\(familyName)" : "\(familyName)-\(fontWeight)"
+    // Like Raleway-Regular
 }
 
 // For SwiftUI extend Font
@@ -97,7 +103,12 @@ extension UIFont {
     
     convenience init(_ family: FontFamily = .defaultFamily,
                      _ size: FontSize, _ weight: FontWeight) {
-        self.init(name: stringName(family, weight), size: size.value)!
+        // TODO: Differantiate for UIFont.Familiies
+        if Bundle.main.url(forResource: stringName(family, weight), withExtension: "ttf") != nil {
+            self.init(name: stringName(family, weight), size: size.value)!
+            return
+        }
+        self.init(name: FontFamily.menlo.rawValue, size: size.value)!
     }
     
 }
