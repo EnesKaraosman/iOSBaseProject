@@ -98,7 +98,7 @@ class SelectionRow: CommonView {
     
     lazy var valueLabel: CommonLabel = {
         let lbl = CommonLabel()
-        lbl.font = .init(.body, .semibold)
+        lbl.font = .init(.body, .semiBold)
         return lbl
     }()
     

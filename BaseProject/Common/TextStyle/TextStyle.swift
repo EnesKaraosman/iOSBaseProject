@@ -9,14 +9,19 @@
 import UIKit
 
 enum FontFamily: String {
-    case system = ".SFUIText" //".SFUI"
+    case raleway = "Raleway"
     case menlo = "Menlo"
     //easy to change default app fonts family
     static let defaultFamily = Configurations.Fonts.primary
 }
 
 enum FontWeight: String {
-    case regular = "", medium, light, heavy, bold, semibold, black
+    case regular  = "Regular"
+    case medium   = "Medium"
+    case light    = "Light"
+    case bold     = "Bold"
+    case semiBold = "SemiBold"
+    case italic   = "Italic"
 }
 
 enum FontSize {
@@ -67,12 +72,11 @@ enum FontSize {
     }
 }
 
-// method provides you the option to list incompatible Font Family and Weight.
-// (For example Inter has no Heavy Weight)
-fileprivate func stringName(_ family: FontFamily, _ weight: FontWeight) -> String {
+// Provides you the option to list incompatible Font Family and Weight.
+private func stringName(_ family: FontFamily, _ weight: FontWeight) -> String {
     let fontWeight: String
     switch (family, weight) {
-    case (.menlo, .semibold):
+    case (.menlo, .semiBold): // Example
         fontWeight = FontWeight.bold.rawValue
     default:
         fontWeight = weight.rawValue

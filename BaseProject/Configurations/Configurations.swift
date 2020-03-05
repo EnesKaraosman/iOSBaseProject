@@ -10,7 +10,7 @@ import UIKit
 
 struct Configurations {
     struct Fonts {
-        static let primary: FontFamily = .menlo
+        static let primary: FontFamily = .raleway
     }
     struct Network {
         static let logNetworkActivity = true

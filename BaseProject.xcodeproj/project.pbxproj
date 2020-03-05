@@ -54,6 +54,12 @@
 		F464D0F9240E7A8B00C9F783 /* CommonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0F8240E7A8B00C9F783 /* CommonLabel.swift */; };
 		F464D101240E992C00C9F783 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F464D100240E992C00C9F783 /* .swiftlint.yml */; };
 		F464D104240FD27200C9F783 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D103240FD27200C9F783 /* TextStyle.swift */; };
+		F464D1212410F49300C9F783 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F464D10E2410F49200C9F783 /* Raleway-Medium.ttf */; };
+		F464D1222410F49300C9F783 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F464D10F2410F49200C9F783 /* Raleway-SemiBold.ttf */; };
+		F464D1252410F49300C9F783 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F464D1122410F49200C9F783 /* Raleway-Regular.ttf */; };
+		F464D1282410F49300C9F783 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F464D1152410F49200C9F783 /* Raleway-Light.ttf */; };
+		F464D12E2410F49300C9F783 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F464D11B2410F49200C9F783 /* Raleway-Italic.ttf */; };
+		F464D12F2410F49300C9F783 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F464D11C2410F49200C9F783 /* Raleway-Bold.ttf */; };
 		F469A2F123C7489900B68D27 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F023C7489900B68D27 /* Connectivity.swift */; };
 		F469A2F323C8602400B68D27 /* BaseViewModelBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F223C8602400B68D27 /* BaseViewModelBehaviour.swift */; };
 		F469A2F523C864DB00B68D27 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F423C864DB00B68D27 /* BaseViewModel.swift */; };
@@ -132,6 +138,12 @@
 		F464D0F8240E7A8B00C9F783 /* CommonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonLabel.swift; sourceTree = "<group>"; };
 		F464D100240E992C00C9F783 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		F464D103240FD27200C9F783 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
+		F464D10E2410F49200C9F783 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		F464D10F2410F49200C9F783 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		F464D1122410F49200C9F783 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		F464D1152410F49200C9F783 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		F464D11B2410F49200C9F783 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		F464D11C2410F49200C9F783 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
 		F469A2F023C7489900B68D27 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		F469A2F223C8602400B68D27 /* BaseViewModelBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelBehaviour.swift; sourceTree = "<group>"; };
 		F469A2F423C864DB00B68D27 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
@@ -338,6 +350,7 @@
 		F464D0FA240E96E100C9F783 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F464D1082410F47A00C9F783 /* Fonts */,
 				F464D100240E992C00C9F783 /* .swiftlint.yml */,
 			);
 			path = Resources;
@@ -349,6 +362,27 @@
 				F464D103240FD27200C9F783 /* TextStyle.swift */,
 			);
 			path = TextStyle;
+			sourceTree = "<group>";
+		};
+		F464D1082410F47A00C9F783 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F464D1092410F49200C9F783 /* Raleway */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F464D1092410F49200C9F783 /* Raleway */ = {
+			isa = PBXGroup;
+			children = (
+				F464D1122410F49200C9F783 /* Raleway-Regular.ttf */,
+				F464D10E2410F49200C9F783 /* Raleway-Medium.ttf */,
+				F464D1152410F49200C9F783 /* Raleway-Light.ttf */,
+				F464D11C2410F49200C9F783 /* Raleway-Bold.ttf */,
+				F464D10F2410F49200C9F783 /* Raleway-SemiBold.ttf */,
+				F464D11B2410F49200C9F783 /* Raleway-Italic.ttf */,
+			);
+			path = Raleway;
 			sourceTree = "<group>";
 		};
 		F469A2F623C8674F00B68D27 /* Extensions */ = {
@@ -493,10 +527,16 @@
 				F464D101240E992C00C9F783 /* .swiftlint.yml in Resources */,
 				F4307D3E23DACA3D0016C8AA /* Settings.bundle in Resources */,
 				F436133123CC6AF80065DC57 /* TemplateIcon.png in Resources */,
+				F464D1282410F49300C9F783 /* Raleway-Light.ttf in Resources */,
 				F45B88E22335406400E5A6F9 /* LaunchScreen.storyboard in Resources */,
 				F4DCBC492355F52300C3D892 /* Localizable.strings in Resources */,
+				F464D12F2410F49300C9F783 /* Raleway-Bold.ttf in Resources */,
+				F464D12E2410F49300C9F783 /* Raleway-Italic.ttf in Resources */,
+				F464D1212410F49300C9F783 /* Raleway-Medium.ttf in Resources */,
 				F436132D23CC6AF80065DC57 /* TemplateIcon@2x.png in Resources */,
+				F464D1222410F49300C9F783 /* Raleway-SemiBold.ttf in Resources */,
 				F48EC1FC2355E2F8002E36D3 /* NetworkUsage.md in Resources */,
+				F464D1252410F49300C9F783 /* Raleway-Regular.ttf in Resources */,
 				F436133223CC6AF80065DC57 /* TemplateInfo.plist in Resources */,
 				F45B88DF2335406400E5A6F9 /* Assets.xcassets in Resources */,
 			);

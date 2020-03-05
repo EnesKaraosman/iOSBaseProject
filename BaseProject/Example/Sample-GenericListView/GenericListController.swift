@@ -50,7 +50,7 @@ class ArticleCell: LBTAListCell<Article> {
     
     private lazy var titleLabel: CommonLabel = {
         let lbl = CommonLabel()
-        lbl.font = .init(.body, .semibold)
+        lbl.font = .init(.body, .semiBold)
         return lbl
     }()
     
