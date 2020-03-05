@@ -48,9 +48,9 @@ class ArticleCell: LBTAListCell<Article> {
     
     private lazy var articleImageView = CircularImageView(width: 50)
     
-    private lazy var titleLabel: UILabel = {
+    private lazy var titleLabel: CommonLabel = {
         let lbl = CommonLabel()
-        lbl.font = .systemFont(ofSize: 17, weight: .bold)
+        lbl.font = .init(.body, .semibold)
         return lbl
     }()
     

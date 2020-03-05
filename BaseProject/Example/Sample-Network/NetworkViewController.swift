@@ -13,12 +13,12 @@ import Highlightr
 
 class NetworkViewController: BaseViewController<NetworkViewModel> {
     
-    private lazy var codeLabel: UILabel = {
+    private lazy var codeLabel: CommonLabel = {
         
         let v = Highlightr()
         v!.setTheme(to: "paraiso-dark")
         
-        let lbl = UILabel()
+        let lbl = CommonLabel()
         lbl.attributedText = v?.highlight("""
         self.viewModel?.api?.executeGET(
             endPoint: "articles",

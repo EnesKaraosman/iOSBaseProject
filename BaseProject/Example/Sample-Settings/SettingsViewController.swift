@@ -94,15 +94,11 @@ class SettingsViewController: BaseViewController<SettingsViewModel> {
 
 class SelectionRow: CommonView {
     
-    lazy var titleLabel: CommonLabel = {
-        let lbl = CommonLabel()
-        lbl.font = .monospacedSystemFont(ofSize: 18, weight: .semibold)
-        return lbl
-    }()
+    lazy var titleLabel = CommonLabel()
     
     lazy var valueLabel: CommonLabel = {
         let lbl = CommonLabel()
-        lbl.font = .monospacedSystemFont(ofSize: 18, weight: .bold)
+        lbl.font = .init(.body, .semibold)
         return lbl
     }()
     

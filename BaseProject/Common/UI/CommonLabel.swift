@@ -10,6 +10,16 @@ import UIKit
 
 class CommonLabel: UILabel {
     
+    static var title = CommonLabel(font: .title)
+    static var body = CommonLabel(font: .body)
+    
+    init(font: UIFont = .body, text: String? = nil, alignment: NSTextAlignment = .left) {
+        super.init(frame: .zero)
+        self.font = font
+        self.text = text
+        self.textAlignment = alignment
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.commonInit()
@@ -26,9 +36,14 @@ class CommonLabel: UILabel {
     }
     
     func commonInit() {
-        self.font = .monospacedSystemFont(ofSize: 17, weight: .medium)
+        self.font = .body
         self.backgroundColor = .clear
         self.theme_textColor = GlobalPicker.textColor
+    }
+    
+    func makeMultiline() {
+        self.numberOfLines = 0
+        self.lineBreakMode = .byWordWrapping
     }
     
 }

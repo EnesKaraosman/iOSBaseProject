@@ -53,6 +53,7 @@
 		F464D0F7240E75BF00C9F783 /* GlobalPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0F6240E75BF00C9F783 /* GlobalPicker.swift */; };
 		F464D0F9240E7A8B00C9F783 /* CommonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0F8240E7A8B00C9F783 /* CommonLabel.swift */; };
 		F464D101240E992C00C9F783 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F464D100240E992C00C9F783 /* .swiftlint.yml */; };
+		F464D104240FD27200C9F783 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D103240FD27200C9F783 /* TextStyle.swift */; };
 		F469A2F123C7489900B68D27 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F023C7489900B68D27 /* Connectivity.swift */; };
 		F469A2F323C8602400B68D27 /* BaseViewModelBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F223C8602400B68D27 /* BaseViewModelBehaviour.swift */; };
 		F469A2F523C864DB00B68D27 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2F423C864DB00B68D27 /* BaseViewModel.swift */; };
@@ -130,6 +131,7 @@
 		F464D0F6240E75BF00C9F783 /* GlobalPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalPicker.swift; sourceTree = "<group>"; };
 		F464D0F8240E7A8B00C9F783 /* CommonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonLabel.swift; sourceTree = "<group>"; };
 		F464D100240E992C00C9F783 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		F464D103240FD27200C9F783 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 		F469A2F023C7489900B68D27 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		F469A2F223C8602400B68D27 /* BaseViewModelBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelBehaviour.swift; sourceTree = "<group>"; };
 		F469A2F423C864DB00B68D27 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 				F4B6977E23FFB157007585BC /* ViewModelContract.swift */,
 				F47E14D523FA8D770050C2A1 /* UI */,
 				F48B284423F56C2500EE4325 /* Theme */,
+				F464D102240FD23C00C9F783 /* TextStyle */,
 				F45B88F523364F8A00E5A6F9 /* LoaderPresentable.swift */,
 				F469A2FA23C86A3B00B68D27 /* AlertPresentable.swift */,
 				F469A2F023C7489900B68D27 /* Connectivity.swift */,
@@ -338,6 +341,14 @@
 				F464D100240E992C00C9F783 /* .swiftlint.yml */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F464D102240FD23C00C9F783 /* TextStyle */ = {
+			isa = PBXGroup;
+			children = (
+				F464D103240FD27200C9F783 /* TextStyle.swift */,
+			);
+			path = TextStyle;
 			sourceTree = "<group>";
 		};
 		F469A2F623C8674F00B68D27 /* Extensions */ = {
@@ -594,6 +605,7 @@
 				F4C4439F23827B8000D33E75 /* CommonButton.swift in Sources */,
 				F45B88DA2335406300E5A6F9 /* ExampleViewController.swift in Sources */,
 				F464D0F7240E75BF00C9F783 /* GlobalPicker.swift in Sources */,
+				F464D104240FD27200C9F783 /* TextStyle.swift in Sources */,
 				F41295C2235DDFBF00DD6D8C /* GenericListController.swift in Sources */,
 				F45B88EA233559EE00E5A6F9 /* Identifiable.swift in Sources */,
 				F45B88F82336559D00E5A6F9 /* Environment.swift in Sources */,
