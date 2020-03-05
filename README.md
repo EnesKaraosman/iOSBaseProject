@@ -50,7 +50,7 @@ You're gonna start to a new project and fed up doing same initialization every t
 
 ## - Helper, Util
 
-#### Localization ✅
+#### ✅ Localization
 Use "".localized() any string you want to localize. Then you can follow helper scripts.
 
 [Localize-Swift](https://github.com/marmelroy/Localize-Swift)
@@ -61,7 +61,7 @@ Scans your Localizable.strings then generates Helper struct to use, ex: Localiza
 
 ------
 
-#### Theming ✅
+#### ✅ Theming
 
 Preferred library: [SwiftTheme](https://github.com/wxxsw/SwiftTheme)
 
@@ -70,7 +70,7 @@ In project, review files under Common/Theme folder.
 
 ------
 
-#### SwiftLint ✅
+#### ✅ SwiftLint
 
 [SwiftLint](https://github.com/realm/SwiftLint)
 
@@ -80,24 +80,54 @@ Make sure .swiftlint.yml file must be on the root path of your project.
 
 ------
 
-* Logger (May be used with analitycs services) ✅
-* Styler (TextStyle, FontManager)
-* Reusable (Identifiable)
-* Loading Indicator integration ✅
+#### ✅ TextStyle, FontManager
+
+* In case you want to add Custom Font
+[Google Fonts](https://fonts.google.com/)
+
+* How to add custom font to project? follow this tutorial.
+[Add Custom Font](https://codewithchris.com/common-mistakes-with-adding-custom-fonts-to-your-ios-app/)
+
+View `Common/TextStyle/TextStyle.swift` file in project.
+
+Use `CommonLabel` to spread common functionality
+You can simply init your font;
+```swift
+lbl.font = .init(.title1, .bold)
+```
+
+------
+
+#### ✅ Logger
+
+View `Log.swift` file, you can use anywhere you want in the project. <br/>
+You might want to integrate Anayltics service(s) in error cases?
+
+------
+
+* ✅ Reusable (Identifiable)
+* ✅ Loading Indicator integration `LoaderPresentable.swift`
+* ✅ Configuration File (May include Fonts, Colors, EnvironmentURL..)
 * Extensions
 * Bottom bar vc, PagerStripVC
 * Constants
-* Configuration File (May include all primary fonts, colors, urls.. ?) ✅
 * Permissions (https://github.com/ivanvorobei/SPPermissions)
-
 * Plist manager
-* BaseClasses, BaseComponents (BaseViews, Dark mode support)
 * Component Factory (UI components)
 
 ------
 
 ## - Analytics
-* Crahslytics
-* Fabric
+
+In case you want to use multiple provider, consider abstraction via https://github.com/devxoul/Umbrella
+
+* AmplitudeProvider (Amplitude-iOS)
+* AnswersProvider (Answers)
+* AppboyProvider (Appboy-iOS-SDK)
+* AppsFlyerProvider (AppsFlyerFramework)
+* FirebaseProvider (Firebase/Analytics)
+* FlurryProvider (Flurry-iOS-SDK/FabricSDK)
+* LocalyticsProvider (Localytics)
+* MixpanelProvider (Mixpanel)
 
 ------
