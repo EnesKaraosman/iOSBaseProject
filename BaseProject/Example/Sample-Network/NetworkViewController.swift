@@ -24,7 +24,8 @@ class NetworkViewController: BaseViewController<NetworkViewModel> {
             endPoint: "articles",
             success: { (articles: [Article]) in
                 print(articles.count)
-            }, failure: { (error) in
+            },
+            failure: { (error) in
                 print(error.localizedDescription)
             }
         )
