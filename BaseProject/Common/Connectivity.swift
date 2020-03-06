@@ -32,7 +32,7 @@ class Connectivity {
     
 }
 
-/**
+/*
  Usage Sample
  
  if Connectivity.shared.isConnectedToInternet {

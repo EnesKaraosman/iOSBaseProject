@@ -16,7 +16,6 @@ struct SamplePage {
 
 class ExampleContainerViewModel: BaseViewModel {
     
-    
     private let router: UnownedErased<StrongRouter<AppRoute>>
     
     init(router: UnownedErased<StrongRouter<AppRoute>>) {

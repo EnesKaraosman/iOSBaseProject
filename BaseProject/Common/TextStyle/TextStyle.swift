@@ -10,8 +10,9 @@ import UIKit
 
 enum FontFamily: String, Codable, CaseIterable, Comparable {
 
-    case raleway = "Raleway"
-    case spartan = "Spartan"
+    case raleway  = "Raleway"
+    case spartan  = "Spartan"
+    case fallback = "Menlo" // System font for fallback
 
     static var onlySystemFonts: [String] {
         return UIFont.familyNames
@@ -111,31 +112,41 @@ extension UIFont {
     
     convenience init(_ family: FontFamily = .defaultFamily,
                      _ size: FontSize, _ weight: FontWeight) {
-        if Bundle.main.url(forResource: stringName(family, weight), withExtension: "ttf") != nil {
-            if !checkFontExist(name: stringName(family, weight)) {
-                Log.e("\(family.rawValue) Font is not added to .plist!!")
-                self.init(name: FontFamily.raleway.rawValue, size: size.value)!
-                return
-            }
-            self.init(name: stringName(family, weight), size: size.value)!
+        
+        let fontName = stringName(family, weight)
+        if !checkFontExist(name: fontName) {
+            self.init(name: FontFamily.fallback.rawValue, size: size.value)!
             return
         }
-        Log.e("\(family.rawValue) Font is not added to bundle!!")
-        self.init(name: FontFamily.raleway.rawValue, size: size.value)!
+        self.init(name: fontName, size: size.value)!
     }
     
 }
 
 private func checkFontExist(name: String) -> Bool {
+    
     let fonts = Bundle.main.object(forInfoDictionaryKey: "UIAppFonts") as! [String]
-    return fonts.first { $0.contains(name) } != nil
+    let existInPlist = fonts.first { $0.contains(name) } != nil
+    
+    if !existInPlist {
+        Log.e("\(name) Font is not added to bundle!!")
+        return false
+    }
+    
+    let existInBundle = Bundle.main.url(forResource: name, withExtension: "ttf") != nil
+    if !existInBundle {
+        Log.e("\(name) Font is not added to bundle!!")
+        return false
+    }
+    
+    return true
 }
 
 /**
  Usage;
  
  let label = UILabel()
- label.font = .init(.body, .bold)
+ label.font = .init(.body, .bold) // Or define static extensions to set as label.font = .title
 
  */
 
