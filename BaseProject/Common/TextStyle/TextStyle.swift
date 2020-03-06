@@ -112,6 +112,11 @@ extension UIFont {
     convenience init(_ family: FontFamily = .defaultFamily,
                      _ size: FontSize, _ weight: FontWeight) {
         if Bundle.main.url(forResource: stringName(family, weight), withExtension: "ttf") != nil {
+            if !checkFontExist(name: stringName(family, weight)) {
+                Log.e("\(family.rawValue) Font is not added to .plist!!")
+                self.init(name: FontFamily.raleway.rawValue, size: size.value)!
+                return
+            }
             self.init(name: stringName(family, weight), size: size.value)!
             return
         }
@@ -119,6 +124,11 @@ extension UIFont {
         self.init(name: FontFamily.raleway.rawValue, size: size.value)!
     }
     
+}
+
+private func checkFontExist(name: String) -> Bool {
+    let fonts = Bundle.main.object(forInfoDictionaryKey: "UIAppFonts") as! [String]
+    return fonts.first { $0.contains(name) } != nil
 }
 
 /**

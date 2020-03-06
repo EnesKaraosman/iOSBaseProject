@@ -25,6 +25,7 @@ class FontPickerController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.contentInset = .init(top: Spacing.small, left: 0, bottom: 0, right: 0)
         tableView.tableFooterView = UIView()
     }
 }
