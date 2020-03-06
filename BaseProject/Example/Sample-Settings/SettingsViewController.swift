@@ -82,23 +82,14 @@ class SettingsViewController: BaseViewController<SettingsViewModel> {
         row.valueLabel.text = FontFamily.defaultFamily.rawValue
         row.tapHandler = { [weak self] _ in
             
-            let actionSheet = UIAlertController(
-                title: "Font".localized(),
-                message: "Choose preferred font".localized(),
-                preferredStyle: UIAlertController.Style.actionSheet
-            )
-            
-            FontFamily.allCases.forEach { font in
-                actionSheet.addAction(.init(title: font.rawValue, style: .default, handler: { (action) in
-                    // TODO: Not Real Time Refresh, but you can save FontName to UserDefaults.
-                    // You might present UIFontPickerViewController.
-                    Configurations.Fonts.primary = font
-                    row.valueLabel.text = font.rawValue
-                }))
+            let vc = FontPickerController(fontNames: FontFamily.allCases)
+            vc.rowTapped = { [weak self] fontName in
+                guard let fontName = fontName else { return }
+                Configurations.Fonts.primary = fontName
+                row.valueLabel.text = fontName.rawValue
+                self?.view.makeToast("To apply changes restart app!".localized())
             }
-            actionSheet.addAction(.init(title: "Cancel".localized(), style: .cancel, handler: nil))
-            
-            self?.present(actionSheet, animated: true, completion: nil)
+            self?.present(vc, animated: true, completion: nil)
         }
         return row
     }()

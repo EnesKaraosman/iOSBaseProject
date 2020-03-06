@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		E1010DD2216F5F86A3CB35BD /* Pods_BaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10597F97009A2EC1A100AC08 /* Pods_BaseProject.framework */; };
 		F41295C2235DDFBF00DD6D8C /* GenericListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41295C1235DDFBF00DD6D8C /* GenericListController.swift */; };
+		F41F937B24123E4D00688998 /* FontPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F937A24123E4D00688998 /* FontPickerController.swift */; };
+		F41F93862412469900688998 /* Spartan-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F41F937D2412469900688998 /* Spartan-Medium.ttf */; };
+		F41F938A2412469900688998 /* Spartan-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F41F93812412469900688998 /* Spartan-Bold.ttf */; };
+		F41F938B2412469900688998 /* Spartan-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F41F93822412469900688998 /* Spartan-Light.ttf */; };
+		F41F938C2412469900688998 /* Spartan-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F41F93832412469900688998 /* Spartan-Regular.ttf */; };
+		F41F938E2412469900688998 /* Spartan-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F41F93852412469900688998 /* Spartan-SemiBold.ttf */; };
 		F42F7CA623F28E18001FCA6C /* EndPointConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F7CA523F28E18001FCA6C /* EndPointConstants.swift */; };
 		F42F7CA823F2BC2D001FCA6C /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F7CA723F2BC2D001FCA6C /* UIColor+Extensions.swift */; };
 		F42F7CAA23F2D6AA001FCA6C /* IAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F7CA923F2D6AA001FCA6C /* IAPIClient.swift */; };
@@ -91,6 +97,12 @@
 		10597F97009A2EC1A100AC08 /* Pods_BaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD1D797168504577404381D /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F41295C1235DDFBF00DD6D8C /* GenericListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericListController.swift; sourceTree = "<group>"; };
+		F41F937A24123E4D00688998 /* FontPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontPickerController.swift; sourceTree = "<group>"; };
+		F41F937D2412469900688998 /* Spartan-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spartan-Medium.ttf"; sourceTree = "<group>"; };
+		F41F93812412469900688998 /* Spartan-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spartan-Bold.ttf"; sourceTree = "<group>"; };
+		F41F93822412469900688998 /* Spartan-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spartan-Light.ttf"; sourceTree = "<group>"; };
+		F41F93832412469900688998 /* Spartan-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spartan-Regular.ttf"; sourceTree = "<group>"; };
+		F41F93852412469900688998 /* Spartan-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spartan-SemiBold.ttf"; sourceTree = "<group>"; };
 		F42F7CA523F28E18001FCA6C /* EndPointConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointConstants.swift; sourceTree = "<group>"; };
 		F42F7CA723F2BC2D001FCA6C /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		F42F7CA923F2D6AA001FCA6C /* IAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPIClient.swift; sourceTree = "<group>"; };
@@ -220,6 +232,18 @@
 				F469A2FC23C86C9200B68D27 /* GenericListViewModel.swift */,
 			);
 			path = "Sample-GenericListView";
+			sourceTree = "<group>";
+		};
+		F41F937C2412469900688998 /* Spartan */ = {
+			isa = PBXGroup;
+			children = (
+				F41F937D2412469900688998 /* Spartan-Medium.ttf */,
+				F41F93812412469900688998 /* Spartan-Bold.ttf */,
+				F41F93822412469900688998 /* Spartan-Light.ttf */,
+				F41F93832412469900688998 /* Spartan-Regular.ttf */,
+				F41F93852412469900688998 /* Spartan-SemiBold.ttf */,
+			);
+			path = Spartan;
 			sourceTree = "<group>";
 		};
 		F436132623CC6AF80065DC57 /* MVVM Files.xctemplate */ = {
@@ -360,6 +384,7 @@
 			isa = PBXGroup;
 			children = (
 				F464D103240FD27200C9F783 /* TextStyle.swift */,
+				F41F937A24123E4D00688998 /* FontPickerController.swift */,
 			);
 			path = TextStyle;
 			sourceTree = "<group>";
@@ -367,6 +392,7 @@
 		F464D1082410F47A00C9F783 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				F41F937C2412469900688998 /* Spartan */,
 				F464D1092410F49200C9F783 /* Raleway */,
 			);
 			path = Fonts;
@@ -529,16 +555,21 @@
 				F436133123CC6AF80065DC57 /* TemplateIcon.png in Resources */,
 				F464D1282410F49300C9F783 /* Raleway-Light.ttf in Resources */,
 				F45B88E22335406400E5A6F9 /* LaunchScreen.storyboard in Resources */,
+				F41F93862412469900688998 /* Spartan-Medium.ttf in Resources */,
 				F4DCBC492355F52300C3D892 /* Localizable.strings in Resources */,
+				F41F938B2412469900688998 /* Spartan-Light.ttf in Resources */,
 				F464D12F2410F49300C9F783 /* Raleway-Bold.ttf in Resources */,
+				F41F938E2412469900688998 /* Spartan-SemiBold.ttf in Resources */,
 				F464D12E2410F49300C9F783 /* Raleway-Italic.ttf in Resources */,
 				F464D1212410F49300C9F783 /* Raleway-Medium.ttf in Resources */,
 				F436132D23CC6AF80065DC57 /* TemplateIcon@2x.png in Resources */,
 				F464D1222410F49300C9F783 /* Raleway-SemiBold.ttf in Resources */,
 				F48EC1FC2355E2F8002E36D3 /* NetworkUsage.md in Resources */,
+				F41F938C2412469900688998 /* Spartan-Regular.ttf in Resources */,
 				F464D1252410F49300C9F783 /* Raleway-Regular.ttf in Resources */,
 				F436133223CC6AF80065DC57 /* TemplateInfo.plist in Resources */,
 				F45B88DF2335406400E5A6F9 /* Assets.xcassets in Resources */,
+				F41F938A2412469900688998 /* Spartan-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +672,7 @@
 				F4ABB48A23E859FB00005E7B /* NetworkBuilder.swift in Sources */,
 				F439F10523EBE37000231A89 /* UIView+Extensions.swift in Sources */,
 				F4BAC71223CC632B005014EB /* BaseViewController.swift in Sources */,
+				F41F937B24123E4D00688998 /* FontPickerController.swift in Sources */,
 				F469A2F123C7489900B68D27 /* Connectivity.swift in Sources */,
 				F4C4439F23827B8000D33E75 /* CommonButton.swift in Sources */,
 				F45B88DA2335406300E5A6F9 /* ExampleViewController.swift in Sources */,

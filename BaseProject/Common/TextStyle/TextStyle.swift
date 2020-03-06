@@ -8,16 +8,24 @@
 
 import UIKit
 
-enum FontFamily: String, CaseIterable, Codable {
+enum FontFamily: String, Codable, CaseIterable, Comparable {
+
     case raleway = "Raleway"
-    case menlo = "Menlo"
-    
-    // TODO: How to combo with UIFont.families
+    case spartan = "Spartan"
+
+    static var onlySystemFonts: [String] {
+        return UIFont.familyNames
+    }
     
     // Changable Font from settings.
     static var defaultFamily: FontFamily {
         return Configurations.Fonts.primary
     }
+    
+    static func < (lhs: FontFamily, rhs: FontFamily) -> Bool {
+        return lhs.rawValue < rhs.rawValue
+    }
+    
 }
 
 enum FontWeight: String {
@@ -81,8 +89,8 @@ enum FontSize {
 private func stringName(_ family: FontFamily, _ weight: FontWeight) -> String {
     let fontWeight: String
     switch (family, weight) {
-    case (.menlo, .semiBold): // Example
-        fontWeight = FontWeight.bold.rawValue
+    case (.spartan, .italic): // Spartan-Italic does not exist.
+        fontWeight = FontWeight.regular.rawValue
     default:
         fontWeight = weight.rawValue
     }
@@ -103,12 +111,12 @@ extension UIFont {
     
     convenience init(_ family: FontFamily = .defaultFamily,
                      _ size: FontSize, _ weight: FontWeight) {
-        // TODO: Differantiate for UIFont.Familiies
         if Bundle.main.url(forResource: stringName(family, weight), withExtension: "ttf") != nil {
             self.init(name: stringName(family, weight), size: size.value)!
             return
         }
-        self.init(name: FontFamily.menlo.rawValue, size: size.value)!
+        Log.e("\(family.rawValue) Font is not added to bundle!!")
+        self.init(name: FontFamily.raleway.rawValue, size: size.value)!
     }
     
 }

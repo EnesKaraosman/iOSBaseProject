@@ -40,6 +40,11 @@
 		<string>Raleway-Italic.ttf</string>
 		<string>Raleway-Light.ttf</string>
 		<string>Raleway-Medium.ttf</string>
+        <string>Spartan-SemiBold.ttf</string>
+        <string>Spartan-Regular.ttf</string>
+        <string>Spartan-Bold.ttf</string>
+        <string>Spartan-Light.ttf</string>
+        <string>Spartan-Medium.ttf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
