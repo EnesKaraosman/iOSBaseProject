@@ -8,7 +8,14 @@
 
 import XCoordinator
 
+struct SamplePage {
+    let name: String
+    let systemIconName: String
+    let route: AppRoute
+}
+
 class ExampleContainerViewModel: BaseViewModel {
+    
     
     private let router: UnownedErased<StrongRouter<AppRoute>>
     
