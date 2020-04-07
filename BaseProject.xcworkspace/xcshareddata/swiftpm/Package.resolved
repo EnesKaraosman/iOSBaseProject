@@ -1,0 +1,115 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "fca036f7aeca07124067cb6e0c12b0ad6359e3d4",
+          "version": "5.1.0"
+        }
+      },
+      {
+        "package": "AloeStackView",
+        "repositoryURL": "https://github.com/airbnb/AloeStackView",
+        "state": {
+          "branch": null,
+          "revision": "28ef1e50cef1eb38512fae67eb45ddc508f9a9f8",
+          "version": "1.2.0"
+        }
+      },
+      {
+        "package": "EKNetworkModule",
+        "repositoryURL": "https://github.com/EnesKaraosman/EKNetworkModule.git",
+        "state": {
+          "branch": null,
+          "revision": "9d8c929d9acfba62ee1c81f550570813577fb466",
+          "version": "0.0.7"
+        }
+      },
+      {
+        "package": "LBTATools",
+        "repositoryURL": "https://github.com/bhlvoong/LBTATools",
+        "state": {
+          "branch": null,
+          "revision": "dce147bfbdc0417a4b430ec220c088629e9dc81d",
+          "version": "1.0.17"
+        }
+      },
+      {
+        "package": "Localize_Swift",
+        "repositoryURL": "https://github.com/marmelroy/Localize-Swift",
+        "state": {
+          "branch": null,
+          "revision": "f2d0c6d790b8af64ae54377ad93494e8d3e46b17",
+          "version": "3.1.0"
+        }
+      },
+      {
+        "package": "NVActivityIndicatorView",
+        "repositoryURL": "https://github.com/ninjaprox/NVActivityIndicatorView",
+        "state": {
+          "branch": null,
+          "revision": "4a4726d15367d82bd3e9e1f01625bd76dbbb0c98",
+          "version": "4.8.0"
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift",
+        "state": {
+          "branch": null,
+          "revision": "002d325b0bdee94e7882e1114af5ff4fe1e96afa",
+          "version": "5.1.1"
+        }
+      },
+      {
+        "package": "SnapKit",
+        "repositoryURL": "https://github.com/SnapKit/SnapKit",
+        "state": {
+          "branch": null,
+          "revision": "d458564516e5676af9c70b4f4b2a9178294f1bc6",
+          "version": "5.0.1"
+        }
+      },
+      {
+        "package": "SwiftTheme",
+        "repositoryURL": "https://github.com/wxxsw/SwiftTheme",
+        "state": {
+          "branch": null,
+          "revision": "a60c374504c6c7fb1b556bf8ca96b3ab5563fbfd",
+          "version": "0.5.2"
+        }
+      },
+      {
+        "package": "SwiftyJSON",
+        "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
+        "state": {
+          "branch": null,
+          "revision": "2b6054efa051565954e1d2b9da831680026cd768",
+          "version": "5.0.0"
+        }
+      },
+      {
+        "package": "Toast",
+        "repositoryURL": "https://github.com/scalessec/Toast-Swift",
+        "state": {
+          "branch": null,
+          "revision": "0c9493eeacb102cc614da385cfaaf475379f4ab4",
+          "version": "5.0.1"
+        }
+      },
+      {
+        "package": "XCoordinator",
+        "repositoryURL": "https://github.com/quickbirdstudios/XCoordinator",
+        "state": {
+          "branch": null,
+          "revision": "4b6fc6f7359078c322e3b354854ed4ac5c12c5e1",
+          "version": "2.0.7"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -9,7 +9,7 @@ PODS:
     - Kingfisher/Core (= 5.13.2)
   - Kingfisher/Core (5.13.2)
   - SCLAlertView (0.8)
-  - SwiftLint (0.38.2)
+  - SwiftLint (0.39.1)
 
 DEPENDENCIES:
   - AlamofireNetworkActivityLogger (~> 3.0)
@@ -35,8 +35,8 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   Kingfisher: d342c8354c10c3d85a27d6d4c42c41285924b898
   SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
-  SwiftLint: 8f5d2f903e1c9bcbc832fd16771e80a263ac6cbb
+  SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
 
-PODFILE CHECKSUM: 91ecafb2ebc493e807d909c3f174b07cede5d242
+PODFILE CHECKSUM: 7630b67e7366ea74da6fb243d14a17ce67a17410
 
 COCOAPODS: 1.8.4
