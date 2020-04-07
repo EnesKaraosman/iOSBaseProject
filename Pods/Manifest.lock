@@ -1,109 +1,42 @@
 PODS:
-  - Alamofire (4.9.1)
-  - AlamofireNetworkActivityLogger (2.4.0):
-    - Alamofire (~> 4.8)
-  - AloeStackView (1.2.0)
+  - Alamofire (5.0.2)
+  - AlamofireNetworkActivityLogger (3.0.0):
+    - Alamofire (~> 5.0.0-rc.2)
   - Bagel (1.3.2):
     - CocoaAsyncSocket
-  - CocoaAsyncSocket (7.6.3)
-  - Highlightr (2.1.0)
-  - Kingfisher (5.12.0):
-    - Kingfisher/Core (= 5.12.0)
-  - Kingfisher/Core (5.12.0)
-  - LBTATools (1.0.12)
-  - Localize-Swift (2.0.0)
-  - NVActivityIndicatorView (4.8.0):
-    - NVActivityIndicatorView/Presenter (= 4.8.0)
-  - NVActivityIndicatorView/Presenter (4.8.0)
-  - RxAlamofire (5.1.0):
-    - RxAlamofire/Core (= 5.1.0)
-  - RxAlamofire/Core (5.1.0):
-    - Alamofire (~> 4.8)
-    - RxSwift (~> 5.0)
-  - RxCocoa (5.0.1):
-    - RxRelay (~> 5)
-    - RxSwift (~> 5)
-  - RxRelay (5.0.1):
-    - RxSwift (~> 5)
-  - RxSwift (5.0.1)
+  - CocoaAsyncSocket (7.6.4)
+  - Kingfisher (5.13.2):
+    - Kingfisher/Core (= 5.13.2)
+  - Kingfisher/Core (5.13.2)
   - SCLAlertView (0.8)
-  - SnapKit (5.0.1)
   - SwiftLint (0.38.2)
-  - SwiftTheme (0.5.0)
-  - SwiftyJSON (5.0.0)
-  - Toast-Swift (5.0.1)
-  - XCoordinator (2.0.6):
-    - XCoordinator/Core (= 2.0.6)
-  - XCoordinator/Core (2.0.6)
 
 DEPENDENCIES:
-  - Alamofire
-  - AlamofireNetworkActivityLogger (~> 2.0)
-  - AloeStackView
+  - AlamofireNetworkActivityLogger (~> 3.0)
   - Bagel (~> 1.3.2)
-  - Highlightr
   - Kingfisher
-  - LBTATools
-  - Localize-Swift (~> 2.0)
-  - NVActivityIndicatorView
-  - RxAlamofire
-  - RxCocoa
-  - RxSwift
   - SCLAlertView
-  - SnapKit
   - SwiftLint
-  - SwiftTheme
-  - SwiftyJSON
-  - Toast-Swift (~> 5.0.0)
-  - XCoordinator
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireNetworkActivityLogger
-    - AloeStackView
     - Bagel
     - CocoaAsyncSocket
-    - Highlightr
     - Kingfisher
-    - LBTATools
-    - Localize-Swift
-    - NVActivityIndicatorView
-    - RxAlamofire
-    - RxCocoa
-    - RxRelay
-    - RxSwift
     - SCLAlertView
-    - SnapKit
     - SwiftLint
-    - SwiftTheme
-    - SwiftyJSON
-    - Toast-Swift
-    - XCoordinator
 
 SPEC CHECKSUMS:
-  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  AlamofireNetworkActivityLogger: 6d3398c692d2c5d83b0c58793537860aca1e383d
-  AloeStackView: 8a4ce0efa08128dd78d538372f60c76c224034bb
+  Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
+  AlamofireNetworkActivityLogger: 94e8a7d454a4a9800cef1d0c1d3699754493684b
   Bagel: 199e0105ac694d6eee9db54dd006c940da6ce81b
-  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
-  Highlightr: 595f3e100737c8de41113385da8bd0b5b65212c6
-  Kingfisher: dc6e0f53bb5b12c3e75bedb0e01bbd7a640eea69
-  LBTATools: 389a901a01b9a56bea5682c40cd6e23530f40015
-  Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
-  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
-  RxAlamofire: a2d7621de4c23a0c6e7b476b504acc32838ee341
-  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
-  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
-  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
+  Kingfisher: d342c8354c10c3d85a27d6d4c42c41285924b898
   SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
-  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftLint: 8f5d2f903e1c9bcbc832fd16771e80a263ac6cbb
-  SwiftTheme: 45a12fe3d600546b99e8e4a52cec9b57eb5b1aec
-  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
-  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
-  XCoordinator: 67772bf463acec002a920ab5eb04f46835dcf123
 
-PODFILE CHECKSUM: 0a90651cfdac046c4f0b8f37a7aac0e570ecb35d
+PODFILE CHECKSUM: 91ecafb2ebc493e807d909c3f174b07cede5d242
 
 COCOAPODS: 1.8.4

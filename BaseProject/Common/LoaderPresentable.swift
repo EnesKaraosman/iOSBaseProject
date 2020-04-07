@@ -6,6 +6,7 @@
 //  Copyright © 2019 Enes Karaosman. All rights reserved.
 //
 
+import Foundation
 import NVActivityIndicatorView
 
 /// Add to any view controller you want. (Single Instance)

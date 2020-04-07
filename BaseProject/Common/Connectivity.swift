@@ -21,14 +21,13 @@ class Connectivity {
     
     var listener: NetworkReachabilityManager.Listener? = nil {
         didSet {
-            manager?.listener = self.listener
-            manager?.startListening()
+            if let listener = self.listener {
+                manager?.startListening(onUpdatePerforming: listener)
+            }
         }
     }
     
-    private init() {
-        
-    }
+    private init() { }
     
 }
 

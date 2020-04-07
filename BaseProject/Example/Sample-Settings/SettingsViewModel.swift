@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import EKNetworkModule
 
 class SettingsViewModel: BaseViewModel, ViewModelContract {
     
@@ -16,7 +17,7 @@ class SettingsViewModel: BaseViewModel, ViewModelContract {
     let input: Input
     let output: Output
     
-    override init(api: IAPIClient? = nil) {
+    override init(api: APIClientProtocol? = nil) {
        input = Input()
        output = Output()
        super.init(api: api)

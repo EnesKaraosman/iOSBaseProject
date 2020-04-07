@@ -6,24 +6,24 @@ target 'BaseProject' do
   use_frameworks!
 
   # Pods for BaseProject
-  pod 'Alamofire' # https://github.com/Alamofire/Alamofire
-  pod 'AlamofireNetworkActivityLogger', '~> 2.0' # https://github.com/konkab/AlamofireNetworkActivityLogger
-  pod 'AloeStackView' # https://github.com/airbnb/AloeStackView
-  pod 'Bagel', '~>  1.3.2' # https://github.com/yagiz/Bagel
-  pod 'Highlightr' # https://github.com/raspu/Highlightr
-  pod 'Kingfisher' # https://github.com/onevcat/Kingfisher
-  pod 'LBTATools'  # https://github.com/bhlvoong/LBTATools
-  pod 'Localize-Swift', '~> 2.0' # https://github.com/marmelroy/Localize-Swift
-  pod 'NVActivityIndicatorView' # https://github.com/ninjaprox/NVActivityIndicatorView
-  pod 'RxSwift' # https://github.com/ReactiveX/RxSwift
-  pod 'RxCocoa'
-  pod 'RxAlamofire'
-  pod 'SCLAlertView' # https://github.com/vikmeup/SCLAlertView-Swift
-  pod 'SnapKit' # https://github.com/SnapKit/SnapKit
-  pod 'SwiftyJSON' # https://github.com/SwiftyJSON/SwiftyJSON
-  pod 'SwiftLint' # https://github.com/realm/SwiftLint
-  pod 'SwiftTheme' # https://github.com/wxxsw/SwiftTheme
-  pod 'Toast-Swift', '~> 5.0.0' # https://github.com/scalessec/Toast-Swift
-  pod 'XCoordinator' # https://github.com/quickbirdstudios/XCoordinator
+  
+#  pod 'RxSwift' # https://github.com/ReactiveX/RxSwift
+#  pod 'RxCocoa'
+#  pod 'Localize-Swift', '~> 2.0' # https://github.com/marmelroy/Localize-Swift SPM+
+#  pod 'AloeStackView' # https://github.com/airbnb/AloeStackView SPM+
+#  pod 'LBTATools'  # https://github.com/bhlvoong/LBTATools SPM+
+#  pod 'NVActivityIndicatorView' # https://github.com/ninjaprox/NVActivityIndicatorView SPM+
+#  pod 'SnapKit' # https://github.com/SnapKit/SnapKit SPM+
+#  pod 'XCoordinator' # https://github.com/quickbirdstudios/XCoordinator SPM+
+#  pod 'Toast-Swift', '~> 5.0.0' # https://github.com/scalessec/Toast-Swift SPM+
+#  pod 'SwiftTheme' # https://github.com/wxxsw/SwiftTheme SPM+
+
+  pod 'SwiftLint' # https://github.com/realm/SwiftLint SPM+ (Be carefull, normally a filed reffered under Pods)
+  
+  pod 'Bagel', '~>  1.3.2' # https://github.com/yagiz/Bagel SPM+ Problem
+  pod 'AlamofireNetworkActivityLogger', '~> 3.0' # https://github.com/konkab/AlamofireNetworkActivityLogger SPM+ Problem
+#  pod 'AlamofireNetworkActivityLogger', '~> 2.0' # https://github.com/konkab/AlamofireNetworkActivityLogger SPM+ Problem
+  pod 'Kingfisher' # https://github.com/onevcat/Kingfisher SPM+ Problem
+  pod 'SCLAlertView' # https://github.com/vikmeup/SCLAlertView-Swift SPM+ Problem
 
 end

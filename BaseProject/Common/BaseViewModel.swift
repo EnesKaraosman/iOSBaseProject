@@ -9,17 +9,18 @@
 import Foundation
 import RxSwift
 import RxCocoa
+import EKNetworkModule
 
 class BaseViewModel: BaseViewModelBehaviour {
     
     let disposeBag = DisposeBag()
 
-    var api: IAPIClient?
+    var api: APIClientProtocol?
     
     var error = BehaviorRelay<(String?, ErrorPresentationType)>(value: (nil, .alert))
 //    var noDataFoundScreen: BehaviorRelay<Bool>
 
-    init(api: IAPIClient? = nil) {
+    init(api: APIClientProtocol? = nil) {
         self.api = api
     }
     

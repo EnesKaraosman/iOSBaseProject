@@ -10,6 +10,7 @@ import UIKit
 import AlamofireNetworkActivityLogger
 import Bagel
 import SwiftTheme
+import EKNetworkModule
 
 // MARK: - Network
 
@@ -135,7 +136,7 @@ extension AppDelegate {
     private func setupNetworkEnvironment() {
         let baseUrl = Configurations.Environment.selected.url
         Log.i(baseUrl)
-        APIClient.instance.environment = NetworkEnvironment(baseUrl: baseUrl)
+        EKAPIClient.instance.networkEnvironment = EKNetworkEnvironment(baseUrl: baseUrl)
     }
     
     private func setupTheme() {

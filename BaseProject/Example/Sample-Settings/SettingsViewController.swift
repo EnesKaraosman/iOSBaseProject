@@ -10,7 +10,7 @@ import UIKit
 import AloeStackView
 import LBTATools
 import Localize_Swift
-import Toast_Swift
+import Toast
 
 class SettingsViewController: BaseViewController<SettingsViewModel> {
     
