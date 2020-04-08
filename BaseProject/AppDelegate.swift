@@ -116,7 +116,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
         Connectivity.shared.listener = { state in
             guard let nv = self.window?.rootViewController as? UINavigationController else { return }
-            nv.viewControllers.first?.view.makeToast(Connectivity.shared.isConnectedToInternet ? "Connected to Internet": "Connection Lost")
+            nv.viewControllers.first?.view.makeToast(
+                Connectivity.shared.isConnectedToInternet ? "Connected to Internet".localized() : "Internet Connection Lost".localized()
+            )
         }
         
         // If initialization gets crowded here, consider using LibsManager & Configuration in a seperate place

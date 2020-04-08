@@ -13,22 +13,19 @@ import SafariServices
 class NetworkViewController: BaseViewController<NetworkViewModel> {
 
     private lazy var codeLabel: CommonLabel = {
-        
-        let lbl = CommonLabel()
-        lbl.text = """
-        self.viewModel?.api?.executeGET(
-            endPoint: "articles",
-            success: { (articles: [Article]) in
-                print(articles.count)
-            },
-            failure: { (error) in
-                print(error.localizedDescription)
-            }
-        )
-        """
-        
-        lbl.numberOfLines = 0
-        return lbl
+        return CommonLabel()
+            .setText(text: """
+                self.viewModel?.api?.executeGET(
+                    endPoint: "articles",
+                    success: { (articles: [Article]) in
+                        print(articles.count)
+                    },
+                    failure: { (error) in
+                        print(error.localizedDescription)
+                    }
+                )
+            """)
+            .makeMultiline()
     }()
     
     override func viewDidLoad() {

@@ -18,12 +18,6 @@
 		F42F7CA623F28E18001FCA6C /* EndPointConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F7CA523F28E18001FCA6C /* EndPointConstants.swift */; };
 		F42F7CA823F2BC2D001FCA6C /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F7CA723F2BC2D001FCA6C /* UIColor+Extensions.swift */; };
 		F4307D3E23DACA3D0016C8AA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4307D3D23DACA3D0016C8AA /* Settings.bundle */; };
-		F436132D23CC6AF80065DC57 /* TemplateIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F436132723CC6AF80065DC57 /* TemplateIcon@2x.png */; };
-		F436132E23CC6AF80065DC57 /* ___FILEBASENAME___ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436132823CC6AF80065DC57 /* ___FILEBASENAME___ViewController.swift */; };
-		F436132F23CC6AF80065DC57 /* ___FILEBASENAME___Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436132923CC6AF80065DC57 /* ___FILEBASENAME___Builder.swift */; };
-		F436133023CC6AF80065DC57 /* ___FILEBASENAME___ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436132A23CC6AF80065DC57 /* ___FILEBASENAME___ViewModel.swift */; };
-		F436133123CC6AF80065DC57 /* TemplateIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F436132B23CC6AF80065DC57 /* TemplateIcon.png */; };
-		F436133223CC6AF80065DC57 /* TemplateInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = F436132C23CC6AF80065DC57 /* TemplateInfo.plist */; };
 		F436133423CC87650065DC57 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436133323CC87650065DC57 /* Constants.swift */; };
 		F436133623CC8B2D0065DC57 /* NSMutableAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436133523CC8B2D0065DC57 /* NSMutableAttributedString+Extensions.swift */; };
 		F436133A23CCAF110065DC57 /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436133723CCAF110065DC57 /* TemplateViewController.swift */; };
@@ -121,12 +115,6 @@
 		F42F7CA523F28E18001FCA6C /* EndPointConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointConstants.swift; sourceTree = "<group>"; };
 		F42F7CA723F2BC2D001FCA6C /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		F4307D3D23DACA3D0016C8AA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		F436132723CC6AF80065DC57 /* TemplateIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TemplateIcon@2x.png"; sourceTree = "<group>"; };
-		F436132823CC6AF80065DC57 /* ___FILEBASENAME___ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewController.swift"; sourceTree = "<group>"; };
-		F436132923CC6AF80065DC57 /* ___FILEBASENAME___Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___Builder.swift"; sourceTree = "<group>"; };
-		F436132A23CC6AF80065DC57 /* ___FILEBASENAME___ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewModel.swift"; sourceTree = "<group>"; };
-		F436132B23CC6AF80065DC57 /* TemplateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon.png; sourceTree = "<group>"; };
-		F436132C23CC6AF80065DC57 /* TemplateInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemplateInfo.plist; sourceTree = "<group>"; };
 		F436133323CC87650065DC57 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F436133523CC8B2D0065DC57 /* NSMutableAttributedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extensions.swift"; sourceTree = "<group>"; };
 		F436133723CCAF110065DC57 /* TemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
@@ -261,19 +249,6 @@
 				F41F93852412469900688998 /* Spartan-SemiBold.ttf */,
 			);
 			path = Spartan;
-			sourceTree = "<group>";
-		};
-		F436132623CC6AF80065DC57 /* MVVM Files.xctemplate */ = {
-			isa = PBXGroup;
-			children = (
-				F436132923CC6AF80065DC57 /* ___FILEBASENAME___Builder.swift */,
-				F436132823CC6AF80065DC57 /* ___FILEBASENAME___ViewController.swift */,
-				F436132A23CC6AF80065DC57 /* ___FILEBASENAME___ViewModel.swift */,
-				F436132B23CC6AF80065DC57 /* TemplateIcon.png */,
-				F436132723CC6AF80065DC57 /* TemplateIcon@2x.png */,
-				F436132C23CC6AF80065DC57 /* TemplateInfo.plist */,
-			);
-			path = "MVVM Files.xctemplate";
 			sourceTree = "<group>";
 		};
 		F45B88C92335406300E5A6F9 = {
@@ -482,7 +457,6 @@
 		F4BAC71323CC6637005014EB /* Sample-Template */ = {
 			isa = PBXGroup;
 			children = (
-				F436132623CC6AF80065DC57 /* MVVM Files.xctemplate */,
 				F436133823CCAF110065DC57 /* TemplateBuilder.swift */,
 				F436133723CCAF110065DC57 /* TemplateViewController.swift */,
 				F436133923CCAF110065DC57 /* TemplateViewModel.swift */,
@@ -582,7 +556,6 @@
 			files = (
 				F464D101240E992C00C9F783 /* .swiftlint.yml in Resources */,
 				F4307D3E23DACA3D0016C8AA /* Settings.bundle in Resources */,
-				F436133123CC6AF80065DC57 /* TemplateIcon.png in Resources */,
 				F464D1282410F49300C9F783 /* Raleway-Light.ttf in Resources */,
 				F45B88E22335406400E5A6F9 /* LaunchScreen.storyboard in Resources */,
 				F41F93862412469900688998 /* Spartan-Medium.ttf in Resources */,
@@ -592,11 +565,9 @@
 				F41F938E2412469900688998 /* Spartan-SemiBold.ttf in Resources */,
 				F464D12E2410F49300C9F783 /* Raleway-Italic.ttf in Resources */,
 				F464D1212410F49300C9F783 /* Raleway-Medium.ttf in Resources */,
-				F436132D23CC6AF80065DC57 /* TemplateIcon@2x.png in Resources */,
 				F464D1222410F49300C9F783 /* Raleway-SemiBold.ttf in Resources */,
 				F41F938C2412469900688998 /* Spartan-Regular.ttf in Resources */,
 				F464D1252410F49300C9F783 /* Raleway-Regular.ttf in Resources */,
-				F436133223CC6AF80065DC57 /* TemplateInfo.plist in Resources */,
 				F45B88DF2335406400E5A6F9 /* Assets.xcassets in Resources */,
 				F41F938A2412469900688998 /* Spartan-Bold.ttf in Resources */,
 			);
@@ -693,7 +664,6 @@
 				F4ABB48723E8573400005E7B /* AppCoordinator.swift in Sources */,
 				F469A2F523C864DB00B68D27 /* BaseViewModel.swift in Sources */,
 				F436133B23CCAF110065DC57 /* TemplateBuilder.swift in Sources */,
-				F436133023CC6AF80065DC57 /* ___FILEBASENAME___ViewModel.swift in Sources */,
 				F4ABB48A23E859FB00005E7B /* NetworkBuilder.swift in Sources */,
 				F439F10523EBE37000231A89 /* UIView+Extensions.swift in Sources */,
 				F4BAC71223CC632B005014EB /* BaseViewController.swift in Sources */,
@@ -721,12 +691,10 @@
 				F4DCBC4D2355F66B00C3D892 /* String+Extensions.swift in Sources */,
 				F436133C23CCAF110065DC57 /* TemplateViewModel.swift in Sources */,
 				F464D0F3240E4A2400C9F783 /* CommonView.swift in Sources */,
-				F436132F23CC6AF80065DC57 /* ___FILEBASENAME___Builder.swift in Sources */,
 				F44B9B992407931300B0C36E /* UIImage+Extensions.swift in Sources */,
 				F42F7CA623F28E18001FCA6C /* EndPointConstants.swift in Sources */,
 				F464D0F9240E7A8B00C9F783 /* CommonLabel.swift in Sources */,
 				F464D0F1240E329B00C9F783 /* UIEdgeInsets+Extensions.swift in Sources */,
-				F436132E23CC6AF80065DC57 /* ___FILEBASENAME___ViewController.swift in Sources */,
 				F436133423CC87650065DC57 /* Constants.swift in Sources */,
 				F48CE0A623C4A747004D23CD /* KeyValueStorage.swift in Sources */,
 				F439F10323EBE2A500231A89 /* NSAttributedString+Extensions.swift in Sources */,

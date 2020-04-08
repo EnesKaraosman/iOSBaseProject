@@ -19,5 +19,8 @@
 "Theme" = "Theme";
 "To apply changes restart app!" = "To apply changes restart app!";
 
+"Connected to Internet" = "Connected to Internet";
+"Internet Connection Lost" = "Internet Connection Lost";
+
 "Light" = "Light";
 "Dark" = "Dark";
