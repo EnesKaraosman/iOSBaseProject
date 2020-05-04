@@ -15,7 +15,7 @@
 		F41F938B2412469900688998 /* Spartan-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F41F93822412469900688998 /* Spartan-Light.ttf */; };
 		F41F938C2412469900688998 /* Spartan-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F41F93832412469900688998 /* Spartan-Regular.ttf */; };
 		F41F938E2412469900688998 /* Spartan-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F41F93852412469900688998 /* Spartan-SemiBold.ttf */; };
-		F42F7CA623F28E18001FCA6C /* EndPointConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F7CA523F28E18001FCA6C /* EndPointConstants.swift */; };
+		F42F7CA623F28E18001FCA6C /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F7CA523F28E18001FCA6C /* EndPoints.swift */; };
 		F42F7CA823F2BC2D001FCA6C /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F7CA723F2BC2D001FCA6C /* UIColor+Extensions.swift */; };
 		F4307D3E23DACA3D0016C8AA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4307D3D23DACA3D0016C8AA /* Settings.bundle */; };
 		F436133423CC87650065DC57 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436133323CC87650065DC57 /* Constants.swift */; };
@@ -112,7 +112,7 @@
 		F41F93822412469900688998 /* Spartan-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spartan-Light.ttf"; sourceTree = "<group>"; };
 		F41F93832412469900688998 /* Spartan-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spartan-Regular.ttf"; sourceTree = "<group>"; };
 		F41F93852412469900688998 /* Spartan-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spartan-SemiBold.ttf"; sourceTree = "<group>"; };
-		F42F7CA523F28E18001FCA6C /* EndPointConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointConstants.swift; sourceTree = "<group>"; };
+		F42F7CA523F28E18001FCA6C /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		F42F7CA723F2BC2D001FCA6C /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		F4307D3D23DACA3D0016C8AA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F436133323CC87650065DC57 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -274,8 +274,8 @@
 		F45B88D42335406300E5A6F9 /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				F477DCCA24600F1600BCFD7D /* App */,
 				F464D0FA240E96E100C9F783 /* Resources */,
-				F45B88D52335406300E5A6F9 /* AppDelegate.swift */,
 				F469A2F723C8699700B68D27 /* Configurations */,
 				F4ABB48523E8571600005E7B /* Coordinators */,
 				F45B88FE2337320000E5A6F9 /* Example */,
@@ -292,7 +292,7 @@
 		F45B88EB2336381B00E5A6F9 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				F45B88FB2337145F00E5A6F9 /* Util */,
+				F42F7CA523F28E18001FCA6C /* EndPoints.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -307,24 +307,10 @@
 				F47E14D523FA8D770050C2A1 /* UI */,
 				F48B284423F56C2500EE4325 /* Theme */,
 				F464D102240FD23C00C9F783 /* TextStyle */,
-				F45B88F523364F8A00E5A6F9 /* LoaderPresentable.swift */,
-				F469A2FA23C86A3B00B68D27 /* AlertPresentable.swift */,
-				F469A2F023C7489900B68D27 /* Connectivity.swift */,
-				F45B88E9233559EE00E5A6F9 /* Identifiable.swift */,
-				F48CE0A523C4A747004D23CD /* KeyValueStorage.swift */,
-				F45B88ED23363AAB00E5A6F9 /* Log.swift */,
-				F436133323CC87650065DC57 /* Constants.swift */,
-				F439F10823ED36C600231A89 /* ErrorPresentationType.swift */,
+				F477DCC924600EBC00BCFD7D /* Other */,
+				F477DCC824600E9300BCFD7D /* Constants */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		F45B88FB2337145F00E5A6F9 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				F42F7CA523F28E18001FCA6C /* EndPointConstants.swift */,
-			);
-			path = Util;
 			sourceTree = "<group>";
 		};
 		F45B88FE2337320000E5A6F9 /* Example */ = {
@@ -416,6 +402,36 @@
 				F469A2F823C869AE00B68D27 /* Configurations.swift */,
 			);
 			path = Configurations;
+			sourceTree = "<group>";
+		};
+		F477DCC824600E9300BCFD7D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F436133323CC87650065DC57 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F477DCC924600EBC00BCFD7D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F439F10823ED36C600231A89 /* ErrorPresentationType.swift */,
+				F469A2F023C7489900B68D27 /* Connectivity.swift */,
+				F45B88E9233559EE00E5A6F9 /* Identifiable.swift */,
+				F48CE0A523C4A747004D23CD /* KeyValueStorage.swift */,
+				F45B88ED23363AAB00E5A6F9 /* Log.swift */,
+				F45B88F523364F8A00E5A6F9 /* LoaderPresentable.swift */,
+				F469A2FA23C86A3B00B68D27 /* AlertPresentable.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F477DCCA24600F1600BCFD7D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F45B88D52335406300E5A6F9 /* AppDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 		F47E14D523FA8D770050C2A1 /* UI */ = {
@@ -692,7 +708,7 @@
 				F436133C23CCAF110065DC57 /* TemplateViewModel.swift in Sources */,
 				F464D0F3240E4A2400C9F783 /* CommonView.swift in Sources */,
 				F44B9B992407931300B0C36E /* UIImage+Extensions.swift in Sources */,
-				F42F7CA623F28E18001FCA6C /* EndPointConstants.swift in Sources */,
+				F42F7CA623F28E18001FCA6C /* EndPoints.swift in Sources */,
 				F464D0F9240E7A8B00C9F783 /* CommonLabel.swift in Sources */,
 				F464D0F1240E329B00C9F783 /* UIEdgeInsets+Extensions.swift in Sources */,
 				F436133423CC87650065DC57 /* Constants.swift in Sources */,
