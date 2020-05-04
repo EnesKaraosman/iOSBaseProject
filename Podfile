@@ -11,7 +11,6 @@ target 'BaseProject' do
   
   pod 'Bagel', '~>  1.3.2' # https://github.com/yagiz/Bagel SPM+ Problem
   pod 'AlamofireNetworkActivityLogger', '~> 3.0' # https://github.com/konkab/AlamofireNetworkActivityLogger SPM+ Problem
-  pod 'Kingfisher' # https://github.com/onevcat/Kingfisher SPM+ Problem
   pod 'SCLAlertView' # https://github.com/vikmeup/SCLAlertView-Swift SPM+ Problem
 
 end

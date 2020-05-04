@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import Kingfisher
 import LBTATools
+import SDWebImage
 
 class GenericListController: LBTAListController<ArticleCell, Article>, UICollectionViewDelegateFlowLayout {
 
@@ -54,7 +54,7 @@ class ArticleCell: LBTAListCell<Article> {
         didSet {
             titleLabel.text = item.name
             guard let imageUrl = URL(string: item.avatar ?? "") else { return }
-            articleImageView.kf.setImage(with: imageUrl)
+            articleImageView.sd_setImage(with: imageUrl, completed: nil)
         }
     }
     

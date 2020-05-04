@@ -62,6 +62,7 @@
 		F469A2FD23C86C9200B68D27 /* GenericListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2FC23C86C9200B68D27 /* GenericListViewModel.swift */; };
 		F469A2FF23C873B500B68D27 /* Timer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A2FE23C873B500B68D27 /* Timer+Extensions.swift */; };
 		F469A30123C8BADD00B68D27 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469A30023C8BADD00B68D27 /* UIApplication+Extensions.swift */; };
+		F477DCCD246015A500BCFD7D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F477DCCC246015A500BCFD7D /* SDWebImage */; };
 		F488D9BC237D358B0031D7FB /* CommonTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488D9BB237D358B0031D7FB /* CommonTextView.swift */; };
 		F48CE0A623C4A747004D23CD /* KeyValueStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48CE0A523C4A747004D23CD /* KeyValueStorage.swift */; };
 		F48EC1F82354B904002E36D3 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48EC1F72354B904002E36D3 /* Article.swift */; };
@@ -193,6 +194,7 @@
 				F4D45B65243C7A72005D4A6D /* RxSwift in Frameworks */,
 				F4D45B44243C6827005D4A6D /* SnapKit in Frameworks */,
 				F4D45B4C243C6FCF005D4A6D /* NVActivityIndicatorView in Frameworks */,
+				F477DCCD246015A500BCFD7D /* SDWebImage in Frameworks */,
 				F4D45B52243C72C8005D4A6D /* XCoordinator in Frameworks */,
 				F4D45B58243C73F6005D4A6D /* Toast in Frameworks */,
 				F4D45B55243C734A005D4A6D /* AloeStackView in Frameworks */,
@@ -514,6 +516,7 @@
 				F4D45B62243C7A72005D4A6D /* RxCocoa */,
 				F4D45B64243C7A72005D4A6D /* RxSwift */,
 				F45A11BC243C9A7800469C3A /* EKNetworkModule */,
+				F477DCCC246015A500BCFD7D /* SDWebImage */,
 			);
 			productName = BaseProject;
 			productReference = F45B88D22335406300E5A6F9 /* BaseProject.app */;
@@ -555,6 +558,7 @@
 				F4D45B5C243C7936005D4A6D /* XCRemoteSwiftPackageReference "Localize-Swift" */,
 				F4D45B5F243C7A72005D4A6D /* XCRemoteSwiftPackageReference "RxSwift" */,
 				F45A11BB243C9A7800469C3A /* XCRemoteSwiftPackageReference "EKNetworkModule" */,
+				F477DCCB246015A500BCFD7D /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = F45B88D32335406300E5A6F9 /* Products */;
 			projectDirPath = "";
@@ -939,6 +943,14 @@
 				minimumVersion = 0.0.7;
 			};
 		};
+		F477DCCB246015A500BCFD7D /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.3;
+			};
+		};
 		F4D45B42243C6827005D4A6D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -1018,6 +1030,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F45A11BB243C9A7800469C3A /* XCRemoteSwiftPackageReference "EKNetworkModule" */;
 			productName = EKNetworkModule;
+		};
+		F477DCCC246015A500BCFD7D /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F477DCCB246015A500BCFD7D /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
 		};
 		F4D45B43243C6827005D4A6D /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
