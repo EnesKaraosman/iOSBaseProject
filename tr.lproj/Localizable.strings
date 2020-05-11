@@ -21,5 +21,8 @@
 "Choose preferred theme" = "Tema tercihinizi seçiniz";
 "Theme" = "Tema";
 
+"Connected to Internet" = "İnternete bağlanıldı.";
+"Internet Connection Lost" = "İnternet bağlantısı yok.";
+
 "Light" = "Açık";
 "Dark" = "Koyu";

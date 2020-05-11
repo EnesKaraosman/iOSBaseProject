@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import EKNetworkModule
 
 class GenericListBuilder {
     class func build() -> GenericListController {
-        let viewModel = GenericListViewModel(api: APIClient.instance)
+        let viewModel = GenericListViewModel(api: EKAPIClient.instance)
         let view = GenericListController(viewModel: viewModel)
         return view
     }
