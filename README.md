@@ -41,9 +41,10 @@ You're gonna start to a new project and fed up doing same initialization every t
 ------
 
 ## - Database
-* ✅ UserDefaults (propertyWrapper)
-* CoreData 
-* Realm    
+* ✅ UserDefaults via propertyWrapper (Recomended max. limit is 1MB)
+* Database (CoreData, Realm)
+* Keychain (OAuth token, User’s sensitive, secret data) [KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess)
+* Files on disk (Images, videos, PDF..)
 
 ------
 
