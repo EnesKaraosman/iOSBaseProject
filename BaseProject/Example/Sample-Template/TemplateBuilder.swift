@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import EKNetworkModule
 
 class TemplateBuilder {
     class func build() -> TemplateViewController {
-        let viewModel = TemplateViewModel(api: APIClient.instance)
+        let viewModel = TemplateViewModel(api: EKAPIClient.instance)
         let view = TemplateViewController(viewModel: viewModel)
         return view
     }

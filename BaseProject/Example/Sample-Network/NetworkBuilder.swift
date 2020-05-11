@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import EKNetworkModule
 
 class NetworkBuilder {
     class func build() -> NetworkViewController {
-        let viewModel = NetworkViewModel(api: APIClient.instance)
+        let viewModel = NetworkViewModel(api: EKAPIClient.instance)
         let view = NetworkViewController(viewModel: viewModel)
         return view
     }

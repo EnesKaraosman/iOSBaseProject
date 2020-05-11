@@ -13,6 +13,7 @@ class CommonLabel: UILabel {
     static var title = CommonLabel(font: .title)
     static var body = CommonLabel(font: .body)
     
+    // Uses static color, be carefull. (you may miss themeing)
     init(font: UIFont = .body, text: String? = nil, color: UIColor = #colorLiteral(red: 0.06934740394, green: 0.06894309819, blue: 0.06966326386, alpha: 1), alignment: NSTextAlignment = .left) {
         super.init(frame: .zero)
         self.font = font
@@ -42,9 +43,35 @@ class CommonLabel: UILabel {
         self.theme_textColor = GlobalPicker.textColor
     }
     
-    func makeMultiline() {
+    func makeMultiline() -> CommonLabel {
         self.numberOfLines = 0
         self.lineBreakMode = .byWordWrapping
+        return self
+    }
+    
+}
+
+// MARK: - Chainable initializers
+extension CommonLabel {
+    
+    func setText(text: String) -> CommonLabel {
+        self.text = text
+        return self
+    }
+    
+    func setFont(font: UIFont) -> CommonLabel {
+        self.font = font
+        return self
+    }
+    
+    func setTextColor(color: UIColor) -> CommonLabel {
+        self.textColor = color
+        return self
+    }
+    
+    func setTextAlignment(alignment: NSTextAlignment) -> CommonLabel {
+        self.textAlignment = alignment
+        return self
     }
     
 }

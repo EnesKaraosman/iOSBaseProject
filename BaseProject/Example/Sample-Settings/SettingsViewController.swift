@@ -10,7 +10,7 @@ import UIKit
 import AloeStackView
 import LBTATools
 import Localize_Swift
-import Toast_Swift
+import Toast
 
 class SettingsViewController: BaseViewController<SettingsViewModel> {
     
@@ -115,11 +115,7 @@ class SelectionRow: CommonView {
     
     lazy var titleLabel = CommonLabel()
     
-    lazy var valueLabel: CommonLabel = {
-        let lbl = CommonLabel()
-        lbl.font = .init(.body, .semiBold)
-        return lbl
-    }()
+    lazy var valueLabel = CommonLabel().setFont(font: .init(.body, .semiBold))
     
     override func commonInit() {
         super.commonInit()

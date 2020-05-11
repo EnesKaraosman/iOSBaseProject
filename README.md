@@ -10,31 +10,30 @@ You're gonna start to a new project and fed up doing same initialization every t
 [Network.md](https://github.com/EnesKaraosman/iOSBaseProject/blob/master/BaseProject/Network/NetworkUsage.md) file exist in project's network module, for detail usage you can play with it.
 #### Parsing
 
-* SwiftyJSON ✅
-* Codable ✅
+* ✅ SwiftyJSON
+* ✅ Codable
 
 #### Reactive
-* Rx Extensions (versions) ✅
-* Moya: Consider using enumeration cases for api (service interfaces) ref: ios-base-swift-master/Services ❌
+* ✅ Rx Extensions (versions)
+* ❌ Moya: Consider using enumeration cases for api (service interfaces) ref: ios-base-swift-master/Services
 
 #### Tracking network activities
-*  External app: Bagel ✅
-*  Internal pod: AlamofireNetworkActivityLogger ✅
+* ✅ External app: Bagel
+* ✅ Internal pod: AlamofireNetworkActivityLogger
 
 #### Settings.bundle custom settings
-* Add support for switching Environment from iOS > Settings > App > Environments ✅
+* ✅ Add support for switching Environment from iOS > Settings > App > Environments
+[Medium Blog about Settings.bundle (TR)](https://medium.com/mobiletech/settings-bundle-on-ios-67329d12cff4)
 
 ------
 
 ## - Clean Architecture
 
 #### Design Pattern
-* MVVM ✅
-* MVP
-* VIPER
+* ✅ MVVM
 
 #### Coordinator
-* XCoordinator ✅
+* ✅ XCoordinator
 
 #### Dependency Injection
 * Resolver: https://github.com/hmlongco/Resolver
@@ -42,9 +41,10 @@ You're gonna start to a new project and fed up doing same initialization every t
 ------
 
 ## - Database
-* UserDefaults (propertyWrapper) ✅
-* CoreData 
-* Realm    
+* ✅ UserDefaults via propertyWrapper (Recomended max. limit is 1MB)
+* Database (CoreData, Realm)
+* Keychain (OAuth token, User’s sensitive, secret data) [KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess)
+* Files on disk (Images, videos, PDF..)
 
 ------
 

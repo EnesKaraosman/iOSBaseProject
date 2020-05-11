@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import EKNetworkModule
 
 class SettingsBuilder {
     class func build() -> SettingsViewController {
-        let viewModel = SettingsViewModel(api: APIClient.instance)
+        let viewModel = SettingsViewModel(api: EKAPIClient.instance)
         let view = SettingsViewController(viewModel: viewModel)
         return view
     }

@@ -7,39 +7,40 @@
 //
 
 import UIKit
-import SnapKit
-import Toast_Swift
-import Highlightr
+import Toast
+import SafariServices
 
 class NetworkViewController: BaseViewController<NetworkViewModel> {
-    
+
     private lazy var codeLabel: CommonLabel = {
-        
-        let v = Highlightr()
-        v!.setTheme(to: "paraiso-dark")
-        
-        let lbl = CommonLabel()
-        lbl.attributedText = v?.highlight("""
-        self.viewModel?.api?.executeGET(
-            endPoint: "articles",
-            success: { (articles: [Article]) in
-                print(articles.count)
-            },
-            failure: { (error) in
-                print(error.localizedDescription)
-            }
-        )
-        """, as: "Swift", fastRender: true)
-        
-        lbl.numberOfLines = 0
-        return lbl
+        return CommonLabel()
+            .setText(text: """
+                self.viewModel?.api?.executeGET(
+                    endPoint: "articles",
+                    success: { (articles: [Article]) in
+                        print(articles.count)
+                    },
+                    failure: { (error) in
+                        print(error.localizedDescription)
+                    }
+                )
+            """)
+            .makeMultiline()
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.viewModel.networkTest(onSuccess: { (articles) in
             self.view.makeToast("\(articles.count)")
         })
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            let web = SFSafariViewController(url: URL(string: "https://github.com/EnesKaraosman/EKNetworkModule/blob/master/README.md")!)
+            web.modalPresentationStyle = .fullScreen
+            self.present(web, animated: true, completion: nil)
+        }
+        
     }
     
     override func setupUI() {
