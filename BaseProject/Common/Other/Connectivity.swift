@@ -6,11 +6,12 @@
 //  Copyright © 2020 Enes Karaosman. All rights reserved.
 //
 
+import UIKit
 import Alamofire
 // If you dont want this helper class to depend on Alamofire, find new one :D
 // You can switch to this one https://github.com/ashleymills/Reachability.swift
 
-class Connectivity {
+class Connectivity: NSObject {
     
     let manager = NetworkReachabilityManager()
     static let shared = Connectivity()
@@ -27,7 +28,27 @@ class Connectivity {
         }
     }
     
-    private init() { }
+    override private init() { }
+    
+}
+
+extension Connectivity: UIApplicationDelegate {
+    
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
+    ) -> Bool {
+
+        Connectivity.shared.listener = { state in
+            guard let nv = UIApplication.shared.windows.first?.rootViewController as? UINavigationController else { return }
+            nv.viewControllers.first?.view.makeToast(
+                Connectivity.shared.isConnectedToInternet ? "Connected to Internet".localized() : "Internet Connection Lost".localized()
+            )
+        }
+        Log.i("ConnectivityAppDelegate didFinishLaunchingWithOptions")
+        
+        return true
+    }
     
 }
 

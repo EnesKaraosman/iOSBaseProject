@@ -12,55 +12,6 @@ import Bagel
 import SwiftTheme
 import EKNetworkModule
 
-// MARK: - Network
-
-// Parsing
-/// ✅ SwiftyJSON
-/// ✅ Codable
-
-// Reactive
-/// ✅ Rx Extensions (versions)
-/// ⁉️ Moya: Consider using enumeration cases for api (service interfaces) ref: ios-base-swift-master/Services
-
-// Tracking network activities
-///  ✅ External app: Bagel
-///  ✅ Internal pod: AlamofireNetworkActivityLogger
-
-// ✅ Settings Bundle Environment switching like Production, Development
-
-/********************************************************************/
-
-// MARK: - Clean Architecture
-
-// Design Pattern
-/// ✅ MVVM
-
-// Coordinator
-/// ✅ XCoordinator https://github.com/quickbirdstudios/XCoordinator
-
-// Dependency Injection
-/// Resolver: https://github.com/hmlongco/Resolver
-
-/********************************************************************/
-
-// MARK: - Storage
-/// ✅ UserDefaults (propertyWrapper) (Recomended max. limit is 1MB)
-/// Databases (CoreData, Realm)
-/// Keychain (OAuth token, User’s sensitive, secret data) https://github.com/kishikawakatsumi/KeychainAccess
-/// Files on disk (Images, videos, PDF..)
-
-/********************************************************************/
-
-// MARK: - Helper, Util
-/// ✅ Logger (May be used with analitycs services)
-/// ✅ Localization
-/// ✅ Styler (TextStyle, FontManager)
-/// ✅ Reusable (Identifiable)
-/// ✅ Loading Indicator integration
-/// ✅ SwiftLint
-/// ✅ ThemeManager
-/// ✅ Configuration File (Fonts, Colors, EnvironmentURLs..)
-
 // Common & Extensions
 
 /// Extensions
@@ -80,19 +31,6 @@ import EKNetworkModule
 // Push Notification Manager
 // Icons: https://github.com/ranesr/SwiftIcons
 
-/// Component Factory (UI components)
-
-// MARK: - Analytics
-/// In case you want to use multiple provider, consider abstraction via https://github.com/devxoul/Umbrella
-/// AmplitudeProvider (Amplitude-iOS)
-/// AnswersProvider (Answers)
-/// AppboyProvider (Appboy-iOS-SDK)
-/// AppsFlyerProvider (AppsFlyerFramework)
-/// FirebaseProvider (Firebase/Analytics)
-/// FlurryProvider (Flurry-iOS-SDK/FabricSDK)
-/// LocalyticsProvider (Localytics)
-/// MixpanelProvider (Mixpanel)
-
 /********************************************************************/
 
 @UIApplicationMain
@@ -101,6 +39,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     private let router = AppCoordinator().strongRouter
+    
+    var features: [UIApplicationDelegate] = [
+        Connectivity.shared
+    ]
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -113,16 +55,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         self.handleNetworkActivityLogging()
         Bagel.start()
-                
-        Connectivity.shared.listener = { state in
-            guard let nv = self.window?.rootViewController as? UINavigationController else { return }
-            nv.viewControllers.first?.view.makeToast(
-                Connectivity.shared.isConnectedToInternet ? "Connected to Internet".localized() : "Internet Connection Lost".localized()
-            )
+        
+        features.forEach {
+            _ = $0.application?(application, didFinishLaunchingWithOptions: launchOptions)
+            // If initialization gets crowded here, clean up :)
+            // https://medium.com/@kennethpoon/newbies-journey-on-cleaning-up-the-massive-appdelegate-comic-style-94008075e51d
         }
-        
-        // If initialization gets crowded here, consider using LibsManager & Configuration in a seperate place
-        
+
         return true
     }
     
