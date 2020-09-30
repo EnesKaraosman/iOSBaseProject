@@ -1012,7 +1012,7 @@
 			repositoryURL = "https://github.com/marmelroy/Localize-Swift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.1.0;
+				minimumVersion = 3.2.0;
 			};
 		};
 		F4D45B5F243C7A72005D4A6D /* XCRemoteSwiftPackageReference "RxSwift" */ = {
