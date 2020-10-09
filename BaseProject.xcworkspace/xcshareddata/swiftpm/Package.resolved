@@ -83,15 +83,6 @@
         }
       },
       {
-        "package": "SwiftTheme",
-        "repositoryURL": "https://github.com/wxxsw/SwiftTheme",
-        "state": {
-          "branch": null,
-          "revision": "a60c374504c6c7fb1b556bf8ca96b3ab5563fbfd",
-          "version": "0.5.2"
-        }
-      },
-      {
         "package": "SwiftyJSON",
         "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
         "state": {

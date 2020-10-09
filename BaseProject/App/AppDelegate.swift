@@ -9,7 +9,6 @@
 import UIKit
 import AlamofireNetworkActivityLogger
 import Bagel
-import SwiftTheme
 import EKNetworkModule
 
 // Common & Extensions
@@ -47,8 +46,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        self.setupTheme()
-        
         self.setupWindow()
         
         self.setupNetworkEnvironment()
@@ -78,14 +75,6 @@ extension AppDelegate {
         let baseUrl = Configurations.Environment.selected.url
         Log.i(baseUrl)
         EKAPIClient.instance.networkEnvironment = EKNetworkEnvironment(baseUrl: baseUrl)
-    }
-    
-    private func setupTheme() {
-        MyThemes.restoreLastTheme()
-        
-        UINavigationBar.appearance().theme_tintColor = GlobalPicker.barTextColor
-        UINavigationBar.appearance().theme_barTintColor = GlobalPicker.barTintColor
-        UIApplication.shared.theme_setStatusBarStyle(GlobalPicker.statusBarStyle, animated: true)
     }
     
     private func handleNetworkActivityLogging() {

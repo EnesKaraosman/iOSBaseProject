@@ -2,27 +2,26 @@
 You're gonna start to a new project and fed up doing same initialization every time.
 
 
-
-# *TODO LIST*
+# *Features*
 
 ## - Network
 
 [Network.md](https://github.com/EnesKaraosman/iOSBaseProject/blob/master/BaseProject/Network/NetworkUsage.md) file exist in project's network module, for detail usage you can play with it.
 #### Parsing
 
-* ✅ SwiftyJSON
-* ✅ Codable
+- [x] SwiftyJSON
+- [x] Codable
 
 #### Reactive
-* ✅ Rx Extensions (versions)
-* ❌ Moya: Consider using enumeration cases for api (service interfaces) ref: ios-base-swift-master/Services
+- [x] Rx Extensions (versions)
+- [] Moya: Consider using enumeration cases for api (service interfaces) ref: ios-base-swift-master/Services
 
 #### Tracking network activities
-* ✅ External app: Bagel
-* ✅ Internal pod: AlamofireNetworkActivityLogger
+- [x] External app: Bagel
+- [x] Internal pod: AlamofireNetworkActivityLogger
 
 #### Settings.bundle custom settings
-* ✅ Add support for switching Environment from iOS > Settings > App > Environments
+- [x] Add support for switching Environment from iOS > Settings > App > Environments
 [Medium Blog about Settings.bundle (TR)](https://medium.com/mobiletech/settings-bundle-on-ios-67329d12cff4)
 
 ------
@@ -30,10 +29,10 @@ You're gonna start to a new project and fed up doing same initialization every t
 ## - Clean Architecture
 
 #### Design Pattern
-* ✅ MVVM
+- [x] MVVM
 
 #### Coordinator
-* ✅ XCoordinator
+- [x] XCoordinator
 
 #### Dependency Injection
 * Resolver: https://github.com/hmlongco/Resolver
@@ -41,10 +40,10 @@ You're gonna start to a new project and fed up doing same initialization every t
 ------
 
 ## - Database
-* ✅ UserDefaults via propertyWrapper (Recomended max. limit is 1MB)
-* Database (CoreData, Realm)
-* Keychain (OAuth token, User’s sensitive, secret data) [KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess)
-* Files on disk (Images, videos, PDF..)
+- [x] UserDefaults via propertyWrapper (Recomended max. limit is 1MB)
+- [] Database (CoreData, Realm)
+- [] Keychain (OAuth token, User’s sensitive, secret data) [KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess)
+- [] Files on disk (Images, videos, PDF..)
 
 ------
 
@@ -63,7 +62,9 @@ Scans your Localizable.strings then generates Helper struct to use, ex: Localiza
 
 #### ✅ Theming
 
-Preferred library: [SwiftTheme](https://github.com/wxxsw/SwiftTheme)
+Since minimum deployment target is iOS13, we can use native dark mode support.
+
+Just create proper color assets in `Assets.xcassets` folder then ready to use.
 
 Use Common/Base UI components to avoid setting colors everywhere in app.
 In project, review files under Common/Theme folder.
@@ -105,10 +106,10 @@ You might want to integrate Anayltics service(s) in error cases?
 
 ------
 
-* ✅ Reusable (Identifiable)
-* ✅ Loading Indicator integration `LoaderPresentable.swift`
-* ✅ Configuration File (May include Fonts, Colors, EnvironmentURL..)
-* Extensions
+- [x] Reusable (Identifiable)
+- [x] Loading Indicator integration `LoaderPresentable.swift`
+- [x] Configuration File (May include Fonts, Colors, EnvironmentURL..)
+- [x] Extensions
 * Bottom bar vc, PagerStripVC
 * Constants
 * Permissions (https://github.com/ivanvorobei/SPPermissions)

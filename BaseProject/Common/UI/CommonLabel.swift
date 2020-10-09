@@ -14,7 +14,7 @@ class CommonLabel: UILabel {
     static var body = CommonLabel(font: .body)
     
     // Uses static color, be carefull. (you may miss themeing)
-    init(font: UIFont = .body, text: String? = nil, color: UIColor = #colorLiteral(red: 0.06934740394, green: 0.06894309819, blue: 0.06966326386, alpha: 1), alignment: NSTextAlignment = .left) {
+    init(font: UIFont = .body, text: String? = nil, color: UIColor = .primaryText, alignment: NSTextAlignment = .left) {
         super.init(frame: .zero)
         self.font = font
         self.text = text
@@ -39,8 +39,7 @@ class CommonLabel: UILabel {
     
     func commonInit() {
         self.font = .body
-        self.backgroundColor = .clear
-        self.theme_textColor = GlobalPicker.textColor
+//        self.theme_textColor = GlobalPicker.textColor
     }
     
 }

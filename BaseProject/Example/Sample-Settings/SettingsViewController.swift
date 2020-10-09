@@ -17,9 +17,9 @@ class SettingsViewController: BaseViewController<SettingsViewModel> {
     private lazy var stackView: AloeStackView = {
         let sv = AloeStackView()
         sv.backgroundColor = .clear
-        sv.addRows([self.languageRow, self.themeRow, self.fontRow])
+        sv.addRows([self.languageRow, self.fontRow])
         sv.setInset(
-            forRows: [self.languageRow, self.themeRow, self.fontRow],
+            forRows: [self.languageRow, self.fontRow],
             inset: .small_all_edges
         )
         return sv
@@ -51,31 +51,6 @@ class SettingsViewController: BaseViewController<SettingsViewModel> {
         return row
     }()
     
-    private lazy var themeRow: SelectionRow = {
-        let row = SelectionRow()
-        row.titleLabel.text = "Theme".localized()
-        row.valueLabel.text = MyThemes.current.title
-        row.tapHandler = { [weak self] _ in
-            
-            let actionSheet = UIAlertController(
-                title: "Theme".localized(),
-                message: "Choose preferred theme".localized(),
-                preferredStyle: UIAlertController.Style.actionSheet
-            )
-            
-            MyThemes.allCases.forEach { theme in
-                actionSheet.addAction(.init(title: theme.title, style: .default, handler: { (action) in
-                    row.valueLabel.text = theme.title
-                    MyThemes.switchTo(theme: theme)
-                }))
-            }
-            actionSheet.addAction(.init(title: "Cancel".localized(), style: .cancel, handler: nil))
-            
-            self?.present(actionSheet, animated: true, completion: nil)
-        }
-        return row
-    }()
-    
     private lazy var fontRow: SelectionRow = {
         let row = SelectionRow()
         row.titleLabel.text = "Font".localized()
@@ -93,11 +68,6 @@ class SettingsViewController: BaseViewController<SettingsViewModel> {
         }
         return row
     }()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view.theme_backgroundColor = GlobalPicker.backgroundColor
-    }
     
     override func setupUI() {
         super.setupUI()

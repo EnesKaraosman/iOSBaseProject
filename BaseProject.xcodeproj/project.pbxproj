@@ -43,8 +43,7 @@
 		F464D0EF240D490300C9F783 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0EC240D490300C9F783 /* SettingsViewModel.swift */; };
 		F464D0F1240E329B00C9F783 /* UIEdgeInsets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0F0240E329B00C9F783 /* UIEdgeInsets+Extensions.swift */; };
 		F464D0F3240E4A2400C9F783 /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0F2240E4A2400C9F783 /* CommonView.swift */; };
-		F464D0F5240E6C6800C9F783 /* MyThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0F4240E6C6800C9F783 /* MyThemes.swift */; };
-		F464D0F7240E75BF00C9F783 /* GlobalPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0F6240E75BF00C9F783 /* GlobalPicker.swift */; };
+		F464D0F5240E6C6800C9F783 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0F4240E6C6800C9F783 /* Colors.swift */; };
 		F464D0F9240E7A8B00C9F783 /* CommonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D0F8240E7A8B00C9F783 /* CommonLabel.swift */; };
 		F464D101240E992C00C9F783 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F464D100240E992C00C9F783 /* .swiftlint.yml */; };
 		F464D104240FD27200C9F783 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464D103240FD27200C9F783 /* TextStyle.swift */; };
@@ -81,7 +80,6 @@
 		F4D45B52243C72C8005D4A6D /* XCoordinator in Frameworks */ = {isa = PBXBuildFile; productRef = F4D45B51243C72C8005D4A6D /* XCoordinator */; };
 		F4D45B55243C734A005D4A6D /* AloeStackView in Frameworks */ = {isa = PBXBuildFile; productRef = F4D45B54243C734A005D4A6D /* AloeStackView */; };
 		F4D45B58243C73F6005D4A6D /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = F4D45B57243C73F6005D4A6D /* Toast */; };
-		F4D45B5B243C7713005D4A6D /* SwiftTheme in Frameworks */ = {isa = PBXBuildFile; productRef = F4D45B5A243C7713005D4A6D /* SwiftTheme */; };
 		F4D45B5E243C7936005D4A6D /* Localize_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = F4D45B5D243C7936005D4A6D /* Localize_Swift */; };
 		F4D45B61243C7A72005D4A6D /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = F4D45B60243C7A72005D4A6D /* RxRelay */; };
 		F4D45B63243C7A72005D4A6D /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F4D45B62243C7A72005D4A6D /* RxCocoa */; };
@@ -89,6 +87,7 @@
 		F4DCBC492355F52300C3D892 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4DCBC472355F52300C3D892 /* Localizable.strings */; };
 		F4DCBC4D2355F66B00C3D892 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DCBC4C2355F66B00C3D892 /* String+Extensions.swift */; };
 		F4EB9CA725309D2600E25CCC /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB9CA625309D2600E25CCC /* UIFont+Extensions.swift */; };
+		F4EB9CA92530A6BE00E25CCC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F4EB9CA82530A6BE00E25CCC /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -143,8 +142,7 @@
 		F464D0EC240D490300C9F783 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		F464D0F0240E329B00C9F783 /* UIEdgeInsets+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extensions.swift"; sourceTree = "<group>"; };
 		F464D0F2240E4A2400C9F783 /* CommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
-		F464D0F4240E6C6800C9F783 /* MyThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyThemes.swift; sourceTree = "<group>"; };
-		F464D0F6240E75BF00C9F783 /* GlobalPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalPicker.swift; sourceTree = "<group>"; };
+		F464D0F4240E6C6800C9F783 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		F464D0F8240E7A8B00C9F783 /* CommonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonLabel.swift; sourceTree = "<group>"; };
 		F464D100240E992C00C9F783 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		F464D103240FD27200C9F783 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
@@ -178,6 +176,7 @@
 		F4DCBC4B2355F56300C3D892 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4DCBC4C2355F66B00C3D892 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		F4EB9CA625309D2600E25CCC /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		F4EB9CA82530A6BE00E25CCC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FBE8AE2B618C3A9A2641B9C9 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,7 +190,6 @@
 				E1010DD2216F5F86A3CB35BD /* Pods_BaseProject.framework in Frameworks */,
 				F4D45B63243C7A72005D4A6D /* RxCocoa in Frameworks */,
 				F4D45B4F243C722B005D4A6D /* LBTATools in Frameworks */,
-				F4D45B5B243C7713005D4A6D /* SwiftTheme in Frameworks */,
 				F4D45B5E243C7936005D4A6D /* Localize_Swift in Frameworks */,
 				F4D45B65243C7A72005D4A6D /* RxSwift in Frameworks */,
 				F4D45B44243C6827005D4A6D /* SnapKit in Frameworks */,
@@ -258,6 +256,7 @@
 		F45B88C92335406300E5A6F9 = {
 			isa = PBXGroup;
 			children = (
+				F4EB9CA82530A6BE00E25CCC /* README.md */,
 				F4307D3D23DACA3D0016C8AA /* Settings.bundle */,
 				F4DCBC472355F52300C3D892 /* Localizable.strings */,
 				F45B88D42335406300E5A6F9 /* BaseProject */,
@@ -307,7 +306,6 @@
 				F469A2F423C864DB00B68D27 /* BaseViewModel.swift */,
 				F4B6977E23FFB157007585BC /* ViewModelContract.swift */,
 				F47E14D523FA8D770050C2A1 /* UI */,
-				F48B284423F56C2500EE4325 /* Theme */,
 				F464D102240FD23C00C9F783 /* TextStyle */,
 				F477DCC924600EBC00BCFD7D /* Other */,
 				F477DCC824600E9300BCFD7D /* Constants */,
@@ -442,21 +440,13 @@
 		F47E14D523FA8D770050C2A1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F464D0F4240E6C6800C9F783 /* Colors.swift */,
 				F4C4439E23827B8000D33E75 /* CommonButton.swift */,
 				F464D0F8240E7A8B00C9F783 /* CommonLabel.swift */,
 				F464D0F2240E4A2400C9F783 /* CommonView.swift */,
 				F488D9BB237D358B0031D7FB /* CommonTextView.swift */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		F48B284423F56C2500EE4325 /* Theme */ = {
-			isa = PBXGroup;
-			children = (
-				F464D0F4240E6C6800C9F783 /* MyThemes.swift */,
-				F464D0F6240E75BF00C9F783 /* GlobalPicker.swift */,
-			);
-			path = Theme;
 			sourceTree = "<group>";
 		};
 		F48EC1F62354B8F3002E36D3 /* Model */ = {
@@ -513,7 +503,6 @@
 				F4D45B51243C72C8005D4A6D /* XCoordinator */,
 				F4D45B54243C734A005D4A6D /* AloeStackView */,
 				F4D45B57243C73F6005D4A6D /* Toast */,
-				F4D45B5A243C7713005D4A6D /* SwiftTheme */,
 				F4D45B5D243C7936005D4A6D /* Localize_Swift */,
 				F4D45B60243C7A72005D4A6D /* RxRelay */,
 				F4D45B62243C7A72005D4A6D /* RxCocoa */,
@@ -557,7 +546,6 @@
 				F4D45B50243C72C8005D4A6D /* XCRemoteSwiftPackageReference "XCoordinator" */,
 				F4D45B53243C734A005D4A6D /* XCRemoteSwiftPackageReference "AloeStackView" */,
 				F4D45B56243C73F6005D4A6D /* XCRemoteSwiftPackageReference "Toast-Swift" */,
-				F4D45B59243C7713005D4A6D /* XCRemoteSwiftPackageReference "SwiftTheme" */,
 				F4D45B5C243C7936005D4A6D /* XCRemoteSwiftPackageReference "Localize-Swift" */,
 				F4D45B5F243C7A72005D4A6D /* XCRemoteSwiftPackageReference "RxSwift" */,
 				F45A11BB243C9A7800469C3A /* XCRemoteSwiftPackageReference "EKNetworkModule" */,
@@ -588,6 +576,7 @@
 				F41F938E2412469900688998 /* Spartan-SemiBold.ttf in Resources */,
 				F464D12E2410F49300C9F783 /* Raleway-Italic.ttf in Resources */,
 				F464D1212410F49300C9F783 /* Raleway-Medium.ttf in Resources */,
+				F4EB9CA92530A6BE00E25CCC /* README.md in Resources */,
 				F464D1222410F49300C9F783 /* Raleway-SemiBold.ttf in Resources */,
 				F41F938C2412469900688998 /* Spartan-Regular.ttf in Resources */,
 				F464D1252410F49300C9F783 /* Raleway-Regular.ttf in Resources */,
@@ -695,7 +684,6 @@
 				F469A2F123C7489900B68D27 /* Connectivity.swift in Sources */,
 				F4C4439F23827B8000D33E75 /* CommonButton.swift in Sources */,
 				F45B88DA2335406300E5A6F9 /* ExampleViewController.swift in Sources */,
-				F464D0F7240E75BF00C9F783 /* GlobalPicker.swift in Sources */,
 				F464D104240FD27200C9F783 /* TextStyle.swift in Sources */,
 				F41295C2235DDFBF00DD6D8C /* GenericListController.swift in Sources */,
 				F45B88EA233559EE00E5A6F9 /* Identifiable.swift in Sources */,
@@ -704,7 +692,7 @@
 				F45B88F623364F8A00E5A6F9 /* LoaderPresentable.swift in Sources */,
 				F469A2FF23C873B500B68D27 /* Timer+Extensions.swift in Sources */,
 				F436133623CC8B2D0065DC57 /* NSMutableAttributedString+Extensions.swift in Sources */,
-				F464D0F5240E6C6800C9F783 /* MyThemes.swift in Sources */,
+				F464D0F5240E6C6800C9F783 /* Colors.swift in Sources */,
 				F439F10723EBE41C00231A89 /* UIViewController+Extensions.swift in Sources */,
 				F4ABB49323E85BC200005E7B /* ExampleContainerViewModel.swift in Sources */,
 				F45B88EE23363AAB00E5A6F9 /* Log.swift in Sources */,
@@ -883,7 +871,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V4SX8Z4247;
 				INFOPLIST_FILE = BaseProject/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -903,7 +891,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V4SX8Z4247;
 				INFOPLIST_FILE = BaseProject/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1003,14 +991,6 @@
 				minimumVersion = 5.0.1;
 			};
 		};
-		F4D45B59243C7713005D4A6D /* XCRemoteSwiftPackageReference "SwiftTheme" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/wxxsw/SwiftTheme";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.5.2;
-			};
-		};
 		F4D45B5C243C7936005D4A6D /* XCRemoteSwiftPackageReference "Localize-Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/marmelroy/Localize-Swift";
@@ -1069,11 +1049,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F4D45B56243C73F6005D4A6D /* XCRemoteSwiftPackageReference "Toast-Swift" */;
 			productName = Toast;
-		};
-		F4D45B5A243C7713005D4A6D /* SwiftTheme */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F4D45B59243C7713005D4A6D /* XCRemoteSwiftPackageReference "SwiftTheme" */;
-			productName = SwiftTheme;
 		};
 		F4D45B5D243C7936005D4A6D /* Localize_Swift */ = {
 			isa = XCSwiftPackageProductDependency;

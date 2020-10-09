@@ -17,7 +17,7 @@ class GenericListController: LBTAListController<ArticleCell, Article>, UICollect
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.collectionView.theme_backgroundColor = GlobalPicker.backgroundColor
+        self.collectionView.backgroundColor = .primaryBackground
 
         viewModel?.getList(articles: { (articles) in
             self.items = articles
