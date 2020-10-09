@@ -47,6 +47,11 @@ class ExampleContainerViewModel: BaseViewModel {
                 name: "Settings".localized(),
                 systemIconName: "settings",
                 route: .settingsSample
+            ),
+            SamplePage(
+                name: "UILab".localized(),
+                systemIconName: "settings",
+                route: .uiLab
             )
         ]
     }

@@ -14,6 +14,7 @@ enum AppRoute: Route {
     case genericListSample
     case templateSample
     case settingsSample
+    case uiLab
 }
 
 class AppCoordinator: NavigationCoordinator<AppRoute> {
@@ -37,6 +38,8 @@ class AppCoordinator: NavigationCoordinator<AppRoute> {
             return .present(TemplateBuilder.build())
         case .settingsSample:
             return .present(SettingsBuilder.build())
+        case .uiLab:
+            return .present(UILabViewController())
         }
     }
     

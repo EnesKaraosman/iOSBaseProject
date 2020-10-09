@@ -88,6 +88,7 @@
 		F4DCBC4D2355F66B00C3D892 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DCBC4C2355F66B00C3D892 /* String+Extensions.swift */; };
 		F4EB9CA725309D2600E25CCC /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB9CA625309D2600E25CCC /* UIFont+Extensions.swift */; };
 		F4EB9CA92530A6BE00E25CCC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F4EB9CA82530A6BE00E25CCC /* README.md */; };
+		F4EB9CAF2530E29A00E25CCC /* UILabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB9CAE2530E29900E25CCC /* UILabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -177,6 +178,7 @@
 		F4DCBC4C2355F66B00C3D892 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		F4EB9CA625309D2600E25CCC /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 		F4EB9CA82530A6BE00E25CCC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F4EB9CAE2530E29900E25CCC /* UILabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabViewController.swift; sourceTree = "<group>"; };
 		FBE8AE2B618C3A9A2641B9C9 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -324,6 +326,7 @@
 				F41295C3235DE94900DD6D8C /* Sample-Network */,
 				F4BAC71323CC6637005014EB /* Sample-Template */,
 				F464D0E3240D47B000C9F783 /* Sample-Settings */,
+				F4EB9CAD2530E26A00E25CCC /* Sample-UILab */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -473,6 +476,14 @@
 				F436133923CCAF110065DC57 /* TemplateViewModel.swift */,
 			);
 			path = "Sample-Template";
+			sourceTree = "<group>";
+		};
+		F4EB9CAD2530E26A00E25CCC /* Sample-UILab */ = {
+			isa = PBXGroup;
+			children = (
+				F4EB9CAE2530E29900E25CCC /* UILabViewController.swift */,
+			);
+			path = "Sample-UILab";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -690,6 +701,7 @@
 				F439F10923ED36C600231A89 /* ErrorPresentationType.swift in Sources */,
 				F488D9BC237D358B0031D7FB /* CommonTextView.swift in Sources */,
 				F45B88F623364F8A00E5A6F9 /* LoaderPresentable.swift in Sources */,
+				F4EB9CAF2530E29A00E25CCC /* UILabViewController.swift in Sources */,
 				F469A2FF23C873B500B68D27 /* Timer+Extensions.swift in Sources */,
 				F436133623CC8B2D0065DC57 /* NSMutableAttributedString+Extensions.swift in Sources */,
 				F464D0F5240E6C6800C9F783 /* Colors.swift in Sources */,
