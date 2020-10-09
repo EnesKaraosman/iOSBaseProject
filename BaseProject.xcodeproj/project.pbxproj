@@ -88,6 +88,7 @@
 		F4D45B65243C7A72005D4A6D /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F4D45B64243C7A72005D4A6D /* RxSwift */; };
 		F4DCBC492355F52300C3D892 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4DCBC472355F52300C3D892 /* Localizable.strings */; };
 		F4DCBC4D2355F66B00C3D892 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DCBC4C2355F66B00C3D892 /* String+Extensions.swift */; };
+		F4EB9CA725309D2600E25CCC /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB9CA625309D2600E25CCC /* UIFont+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -176,6 +177,7 @@
 		F4DCBC482355F52300C3D892 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4DCBC4B2355F56300C3D892 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4DCBC4C2355F66B00C3D892 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		F4EB9CA625309D2600E25CCC /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 		FBE8AE2B618C3A9A2641B9C9 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -394,6 +396,7 @@
 				F42F7CA723F2BC2D001FCA6C /* UIColor+Extensions.swift */,
 				F44B9B982407931300B0C36E /* UIImage+Extensions.swift */,
 				F464D0F0240E329B00C9F783 /* UIEdgeInsets+Extensions.swift */,
+				F4EB9CA625309D2600E25CCC /* UIFont+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -688,6 +691,7 @@
 				F439F10523EBE37000231A89 /* UIView+Extensions.swift in Sources */,
 				F4BAC71223CC632B005014EB /* BaseViewController.swift in Sources */,
 				F41F937B24123E4D00688998 /* FontPickerController.swift in Sources */,
+				F4EB9CA725309D2600E25CCC /* UIFont+Extensions.swift in Sources */,
 				F469A2F123C7489900B68D27 /* Connectivity.swift in Sources */,
 				F4C4439F23827B8000D33E75 /* CommonButton.swift in Sources */,
 				F45B88DA2335406300E5A6F9 /* ExampleViewController.swift in Sources */,

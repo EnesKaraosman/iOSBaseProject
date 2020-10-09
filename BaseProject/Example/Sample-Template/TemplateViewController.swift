@@ -21,7 +21,7 @@ class TemplateViewController: BaseViewController<TemplateViewModel> {
             
             4) Also make sure dependent files/modules exist (it dependends on some classes like APIClient, BaseViewModel etc.)
          """)
-            .makeMultiline()
+            .multiLined()
         
     }()
     

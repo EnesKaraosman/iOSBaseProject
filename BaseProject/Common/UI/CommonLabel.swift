@@ -43,34 +43,63 @@ class CommonLabel: UILabel {
         self.theme_textColor = GlobalPicker.textColor
     }
     
-    func makeMultiline() -> CommonLabel {
-        self.numberOfLines = 0
-        self.lineBreakMode = .byWordWrapping
-        return self
-    }
-    
 }
 
 // MARK: - Chainable initializers
 extension CommonLabel {
     
-    func setText(text: String) -> CommonLabel {
+    /// Sets the text.
+    func setText(text: String) -> Self {
         self.text = text
         return self
     }
     
-    func setFont(font: UIFont) -> CommonLabel {
+    /// Sets the default font for text in the view.
+    func font(_ font: UIFont) -> Self {
         self.font = font
         return self
     }
     
-    func setTextColor(color: UIColor) -> CommonLabel {
+    /// Sets the color of the text displayed by this view.
+    func foregroundColor(color: UIColor) -> Self {
         self.textColor = color
         return self
     }
     
-    func setTextAlignment(alignment: NSTextAlignment) -> CommonLabel {
+    /// Applies a bold font weight to the text.
+    func bold() -> Self {
+        self.font = .init(.custom(self.font.pointSize), .bold)
+        return self
+    }
+    
+    /// Applies italics to the text.
+    func italic() -> Self {
+        self.font = self.font.italic
+        return self
+    }
+    
+    /// Sets the font weight of the text.
+    func fontWeight(_ weight: FontWeight) -> Self {
+        self.font = .init(.custom(self.font.pointSize), weight)
+        return self
+    }
+    
+    /// Sets the backgroundColor of the text displayed by this view.
+    func backgroundColor(color: UIColor) -> Self {
+        self.backgroundColor = color
+        return self
+    }
+    
+    /// Sets the alignment of multiline text in this view.
+    func setTextAlignment(alignment: NSTextAlignment) -> Self {
         self.textAlignment = alignment
+        return self
+    }
+    
+    /// Makes label multiline with the given lineBreakMode.
+    func multiLined(lineBreakMode: NSLineBreakMode = .byWordWrapping) -> Self {
+        self.numberOfLines = 0
+        self.lineBreakMode = lineBreakMode
         return self
     }
     

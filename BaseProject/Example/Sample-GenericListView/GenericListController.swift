@@ -48,7 +48,7 @@ class ArticleCell: LBTAListCell<Article> {
     
     private lazy var articleImageView = CircularImageView(width: 50)
     
-    private lazy var titleLabel = CommonLabel().setFont(font: .init(.body, .semiBold))
+    private lazy var titleLabel = CommonLabel().font(.init(.body, .semiBold))
     
     override var item: Article! {
         didSet {

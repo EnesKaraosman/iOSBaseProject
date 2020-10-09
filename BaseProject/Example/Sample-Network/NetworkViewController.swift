@@ -25,7 +25,7 @@ class NetworkViewController: BaseViewController<NetworkViewModel> {
                     }
                 )
             """)
-            .makeMultiline()
+            .multiLined()
     }()
     
     override func viewDidLoad() {
