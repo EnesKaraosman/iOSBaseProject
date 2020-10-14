@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E1010DD2216F5F86A3CB35BD /* Pods_BaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10597F97009A2EC1A100AC08 /* Pods_BaseProject.framework */; };
+		F4060BAF2536DF020029FA5F /* CommonStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4060BAE2536DF020029FA5F /* CommonStackView.swift */; };
 		F41295C2235DDFBF00DD6D8C /* GenericListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41295C1235DDFBF00DD6D8C /* GenericListController.swift */; };
 		F41F937B24123E4D00688998 /* FontPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F937A24123E4D00688998 /* FontPickerController.swift */; };
 		F41F93862412469900688998 /* Spartan-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F41F937D2412469900688998 /* Spartan-Medium.ttf */; };
@@ -107,6 +108,7 @@
 /* Begin PBXFileReference section */
 		10597F97009A2EC1A100AC08 /* Pods_BaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AD1D797168504577404381D /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
+		F4060BAE2536DF020029FA5F /* CommonStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStackView.swift; sourceTree = "<group>"; };
 		F41295C1235DDFBF00DD6D8C /* GenericListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericListController.swift; sourceTree = "<group>"; };
 		F41F937A24123E4D00688998 /* FontPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontPickerController.swift; sourceTree = "<group>"; };
 		F41F937D2412469900688998 /* Spartan-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spartan-Medium.ttf"; sourceTree = "<group>"; };
@@ -448,6 +450,7 @@
 				F464D0F8240E7A8B00C9F783 /* CommonLabel.swift */,
 				F464D0F2240E4A2400C9F783 /* CommonView.swift */,
 				F488D9BB237D358B0031D7FB /* CommonTextView.swift */,
+				F4060BAE2536DF020029FA5F /* CommonStackView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -532,7 +535,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Enes Karaosman";
 				TargetAttributes = {
 					F45B88D12335406300E5A6F9 = {
@@ -720,6 +723,7 @@
 				F464D0F9240E7A8B00C9F783 /* CommonLabel.swift in Sources */,
 				F464D0F1240E329B00C9F783 /* UIEdgeInsets+Extensions.swift in Sources */,
 				F436133423CC87650065DC57 /* Constants.swift in Sources */,
+				F4060BAF2536DF020029FA5F /* CommonStackView.swift in Sources */,
 				F48CE0A623C4A747004D23CD /* KeyValueStorage.swift in Sources */,
 				F439F10323EBE2A500231A89 /* NSAttributedString+Extensions.swift in Sources */,
 				F436133A23CCAF110065DC57 /* TemplateViewController.swift in Sources */,
@@ -786,6 +790,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -847,6 +852,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

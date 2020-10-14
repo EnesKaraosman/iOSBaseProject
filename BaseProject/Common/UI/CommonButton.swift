@@ -89,6 +89,12 @@ public class CommonButton: UIButton {
         }
     }
     
+    public init(configure: @escaping (CommonButton) -> Void) {
+        super.init(frame: .zero)
+        commonInit()
+        configure(self)
+    }
+    
     public init(title: String, action: @escaping TapHandler) {
         super.init(frame: .zero)
         commonInit()

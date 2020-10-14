@@ -11,19 +11,18 @@ import SnapKit
 
 class UILabViewController: UIViewController {
 
-    lazy var button: CommonButton = {
-        let btn = CommonButton(title: "Tap") {
+    lazy var button: CommonButton = CommonButton {
+        $0.setTitle("Tap", for: .normal)
+        $0.setTitleColor(.white, for: .normal)
+        $0.setTitleColor(UIColor.white.withAlphaComponent(0.8), for: .highlighted)
+        $0.setTitleColor(UIColor.white.withAlphaComponent(0.5), for: .disabled)
+        $0.normalBackgroundColor = .systemOrange
+        $0.highlightedBackgroundColor = UIColor.systemOrange.withAlphaComponent(0.5)
+        $0.disabledBackgroundColor = .lightGray
+        $0.tapHandler = {
             print("I am tapped!!")
         }
-        btn.setTitleColor(.white, for: .normal)
-        btn.setTitleColor(UIColor.white.withAlphaComponent(0.8), for: .highlighted)
-        btn.setTitleColor(UIColor.white.withAlphaComponent(0.5), for: .disabled)
-        btn.normalBackgroundColor = .systemOrange
-        btn.highlightedBackgroundColor = UIColor.systemOrange.withAlphaComponent(0.5)
-        btn.disabledBackgroundColor = .lightGray
-        
-        return btn
-    }()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

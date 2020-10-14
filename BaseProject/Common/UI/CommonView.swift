@@ -21,6 +21,12 @@ class CommonView: UIView {
         super.init(coder: coder)
         self.commonInit()
     }
+    
+    public init(configure: @escaping (CommonView) -> Void) {
+        super.init(frame: .zero)
+        commonInit()
+        configure(self)
+    }
         
     @objc private func selfTapped() {
         self.tapHandler?(self)
