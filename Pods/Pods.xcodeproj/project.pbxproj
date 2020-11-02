@@ -15,284 +15,285 @@
 			dependencies = (
 			);
 			name = SwiftLint;
-			productName = SwiftLint;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		00FA97D56201027AEB1C7692A2C3CF8B /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07745315940D102E1158D890A6C5EB8E /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0419772A87B16DB7DCF405A9E77D671F /* Protector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78802035A9BCAF0F3B17D1683C271390 /* Protector.swift */; };
-		06507A26118BA5ACFBBC8C225776920E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733D1CBA6ED27ACA077109E1578DA963 /* Validation.swift */; };
-		08E0CA2B1EAE1FFE92723E86406FE05F /* BagelRequestPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 3827ED89675832CBE4BFF4505434B28C /* BagelRequestPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09761755DC03D52192CDD9EF83D9A238 /* NetworkActivityLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9945482AA6E39EE0D0726ED981BD4645 /* NetworkActivityLogger.swift */; };
-		0AC5096478FA7A8F544ACDE7BD3A2EE7 /* BagelURLSessionInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 9359EC00E7D9C954D4B1545A2F16EE43 /* BagelURLSessionInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0AE06C3AEA6CA45342BA703230ABD2CB /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CD180B3F88F6F4ACA55C5384B4D188 /* CachedResponseHandler.swift */; };
-		0CC43FF0E31AA320ACFEB0FE6239DF34 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1768EAF91F11CD4FE62F38640492283 /* ServerTrustEvaluation.swift */; };
-		0DD272B266898FB266A72F049FB4F787 /* AlamofireNetworkActivityLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9C1A5F8BA1B2356F06EB3A9FDBF055 /* AlamofireNetworkActivityLogger-dummy.m */; };
-		13457FE4E607509A3B9527B0711033D5 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39582ED343F21665CB7A7AEC73BBE0E4 /* ResponseSerialization.swift */; };
-		14AB7976E100075ADEA0AB1DB833E72D /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99689CCF6B3F3B64E4FF6088199CE641 /* ParameterEncoding.swift */; };
-		16208A7953A067D01BFC0F47811C76C8 /* BagelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B38E85204EECD81279DC25B5D92A7D /* BagelController.m */; };
-		17578ED859932D4CD449278FE40289D9 /* BagelRequestInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 799977932A0C023417EADB47E56776FC /* BagelRequestInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		17953A9CF2E354B3E69B9ABC2F367AD9 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11CA9960FFE24225CEDC6C3E112811C /* AFError.swift */; };
-		185525B192AF43D134E3F3908B2C43FA /* BagelBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FFE88519D6572CEB0AC824C39A7C24 /* BagelBrowser.m */; };
-		243D94842FD86814747B6688CE03281B /* Bagel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C761F4A252E3C28905C10E27FA9D6322 /* Bagel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		298E4F1A7F3DFD1F512EF7561C18CD20 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DE5E89712092C92F230B471272E907 /* SCLAlertView.swift */; };
-		3B1CFEC87BC2B672C5F86D8A045A4F36 /* BagelBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF2D196E76167589E84D3FD23D086F9 /* BagelBaseModel.m */; };
-		3B88E9D835489F192E3D7A40D18E20BD /* BagelConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0DFD8B7EED48922E4F7719DC93945B /* BagelConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E0F35F82CEE931D8FF4657FA5CBEDF0 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA85D387C850093F9098E69FBC7030E /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4082513A35C682F2193D002C80F72B79 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AB41B2DADA2E4426F03F9218202689 /* Result+Alamofire.swift */; };
-		40C2D67B05ABBF372B7DAFB94669B2AE /* BagelRequestCarrier.h in Headers */ = {isa = PBXBuildFile; fileRef = 634724534CA239F3C90E2194BFCA5625 /* BagelRequestCarrier.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42CDB5C986C78BBC8E5C0185F746CABF /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7643177B697F33D6FC284CD5EB717 /* SessionDelegate.swift */; };
-		43FD90E9C24B9DA5460CBC914EE3AEB3 /* BagelRequestPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7724D87F61DE6ABB5ED7AFCEA81FE6EF /* BagelRequestPacket.m */; };
-		44127C4B989C9CC6A90D78B66A929A5E /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394AAF04403949CA5A2CD3984457D7B7 /* AlamofireExtended.swift */; };
-		441E752CAE9652F50F61B68BC9055E83 /* Pods-BaseProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFFA4B8B57D37C80FF9F9871D0C8455 /* Pods-BaseProject-dummy.m */; };
-		45B24CAED6B2FFFC1D637C1F9AD2CF04 /* BagelDeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA18CDAA47705D0C10B40C491C3ED05 /* BagelDeviceModel.m */; };
-		46FEF243EB68418996C15554C3DB20ED /* BagelRequestInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F08F3FE7F1D12C3925EA73AD7CFA3A /* BagelRequestInfo.m */; };
-		48D97BE7D5CAED273BD2341C239CC934 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48D2E9BBE64CB58E290EB2E3B65796C /* RequestTaskMap.swift */; };
-		4AB2563541632494CE6F500406FDD86E /* AlamofireNetworkActivityLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F4AB42F67B97B83F59D37A14768FB2F /* AlamofireNetworkActivityLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5394C4DCB14CD55B19D088F07382AE14 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84345D3A0064902AC52B87B8FC3D2F94 /* SCLExtensions.swift */; };
-		56BD4D29687D229B48D7AFCE5B6DB3BE /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D570D650630601285BBC5134729932 /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56EC8ED1535DAB987F3D2B71D4C05773 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486F64C981F13F554AD782621BC72D6F /* HTTPHeaders.swift */; };
-		5C4A0685B5A201436AB52EF25829B333 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FC9212E713B80AA929B1528B9AA63E /* MultipartFormData.swift */; };
-		5C605257D9971CEE1995C4B487E7188B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68943DCB2AA8E00DEE82533097EFFDC0 /* Foundation.framework */; };
-		5D12235D061AEE7459279AAF8C348DFE /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB71F6E07340A901BC37AE88B0D3AA60 /* URLEncodedFormEncoder.swift */; };
-		5D61C8ED0DDCC9F8B576B6514B19EE50 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D94ABBE301EB70CA815B2B980A9E3A /* ParameterEncoder.swift */; };
-		6489907DB3063D7192F9BAECB887EF40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68943DCB2AA8E00DEE82533097EFFDC0 /* Foundation.framework */; };
-		683ADEBB633C3B79366C8BEEC7CBD2B1 /* BagelBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = B9EE58898426A60AB71FA863675FD9A1 /* BagelBrowser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		69437A6AA2866A54AACCCEA857664F47 /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C086A0AA9CF4C841FE679DA02B5518 /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		69ACE4EEE5A8C1C618B22CC1F7B8EF01 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DA1548D646F6EFBFD281CEEA78228A /* Session.swift */; };
-		6A22C46CB1EDE471794D9AB2AC10327F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BD37B08D8234ED3FB5FFE01C78BCC /* Request.swift */; };
-		6C403390C200C1CEB6736B2D8F375FE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68943DCB2AA8E00DEE82533097EFFDC0 /* Foundation.framework */; };
-		6EF370DE63E467814B475AFC472C85E2 /* BagelDeviceModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CD7A15D8058C52647280E758C70CA0C /* BagelDeviceModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		70517C3BAC2D6614347DEAC15299EB84 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35486E8D63C9669BDC151DD0B26205ED /* URLConvertible+URLRequestConvertible.swift */; };
-		7087F0136CD02946D871992306B952DF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB4EC6ED24366E6C78B734B18232B5A /* Alamofire.framework */; };
-		72773E371CD9D5F63EC6DF822E606B60 /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A662FE1326B813F68599A18510E5CC /* CocoaAsyncSocket-dummy.m */; };
-		7956D060CB15AFEA0F0EFD0B1748E5C7 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D04394C4DA0E14E19DDE94B9C7CF90 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7A57D989EB7EB3D21FC9E13C97A47911 /* BagelUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EF85071018BDD6ED149F01B20A24A418 /* BagelUtility.m */; };
-		7CF8362BA31492053F5CB165637AE117 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8D066F71FB0C64BF84C54F2F977DC9 /* NetworkReachabilityManager.swift */; };
-		7D19647E26736527449499A4A79A75C0 /* BagelUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ACB1A87FBE3992FF670AC036B129760 /* BagelUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9010BE7613DD9C7769650C92E3CCC3B5 /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B113887D294BD6347375A4DD89E323A0 /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		92811AC5CD9A5004116AE43C4E8FD955 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9820F1C6F411E7DEA223E367AF86C2 /* OperationQueue+Alamofire.swift */; };
-		97A168DFB6DB61770CE2DBF4FD39AA8D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0193C1D52E9CD0555CFC4D330E1B8902 /* CFNetwork.framework */; };
-		9DA5C0F9EC04839B854FF52724C45137 /* Bagel.h in Headers */ = {isa = PBXBuildFile; fileRef = D9946B67ED7290C540D913705DED8210 /* Bagel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A00531195294693CDDE72B9C9523CA66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68943DCB2AA8E00DEE82533097EFFDC0 /* Foundation.framework */; };
-		AA365BEE6D789715345E2EFDAAEFFAE7 /* BagelProjectModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 92348FC9E3DA73E173BE6759BDA4B23B /* BagelProjectModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD17A649D16BC5E1922FA7AB7F703DE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68943DCB2AA8E00DEE82533097EFFDC0 /* Foundation.framework */; };
-		AD9899986955B2EC1EC20818C860C971 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F730E0B28DFCAD1275198D4822F8C /* RequestInterceptor.swift */; };
-		AF92602937CA016548022C600B8CDC16 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59940C0A214E6E0A6B3807D0486444A /* URLSessionConfiguration+Alamofire.swift */; };
-		AFBC2DB459CC5AA74E51E09162058CDF /* BagelProjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD82C74F785A9C6084112654BB49621 /* BagelProjectModel.m */; };
-		B1C58F6CED7B3E45170711D9ADF878AF /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9EBC88B0D86BC90BA789449B2AE2B98 /* Alamofire-dummy.m */; };
-		B23E9A5CDA31534491226F4C2EE8F8E6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7070400FA0B1321B7D1EF07752C9F0 /* HTTPMethod.swift */; };
-		B2CD26FA12F085D65FC6B6435DB0F9F5 /* BagelRequestCarrier.m in Sources */ = {isa = PBXBuildFile; fileRef = F52C507CEB2FACB5C0846311F54AB4D0 /* BagelRequestCarrier.m */; };
-		B3DC5642B065FEA6756C6CC6846B70BF /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBFB020FE39E15C18E7F8D4AA1E1EE5 /* CocoaAsyncSocket.framework */; };
-		B6FAF285DA96EC1301083C77904A1E74 /* BagelBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 95FF35222944112D9509D771678358E3 /* BagelBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B788B3354CCEBE56DFDB963CAFD7F6C2 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FECD782A70C2CF754C542E9D1EC34E9 /* Alamofire.swift */; };
-		B98733C303FFBD5D956071ED6940935F /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F5B95E216379D9BFF7D4AF382A2C7E3 /* SCLAlertView-dummy.m */; };
-		BE82AE980F8C7EE28A6448959194F93A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68943DCB2AA8E00DEE82533097EFFDC0 /* Foundation.framework */; };
-		C372F123E06CEC19EF12F3C7A20BA020 /* BagelURLConnectionInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 542DC0B1C75AD7DBE4025FB65270E170 /* BagelURLConnectionInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C64AF152F7928CDB59385528DB65FE19 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D00D972BB6E0F80ADFF1F1402ADFA62 /* RedirectHandler.swift */; };
-		C7369563F6946D8984124E1A546B6425 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1E49E6838612D88F8B9D79217AA6E /* Notifications.swift */; };
-		CACBD166E573774FB5613C34AA6DA7A7 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A9491E63D0C5FA2D4502500CAF0BD1 /* EventMonitor.swift */; };
-		CF820E9D7EA97BDF5339D41D52F45135 /* BagelURLSessionInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAFE1D6F2F7D11CD9B3FF76A5D4E6FA /* BagelURLSessionInjector.m */; };
-		D6B2983389480F48F27A0704EEB5DC81 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88D473CC34497A7B6E6FAFC4BDC97D2 /* RetryPolicy.swift */; };
-		D9BB93F8AE877839A78F1931DAA7D5F3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E715CF7349B9468340B59CCDA92DACA /* Security.framework */; };
-		E07BD425C4EA9ADF15DDFCDB10D0B2FB /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366544D02A17DDE8F6AF4D933319809C /* MultipartUpload.swift */; };
-		E3DF86D0FDF91965AC2952E06B62D4DF /* BagelURLConnectionInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = E35C71D339F85BB30A5191447AE8C3C2 /* BagelURLConnectionInjector.m */; };
-		E450C3381BD6C3396ED67EF9AA841BDB /* BagelConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = F90ECE39F4536B096552E08F4B3D4C68 /* BagelConfiguration.m */; };
-		E4E12208D5246E64B7E6CCAE987ADB03 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E654E2614A61DD2B67BAB7AE0305B4C /* URLRequest+Alamofire.swift */; };
-		E9A5AC2F471699CCA516952A5FEB990B /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF610A05B9A1A131AB6A3B0CB6C4CB95 /* DispatchQueue+Alamofire.swift */; };
-		EB0C41DE8E5AA5EB81925C6AE5AE6318 /* BagelController.h in Headers */ = {isa = PBXBuildFile; fileRef = DB0F81225C79A28F6129A032D96B7CE7 /* BagelController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F314657DC4F4425C5B1C11DA8A75C9EB /* Bagel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A05DFE2298101CEC7554F9B4C35AF2C /* Bagel-dummy.m */; };
-		F3C249E4EBCB873214C3A6B1B3EA43AF /* Pods-BaseProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3A74FAE550DDCE66438F8EA798CDE6 /* Pods-BaseProject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3CCFA9F29CB71F25124DDFF8B6D6849 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 02F72E66A25BDBE93CAC1680B9E44446 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F71789DC91A75033EFB79DB828676451 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10ECE47DB658FC8525EDBFA49B19590 /* Response.swift */; };
-		F7A65685FF248CAAC852BD5D5DEE4488 /* Bagel.m in Sources */ = {isa = PBXBuildFile; fileRef = F746E43841C5CC9AE4039201096FAB27 /* Bagel.m */; };
-		FCEBD47A588F50570D9598C9E511E058 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0193C1D52E9CD0555CFC4D330E1B8902 /* CFNetwork.framework */; };
+		00FA97D56201027AEB1C7692A2C3CF8B /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E0D62A79E10539DFE292DB284EB989 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0419772A87B16DB7DCF405A9E77D671F /* Protector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AE8348CD41DC1BE34377A5E0E8B757 /* Protector.swift */; };
+		06507A26118BA5ACFBBC8C225776920E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05CB06E4C58475354BC50E967A5B042 /* Validation.swift */; };
+		0AE06C3AEA6CA45342BA703230ABD2CB /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B176905A13271BEC65D0ECBCF0887B0 /* CachedResponseHandler.swift */; };
+		0CC43FF0E31AA320ACFEB0FE6239DF34 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBA662AE142551ADA4673165423086F /* ServerTrustEvaluation.swift */; };
+		0F7F2CF8EF8DB8E672ECF3AE3961C3D1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5BA4519FD3D6E0F8483D8BAD8C57D86 /* Security.framework */; };
+		13457FE4E607509A3B9527B0711033D5 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9834C57E55C184A1AFE81D2A526E8D /* ResponseSerialization.swift */; };
+		14AB7976E100075ADEA0AB1DB833E72D /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5960C563484ABE3A91A969931B0835 /* ParameterEncoding.swift */; };
+		17953A9CF2E354B3E69B9ABC2F367AD9 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B365ED1B983F91DB36598D5B3A4DDA87 /* AFError.swift */; };
+		18248CAB59AFEC56C7B7B74407F62F8C /* BagelRequestCarrier.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEF11D16EC23D7337E043C14E3D470C /* BagelRequestCarrier.m */; };
+		1A441ACFD3F32B5DC2AE06F4C651EF02 /* BagelConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8750A0036A14F3264729CE673689745B /* BagelConfiguration.m */; };
+		1A7E76A1323347E399CA46A3DBC7C68C /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1820B5327640F4F8BD12158172E093 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21862580341224253F4B8968A0804AC6 /* BagelDeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AD8092454DB1EDDD28C8F703B334AF /* BagelDeviceModel.m */; };
+		298E4F1A7F3DFD1F512EF7561C18CD20 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71731DB62D253B84FC5F756783984F2E /* SCLAlertView.swift */; };
+		3647AC57C4E452E0A3B5FB70B724CA33 /* Pods-BaseProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3A74FAE550DDCE66438F8EA798CDE6 /* Pods-BaseProject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4082513A35C682F2193D002C80F72B79 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B1560B9D8B8B46841F69CFF9D4FD55 /* Result+Alamofire.swift */; };
+		42CDB5C986C78BBC8E5C0185F746CABF /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57AE46DAC2C19659C1EFF3E1D3BCBDA /* SessionDelegate.swift */; };
+		44127C4B989C9CC6A90D78B66A929A5E /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0654F5EEC6DE9C0A46CFB2BB00843A09 /* AlamofireExtended.swift */; };
+		477686118F05B10FF32916CA286A2433 /* BagelCarrierDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F1AAE8C868B2698DC732742C5F4C433 /* BagelCarrierDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48D97BE7D5CAED273BD2341C239CC934 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28507A775818C95D4944FAFD6E3EA797 /* RequestTaskMap.swift */; };
+		51AE41019B51544F3ECBC8656C284B0A /* BagelURLConnectionInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FB6E3641F6B62ED7BFB6312B8A32CA /* BagelURLConnectionInjector.m */; };
+		5394C4DCB14CD55B19D088F07382AE14 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E350E8B3F8F5821F67EBA2DFB2D5E9E5 /* SCLExtensions.swift */; };
+		545B59717343B3BBBD271005117B27CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A9B9F05B885604E73A8ECE6459B56B /* Foundation.framework */; };
+		5526002FE6B6B17911B5F284B8B4B427 /* BagelBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A829B70B54BDFB41ED858AE6626809D /* BagelBrowser.m */; };
+		558C1C254BF94C2FB12F605351CCB594 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A9B9F05B885604E73A8ECE6459B56B /* Foundation.framework */; };
+		562B5B83319A49BB278B13053F4D8DCB /* BagelRequestPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E373C029230499F1A37E3B9622D6BFA /* BagelRequestPacket.m */; };
+		56EC8ED1535DAB987F3D2B71D4C05773 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C74E6ABD7136C250E693944CC4E07B /* HTTPHeaders.swift */; };
+		5BF05DD2A51769140E71505FDD56BF81 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBFB020FE39E15C18E7F8D4AA1E1EE5 /* CocoaAsyncSocket.framework */; };
+		5C4A0685B5A201436AB52EF25829B333 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F308B196F730928DEC1BFDD0B0C0AB43 /* MultipartFormData.swift */; };
+		5D12235D061AEE7459279AAF8C348DFE /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44190254E1808E5A36836301D6FCACAD /* URLEncodedFormEncoder.swift */; };
+		5D61C8ED0DDCC9F8B576B6514B19EE50 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC7E1CB1FCC23FAF9542B3799544444 /* ParameterEncoder.swift */; };
+		5DABD79A4E7F8B52255103DC201B0312 /* AlamofireNetworkActivityLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B61767D87828D296B3FEEC3A24066FCF /* AlamofireNetworkActivityLogger-dummy.m */; };
+		61050AD7413074D900795848762D27F9 /* BagelBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 55153C8772471AC91DA940C8379C4666 /* BagelBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62AC09ACBC64535634ADEDB3AD486043 /* BagelUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 47750094C6B03E69DB0E7F5D4EF6B521 /* BagelUtility.m */; };
+		665EB61456D739B05C99181CB42D3F34 /* BagelRequestCarrier.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D7D04B225AC61E627E06F5245847C71 /* BagelRequestCarrier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69437A6AA2866A54AACCCEA857664F47 /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AA5A984DD8CD7FD67F4CECAE86C6FB1 /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69ACE4EEE5A8C1C618B22CC1F7B8EF01 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43111E939E00869726CEEDBD7197DEB /* Session.swift */; };
+		6A22C46CB1EDE471794D9AB2AC10327F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B498504A9D3A8A89B63B2C2FA9ADAD0 /* Request.swift */; };
+		6FD4C5276A6601EE47349C55D008CE95 /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0DDED6DCCE813242144D8D1870902E3 /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70517C3BAC2D6614347DEAC15299EB84 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F1665CF0B4A9D6F72FFE60360F007D /* URLConvertible+URLRequestConvertible.swift */; };
+		7807F977B4C88EA20CFAF8141D673FFF /* BagelURLSessionInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5588AC576714DFC52F18FDB95C268 /* BagelURLSessionInjector.m */; };
+		7CF8362BA31492053F5CB165637AE117 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E658804CDAE46BE97E9BE3779511C7 /* NetworkReachabilityManager.swift */; };
+		84A6A129DFCE52013772DDFD275DEFC0 /* BagelController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE2A301037F700853011D0EFB017AAB9 /* BagelController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B60E556BDDE2F049DDADDE42AA5ED33 /* BagelRequestInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 084E880ADF7379DFBBC6B75634831634 /* BagelRequestInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9138C1B03F768605D8BF4163F0671C27 /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E723C00ADDEBC5B6E7F9B31148EC0B17 /* CocoaAsyncSocket-dummy.m */; };
+		91556967497556DF8C35AA1011C8AF3B /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 5307753D8E34224F9FA81B8AEA26ECFF /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92811AC5CD9A5004116AE43C4E8FD955 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFBB0E04DA3A37E078AC2DF5AB77E8 /* OperationQueue+Alamofire.swift */; };
+		9730BBE114126BBE0433AEE7DF45BEEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A9B9F05B885604E73A8ECE6459B56B /* Foundation.framework */; };
+		98F8090FC582A8BFEFA7986379F05292 /* BagelRequestInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 92735574174F2E6E671A4085A43AE0FD /* BagelRequestInfo.m */; };
+		9BF9DBB2B94E0452D6B4FE75A4623100 /* Bagel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AEBEF45F5DDA7D79ED07D8BA093380B6 /* Bagel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2D141D2BC342890F44CBF9067E3798B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A9B9F05B885604E73A8ECE6459B56B /* Foundation.framework */; };
+		AA7CF2C754026097DEF9B666F7322186 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB4EC6ED24366E6C78B734B18232B5A /* Alamofire.framework */; };
+		AD9899986955B2EC1EC20818C860C971 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B737C34CAEB8FF4CA4D4EB0143B594 /* RequestInterceptor.swift */; };
+		AF92602937CA016548022C600B8CDC16 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371EF10F476D9BE57C01FB4CF6D3D291 /* URLSessionConfiguration+Alamofire.swift */; };
+		B1C58F6CED7B3E45170711D9ADF878AF /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BF8FB516D013B2CB59BEEBF67CD869 /* Alamofire-dummy.m */; };
+		B23E9A5CDA31534491226F4C2EE8F8E6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC60215D03A4B840CD4BC2A5F73AD0E /* HTTPMethod.swift */; };
+		B3AE6C928F8D65EA5C96638BC13578B3 /* BagelURLConnectionInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 3163EF7899B55F96D7EA2C7837F79503 /* BagelURLConnectionInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B691EF3F18B51EFF2689EB46B3FF9439 /* BagelDeviceModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B6981D318FC76AEA55D720FD2750468D /* BagelDeviceModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B753C248E0B7283323C9ACE4425E5099 /* BagelBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 569AE5AEDDC92D1AD227EA5987842F81 /* BagelBrowser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B788B3354CCEBE56DFDB963CAFD7F6C2 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675860C59487166D8AD025E4290F9060 /* Alamofire.swift */; };
+		B98733C303FFBD5D956071ED6940935F /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 927C04E13CAA34580E163C6741749D06 /* SCLAlertView-dummy.m */; };
+		B9A8BE2675B0718AFB73DCFAA8A41B37 /* AlamofireNetworkActivityLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 752A20231E7C91B7F852AAFA98A0D6BB /* AlamofireNetworkActivityLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C41C267ADE41B97BA65701C23A3B3245 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B52D1DA7AFC2954F2CEE5C9D53BFEB /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C423E1BE9C3C0B5F190EE5ABA735987B /* Bagel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B1185398400100467ED1AF840FE35E /* Bagel-dummy.m */; };
+		C5F0BC7FC80AC3844B4740200882AB0F /* BagelConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C50DE0190B8E83520890865B1906CD2 /* BagelConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C64AF152F7928CDB59385528DB65FE19 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE8226D273325F84DBB6AD27D01B779 /* RedirectHandler.swift */; };
+		C7369563F6946D8984124E1A546B6425 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0E58DB1705FB3E1A2832CFBF0FD67 /* Notifications.swift */; };
+		C9D23861FA70EBA3918D09A18B6BDD6F /* BagelBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9B7B541B532EEB76BDA690D7715FBD /* BagelBaseModel.m */; };
+		CA24AB75E03657AD9E641D3A399EF05C /* BagelURLSessionInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0E5C1146C9AB2CB859D4C275AF9608 /* BagelURLSessionInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CACBD166E573774FB5613C34AA6DA7A7 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5962EC7AFE5C36E46876F5539A1466 /* EventMonitor.swift */; };
+		CB759BE7ACDF84AD46C5477B3CFFCEDD /* Pods-BaseProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFFA4B8B57D37C80FF9F9871D0C8455 /* Pods-BaseProject-dummy.m */; };
+		CBA9DD44FA319255EB3D7A89CA20924B /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A737C50EB65D7AFEC2884884747B94E5 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D42858DF5ACBBC95BB92D934D86F37D2 /* BagelUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EA11E0E8C11B357A4FCC7D79B75DCBA /* BagelUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D489E3A7F2A51226E3ED5206B8E01EFE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37578DD1457AAFBF0E6FFB3AEE7797B /* CFNetwork.framework */; };
+		D6B2983389480F48F27A0704EEB5DC81 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0646363C4FEA7DC6D7BCEBDF5F01A95A /* RetryPolicy.swift */; };
+		DE494BC518A68EB8772451E0BC2E8014 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A9B9F05B885604E73A8ECE6459B56B /* Foundation.framework */; };
+		E07BD425C4EA9ADF15DDFCDB10D0B2FB /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = C945D6713AA7EDF00A315249A1298DA1 /* MultipartUpload.swift */; };
+		E3681C00183D1A4C6401D7B495A082A3 /* BagelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAD229173E2C5FE56B22493D6FAF041 /* BagelController.m */; };
+		E4E12208D5246E64B7E6CCAE987ADB03 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97DF89797959EDDC36C9E1B1973C1A5 /* URLRequest+Alamofire.swift */; };
+		E5CA917A37A70200E014D4577773EB77 /* BagelRequestPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A90F235D31CDB0F199CCD9B896E4696 /* BagelRequestPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E90E1B3921D20274283963264549A76E /* NetworkActivityLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C110A177F6A44784D9CAD7F073A6E1D /* NetworkActivityLogger.swift */; };
+		E9A5AC2F471699CCA516952A5FEB990B /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07486DA4E6D3CD46A500ED8AEBD0EFB0 /* DispatchQueue+Alamofire.swift */; };
+		E9CB9E4A5B746FF8CD438CC533B70539 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37578DD1457AAFBF0E6FFB3AEE7797B /* CFNetwork.framework */; };
+		EEE1EB28BCE6E52DA3B7D826959F041D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A9B9F05B885604E73A8ECE6459B56B /* Foundation.framework */; };
+		F109CB9F8CF0B34942BFE67E85F3CA4F /* BagelProjectModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E34146B9D092FF6A71A44E7E75192B9 /* BagelProjectModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F490C86D8C4FF68DD049A942BC42A410 /* Bagel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A21E4066DCBEF15836CB34377A54D61 /* Bagel.m */; };
+		F71789DC91A75033EFB79DB828676451 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E169A79FE8BA06EB4F40879FBAD3600 /* Response.swift */; };
+		FCC5815381055DA1F6229A7642730D27 /* Bagel.h in Headers */ = {isa = PBXBuildFile; fileRef = E7B43F694AE6F7A6B64C77D8134C3468 /* Bagel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDCE5CBD2B50E9077BF8FFAEEBBC5619 /* BagelProjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DA202A985545908267A05EFCAD432D /* BagelProjectModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		706306CD932733AD4945E18BF2BB7C1E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 92077976CB3E088351E515981DC39115;
-			remoteInfo = Bagel;
-		};
-		7DF4F4E295FE83644022CD8400AA5304 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
-			remoteInfo = CocoaAsyncSocket;
-		};
-		9CC2C3E4737A5A6E9C6AFA9D269BCD04 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8AABDD06F1327BC62BE3ECBBB02AF715;
-			remoteInfo = AlamofireNetworkActivityLogger;
-		};
-		B59E6AA28CC18D8337CB3365241B3282 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
-			remoteInfo = Alamofire;
-		};
-		DBB235B0D9FE67FEFEC5B6AA297B3061 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E0152970E5467A11DF89E7D22C63B47C;
-			remoteInfo = SCLAlertView;
-		};
-		E78AEA1A3D426D8B859B9C842ABD120E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
-			remoteInfo = Alamofire;
-		};
-		EAB742075FE5C98FA8A4A7C0FCC35552 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
-			remoteInfo = CocoaAsyncSocket;
-		};
-		F4C446B44759AD4FDA549D918C178530 /* PBXContainerItemProxy */ = {
+		3D256312CB9FB4936EDEB566872A3D71 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
 			remoteInfo = SwiftLint;
 		};
+		40E939B6174CB1D687D2CD23A7973A50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		52A70948DABBED957854A41F1A828041 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		78816196B9B37DB8319C7D03F4B5B4E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AABDD06F1327BC62BE3ECBBB02AF715;
+			remoteInfo = AlamofireNetworkActivityLogger;
+		};
+		81E023B7EF58BF2617CDC089980F61C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0152970E5467A11DF89E7D22C63B47C;
+			remoteInfo = SCLAlertView;
+		};
+		85C251E6E94A3E7423B91AE2AE51E76C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		E15FE03812DDC23337B37CF44FBDB6EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		E777EE2E7B26F3CF90746341D97A1A63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92077976CB3E088351E515981DC39115;
+			remoteInfo = Bagel;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0193C1D52E9CD0555CFC4D330E1B8902 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		02F72E66A25BDBE93CAC1680B9E44446 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
 		041857CABFFB04AAC11784373186397D /* Pods-BaseProject-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BaseProject-Info.plist"; sourceTree = "<group>"; };
-		04B38E85204EECD81279DC25B5D92A7D /* BagelController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelController.m; path = iOS/Source/BagelController.m; sourceTree = "<group>"; };
-		05FC9212E713B80AA929B1528B9AA63E /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		0641CCE7EC890B5F2DD3C59C084A50C0 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
-		07745315940D102E1158D890A6C5EB8E /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		0646363C4FEA7DC6D7BCEBDF5F01A95A /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
+		0654F5EEC6DE9C0A46CFB2BB00843A09 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
+		07486DA4E6D3CD46A500ED8AEBD0EFB0 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		07F00058AD2A27DC7091159420F872FF /* Pods-BaseProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BaseProject-acknowledgements.plist"; sourceTree = "<group>"; };
-		0C9820F1C6F411E7DEA223E367AF86C2 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		084E880ADF7379DFBBC6B75634831634 /* BagelRequestInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelRequestInfo.h; path = iOS/Source/BagelRequestInfo.h; sourceTree = "<group>"; };
+		0A90F235D31CDB0F199CCD9B896E4696 /* BagelRequestPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelRequestPacket.h; path = iOS/Source/BagelRequestPacket.h; sourceTree = "<group>"; };
+		0C0E5C1146C9AB2CB859D4C275AF9608 /* BagelURLSessionInjector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelURLSessionInjector.h; path = iOS/Source/BagelURLSessionInjector.h; sourceTree = "<group>"; };
 		0DFFA4B8B57D37C80FF9F9871D0C8455 /* Pods-BaseProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BaseProject-dummy.m"; sourceTree = "<group>"; };
-		0FECD782A70C2CF754C542E9D1EC34E9 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		17AB41B2DADA2E4426F03F9218202689 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
+		0FAD229173E2C5FE56B22493D6FAF041 /* BagelController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelController.m; path = iOS/Source/BagelController.m; sourceTree = "<group>"; };
 		18408A7A0A3741B564C792AC070C1748 /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
-		21CAE0550A4C6D5D653998868A2D6F66 /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
-		2269A255E00D028CE3170FECF1080B1E /* Bagel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Bagel.modulemap; sourceTree = "<group>"; };
-		278B7C23FBAB43499373E3C6BF4E954B /* Bagel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bagel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C0DFD8B7EED48922E4F7719DC93945B /* BagelConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelConfiguration.h; path = iOS/Source/BagelConfiguration.h; sourceTree = "<group>"; };
-		2C8D066F71FB0C64BF84C54F2F977DC9 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		2CD7A15D8058C52647280E758C70CA0C /* BagelDeviceModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelDeviceModel.h; path = iOS/Source/BagelDeviceModel.h; sourceTree = "<group>"; };
-		35486E8D63C9669BDC151DD0B26205ED /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
-		366544D02A17DDE8F6AF4D933319809C /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
-		3827ED89675832CBE4BFF4505434B28C /* BagelRequestPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelRequestPacket.h; path = iOS/Source/BagelRequestPacket.h; sourceTree = "<group>"; };
-		394AAF04403949CA5A2CD3984457D7B7 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
-		39582ED343F21665CB7A7AEC73BBE0E4 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		39F57EFA63E3CE78C0C08081CC009599 /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
-		3EAFE1D6F2F7D11CD9B3FF76A5D4E6FA /* BagelURLSessionInjector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelURLSessionInjector.m; path = iOS/Source/BagelURLSessionInjector.m; sourceTree = "<group>"; };
-		3F4AB42F67B97B83F59D37A14768FB2F /* AlamofireNetworkActivityLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireNetworkActivityLogger-umbrella.h"; sourceTree = "<group>"; };
-		416ADC7CC078E7CE2B048F372648432D /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
-		44F08F3FE7F1D12C3925EA73AD7CFA3A /* BagelRequestInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelRequestInfo.m; path = iOS/Source/BagelRequestInfo.m; sourceTree = "<group>"; };
-		486F64C981F13F554AD782621BC72D6F /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
-		4AF2E39AE7CBEB16BDCF1479813767A1 /* AlamofireNetworkActivityLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireNetworkActivityLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B0353F729FA025D3342235C9E3B765B /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
-		4E654E2614A61DD2B67BAB7AE0305B4C /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
-		51F1E49E6838612D88F8B9D79217AA6E /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		5230B781F27DDF522AB7E6354521086E /* CocoaAsyncSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.debug.xcconfig; sourceTree = "<group>"; };
-		5427F0B1D7BCDEBD7CA625A062347570 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		542DC0B1C75AD7DBE4025FB65270E170 /* BagelURLConnectionInjector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelURLConnectionInjector.h; path = iOS/Source/BagelURLConnectionInjector.h; sourceTree = "<group>"; };
-		5494A2465C2089FE84ADBBEA1C1A42B1 /* Bagel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bagel.debug.xcconfig; sourceTree = "<group>"; };
-		5D00D972BB6E0F80ADFF1F1402ADFA62 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		62D570D650630601285BBC5134729932 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
-		634724534CA239F3C90E2194BFCA5625 /* BagelRequestCarrier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelRequestCarrier.h; path = iOS/Source/BagelRequestCarrier.h; sourceTree = "<group>"; };
-		67A662FE1326B813F68599A18510E5CC /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
-		68943DCB2AA8E00DEE82533097EFFDC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6CA5F061F9D4D82042AC78F6810B6F02 /* Pods_BaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E715CF7349B9468340B59CCDA92DACA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		6F5B95E216379D9BFF7D4AF382A2C7E3 /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
-		733D1CBA6ED27ACA077109E1578DA963 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		75C753925C3B060BB305801A8EE2825A /* AlamofireNetworkActivityLogger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireNetworkActivityLogger.release.xcconfig; sourceTree = "<group>"; };
-		7724D87F61DE6ABB5ED7AFCEA81FE6EF /* BagelRequestPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelRequestPacket.m; path = iOS/Source/BagelRequestPacket.m; sourceTree = "<group>"; };
-		78802035A9BCAF0F3B17D1683C271390 /* Protector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protector.swift; path = Source/Protector.swift; sourceTree = "<group>"; };
-		799977932A0C023417EADB47E56776FC /* BagelRequestInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelRequestInfo.h; path = iOS/Source/BagelRequestInfo.h; sourceTree = "<group>"; };
-		7CA18CDAA47705D0C10B40C491C3ED05 /* BagelDeviceModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelDeviceModel.m; path = iOS/Source/BagelDeviceModel.m; sourceTree = "<group>"; };
-		84345D3A0064902AC52B87B8FC3D2F94 /* SCLExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/SCLExtensions.swift; sourceTree = "<group>"; };
-		84A3CDED6DB704D40899971D5B8DAA5A /* SCLAlertView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SCLAlertView-Info.plist"; sourceTree = "<group>"; };
-		8896F7CB00CFA303FFC3F96E65783D36 /* SCLAlertView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.release.xcconfig; sourceTree = "<group>"; };
-		8ACB1A87FBE3992FF670AC036B129760 /* BagelUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelUtility.h; path = iOS/Source/BagelUtility.h; sourceTree = "<group>"; };
-		8B7070400FA0B1321B7D1EF07752C9F0 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
-		8BF417967D7C331159B428ED3F9ABD56 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
+		1DA5588AC576714DFC52F18FDB95C268 /* BagelURLSessionInjector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelURLSessionInjector.m; path = iOS/Source/BagelURLSessionInjector.m; sourceTree = "<group>"; };
+		1E34146B9D092FF6A71A44E7E75192B9 /* BagelProjectModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelProjectModel.h; path = iOS/Source/BagelProjectModel.h; sourceTree = "<group>"; };
+		25802737E21BB5CD3108F96529C810FE /* AlamofireNetworkActivityLogger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireNetworkActivityLogger.release.xcconfig; sourceTree = "<group>"; };
+		2736990248C85C3C0AD217E06804D793 /* SCLAlertView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.debug.xcconfig; sourceTree = "<group>"; };
+		278B7C23FBAB43499373E3C6BF4E954B /* Bagel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Bagel.framework; path = Bagel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28507A775818C95D4944FAFD6E3EA797 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
+		29986FFBE48791553F5E98D2D642A30A /* AlamofireNetworkActivityLogger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireNetworkActivityLogger.debug.xcconfig; sourceTree = "<group>"; };
+		2AA5A984DD8CD7FD67F4CECAE86C6FB1 /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
+		2AD3FD3FED705054A55C61947514AA4C /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
+		2E373C029230499F1A37E3B9622D6BFA /* BagelRequestPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelRequestPacket.m; path = iOS/Source/BagelRequestPacket.m; sourceTree = "<group>"; };
+		2E74C2802053D883A618FA55E3EF80BE /* Bagel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Bagel-Info.plist"; sourceTree = "<group>"; };
+		3163EF7899B55F96D7EA2C7837F79503 /* BagelURLConnectionInjector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelURLConnectionInjector.h; path = iOS/Source/BagelURLConnectionInjector.h; sourceTree = "<group>"; };
+		327757B3471C44244D127F3EDFDCCCE8 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		32DA202A985545908267A05EFCAD432D /* BagelProjectModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelProjectModel.m; path = iOS/Source/BagelProjectModel.m; sourceTree = "<group>"; };
+		35B52D1DA7AFC2954F2CEE5C9D53BFEB /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		371EF10F476D9BE57C01FB4CF6D3D291 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		37B1185398400100467ED1AF840FE35E /* Bagel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Bagel-dummy.m"; sourceTree = "<group>"; };
+		3A9834C57E55C184A1AFE81D2A526E8D /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		3AA0E58DB1705FB3E1A2832CFBF0FD67 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		3B33243892CE5E36C3EDA58AD268E105 /* Bagel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Bagel.modulemap; sourceTree = "<group>"; };
+		3C1820B5327640F4F8BD12158172E093 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		3EC7E1CB1FCC23FAF9542B3799544444 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
+		3FE8226D273325F84DBB6AD27D01B779 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
+		44190254E1808E5A36836301D6FCACAD /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
+		47750094C6B03E69DB0E7F5D4EF6B521 /* BagelUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelUtility.m; path = iOS/Source/BagelUtility.m; sourceTree = "<group>"; };
+		48B21EC0197B7FD764F2470E5488B269 /* CocoaAsyncSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.debug.xcconfig; sourceTree = "<group>"; };
+		48E0D62A79E10539DFE292DB284EB989 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		48F1665CF0B4A9D6F72FFE60360F007D /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		4AF2E39AE7CBEB16BDCF1479813767A1 /* AlamofireNetworkActivityLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlamofireNetworkActivityLogger.framework; path = AlamofireNetworkActivityLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C110A177F6A44784D9CAD7F073A6E1D /* NetworkActivityLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkActivityLogger.swift; path = Source/NetworkActivityLogger.swift; sourceTree = "<group>"; };
+		4C5962EC7AFE5C36E46876F5539A1466 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
+		4DE04801F674E07CA65B4880C0BC91B5 /* SCLAlertView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SCLAlertView-Info.plist"; sourceTree = "<group>"; };
+		4EA11E0E8C11B357A4FCC7D79B75DCBA /* BagelUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelUtility.h; path = iOS/Source/BagelUtility.h; sourceTree = "<group>"; };
+		4F1AAE8C868B2698DC732742C5F4C433 /* BagelCarrierDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelCarrierDelegate.h; path = iOS/Source/BagelCarrierDelegate.h; sourceTree = "<group>"; };
+		5307753D8E34224F9FA81B8AEA26ECFF /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		55153C8772471AC91DA940C8379C4666 /* BagelBaseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelBaseModel.h; path = iOS/Source/BagelBaseModel.h; sourceTree = "<group>"; };
+		569AE5AEDDC92D1AD227EA5987842F81 /* BagelBrowser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelBrowser.h; path = iOS/Source/BagelBrowser.h; sourceTree = "<group>"; };
+		5A829B70B54BDFB41ED858AE6626809D /* BagelBrowser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelBrowser.m; path = iOS/Source/BagelBrowser.m; sourceTree = "<group>"; };
+		5B176905A13271BEC65D0ECBCF0887B0 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D7D04B225AC61E627E06F5245847C71 /* BagelRequestCarrier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelRequestCarrier.h; path = iOS/Source/BagelRequestCarrier.h; sourceTree = "<group>"; };
+		5E169A79FE8BA06EB4F40879FBAD3600 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		5E9B7B541B532EEB76BDA690D7715FBD /* BagelBaseModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelBaseModel.m; path = iOS/Source/BagelBaseModel.m; sourceTree = "<group>"; };
+		66CCD91AF0AE4DC14659BDD1F3817852 /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
+		675860C59487166D8AD025E4290F9060 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		67A9C8B77F74C65934396EF26DB67109 /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
+		67D3529CF2AFB323349891CA1891490A /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		68B737C34CAEB8FF4CA4D4EB0143B594 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
+		6C50DE0190B8E83520890865B1906CD2 /* BagelConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelConfiguration.h; path = iOS/Source/BagelConfiguration.h; sourceTree = "<group>"; };
+		6CA5F061F9D4D82042AC78F6810B6F02 /* Pods_BaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BaseProject.framework; path = "Pods-BaseProject.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EBA662AE142551ADA4673165423086F /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		6FA2A1D8968ABF10445AB6B4A902D62B /* Bagel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bagel-prefix.pch"; sourceTree = "<group>"; };
+		71731DB62D253B84FC5F756783984F2E /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
+		752A20231E7C91B7F852AAFA98A0D6BB /* AlamofireNetworkActivityLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireNetworkActivityLogger-umbrella.h"; sourceTree = "<group>"; };
+		77A9B9F05B885604E73A8ECE6459B56B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		78AD8092454DB1EDDD28C8F703B334AF /* BagelDeviceModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelDeviceModel.m; path = iOS/Source/BagelDeviceModel.m; sourceTree = "<group>"; };
+		7FE2849717C28A60310C3D5CF1206471 /* AlamofireNetworkActivityLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AlamofireNetworkActivityLogger.modulemap; sourceTree = "<group>"; };
+		857D5B6E9E0F65CC3C41E46DA2F46ACB /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		8750A0036A14F3264729CE673689745B /* BagelConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelConfiguration.m; path = iOS/Source/BagelConfiguration.m; sourceTree = "<group>"; };
+		89F3B1A35C61D92289FB3A58CAF3E93E /* CocoaAsyncSocket-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaAsyncSocket-Info.plist"; sourceTree = "<group>"; };
+		8A21E4066DCBEF15836CB34377A54D61 /* Bagel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Bagel.m; path = iOS/Source/Bagel.m; sourceTree = "<group>"; };
+		8B498504A9D3A8A89B63B2C2FA9ADAD0 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		8D5960C563484ABE3A91A969931B0835 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		8FB4EC6ED24366E6C78B734B18232B5A /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		92348FC9E3DA73E173BE6759BDA4B23B /* BagelProjectModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelProjectModel.h; path = iOS/Source/BagelProjectModel.h; sourceTree = "<group>"; };
-		9359EC00E7D9C954D4B1545A2F16EE43 /* BagelURLSessionInjector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelURLSessionInjector.h; path = iOS/Source/BagelURLSessionInjector.h; sourceTree = "<group>"; };
-		9451601C040A15A44953AEDD4A0D1B6A /* AlamofireNetworkActivityLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AlamofireNetworkActivityLogger.modulemap; sourceTree = "<group>"; };
-		95FF35222944112D9509D771678358E3 /* BagelBaseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelBaseModel.h; path = iOS/Source/BagelBaseModel.h; sourceTree = "<group>"; };
-		962A4B1F73A781D3BB906D0525BD2A8A /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9945482AA6E39EE0D0726ED981BD4645 /* NetworkActivityLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkActivityLogger.swift; path = Source/NetworkActivityLogger.swift; sourceTree = "<group>"; };
-		99689CCF6B3F3B64E4FF6088199CE641 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		9A05DFE2298101CEC7554F9B4C35AF2C /* Bagel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Bagel-dummy.m"; sourceTree = "<group>"; };
-		9A42A80679A97E66DDA59909154B9CAD /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
+		92735574174F2E6E671A4085A43AE0FD /* BagelRequestInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelRequestInfo.m; path = iOS/Source/BagelRequestInfo.m; sourceTree = "<group>"; };
+		927C04E13CAA34580E163C6741749D06 /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
+		962A4B1F73A781D3BB906D0525BD2A8A /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCLAlertView.framework; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E658804CDAE46BE97E9BE3779511C7 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		9731FE4CD799193B700B42002EBCCF03 /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
 		9C893402B74BAB86A235E2B78633FCE1 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DD82C74F785A9C6084112654BB49621 /* BagelProjectModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelProjectModel.m; path = iOS/Source/BagelProjectModel.m; sourceTree = "<group>"; };
-		9F6BD37B08D8234ED3FB5FFE01C78BCC /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		A1DA1548D646F6EFBFD281CEEA78228A /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
-		A6C086A0AA9CF4C841FE679DA02B5518 /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
-		A6D04394C4DA0E14E19DDE94B9C7CF90 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
-		ACF7643177B697F33D6FC284CD5EB717 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		B113887D294BD6347375A4DD89E323A0 /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
-		B9A9491E63D0C5FA2D4502500CAF0BD1 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
-		B9EE58898426A60AB71FA863675FD9A1 /* BagelBrowser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelBrowser.h; path = iOS/Source/BagelBrowser.h; sourceTree = "<group>"; };
-		B9FFE88519D6572CEB0AC824C39A7C24 /* BagelBrowser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelBrowser.m; path = iOS/Source/BagelBrowser.m; sourceTree = "<group>"; };
-		BB71F6E07340A901BC37AE88B0D3AA60 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
-		BD9C1A5F8BA1B2356F06EB3A9FDBF055 /* AlamofireNetworkActivityLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireNetworkActivityLogger-dummy.m"; sourceTree = "<group>"; };
-		BDD5D0E034E377C4AA5951B526191B8D /* SCLAlertView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.debug.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1B1560B9D8B8B46841F69CFF9D4FD55 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
+		A57AE46DAC2C19659C1EFF3E1D3BCBDA /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		A737C50EB65D7AFEC2884884747B94E5 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		ABC9690997AB3647A9415323CBE48F8A /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
+		ADE7296E9AF24D3EC3403BCB26ECB2F6 /* SCLAlertView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.release.xcconfig; sourceTree = "<group>"; };
+		ADEF11D16EC23D7337E043C14E3D470C /* BagelRequestCarrier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelRequestCarrier.m; path = iOS/Source/BagelRequestCarrier.m; sourceTree = "<group>"; };
+		ADEFBB0E04DA3A37E078AC2DF5AB77E8 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		AEB24AC0A235C9A5DDD6D80A6C0A0639 /* AlamofireNetworkActivityLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireNetworkActivityLogger-prefix.pch"; sourceTree = "<group>"; };
+		AEBEF45F5DDA7D79ED07D8BA093380B6 /* Bagel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bagel-umbrella.h"; sourceTree = "<group>"; };
+		B365ED1B983F91DB36598D5B3A4DDA87 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		B61767D87828D296B3FEEC3A24066FCF /* AlamofireNetworkActivityLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireNetworkActivityLogger-dummy.m"; sourceTree = "<group>"; };
+		B63492232A327EF7852B24B3390CCFD5 /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
+		B6981D318FC76AEA55D720FD2750468D /* BagelDeviceModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelDeviceModel.h; path = iOS/Source/BagelDeviceModel.h; sourceTree = "<group>"; };
+		BE7030F600BA9F86589C16A5037F4D51 /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
 		BF3A74FAE550DDCE66438F8EA798CDE6 /* Pods-BaseProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BaseProject-umbrella.h"; sourceTree = "<group>"; };
-		C01F730E0B28DFCAD1275198D4822F8C /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
-		C11CA9960FFE24225CEDC6C3E112811C /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		C48D2E9BBE64CB58E290EB2E3B65796C /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
-		C65CB4B0D1BAE7FD8C6F3A25AC1BAA83 /* AlamofireNetworkActivityLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireNetworkActivityLogger-prefix.pch"; sourceTree = "<group>"; };
-		C761F4A252E3C28905C10E27FA9D6322 /* Bagel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bagel-umbrella.h"; sourceTree = "<group>"; };
-		C7D94ABBE301EB70CA815B2B980A9E3A /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
-		C899C36F152E962576C9CE50C8317227 /* Bagel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bagel.release.xcconfig; sourceTree = "<group>"; };
-		CF152DA8C2422B4B14859EE326AC145D /* CocoaAsyncSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.release.xcconfig; sourceTree = "<group>"; };
-		D2DE5E89712092C92F230B471272E907 /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
-		D59940C0A214E6E0A6B3807D0486444A /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
-		D5C542560B853500945B72566ABED1C3 /* Bagel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Bagel-Info.plist"; sourceTree = "<group>"; };
-		D88D473CC34497A7B6E6FAFC4BDC97D2 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
-		D8CD180B3F88F6F4ACA55C5384B4D188 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
-		D9946B67ED7290C540D913705DED8210 /* Bagel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bagel.h; path = iOS/Source/Bagel.h; sourceTree = "<group>"; };
-		DB0F81225C79A28F6129A032D96B7CE7 /* BagelController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelController.h; path = iOS/Source/BagelController.h; sourceTree = "<group>"; };
+		C37578DD1457AAFBF0E6FFB3AEE7797B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		C5BA4519FD3D6E0F8483D8BAD8C57D86 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		C7FB6E3641F6B62ED7BFB6312B8A32CA /* BagelURLConnectionInjector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelURLConnectionInjector.m; path = iOS/Source/BagelURLConnectionInjector.m; sourceTree = "<group>"; };
+		C945D6713AA7EDF00A315249A1298DA1 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
+		C97DF89797959EDDC36C9E1B1973C1A5 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		CE2A301037F700853011D0EFB017AAB9 /* BagelController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelController.h; path = iOS/Source/BagelController.h; sourceTree = "<group>"; };
+		D05CB06E4C58475354BC50E967A5B042 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		D24C8C6F8EDFD4B1CB175077290DDED3 /* Bagel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bagel.debug.xcconfig; sourceTree = "<group>"; };
+		D5AE8348CD41DC1BE34377A5E0E8B757 /* Protector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protector.swift; path = Source/Protector.swift; sourceTree = "<group>"; };
+		DB0A078EF40D0CB007CA23A9EC7EA7E9 /* AlamofireNetworkActivityLogger-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AlamofireNetworkActivityLogger-Info.plist"; sourceTree = "<group>"; };
 		DEBFB020FE39E15C18E7F8D4AA1E1EE5 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF50B5EB00628578C47384CB4EF481B5 /* Pods-BaseProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BaseProject-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E0DC7BFB5D24F88E8E91A7706E4E3EF8 /* AlamofireNetworkActivityLogger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireNetworkActivityLogger.debug.xcconfig; sourceTree = "<group>"; };
-		E10ECE47DB658FC8525EDBFA49B19590 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		E35C71D339F85BB30A5191447AE8C3C2 /* BagelURLConnectionInjector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelURLConnectionInjector.m; path = iOS/Source/BagelURLConnectionInjector.m; sourceTree = "<group>"; };
-		E5075FAB7A2AEEF82672E7217AAEF6C1 /* CocoaAsyncSocket-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaAsyncSocket-Info.plist"; sourceTree = "<group>"; };
+		DFB76593EC5EE5B12808977DE185DA0E /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
+		E0DDED6DCCE813242144D8D1870902E3 /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
+		E1C74E6ABD7136C250E693944CC4E07B /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
+		E201F03BA01689B827B064E63389DC66 /* Bagel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bagel.release.xcconfig; sourceTree = "<group>"; };
+		E350E8B3F8F5821F67EBA2DFB2D5E9E5 /* SCLExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/SCLExtensions.swift; sourceTree = "<group>"; };
+		E43111E939E00869726CEEDBD7197DEB /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
+		E723C00ADDEBC5B6E7F9B31148EC0B17 /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
+		E7B43F694AE6F7A6B64C77D8134C3468 /* Bagel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bagel.h; path = iOS/Source/Bagel.h; sourceTree = "<group>"; };
 		EAEEACC03E2BFE13053626A8C8F7E3A4 /* Pods-BaseProject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BaseProject-frameworks.sh"; sourceTree = "<group>"; };
-		ECA85D387C850093F9098E69FBC7030E /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
-		EF85071018BDD6ED149F01B20A24A418 /* BagelUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelUtility.m; path = iOS/Source/BagelUtility.m; sourceTree = "<group>"; };
-		F1768EAF91F11CD4FE62F38640492283 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
-		F52C507CEB2FACB5C0846311F54AB4D0 /* BagelRequestCarrier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelRequestCarrier.m; path = iOS/Source/BagelRequestCarrier.m; sourceTree = "<group>"; };
-		F6309BD5EB1E137A15ABC0CE081E74D2 /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
-		F746E43841C5CC9AE4039201096FAB27 /* Bagel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Bagel.m; path = iOS/Source/Bagel.m; sourceTree = "<group>"; };
-		F90ECE39F4536B096552E08F4B3D4C68 /* BagelConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelConfiguration.m; path = iOS/Source/BagelConfiguration.m; sourceTree = "<group>"; };
-		F9B6EF766D1A0F4484C3BC7ED5E8084C /* Bagel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bagel-prefix.pch"; sourceTree = "<group>"; };
-		F9EBC88B0D86BC90BA789449B2AE2B98 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		F1BF8FB516D013B2CB59BEEBF67CD869 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		F308B196F730928DEC1BFDD0B0C0AB43 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		F7B58132091328D7B1D4F3275925E95B /* CocoaAsyncSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.release.xcconfig; sourceTree = "<group>"; };
 		FA15A6B60E9F6D04ED09D5813781B9A7 /* Pods-BaseProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BaseProject.modulemap"; sourceTree = "<group>"; };
-		FA4ED472A63174907A25B4125507571A /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
-		FAA5D4760D431775ADECA02C31249BBA /* AlamofireNetworkActivityLogger-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AlamofireNetworkActivityLogger-Info.plist"; sourceTree = "<group>"; };
-		FAF2D196E76167589E84D3FD23D086F9 /* BagelBaseModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelBaseModel.m; path = iOS/Source/BagelBaseModel.m; sourceTree = "<group>"; };
-		FF4075E9B5E4E007B98BD96551DEA337 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		FF610A05B9A1A131AB6A3B0CB6C4CB95 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		FCC60215D03A4B840CD4BC2A5F73AD0E /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,26 +301,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A00531195294693CDDE72B9C9523CA66 /* Foundation.framework in Frameworks */,
+				EEE1EB28BCE6E52DA3B7D826959F041D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		06D829E8F24A084CA883EBA74CBC9723 /* Frameworks */ = {
+		35EF9BB183026175FC8B28899C9496FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCEBD47A588F50570D9598C9E511E058 /* CFNetwork.framework in Frameworks */,
-				AD17A649D16BC5E1922FA7AB7F703DE2 /* Foundation.framework in Frameworks */,
-				D9BB93F8AE877839A78F1931DAA7D5F3 /* Security.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3E64F4A1ECF4A89D9B338250F30CBAE9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B3DC5642B065FEA6756C6CC6846B70BF /* CocoaAsyncSocket.framework in Frameworks */,
-				5C605257D9971CEE1995C4B487E7188B /* Foundation.framework in Frameworks */,
+				5BF05DD2A51769140E71505FDD56BF81 /* CocoaAsyncSocket.framework in Frameworks */,
+				DE494BC518A68EB8772451E0BC2E8014 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,103 +318,62 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97A168DFB6DB61770CE2DBF4FD39AA8D /* CFNetwork.framework in Frameworks */,
-				BE82AE980F8C7EE28A6448959194F93A /* Foundation.framework in Frameworks */,
+				E9CB9E4A5B746FF8CD438CC533B70539 /* CFNetwork.framework in Frameworks */,
+				A2D141D2BC342890F44CBF9067E3798B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F36F83434F55F626BA5772CA255988A /* Frameworks */ = {
+		C85D80F72FF73CEE565A79FB35B9F2D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6489907DB3063D7192F9BAECB887EF40 /* Foundation.framework in Frameworks */,
+				D489E3A7F2A51226E3ED5206B8E01EFE /* CFNetwork.framework in Frameworks */,
+				545B59717343B3BBBD271005117B27CA /* Foundation.framework in Frameworks */,
+				0F7F2CF8EF8DB8E672ECF3AE3961C3D1 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DCEB00198C83EF4CC1E5D91713020319 /* Frameworks */ = {
+		CCDF5E583DBFFCE5C3103CBDC5B65A0C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7087F0136CD02946D871992306B952DF /* Alamofire.framework in Frameworks */,
-				6C403390C200C1CEB6736B2D8F375FE1 /* Foundation.framework in Frameworks */,
+				AA7CF2C754026097DEF9B666F7322186 /* Alamofire.framework in Frameworks */,
+				558C1C254BF94C2FB12F605351CCB594 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48EEE2693A972A31FFC4FCCF78ADDA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9730BBE114126BBE0433AEE7DF45BEEC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		011C01B16DC3A7507124A006A37768C4 /* Bagel */ = {
+		029305E22F704FBA88D041B3878EF3BE /* SCLAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				D9946B67ED7290C540D913705DED8210 /* Bagel.h */,
-				F746E43841C5CC9AE4039201096FAB27 /* Bagel.m */,
-				95FF35222944112D9509D771678358E3 /* BagelBaseModel.h */,
-				FAF2D196E76167589E84D3FD23D086F9 /* BagelBaseModel.m */,
-				B9EE58898426A60AB71FA863675FD9A1 /* BagelBrowser.h */,
-				B9FFE88519D6572CEB0AC824C39A7C24 /* BagelBrowser.m */,
-				2C0DFD8B7EED48922E4F7719DC93945B /* BagelConfiguration.h */,
-				F90ECE39F4536B096552E08F4B3D4C68 /* BagelConfiguration.m */,
-				DB0F81225C79A28F6129A032D96B7CE7 /* BagelController.h */,
-				04B38E85204EECD81279DC25B5D92A7D /* BagelController.m */,
-				2CD7A15D8058C52647280E758C70CA0C /* BagelDeviceModel.h */,
-				7CA18CDAA47705D0C10B40C491C3ED05 /* BagelDeviceModel.m */,
-				92348FC9E3DA73E173BE6759BDA4B23B /* BagelProjectModel.h */,
-				9DD82C74F785A9C6084112654BB49621 /* BagelProjectModel.m */,
-				634724534CA239F3C90E2194BFCA5625 /* BagelRequestCarrier.h */,
-				F52C507CEB2FACB5C0846311F54AB4D0 /* BagelRequestCarrier.m */,
-				799977932A0C023417EADB47E56776FC /* BagelRequestInfo.h */,
-				44F08F3FE7F1D12C3925EA73AD7CFA3A /* BagelRequestInfo.m */,
-				3827ED89675832CBE4BFF4505434B28C /* BagelRequestPacket.h */,
-				7724D87F61DE6ABB5ED7AFCEA81FE6EF /* BagelRequestPacket.m */,
-				542DC0B1C75AD7DBE4025FB65270E170 /* BagelURLConnectionInjector.h */,
-				E35C71D339F85BB30A5191447AE8C3C2 /* BagelURLConnectionInjector.m */,
-				9359EC00E7D9C954D4B1545A2F16EE43 /* BagelURLSessionInjector.h */,
-				3EAFE1D6F2F7D11CD9B3FF76A5D4E6FA /* BagelURLSessionInjector.m */,
-				8ACB1A87FBE3992FF670AC036B129760 /* BagelUtility.h */,
-				EF85071018BDD6ED149F01B20A24A418 /* BagelUtility.m */,
-				DB568A0B97720EC92B9CDFDFB6810748 /* Support Files */,
+				71731DB62D253B84FC5F756783984F2E /* SCLAlertView.swift */,
+				E350E8B3F8F5821F67EBA2DFB2D5E9E5 /* SCLExtensions.swift */,
+				54A1C87A6DE8AFA42977115DC6187D28 /* Support Files */,
 			);
-			path = Bagel;
-			sourceTree = "<group>";
-		};
-		169D9CBDE8460FFF630DE375EFC526A9 /* AlamofireNetworkActivityLogger */ = {
-			isa = PBXGroup;
-			children = (
-				9945482AA6E39EE0D0726ED981BD4645 /* NetworkActivityLogger.swift */,
-				D7DD16715AA917F8891D932706D14B69 /* Support Files */,
-			);
-			path = AlamofireNetworkActivityLogger;
-			sourceTree = "<group>";
-		};
-		25568C964C23050E17A0DB58B69F8049 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9A42A80679A97E66DDA59909154B9CAD /* SwiftLint.debug.xcconfig */,
-				F6309BD5EB1E137A15ABC0CE081E74D2 /* SwiftLint.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftLint";
-			sourceTree = "<group>";
-		};
-		2AF31A69FF3889D20840E5B9032F2BC0 /* SCLAlertView */ = {
-			isa = PBXGroup;
-			children = (
-				D2DE5E89712092C92F230B471272E907 /* SCLAlertView.swift */,
-				84345D3A0064902AC52B87B8FC3D2F94 /* SCLExtensions.swift */,
-				D2362D026344F82ADFC639A91EAAF9F6 /* Support Files */,
-			);
+			name = SCLAlertView;
 			path = SCLAlertView;
 			sourceTree = "<group>";
 		};
-		2B74AB233988423CD28211CC6F895AE3 /* CocoaAsyncSocket */ = {
+		29881F83D145F781092C0E497F271573 /* CocoaAsyncSocket */ = {
 			isa = PBXGroup;
 			children = (
-				02F72E66A25BDBE93CAC1680B9E44446 /* GCDAsyncSocket.h */,
-				A6D04394C4DA0E14E19DDE94B9C7CF90 /* GCDAsyncSocket.m */,
-				62D570D650630601285BBC5134729932 /* GCDAsyncUdpSocket.h */,
-				ECA85D387C850093F9098E69FBC7030E /* GCDAsyncUdpSocket.m */,
-				F3FECC893D0D53DD10AABAFCF7E4D5A2 /* Support Files */,
+				3C1820B5327640F4F8BD12158172E093 /* GCDAsyncSocket.h */,
+				A737C50EB65D7AFEC2884884747B94E5 /* GCDAsyncSocket.m */,
+				5307753D8E34224F9FA81B8AEA26ECFF /* GCDAsyncUdpSocket.h */,
+				35B52D1DA7AFC2954F2CEE5C9D53BFEB /* GCDAsyncUdpSocket.m */,
+				67EB1CE0D5AC3333AA8AA30BA187C2DE /* Support Files */,
 			);
+			name = CocoaAsyncSocket;
 			path = CocoaAsyncSocket;
 			sourceTree = "<group>";
 		};
@@ -440,72 +390,55 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		36E9A7CF58CA47F7307E03BACE9AE604 /* Alamofire */ = {
+		3A838399CAA98C902310601462AB238E /* Bagel */ = {
 			isa = PBXGroup;
 			children = (
-				C11CA9960FFE24225CEDC6C3E112811C /* AFError.swift */,
-				0FECD782A70C2CF754C542E9D1EC34E9 /* Alamofire.swift */,
-				394AAF04403949CA5A2CD3984457D7B7 /* AlamofireExtended.swift */,
-				D8CD180B3F88F6F4ACA55C5384B4D188 /* CachedResponseHandler.swift */,
-				FF610A05B9A1A131AB6A3B0CB6C4CB95 /* DispatchQueue+Alamofire.swift */,
-				B9A9491E63D0C5FA2D4502500CAF0BD1 /* EventMonitor.swift */,
-				486F64C981F13F554AD782621BC72D6F /* HTTPHeaders.swift */,
-				8B7070400FA0B1321B7D1EF07752C9F0 /* HTTPMethod.swift */,
-				05FC9212E713B80AA929B1528B9AA63E /* MultipartFormData.swift */,
-				366544D02A17DDE8F6AF4D933319809C /* MultipartUpload.swift */,
-				2C8D066F71FB0C64BF84C54F2F977DC9 /* NetworkReachabilityManager.swift */,
-				51F1E49E6838612D88F8B9D79217AA6E /* Notifications.swift */,
-				0C9820F1C6F411E7DEA223E367AF86C2 /* OperationQueue+Alamofire.swift */,
-				C7D94ABBE301EB70CA815B2B980A9E3A /* ParameterEncoder.swift */,
-				99689CCF6B3F3B64E4FF6088199CE641 /* ParameterEncoding.swift */,
-				78802035A9BCAF0F3B17D1683C271390 /* Protector.swift */,
-				5D00D972BB6E0F80ADFF1F1402ADFA62 /* RedirectHandler.swift */,
-				9F6BD37B08D8234ED3FB5FFE01C78BCC /* Request.swift */,
-				C01F730E0B28DFCAD1275198D4822F8C /* RequestInterceptor.swift */,
-				C48D2E9BBE64CB58E290EB2E3B65796C /* RequestTaskMap.swift */,
-				E10ECE47DB658FC8525EDBFA49B19590 /* Response.swift */,
-				39582ED343F21665CB7A7AEC73BBE0E4 /* ResponseSerialization.swift */,
-				17AB41B2DADA2E4426F03F9218202689 /* Result+Alamofire.swift */,
-				D88D473CC34497A7B6E6FAFC4BDC97D2 /* RetryPolicy.swift */,
-				F1768EAF91F11CD4FE62F38640492283 /* ServerTrustEvaluation.swift */,
-				A1DA1548D646F6EFBFD281CEEA78228A /* Session.swift */,
-				ACF7643177B697F33D6FC284CD5EB717 /* SessionDelegate.swift */,
-				35486E8D63C9669BDC151DD0B26205ED /* URLConvertible+URLRequestConvertible.swift */,
-				BB71F6E07340A901BC37AE88B0D3AA60 /* URLEncodedFormEncoder.swift */,
-				4E654E2614A61DD2B67BAB7AE0305B4C /* URLRequest+Alamofire.swift */,
-				D59940C0A214E6E0A6B3807D0486444A /* URLSessionConfiguration+Alamofire.swift */,
-				733D1CBA6ED27ACA077109E1578DA963 /* Validation.swift */,
-				452EEC354AE4A2DC83533F2C71A9F4FD /* Support Files */,
+				E7B43F694AE6F7A6B64C77D8134C3468 /* Bagel.h */,
+				8A21E4066DCBEF15836CB34377A54D61 /* Bagel.m */,
+				55153C8772471AC91DA940C8379C4666 /* BagelBaseModel.h */,
+				5E9B7B541B532EEB76BDA690D7715FBD /* BagelBaseModel.m */,
+				569AE5AEDDC92D1AD227EA5987842F81 /* BagelBrowser.h */,
+				5A829B70B54BDFB41ED858AE6626809D /* BagelBrowser.m */,
+				4F1AAE8C868B2698DC732742C5F4C433 /* BagelCarrierDelegate.h */,
+				6C50DE0190B8E83520890865B1906CD2 /* BagelConfiguration.h */,
+				8750A0036A14F3264729CE673689745B /* BagelConfiguration.m */,
+				CE2A301037F700853011D0EFB017AAB9 /* BagelController.h */,
+				0FAD229173E2C5FE56B22493D6FAF041 /* BagelController.m */,
+				B6981D318FC76AEA55D720FD2750468D /* BagelDeviceModel.h */,
+				78AD8092454DB1EDDD28C8F703B334AF /* BagelDeviceModel.m */,
+				1E34146B9D092FF6A71A44E7E75192B9 /* BagelProjectModel.h */,
+				32DA202A985545908267A05EFCAD432D /* BagelProjectModel.m */,
+				5D7D04B225AC61E627E06F5245847C71 /* BagelRequestCarrier.h */,
+				ADEF11D16EC23D7337E043C14E3D470C /* BagelRequestCarrier.m */,
+				084E880ADF7379DFBBC6B75634831634 /* BagelRequestInfo.h */,
+				92735574174F2E6E671A4085A43AE0FD /* BagelRequestInfo.m */,
+				0A90F235D31CDB0F199CCD9B896E4696 /* BagelRequestPacket.h */,
+				2E373C029230499F1A37E3B9622D6BFA /* BagelRequestPacket.m */,
+				3163EF7899B55F96D7EA2C7837F79503 /* BagelURLConnectionInjector.h */,
+				C7FB6E3641F6B62ED7BFB6312B8A32CA /* BagelURLConnectionInjector.m */,
+				0C0E5C1146C9AB2CB859D4C275AF9608 /* BagelURLSessionInjector.h */,
+				1DA5588AC576714DFC52F18FDB95C268 /* BagelURLSessionInjector.m */,
+				4EA11E0E8C11B357A4FCC7D79B75DCBA /* BagelUtility.h */,
+				47750094C6B03E69DB0E7F5D4EF6B521 /* BagelUtility.m */,
+				3E30D91E7270F8F3E443132302C7C9E1 /* Support Files */,
 			);
-			path = Alamofire;
+			name = Bagel;
+			path = Bagel;
 			sourceTree = "<group>";
 		};
-		4272C29C7D08671091BDCE3DBFBBC10B /* Pods */ = {
+		3E30D91E7270F8F3E443132302C7C9E1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				36E9A7CF58CA47F7307E03BACE9AE604 /* Alamofire */,
-				169D9CBDE8460FFF630DE375EFC526A9 /* AlamofireNetworkActivityLogger */,
-				011C01B16DC3A7507124A006A37768C4 /* Bagel */,
-				2B74AB233988423CD28211CC6F895AE3 /* CocoaAsyncSocket */,
-				2AF31A69FF3889D20840E5B9032F2BC0 /* SCLAlertView */,
-				651FBD90C2EA0CC7D6EDD07FA47B154F /* SwiftLint */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		452EEC354AE4A2DC83533F2C71A9F4FD /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FF4075E9B5E4E007B98BD96551DEA337 /* Alamofire.modulemap */,
-				F9EBC88B0D86BC90BA789449B2AE2B98 /* Alamofire-dummy.m */,
-				0641CCE7EC890B5F2DD3C59C084A50C0 /* Alamofire-Info.plist */,
-				5427F0B1D7BCDEBD7CA625A062347570 /* Alamofire-prefix.pch */,
-				07745315940D102E1158D890A6C5EB8E /* Alamofire-umbrella.h */,
-				FA4ED472A63174907A25B4125507571A /* Alamofire.debug.xcconfig */,
-				8BF417967D7C331159B428ED3F9ABD56 /* Alamofire.release.xcconfig */,
+				3B33243892CE5E36C3EDA58AD268E105 /* Bagel.modulemap */,
+				37B1185398400100467ED1AF840FE35E /* Bagel-dummy.m */,
+				2E74C2802053D883A618FA55E3EF80BE /* Bagel-Info.plist */,
+				6FA2A1D8968ABF10445AB6B4A902D62B /* Bagel-prefix.pch */,
+				AEBEF45F5DDA7D79ED07D8BA093380B6 /* Bagel-umbrella.h */,
+				D24C8C6F8EDFD4B1CB175077290DDED3 /* Bagel.debug.xcconfig */,
+				E201F03BA01689B827B064E63389DC66 /* Bagel.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
+			path = "../Target Support Files/Bagel";
 			sourceTree = "<group>";
 		};
 		4A18CE6657C51AE81D36CFCB79D21E70 /* Pods-BaseProject */ = {
@@ -525,12 +458,72 @@
 			path = "Target Support Files/Pods-BaseProject";
 			sourceTree = "<group>";
 		};
-		651FBD90C2EA0CC7D6EDD07FA47B154F /* SwiftLint */ = {
+		54A1C87A6DE8AFA42977115DC6187D28 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				25568C964C23050E17A0DB58B69F8049 /* Support Files */,
+				ABC9690997AB3647A9415323CBE48F8A /* SCLAlertView.modulemap */,
+				927C04E13CAA34580E163C6741749D06 /* SCLAlertView-dummy.m */,
+				4DE04801F674E07CA65B4880C0BC91B5 /* SCLAlertView-Info.plist */,
+				66CCD91AF0AE4DC14659BDD1F3817852 /* SCLAlertView-prefix.pch */,
+				2AA5A984DD8CD7FD67F4CECAE86C6FB1 /* SCLAlertView-umbrella.h */,
+				2736990248C85C3C0AD217E06804D793 /* SCLAlertView.debug.xcconfig */,
+				ADE7296E9AF24D3EC3403BCB26ECB2F6 /* SCLAlertView.release.xcconfig */,
 			);
-			path = SwiftLint;
+			name = "Support Files";
+			path = "../Target Support Files/SCLAlertView";
+			sourceTree = "<group>";
+		};
+		67EB1CE0D5AC3333AA8AA30BA187C2DE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9731FE4CD799193B700B42002EBCCF03 /* CocoaAsyncSocket.modulemap */,
+				E723C00ADDEBC5B6E7F9B31148EC0B17 /* CocoaAsyncSocket-dummy.m */,
+				89F3B1A35C61D92289FB3A58CAF3E93E /* CocoaAsyncSocket-Info.plist */,
+				BE7030F600BA9F86589C16A5037F4D51 /* CocoaAsyncSocket-prefix.pch */,
+				E0DDED6DCCE813242144D8D1870902E3 /* CocoaAsyncSocket-umbrella.h */,
+				48B21EC0197B7FD764F2470E5488B269 /* CocoaAsyncSocket.debug.xcconfig */,
+				F7B58132091328D7B1D4F3275925E95B /* CocoaAsyncSocket.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaAsyncSocket";
+			sourceTree = "<group>";
+		};
+		6CECD10628F4D73D6854DA6653E7388B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				67D3529CF2AFB323349891CA1891490A /* Alamofire.modulemap */,
+				F1BF8FB516D013B2CB59BEEBF67CD869 /* Alamofire-dummy.m */,
+				327757B3471C44244D127F3EDFDCCCE8 /* Alamofire-Info.plist */,
+				857D5B6E9E0F65CC3C41E46DA2F46ACB /* Alamofire-prefix.pch */,
+				48E0D62A79E10539DFE292DB284EB989 /* Alamofire-umbrella.h */,
+				B63492232A327EF7852B24B3390CCFD5 /* Alamofire.debug.xcconfig */,
+				DFB76593EC5EE5B12808977DE185DA0E /* Alamofire.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		6D9BB7565AEEB9F6BD8768481E86AA3E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2AD3FD3FED705054A55C61947514AA4C /* SwiftLint.debug.xcconfig */,
+				67A9C8B77F74C65934396EF26DB67109 /* SwiftLint.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		7F10FBDC90D0018682178DB9AE44EC8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD36518FDC22AB9128506FEAC5434046 /* Alamofire */,
+				C5544A3560542C8AD8AC42104F731957 /* AlamofireNetworkActivityLogger */,
+				3A838399CAA98C902310601462AB238E /* Bagel */,
+				29881F83D145F781092C0E497F271573 /* CocoaAsyncSocket */,
+				029305E22F704FBA88D041B3878EF3BE /* SCLAlertView */,
+				CBC0AA695C89AFCFB100E18B7D02D63A /* SwiftLint */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		8297A066E895665281DF7DBAC0227606 /* Frameworks */ = {
@@ -538,7 +531,7 @@
 			children = (
 				8FB4EC6ED24366E6C78B734B18232B5A /* Alamofire.framework */,
 				DEBFB020FE39E15C18E7F8D4AA1E1EE5 /* CocoaAsyncSocket.framework */,
-				F85D1A59B20E4AD497B2389F678B8B1D /* iOS */,
+				A6EE90C0F159BEAF1BC1E1DDC4F1E719 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -551,85 +544,100 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		CF1408CF629C7361332E53B88F7BD30C = {
+		A6EE90C0F159BEAF1BC1E1DDC4F1E719 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				8297A066E895665281DF7DBAC0227606 /* Frameworks */,
-				4272C29C7D08671091BDCE3DBFBBC10B /* Pods */,
-				345D8A1FC6C1156E7BA58D504E28C95A /* Products */,
-				9DE7EBDAC228A2A88EE003AA50C71F45 /* Targets Support Files */,
+				C37578DD1457AAFBF0E6FFB3AEE7797B /* CFNetwork.framework */,
+				77A9B9F05B885604E73A8ECE6459B56B /* Foundation.framework */,
+				C5BA4519FD3D6E0F8483D8BAD8C57D86 /* Security.framework */,
 			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		D2362D026344F82ADFC639A91EAAF9F6 /* Support Files */ = {
+		BD36518FDC22AB9128506FEAC5434046 /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				4B0353F729FA025D3342235C9E3B765B /* SCLAlertView.modulemap */,
-				6F5B95E216379D9BFF7D4AF382A2C7E3 /* SCLAlertView-dummy.m */,
-				84A3CDED6DB704D40899971D5B8DAA5A /* SCLAlertView-Info.plist */,
-				416ADC7CC078E7CE2B048F372648432D /* SCLAlertView-prefix.pch */,
-				A6C086A0AA9CF4C841FE679DA02B5518 /* SCLAlertView-umbrella.h */,
-				BDD5D0E034E377C4AA5951B526191B8D /* SCLAlertView.debug.xcconfig */,
-				8896F7CB00CFA303FFC3F96E65783D36 /* SCLAlertView.release.xcconfig */,
+				B365ED1B983F91DB36598D5B3A4DDA87 /* AFError.swift */,
+				675860C59487166D8AD025E4290F9060 /* Alamofire.swift */,
+				0654F5EEC6DE9C0A46CFB2BB00843A09 /* AlamofireExtended.swift */,
+				5B176905A13271BEC65D0ECBCF0887B0 /* CachedResponseHandler.swift */,
+				07486DA4E6D3CD46A500ED8AEBD0EFB0 /* DispatchQueue+Alamofire.swift */,
+				4C5962EC7AFE5C36E46876F5539A1466 /* EventMonitor.swift */,
+				E1C74E6ABD7136C250E693944CC4E07B /* HTTPHeaders.swift */,
+				FCC60215D03A4B840CD4BC2A5F73AD0E /* HTTPMethod.swift */,
+				F308B196F730928DEC1BFDD0B0C0AB43 /* MultipartFormData.swift */,
+				C945D6713AA7EDF00A315249A1298DA1 /* MultipartUpload.swift */,
+				96E658804CDAE46BE97E9BE3779511C7 /* NetworkReachabilityManager.swift */,
+				3AA0E58DB1705FB3E1A2832CFBF0FD67 /* Notifications.swift */,
+				ADEFBB0E04DA3A37E078AC2DF5AB77E8 /* OperationQueue+Alamofire.swift */,
+				3EC7E1CB1FCC23FAF9542B3799544444 /* ParameterEncoder.swift */,
+				8D5960C563484ABE3A91A969931B0835 /* ParameterEncoding.swift */,
+				D5AE8348CD41DC1BE34377A5E0E8B757 /* Protector.swift */,
+				3FE8226D273325F84DBB6AD27D01B779 /* RedirectHandler.swift */,
+				8B498504A9D3A8A89B63B2C2FA9ADAD0 /* Request.swift */,
+				68B737C34CAEB8FF4CA4D4EB0143B594 /* RequestInterceptor.swift */,
+				28507A775818C95D4944FAFD6E3EA797 /* RequestTaskMap.swift */,
+				5E169A79FE8BA06EB4F40879FBAD3600 /* Response.swift */,
+				3A9834C57E55C184A1AFE81D2A526E8D /* ResponseSerialization.swift */,
+				A1B1560B9D8B8B46841F69CFF9D4FD55 /* Result+Alamofire.swift */,
+				0646363C4FEA7DC6D7BCEBDF5F01A95A /* RetryPolicy.swift */,
+				6EBA662AE142551ADA4673165423086F /* ServerTrustEvaluation.swift */,
+				E43111E939E00869726CEEDBD7197DEB /* Session.swift */,
+				A57AE46DAC2C19659C1EFF3E1D3BCBDA /* SessionDelegate.swift */,
+				48F1665CF0B4A9D6F72FFE60360F007D /* URLConvertible+URLRequestConvertible.swift */,
+				44190254E1808E5A36836301D6FCACAD /* URLEncodedFormEncoder.swift */,
+				C97DF89797959EDDC36C9E1B1973C1A5 /* URLRequest+Alamofire.swift */,
+				371EF10F476D9BE57C01FB4CF6D3D291 /* URLSessionConfiguration+Alamofire.swift */,
+				D05CB06E4C58475354BC50E967A5B042 /* Validation.swift */,
+				6CECD10628F4D73D6854DA6653E7388B /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SCLAlertView";
+			name = Alamofire;
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		D7DD16715AA917F8891D932706D14B69 /* Support Files */ = {
+		C5544A3560542C8AD8AC42104F731957 /* AlamofireNetworkActivityLogger */ = {
 			isa = PBXGroup;
 			children = (
-				9451601C040A15A44953AEDD4A0D1B6A /* AlamofireNetworkActivityLogger.modulemap */,
-				BD9C1A5F8BA1B2356F06EB3A9FDBF055 /* AlamofireNetworkActivityLogger-dummy.m */,
-				FAA5D4760D431775ADECA02C31249BBA /* AlamofireNetworkActivityLogger-Info.plist */,
-				C65CB4B0D1BAE7FD8C6F3A25AC1BAA83 /* AlamofireNetworkActivityLogger-prefix.pch */,
-				3F4AB42F67B97B83F59D37A14768FB2F /* AlamofireNetworkActivityLogger-umbrella.h */,
-				E0DC7BFB5D24F88E8E91A7706E4E3EF8 /* AlamofireNetworkActivityLogger.debug.xcconfig */,
-				75C753925C3B060BB305801A8EE2825A /* AlamofireNetworkActivityLogger.release.xcconfig */,
+				4C110A177F6A44784D9CAD7F073A6E1D /* NetworkActivityLogger.swift */,
+				C6DBC1D22354D8034BE1CB1F9A47C2D6 /* Support Files */,
+			);
+			name = AlamofireNetworkActivityLogger;
+			path = AlamofireNetworkActivityLogger;
+			sourceTree = "<group>";
+		};
+		C6DBC1D22354D8034BE1CB1F9A47C2D6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FE2849717C28A60310C3D5CF1206471 /* AlamofireNetworkActivityLogger.modulemap */,
+				B61767D87828D296B3FEEC3A24066FCF /* AlamofireNetworkActivityLogger-dummy.m */,
+				DB0A078EF40D0CB007CA23A9EC7EA7E9 /* AlamofireNetworkActivityLogger-Info.plist */,
+				AEB24AC0A235C9A5DDD6D80A6C0A0639 /* AlamofireNetworkActivityLogger-prefix.pch */,
+				752A20231E7C91B7F852AAFA98A0D6BB /* AlamofireNetworkActivityLogger-umbrella.h */,
+				29986FFBE48791553F5E98D2D642A30A /* AlamofireNetworkActivityLogger.debug.xcconfig */,
+				25802737E21BB5CD3108F96529C810FE /* AlamofireNetworkActivityLogger.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AlamofireNetworkActivityLogger";
 			sourceTree = "<group>";
 		};
-		DB568A0B97720EC92B9CDFDFB6810748 /* Support Files */ = {
+		CBC0AA695C89AFCFB100E18B7D02D63A /* SwiftLint */ = {
 			isa = PBXGroup;
 			children = (
-				2269A255E00D028CE3170FECF1080B1E /* Bagel.modulemap */,
-				9A05DFE2298101CEC7554F9B4C35AF2C /* Bagel-dummy.m */,
-				D5C542560B853500945B72566ABED1C3 /* Bagel-Info.plist */,
-				F9B6EF766D1A0F4484C3BC7ED5E8084C /* Bagel-prefix.pch */,
-				C761F4A252E3C28905C10E27FA9D6322 /* Bagel-umbrella.h */,
-				5494A2465C2089FE84ADBBEA1C1A42B1 /* Bagel.debug.xcconfig */,
-				C899C36F152E962576C9CE50C8317227 /* Bagel.release.xcconfig */,
+				6D9BB7565AEEB9F6BD8768481E86AA3E /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Bagel";
+			name = SwiftLint;
+			path = SwiftLint;
 			sourceTree = "<group>";
 		};
-		F3FECC893D0D53DD10AABAFCF7E4D5A2 /* Support Files */ = {
+		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				21CAE0550A4C6D5D653998868A2D6F66 /* CocoaAsyncSocket.modulemap */,
-				67A662FE1326B813F68599A18510E5CC /* CocoaAsyncSocket-dummy.m */,
-				E5075FAB7A2AEEF82672E7217AAEF6C1 /* CocoaAsyncSocket-Info.plist */,
-				39F57EFA63E3CE78C0C08081CC009599 /* CocoaAsyncSocket-prefix.pch */,
-				B113887D294BD6347375A4DD89E323A0 /* CocoaAsyncSocket-umbrella.h */,
-				5230B781F27DDF522AB7E6354521086E /* CocoaAsyncSocket.debug.xcconfig */,
-				CF152DA8C2422B4B14859EE326AC145D /* CocoaAsyncSocket.release.xcconfig */,
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				8297A066E895665281DF7DBAC0227606 /* Frameworks */,
+				7F10FBDC90D0018682178DB9AE44EC8D /* Pods */,
+				345D8A1FC6C1156E7BA58D504E28C95A /* Products */,
+				9DE7EBDAC228A2A88EE003AA50C71F45 /* Targets Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/CocoaAsyncSocket";
-			sourceTree = "<group>";
-		};
-		F85D1A59B20E4AD497B2389F678B8B1D /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				0193C1D52E9CD0555CFC4D330E1B8902 /* CFNetwork.framework */,
-				68943DCB2AA8E00DEE82533097EFFDC0 /* Foundation.framework */,
-				6E715CF7349B9468340B59CCDA92DACA /* Security.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -643,32 +651,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25CB8AC6F0D1B7FCAB7046EEDA4BE156 /* Headers */ = {
+		2D656E802F0118C790C00D3EC87EC2AC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AB2563541632494CE6F500406FDD86E /* AlamofireNetworkActivityLogger-umbrella.h in Headers */,
+				9BF9DBB2B94E0452D6B4FE75A4623100 /* Bagel-umbrella.h in Headers */,
+				FCC5815381055DA1F6229A7642730D27 /* Bagel.h in Headers */,
+				61050AD7413074D900795848762D27F9 /* BagelBaseModel.h in Headers */,
+				B753C248E0B7283323C9ACE4425E5099 /* BagelBrowser.h in Headers */,
+				477686118F05B10FF32916CA286A2433 /* BagelCarrierDelegate.h in Headers */,
+				C5F0BC7FC80AC3844B4740200882AB0F /* BagelConfiguration.h in Headers */,
+				84A6A129DFCE52013772DDFD275DEFC0 /* BagelController.h in Headers */,
+				B691EF3F18B51EFF2689EB46B3FF9439 /* BagelDeviceModel.h in Headers */,
+				F109CB9F8CF0B34942BFE67E85F3CA4F /* BagelProjectModel.h in Headers */,
+				665EB61456D739B05C99181CB42D3F34 /* BagelRequestCarrier.h in Headers */,
+				8B60E556BDDE2F049DDADDE42AA5ED33 /* BagelRequestInfo.h in Headers */,
+				E5CA917A37A70200E014D4577773EB77 /* BagelRequestPacket.h in Headers */,
+				B3AE6C928F8D65EA5C96638BC13578B3 /* BagelURLConnectionInjector.h in Headers */,
+				CA24AB75E03657AD9E641D3A399EF05C /* BagelURLSessionInjector.h in Headers */,
+				D42858DF5ACBBC95BB92D934D86F37D2 /* BagelUtility.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		316AC2EC2BBEEA10C426834B74E22EF9 /* Headers */ = {
+		A017B1C9BBBDCF54BE7FF698FFFE2D0D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				243D94842FD86814747B6688CE03281B /* Bagel-umbrella.h in Headers */,
-				9DA5C0F9EC04839B854FF52724C45137 /* Bagel.h in Headers */,
-				B6FAF285DA96EC1301083C77904A1E74 /* BagelBaseModel.h in Headers */,
-				683ADEBB633C3B79366C8BEEC7CBD2B1 /* BagelBrowser.h in Headers */,
-				3B88E9D835489F192E3D7A40D18E20BD /* BagelConfiguration.h in Headers */,
-				EB0C41DE8E5AA5EB81925C6AE5AE6318 /* BagelController.h in Headers */,
-				6EF370DE63E467814B475AFC472C85E2 /* BagelDeviceModel.h in Headers */,
-				AA365BEE6D789715345E2EFDAAEFFAE7 /* BagelProjectModel.h in Headers */,
-				40C2D67B05ABBF372B7DAFB94669B2AE /* BagelRequestCarrier.h in Headers */,
-				17578ED859932D4CD449278FE40289D9 /* BagelRequestInfo.h in Headers */,
-				08E0CA2B1EAE1FFE92723E86406FE05F /* BagelRequestPacket.h in Headers */,
-				C372F123E06CEC19EF12F3C7A20BA020 /* BagelURLConnectionInjector.h in Headers */,
-				0AC5096478FA7A8F544ACDE7BD3A2EE7 /* BagelURLSessionInjector.h in Headers */,
-				7D19647E26736527449499A4A79A75C0 /* BagelUtility.h in Headers */,
+				B9A8BE2675B0718AFB73DCFAA8A41B37 /* AlamofireNetworkActivityLogger-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,21 +689,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D58F0D6B53C7072A63A009772043FC7A /* Headers */ = {
+		BCFA0AA45B62B12125CE569040DCA46C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3C249E4EBCB873214C3A6B1B3EA43AF /* Pods-BaseProject-umbrella.h in Headers */,
+				3647AC57C4E452E0A3B5FB70B724CA33 /* Pods-BaseProject-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F586C7D07D3EDA6AC75B5B1E6DB38166 /* Headers */ = {
+		F7163632057222BEF765645CAF2FD8EE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9010BE7613DD9C7769650C92E3CCC3B5 /* CocoaAsyncSocket-umbrella.h in Headers */,
-				F3CCFA9F29CB71F25124DDFF8B6D6849 /* GCDAsyncSocket.h in Headers */,
-				56BD4D29687D229B48D7AFCE5B6DB3BE /* GCDAsyncUdpSocket.h in Headers */,
+				6FD4C5276A6601EE47349C55D008CE95 /* CocoaAsyncSocket-umbrella.h in Headers */,
+				1A7E76A1323347E399CA46A3DBC7C68C /* GCDAsyncSocket.h in Headers */,
+				91556967497556DF8C35AA1011C8AF3B /* GCDAsyncUdpSocket.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -703,22 +712,22 @@
 /* Begin PBXNativeTarget section */
 		1BA240E758039DCE7A6061144C02BF08 /* Pods-BaseProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 31F526ECB757730219E8DEE3E699FD93 /* Build configuration list for PBXNativeTarget "Pods-BaseProject" */;
+			buildConfigurationList = B1716073A46CA486EB217CC2561DEAF8 /* Build configuration list for PBXNativeTarget "Pods-BaseProject" */;
 			buildPhases = (
-				D58F0D6B53C7072A63A009772043FC7A /* Headers */,
-				2C24C4DA9082DAB4B630C50F98AF0794 /* Sources */,
-				9F36F83434F55F626BA5772CA255988A /* Frameworks */,
-				EF36C4A94AC8AAB835A45926844C276E /* Resources */,
+				BCFA0AA45B62B12125CE569040DCA46C /* Headers */,
+				9D5D3F5E6B8C05AE204D0A9BDE69EC7E /* Sources */,
+				D48EEE2693A972A31FFC4FCCF78ADDA1 /* Frameworks */,
+				A10E440AFA5BBF4A8576674CA76FC200 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D1D4D23AE12D00CF4A75F0D4F76D27CE /* PBXTargetDependency */,
-				872D7B3F0B5989B44FEDD733966FC573 /* PBXTargetDependency */,
-				711DCAD4F4677B2E666A85B563AC8D07 /* PBXTargetDependency */,
-				D29C23CE450BD86EF02FC8809ABD9CC1 /* PBXTargetDependency */,
-				0B1BE755EFC731A9FC6C56F44EFDDC6E /* PBXTargetDependency */,
-				F212013A509B8C1B27F9F75929948545 /* PBXTargetDependency */,
+				5FFCEF1C0A7186CE0DDC2905AAB58A00 /* PBXTargetDependency */,
+				F456E705DA9A888B6CB6B7BF0020EDC1 /* PBXTargetDependency */,
+				BFB622F9B66E22E26291B2E2BBF5A28C /* PBXTargetDependency */,
+				568B6F2C4FD7659960589EA901700A7A /* PBXTargetDependency */,
+				2F188BD186DAC1006ED7C72CEE2E86D4 /* PBXTargetDependency */,
+				6531927BB5BC02E6D24995E9EA92CC5D /* PBXTargetDependency */,
 			);
 			name = "Pods-BaseProject";
 			productName = "Pods-BaseProject";
@@ -727,12 +736,12 @@
 		};
 		6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 35B5FC0468CAC8FE95974416049B49E7 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */;
+			buildConfigurationList = AEFE4C6F16DE891DB0053B5C2B094235 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */;
 			buildPhases = (
-				F586C7D07D3EDA6AC75B5B1E6DB38166 /* Headers */,
-				9C74C4615A7B0ED78BE800F8E5FF3CFC /* Sources */,
-				06D829E8F24A084CA883EBA74CBC9723 /* Frameworks */,
-				C395198831362A9182B4FD6ADC64BDEE /* Resources */,
+				F7163632057222BEF765645CAF2FD8EE /* Headers */,
+				48D583F464A874329E488F92D915FDFF /* Sources */,
+				C85D80F72FF73CEE565A79FB35B9F2D4 /* Frameworks */,
+				736AA6DCA7EED1DAC00E2F0C604888A3 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -745,17 +754,17 @@
 		};
 		8AABDD06F1327BC62BE3ECBBB02AF715 /* AlamofireNetworkActivityLogger */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 329D0CADA4464F0F861668C41C3572F5 /* Build configuration list for PBXNativeTarget "AlamofireNetworkActivityLogger" */;
+			buildConfigurationList = 69C0CEED2F29170642F7B0228A2A7942 /* Build configuration list for PBXNativeTarget "AlamofireNetworkActivityLogger" */;
 			buildPhases = (
-				25CB8AC6F0D1B7FCAB7046EEDA4BE156 /* Headers */,
-				FA49F9E45C51079F57465709159AD059 /* Sources */,
-				DCEB00198C83EF4CC1E5D91713020319 /* Frameworks */,
-				0236DD4F6534E5303C5EAC00FC93E30B /* Resources */,
+				A017B1C9BBBDCF54BE7FF698FFFE2D0D /* Headers */,
+				27780AA9A440641B0F2E52CFA72C5CBA /* Sources */,
+				CCDF5E583DBFFCE5C3103CBDC5B65A0C /* Frameworks */,
+				31B08305B25EB7CAA60026DD01B27384 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				884D3A2D93980E6817BAB267D4915FCD /* PBXTargetDependency */,
+				CA1FF57E8B846A755ABAA75BFFA0A699 /* PBXTargetDependency */,
 			);
 			name = AlamofireNetworkActivityLogger;
 			productName = AlamofireNetworkActivityLogger;
@@ -764,17 +773,17 @@
 		};
 		92077976CB3E088351E515981DC39115 /* Bagel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 80E018824402DAF53E9F9AC63E065B09 /* Build configuration list for PBXNativeTarget "Bagel" */;
+			buildConfigurationList = BB977C8BD22C8DECEC203C9946853750 /* Build configuration list for PBXNativeTarget "Bagel" */;
 			buildPhases = (
-				316AC2EC2BBEEA10C426834B74E22EF9 /* Headers */,
-				5DB58F84D9A996D117262FE433DE71F0 /* Sources */,
-				3E64F4A1ECF4A89D9B338250F30CBAE9 /* Frameworks */,
-				4AAA954E83DA1059707AC4DE12A8CBB4 /* Resources */,
+				2D656E802F0118C790C00D3EC87EC2AC /* Headers */,
+				74D13CB8CCCFBAC4C7BB6510C0C666E3 /* Sources */,
+				35EF9BB183026175FC8B28899C9496FB /* Frameworks */,
+				455340DA9F2E03B03DBCB17ACBC0D1C2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AA71513E3445CFB007674040B1795E28 /* PBXTargetDependency */,
+				343473B7CE6BCD0D27F448CE6A1148FC /* PBXTargetDependency */,
 			);
 			name = Bagel;
 			productName = Bagel;
@@ -824,7 +833,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 11.0";
@@ -851,13 +860,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0236DD4F6534E5303C5EAC00FC93E30B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		28FC0024B79C28A420D7C4FEBB9E3AEB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -865,14 +867,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AAA954E83DA1059707AC4DE12A8CBB4 /* Resources */ = {
+		31B08305B25EB7CAA60026DD01B27384 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C395198831362A9182B4FD6ADC64BDEE /* Resources */ = {
+		455340DA9F2E03B03DBCB17ACBC0D1C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		736AA6DCA7EED1DAC00E2F0C604888A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10E440AFA5BBF4A8576674CA76FC200 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -886,42 +902,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF36C4A94AC8AAB835A45926844C276E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2C24C4DA9082DAB4B630C50F98AF0794 /* Sources */ = {
+		27780AA9A440641B0F2E52CFA72C5CBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				441E752CAE9652F50F61B68BC9055E83 /* Pods-BaseProject-dummy.m in Sources */,
+				5DABD79A4E7F8B52255103DC201B0312 /* AlamofireNetworkActivityLogger-dummy.m in Sources */,
+				E90E1B3921D20274283963264549A76E /* NetworkActivityLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5DB58F84D9A996D117262FE433DE71F0 /* Sources */ = {
+		48D583F464A874329E488F92D915FDFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F314657DC4F4425C5B1C11DA8A75C9EB /* Bagel-dummy.m in Sources */,
-				F7A65685FF248CAAC852BD5D5DEE4488 /* Bagel.m in Sources */,
-				3B1CFEC87BC2B672C5F86D8A045A4F36 /* BagelBaseModel.m in Sources */,
-				185525B192AF43D134E3F3908B2C43FA /* BagelBrowser.m in Sources */,
-				E450C3381BD6C3396ED67EF9AA841BDB /* BagelConfiguration.m in Sources */,
-				16208A7953A067D01BFC0F47811C76C8 /* BagelController.m in Sources */,
-				45B24CAED6B2FFFC1D637C1F9AD2CF04 /* BagelDeviceModel.m in Sources */,
-				AFBC2DB459CC5AA74E51E09162058CDF /* BagelProjectModel.m in Sources */,
-				B2CD26FA12F085D65FC6B6435DB0F9F5 /* BagelRequestCarrier.m in Sources */,
-				46FEF243EB68418996C15554C3DB20ED /* BagelRequestInfo.m in Sources */,
-				43FD90E9C24B9DA5460CBC914EE3AEB3 /* BagelRequestPacket.m in Sources */,
-				E3DF86D0FDF91965AC2952E06B62D4DF /* BagelURLConnectionInjector.m in Sources */,
-				CF820E9D7EA97BDF5339D41D52F45135 /* BagelURLSessionInjector.m in Sources */,
-				7A57D989EB7EB3D21FC9E13C97A47911 /* BagelUtility.m in Sources */,
+				9138C1B03F768605D8BF4163F0671C27 /* CocoaAsyncSocket-dummy.m in Sources */,
+				CBA9DD44FA319255EB3D7A89CA20924B /* GCDAsyncSocket.m in Sources */,
+				C41C267ADE41B97BA65701C23A3B3245 /* GCDAsyncUdpSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -965,13 +964,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C74C4615A7B0ED78BE800F8E5FF3CFC /* Sources */ = {
+		74D13CB8CCCFBAC4C7BB6510C0C666E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72773E371CD9D5F63EC6DF822E606B60 /* CocoaAsyncSocket-dummy.m in Sources */,
-				7956D060CB15AFEA0F0EFD0B1748E5C7 /* GCDAsyncSocket.m in Sources */,
-				3E0F35F82CEE931D8FF4657FA5CBEDF0 /* GCDAsyncUdpSocket.m in Sources */,
+				C423E1BE9C3C0B5F190EE5ABA735987B /* Bagel-dummy.m in Sources */,
+				F490C86D8C4FF68DD049A942BC42A410 /* Bagel.m in Sources */,
+				C9D23861FA70EBA3918D09A18B6BDD6F /* BagelBaseModel.m in Sources */,
+				5526002FE6B6B17911B5F284B8B4B427 /* BagelBrowser.m in Sources */,
+				1A441ACFD3F32B5DC2AE06F4C651EF02 /* BagelConfiguration.m in Sources */,
+				E3681C00183D1A4C6401D7B495A082A3 /* BagelController.m in Sources */,
+				21862580341224253F4B8968A0804AC6 /* BagelDeviceModel.m in Sources */,
+				FDCE5CBD2B50E9077BF8FFAEEBBC5619 /* BagelProjectModel.m in Sources */,
+				18248CAB59AFEC56C7B7B74407F62F8C /* BagelRequestCarrier.m in Sources */,
+				98F8090FC582A8BFEFA7986379F05292 /* BagelRequestInfo.m in Sources */,
+				562B5B83319A49BB278B13053F4D8DCB /* BagelRequestPacket.m in Sources */,
+				51AE41019B51544F3ECBC8656C284B0A /* BagelURLConnectionInjector.m in Sources */,
+				7807F977B4C88EA20CFAF8141D673FFF /* BagelURLSessionInjector.m in Sources */,
+				62AC09ACBC64535634ADEDB3AD486043 /* BagelUtility.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D5D3F5E6B8C05AE204D0A9BDE69EC7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB759BE7ACDF84AD46C5477B3CFFCEDD /* Pods-BaseProject-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -985,74 +1003,207 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA49F9E45C51079F57465709159AD059 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0DD272B266898FB266A72F049FB4F787 /* AlamofireNetworkActivityLogger-dummy.m in Sources */,
-				09761755DC03D52192CDD9EF83D9A238 /* NetworkActivityLogger.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0B1BE755EFC731A9FC6C56F44EFDDC6E /* PBXTargetDependency */ = {
+		2F188BD186DAC1006ED7C72CEE2E86D4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SCLAlertView;
 			target = E0152970E5467A11DF89E7D22C63B47C /* SCLAlertView */;
-			targetProxy = DBB235B0D9FE67FEFEC5B6AA297B3061 /* PBXContainerItemProxy */;
+			targetProxy = 81E023B7EF58BF2617CDC089980F61C6 /* PBXContainerItemProxy */;
 		};
-		711DCAD4F4677B2E666A85B563AC8D07 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Bagel;
-			target = 92077976CB3E088351E515981DC39115 /* Bagel */;
-			targetProxy = 706306CD932733AD4945E18BF2BB7C1E /* PBXContainerItemProxy */;
-		};
-		872D7B3F0B5989B44FEDD733966FC573 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AlamofireNetworkActivityLogger;
-			target = 8AABDD06F1327BC62BE3ECBBB02AF715 /* AlamofireNetworkActivityLogger */;
-			targetProxy = 9CC2C3E4737A5A6E9C6AFA9D269BCD04 /* PBXContainerItemProxy */;
-		};
-		884D3A2D93980E6817BAB267D4915FCD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = B59E6AA28CC18D8337CB3365241B3282 /* PBXContainerItemProxy */;
-		};
-		AA71513E3445CFB007674040B1795E28 /* PBXTargetDependency */ = {
+		343473B7CE6BCD0D27F448CE6A1148FC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CocoaAsyncSocket;
 			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
-			targetProxy = EAB742075FE5C98FA8A4A7C0FCC35552 /* PBXContainerItemProxy */;
+			targetProxy = E15FE03812DDC23337B37CF44FBDB6EC /* PBXContainerItemProxy */;
 		};
-		D1D4D23AE12D00CF4A75F0D4F76D27CE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = E78AEA1A3D426D8B859B9C842ABD120E /* PBXContainerItemProxy */;
-		};
-		D29C23CE450BD86EF02FC8809ABD9CC1 /* PBXTargetDependency */ = {
+		568B6F2C4FD7659960589EA901700A7A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CocoaAsyncSocket;
 			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
-			targetProxy = 7DF4F4E295FE83644022CD8400AA5304 /* PBXContainerItemProxy */;
+			targetProxy = 85C251E6E94A3E7423B91AE2AE51E76C /* PBXContainerItemProxy */;
 		};
-		F212013A509B8C1B27F9F75929948545 /* PBXTargetDependency */ = {
+		5FFCEF1C0A7186CE0DDC2905AAB58A00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 40E939B6174CB1D687D2CD23A7973A50 /* PBXContainerItemProxy */;
+		};
+		6531927BB5BC02E6D24995E9EA92CC5D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftLint;
 			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
-			targetProxy = F4C446B44759AD4FDA549D918C178530 /* PBXContainerItemProxy */;
+			targetProxy = 3D256312CB9FB4936EDEB566872A3D71 /* PBXContainerItemProxy */;
+		};
+		BFB622F9B66E22E26291B2E2BBF5A28C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Bagel;
+			target = 92077976CB3E088351E515981DC39115 /* Bagel */;
+			targetProxy = E777EE2E7B26F3CF90746341D97A1A63 /* PBXContainerItemProxy */;
+		};
+		CA1FF57E8B846A755ABAA75BFFA0A699 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 52A70948DABBED957854A41F1A828041 /* PBXContainerItemProxy */;
+		};
+		F456E705DA9A888B6CB6B7BF0020EDC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlamofireNetworkActivityLogger;
+			target = 8AABDD06F1327BC62BE3ECBBB02AF715 /* AlamofireNetworkActivityLogger */;
+			targetProxy = 78816196B9B37DB8319C7D03F4B5B4E5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0B6B8E36BC93E62760BB9C91D6B012D9 /* Release */ = {
+		0189E11743B2CAC0B97099AF819595FC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8896F7CB00CFA303FFC3F96E65783D36 /* SCLAlertView.release.xcconfig */;
+			baseConfigurationReference = DFB76593EC5EE5B12808977DE185DA0E /* Alamofire.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0E493D5FD2F67D472FC92E0168947D00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C893402B74BAB86A235E2B78633FCE1 /* Pods-BaseProject.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BaseProject/Pods-BaseProject-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BaseProject/Pods-BaseProject.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2640DDA77A7677BBB0029CF86D5B4606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B63492232A327EF7852B24B3390CCFD5 /* Alamofire.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E668E83188552EA3D36A8DCF9071C90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24C8C6F8EDFD4B1CB175077290DDED3 /* Bagel.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Bagel/Bagel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bagel/Bagel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Bagel/Bagel.modulemap";
+				PRODUCT_MODULE_NAME = Bagel;
+				PRODUCT_NAME = Bagel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		612F2A7AD8EEE43229D101D768A31AEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADE7296E9AF24D3EC3403BCB26ECB2F6 /* SCLAlertView.release.xcconfig */;
+			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1064,7 +1215,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SCLAlertView/SCLAlertView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1084,10 +1235,97 @@
 			};
 			name = Release;
 		};
-		131356BE54884448CA49C07BEDF4BB2A /* Debug */ = {
+		68A5A619EDF2730D305D8C57E38E9F6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67A9C8B77F74C65934396EF26DB67109 /* SwiftLint.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BACB215D62B19F55E03B4B1EA95894D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7B58132091328D7B1D4F3275925E95B /* CocoaAsyncSocket.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8C2C63CEAF3B602CBF6B30B8E4CA124D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2736990248C85C3C0AD217E06804D793 /* SCLAlertView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/SCLAlertView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				PRODUCT_MODULE_NAME = SCLAlertView;
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1136,7 +1374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1149,12 +1387,11 @@
 			};
 			name = Debug;
 		};
-		24281618194DD9B54EA38B7E9830BD9F /* Debug */ = {
+		9D2510D360A5416C42B01C27019F4922 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0DC7BFB5D24F88E8E91A7706E4E3EF8 /* AlamofireNetworkActivityLogger.debug.xcconfig */;
+			baseConfigurationReference = 29986FFBE48791553F5E98D2D642A30A /* AlamofireNetworkActivityLogger.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1166,7 +1403,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1185,407 +1422,11 @@
 			};
 			name = Debug;
 		};
-		46EECD2DED30D7C5FE141C0B267C2D3F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A42A80679A97E66DDA59909154B9CAD /* SwiftLint.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		55DD740115BE746C8DBB7753806D85D5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6309BD5EB1E137A15ABC0CE081E74D2 /* SwiftLint.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		6F8473DE1636FC39D835252275A268FF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75C753925C3B060BB305801A8EE2825A /* AlamofireNetworkActivityLogger.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger.modulemap";
-				PRODUCT_MODULE_NAME = AlamofireNetworkActivityLogger;
-				PRODUCT_NAME = AlamofireNetworkActivityLogger;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7410B2EA2FFE066CC69EE7A624DFF6F7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDD5D0E034E377C4AA5951B526191B8D /* SCLAlertView.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SCLAlertView/SCLAlertView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
-				PRODUCT_MODULE_NAME = SCLAlertView;
-				PRODUCT_NAME = SCLAlertView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		78F0A7E7490F24509D56845F81922CF6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BF417967D7C331159B428ED3F9ABD56 /* Alamofire.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_MODULE_NAME = Alamofire;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		843FAC2FE9F0080FA6A4BDD0AE0D2ED8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5494A2465C2089FE84ADBBEA1C1A42B1 /* Bagel.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Bagel/Bagel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Bagel/Bagel-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Bagel/Bagel.modulemap";
-				PRODUCT_MODULE_NAME = Bagel;
-				PRODUCT_NAME = Bagel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9A20D9C5346766D8C4243E542E6C0E31 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA4ED472A63174907A25B4125507571A /* Alamofire.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_MODULE_NAME = Alamofire;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A9C47DCC223DD10D973849616EAA4C15 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5230B781F27DDF522AB7E6354521086E /* CocoaAsyncSocket.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
-				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
-				PRODUCT_NAME = CocoaAsyncSocket;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		ABB1D46FB593ABDB3EF77F07949AB805 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C893402B74BAB86A235E2B78633FCE1 /* Pods-BaseProject.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BaseProject/Pods-BaseProject-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BaseProject/Pods-BaseProject.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D79967CC22E6CF2E4B069A4874C65D9B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF152DA8C2422B4B14859EE326AC145D /* CocoaAsyncSocket.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
-				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
-				PRODUCT_NAME = CocoaAsyncSocket;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DAF9226CBFEBF2448EFCA4B3FDD26113 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18408A7A0A3741B564C792AC070C1748 /* Pods-BaseProject.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BaseProject/Pods-BaseProject-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BaseProject/Pods-BaseProject.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EBB02978ACB3D77F741BD01E2FE89DE7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C899C36F152E962576C9CE50C8317227 /* Bagel.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Bagel/Bagel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Bagel/Bagel-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Bagel/Bagel.modulemap";
-				PRODUCT_MODULE_NAME = Bagel;
-				PRODUCT_NAME = Bagel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F090CD07A80273D5A73C8EA19224ADDB /* Release */ = {
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1631,7 +1472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1643,41 +1484,181 @@
 			};
 			name = Release;
 		};
+		A29DB5F1E2D22C32D551F5152C77D3DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18408A7A0A3741B564C792AC070C1748 /* Pods-BaseProject.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BaseProject/Pods-BaseProject-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BaseProject/Pods-BaseProject.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B3EA9E3AC20B54A6071EE93A3F6A10F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AD3FD3FED705054A55C61947514AA4C /* SwiftLint.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D73461FCEC9108281DE66091CA0E1389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E201F03BA01689B827B064E63389DC66 /* Bagel.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Bagel/Bagel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bagel/Bagel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Bagel/Bagel.modulemap";
+				PRODUCT_MODULE_NAME = Bagel;
+				PRODUCT_NAME = Bagel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E20F9EFA9ABB3D638644300FD897ED77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25802737E21BB5CD3108F96529C810FE /* AlamofireNetworkActivityLogger.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger.modulemap";
+				PRODUCT_MODULE_NAME = AlamofireNetworkActivityLogger;
+				PRODUCT_NAME = AlamofireNetworkActivityLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FDCF7A0EC7B3640045F7DE274C5428A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48B21EC0197B7FD764F2470E5488B269 /* CocoaAsyncSocket.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		31F526ECB757730219E8DEE3E699FD93 /* Build configuration list for PBXNativeTarget "Pods-BaseProject" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DAF9226CBFEBF2448EFCA4B3FDD26113 /* Debug */,
-				ABB1D46FB593ABDB3EF77F07949AB805 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		329D0CADA4464F0F861668C41C3572F5 /* Build configuration list for PBXNativeTarget "AlamofireNetworkActivityLogger" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				24281618194DD9B54EA38B7E9830BD9F /* Debug */,
-				6F8473DE1636FC39D835252275A268FF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		35B5FC0468CAC8FE95974416049B49E7 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A9C47DCC223DD10D973849616EAA4C15 /* Debug */,
-				D79967CC22E6CF2E4B069A4874C65D9B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				131356BE54884448CA49C07BEDF4BB2A /* Debug */,
-				F090CD07A80273D5A73C8EA19224ADDB /* Release */,
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69C0CEED2F29170642F7B0228A2A7942 /* Build configuration list for PBXNativeTarget "AlamofireNetworkActivityLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D2510D360A5416C42B01C27019F4922 /* Debug */,
+				E20F9EFA9ABB3D638644300FD897ED77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1685,17 +1666,8 @@
 		6B2B8EC7E21CDBFF2BDA26B1B4AC4C0D /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9A20D9C5346766D8C4243E542E6C0E31 /* Debug */,
-				78F0A7E7490F24509D56845F81922CF6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		80E018824402DAF53E9F9AC63E065B09 /* Build configuration list for PBXNativeTarget "Bagel" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				843FAC2FE9F0080FA6A4BDD0AE0D2ED8 /* Debug */,
-				EBB02978ACB3D77F741BD01E2FE89DE7 /* Release */,
+				2640DDA77A7677BBB0029CF86D5B4606 /* Debug */,
+				0189E11743B2CAC0B97099AF819595FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1703,8 +1675,35 @@
 		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46EECD2DED30D7C5FE141C0B267C2D3F /* Debug */,
-				55DD740115BE746C8DBB7753806D85D5 /* Release */,
+				B3EA9E3AC20B54A6071EE93A3F6A10F7 /* Debug */,
+				68A5A619EDF2730D305D8C57E38E9F6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEFE4C6F16DE891DB0053B5C2B094235 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDCF7A0EC7B3640045F7DE274C5428A2 /* Debug */,
+				7BACB215D62B19F55E03B4B1EA95894D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1716073A46CA486EB217CC2561DEAF8 /* Build configuration list for PBXNativeTarget "Pods-BaseProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A29DB5F1E2D22C32D551F5152C77D3DD /* Debug */,
+				0E493D5FD2F67D472FC92E0168947D00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB977C8BD22C8DECEC203C9946853750 /* Build configuration list for PBXNativeTarget "Bagel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E668E83188552EA3D36A8DCF9071C90 /* Debug */,
+				D73461FCEC9108281DE66091CA0E1389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1712,8 +1711,8 @@
 		EBBBD336E2C1CE47CB387CBD269D6E58 /* Build configuration list for PBXNativeTarget "SCLAlertView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7410B2EA2FFE066CC69EE7A624DFF6F7 /* Debug */,
-				0B6B8E36BC93E62760BB9C91D6B012D9 /* Release */,
+				8C2C63CEAF3B602CBF6B30B8E4CA124D /* Debug */,
+				612F2A7AD8EEE43229D101D768A31AEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

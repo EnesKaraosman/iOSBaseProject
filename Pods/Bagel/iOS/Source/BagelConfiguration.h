@@ -20,6 +20,7 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
+#import "BagelCarrierDelegate.h"
 #import "BagelProjectModel.h"
 #import "BagelDeviceModel.h"
 #import "BagelUtility.h"
@@ -28,6 +29,8 @@
 
 @property (nonatomic, strong) BagelProjectModel* project;
 @property (nonatomic, strong) BagelDeviceModel* device;
+
+@property (nonatomic, weak) id<BagelCarrierDelegate> carrierDelegate;
 
 @property (nonatomic) uint16_t netservicePort;
 @property (nonatomic, strong) NSString* netserviceType;

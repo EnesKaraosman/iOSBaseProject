@@ -13,6 +13,7 @@
 #import "Bagel.h"
 #import "BagelBaseModel.h"
 #import "BagelBrowser.h"
+#import "BagelCarrierDelegate.h"
 #import "BagelConfiguration.h"
 #import "BagelController.h"
 #import "BagelDeviceModel.h"
