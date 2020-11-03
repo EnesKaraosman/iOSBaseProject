@@ -65,6 +65,7 @@
 		F477DCCD246015A500BCFD7D /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F477DCCC246015A500BCFD7D /* SDWebImage */; };
 		F488D9BC237D358B0031D7FB /* CommonTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F488D9BB237D358B0031D7FB /* CommonTextView.swift */; };
 		F48CC34125512D270076CDCF /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48CC34025512D270076CDCF /* NetworkLogger.swift */; };
+		F48CC3432551363A0076CDCF /* NetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48CC3422551363A0076CDCF /* NetworkEnvironment.swift */; };
 		F48CE0A623C4A747004D23CD /* KeyValueStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48CE0A523C4A747004D23CD /* KeyValueStorage.swift */; };
 		F48EC1F82354B904002E36D3 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48EC1F72354B904002E36D3 /* Article.swift */; };
 		F4ABB48723E8573400005E7B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ABB48623E8573400005E7B /* AppCoordinator.swift */; };
@@ -166,6 +167,7 @@
 		F469A30023C8BADD00B68D27 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		F488D9BB237D358B0031D7FB /* CommonTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTextView.swift; sourceTree = "<group>"; };
 		F48CC34025512D270076CDCF /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		F48CC3422551363A0076CDCF /* NetworkEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEnvironment.swift; sourceTree = "<group>"; };
 		F48CE0A523C4A747004D23CD /* KeyValueStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStorage.swift; sourceTree = "<group>"; };
 		F48EC1F72354B904002E36D3 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		F4ABB48623E8573400005E7B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 			children = (
 				F42F7CA523F28E18001FCA6C /* EndPoints.swift */,
 				F48CC34025512D270076CDCF /* NetworkLogger.swift */,
+				F48CC3422551363A0076CDCF /* NetworkEnvironment.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -735,6 +738,7 @@
 				F469A30123C8BADD00B68D27 /* UIApplication+Extensions.swift in Sources */,
 				F45B89022337367E00E5A6F9 /* NetworkViewController.swift in Sources */,
 				F469A2F323C8602400B68D27 /* BaseViewModelBehaviour.swift in Sources */,
+				F48CC3432551363A0076CDCF /* NetworkEnvironment.swift in Sources */,
 				F42F7CA823F2BC2D001FCA6C /* UIColor+Extensions.swift in Sources */,
 				F469A2F923C869AE00B68D27 /* Configurations.swift in Sources */,
 				F45B88D62335406300E5A6F9 /* AppDelegate.swift in Sources */,
@@ -958,7 +962,7 @@
 			repositoryURL = "https://github.com/EnesKaraosman/EKNetworkModule.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.1;
+				minimumVersion = 0.1.2;
 			};
 		};
 		F477DCCB246015A500BCFD7D /* XCRemoteSwiftPackageReference "SDWebImage" */ = {

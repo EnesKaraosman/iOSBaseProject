@@ -39,7 +39,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var features: [UIApplicationDelegate] = [
         Connectivity.shared,
-        NetworkLogger.shared
+        NetworkLogger.shared,
+        EKAPIClient.shared
     ]
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -47,11 +48,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.setupWindow()
         
-        self.setupNetworkEnvironment()
-        
         features.forEach {
             _ = $0.application?(application, didFinishLaunchingWithOptions: launchOptions)
-            // If initialization gets crowded here, clean up :)
             // https://medium.com/@kennethpoon/newbies-journey-on-cleaning-up-the-massive-appdelegate-comic-style-94008075e51d
         }
 
@@ -65,12 +63,6 @@ extension AppDelegate {
     private func setupWindow() {
         window = UIWindow(frame: UIScreen.main.bounds)
         router.setRoot(for: window!)
-    }
-    
-    private func setupNetworkEnvironment() {
-        let baseUrl = Configurations.Environment.selected.url
-        Log.i(baseUrl)
-        EKAPIClient.shared.networkEnvironment = EKNetworkEnvironment(baseUrl: baseUrl)
     }
 
 }
