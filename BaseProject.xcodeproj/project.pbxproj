@@ -954,7 +954,7 @@
 			repositoryURL = "https://github.com/EnesKaraosman/EKNetworkModule.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.7;
+				minimumVersion = 0.1.1;
 			};
 		};
 		F477DCCB246015A500BCFD7D /* XCRemoteSwiftPackageReference "SDWebImage" */ = {

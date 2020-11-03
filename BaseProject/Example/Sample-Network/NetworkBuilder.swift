@@ -11,7 +11,7 @@ import EKNetworkModule
 
 class NetworkBuilder {
     class func build() -> NetworkViewController {
-        let viewModel = NetworkViewModel(api: EKAPIClient.instance)
+        let viewModel = NetworkViewModel(api: EKAPIClient.shared)
         let view = NetworkViewController(viewModel: viewModel)
         return view
     }

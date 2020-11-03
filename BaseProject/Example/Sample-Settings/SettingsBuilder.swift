@@ -11,7 +11,7 @@ import EKNetworkModule
 
 class SettingsBuilder {
     class func build() -> SettingsViewController {
-        let viewModel = SettingsViewModel(api: EKAPIClient.instance)
+        let viewModel = SettingsViewModel(api: EKAPIClient.shared)
         let view = SettingsViewController(viewModel: viewModel)
         return view
     }

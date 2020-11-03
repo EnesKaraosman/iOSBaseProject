@@ -74,7 +74,7 @@ extension AppDelegate {
     private func setupNetworkEnvironment() {
         let baseUrl = Configurations.Environment.selected.url
         Log.i(baseUrl)
-        EKAPIClient.instance.networkEnvironment = EKNetworkEnvironment(baseUrl: baseUrl)
+        EKAPIClient.shared.networkEnvironment = EKNetworkEnvironment(baseUrl: baseUrl)
     }
     
     private func handleNetworkActivityLogging() {

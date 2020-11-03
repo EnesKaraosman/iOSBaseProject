@@ -11,7 +11,7 @@ import EKNetworkModule
 
 class GenericListBuilder {
     class func build() -> GenericListController {
-        let viewModel = GenericListViewModel(api: EKAPIClient.instance)
+        let viewModel = GenericListViewModel(api: EKAPIClient.shared)
         let view = GenericListController(viewModel: viewModel)
         return view
     }

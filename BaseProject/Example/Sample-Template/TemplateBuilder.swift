@@ -11,7 +11,7 @@ import EKNetworkModule
 
 class TemplateBuilder {
     class func build() -> TemplateViewController {
-        let viewModel = TemplateViewModel(api: EKAPIClient.instance)
+        let viewModel = TemplateViewModel(api: EKAPIClient.shared)
         let view = TemplateViewController(viewModel: viewModel)
         return view
     }
