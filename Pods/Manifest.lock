@@ -1,7 +1,4 @@
 PODS:
-  - Alamofire (5.0.2)
-  - AlamofireNetworkActivityLogger (3.0.0):
-    - Alamofire (~> 5.0.0-rc.2)
   - Bagel (1.4.0):
     - CocoaAsyncSocket
   - CocoaAsyncSocket (7.6.4)
@@ -9,28 +6,23 @@ PODS:
   - SwiftLint (0.40.3)
 
 DEPENDENCIES:
-  - AlamofireNetworkActivityLogger (~> 3.0)
   - Bagel (~> 1.4.0)
   - SCLAlertView
   - SwiftLint
 
 SPEC REPOS:
   trunk:
-    - Alamofire
-    - AlamofireNetworkActivityLogger
     - Bagel
     - CocoaAsyncSocket
     - SCLAlertView
     - SwiftLint
 
 SPEC CHECKSUMS:
-  Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
-  AlamofireNetworkActivityLogger: 94e8a7d454a4a9800cef1d0c1d3699754493684b
   Bagel: c3fa6bcbd52db9ca976edbafd7638f0553ded101
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
   SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
 
-PODFILE CHECKSUM: 53d2c6cec93b9964cb520934db225bfcb7dca151
+PODFILE CHECKSUM: 7d13795956503a5f97cd1dceae68a8743231e9fd
 
 COCOAPODS: 1.10.0

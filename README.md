@@ -14,11 +14,10 @@ You're gonna start to a new project and fed up doing same initialization every t
 
 #### Reactive
 - [x] Rx Extensions (versions)
-- [] Moya: Consider using enumeration cases for api (service interfaces) ref: ios-base-swift-master/Services
+- [ ] Moya: Consider using enumeration cases for api (service interfaces) ref: ios-base-swift-master/Services
 
 #### Tracking network activities
 - [x] External app: Bagel
-- [x] Internal pod: AlamofireNetworkActivityLogger
 
 #### Settings.bundle custom settings
 - [x] Add support for switching Environment from iOS > Settings > App > Environments
@@ -35,15 +34,15 @@ You're gonna start to a new project and fed up doing same initialization every t
 - [x] XCoordinator
 
 #### Dependency Injection
-* Resolver: https://github.com/hmlongco/Resolver
+- [ ] Resolver: https://github.com/hmlongco/Resolver
 
 ------
 
 ## - Database
-- [x] UserDefaults via propertyWrapper (Recomended max. limit is 1MB)
-- [] Database (CoreData, Realm)
-- [] Keychain (OAuth token, User’s sensitive, secret data) [KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess)
-- [] Files on disk (Images, videos, PDF..)
+- [x] UserDefaults via propertyWrapper (Recommended max. limit is 1MB)
+- [ ] Database (CoreData, Realm)
+- [ ] Keychain (OAuth token, User’s sensitive, secret data) [KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess)
+- [ ] Files on disk (Images, videos, PDF..)
 
 ------
 

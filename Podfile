@@ -10,7 +10,6 @@ target 'BaseProject' do
   pod 'SwiftLint' # https://github.com/realm/SwiftLint SPM+ (Be careful, normally a filed referred under Pods)
   
   pod 'Bagel', '~>  1.4.0' # https://github.com/yagiz/Bagel SPM+ Problem
-  pod 'AlamofireNetworkActivityLogger', '~> 3.0' # https://github.com/konkab/AlamofireNetworkActivityLogger SPM+ Problem
   pod 'SCLAlertView' # https://github.com/vikmeup/SCLAlertView-Swift SPM+ Problem
 
 end

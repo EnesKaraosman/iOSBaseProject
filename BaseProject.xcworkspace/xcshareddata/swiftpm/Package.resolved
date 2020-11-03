@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
         "state": {
           "branch": null,
-          "revision": "fca036f7aeca07124067cb6e0c12b0ad6359e3d4",
-          "version": "5.1.0"
+          "revision": "097e1f03166d49b31f824507fb85ad843b14fc13",
+          "version": "5.3.0"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/EnesKaraosman/EKNetworkModule.git",
         "state": {
           "branch": null,
-          "revision": "9d8c929d9acfba62ee1c81f550570813577fb466",
-          "version": "0.0.7"
+          "revision": "90bc94e3005a117190e95739d1c97bcbccce0c12",
+          "version": "0.1.1"
         }
       },
       {

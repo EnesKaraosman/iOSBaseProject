@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import AlamofireNetworkActivityLogger
-import Bagel
 import EKNetworkModule
 
 // Common & Extensions
@@ -40,7 +38,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private let router = AppCoordinator().strongRouter
     
     var features: [UIApplicationDelegate] = [
-        Connectivity.shared
+        Connectivity.shared,
+        NetworkLogger.shared
     ]
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -49,9 +48,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.setupWindow()
         
         self.setupNetworkEnvironment()
-
-        self.handleNetworkActivityLogging()
-        Bagel.start()
         
         features.forEach {
             _ = $0.application?(application, didFinishLaunchingWithOptions: launchOptions)
@@ -76,14 +72,5 @@ extension AppDelegate {
         Log.i(baseUrl)
         EKAPIClient.shared.networkEnvironment = EKNetworkEnvironment(baseUrl: baseUrl)
     }
-    
-    private func handleNetworkActivityLogging() {
-        #if DEBUG
-        if Configurations.Network.logNetworkActivity {
-            NetworkActivityLogger.shared.level = .debug
-            NetworkActivityLogger.shared.startLogging()
-        }
-        #endif
-    }
-    
+
 }

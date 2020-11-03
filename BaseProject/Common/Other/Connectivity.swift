@@ -11,7 +11,7 @@ import Alamofire
 // If you dont want this helper class to depend on Alamofire, find new one :D
 // You can switch to this one https://github.com/ashleymills/Reachability.swift
 
-class Connectivity: NSObject {
+final class Connectivity: NSObject {
     
     let manager = NetworkReachabilityManager()
     static let shared = Connectivity()
