@@ -15,7 +15,7 @@ class NetworkViewModel: BaseViewModel {
             endPoint: EndPoints.articles,
             success: onSuccess,
             failure: { (error) in
-                self.error.accept((error.localizedDescription, .alert))
+                self.error.send((error.localizedDescription, .alert))
             }
         )
     }

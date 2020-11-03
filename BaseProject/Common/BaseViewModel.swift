@@ -6,18 +6,17 @@
 //  Copyright © 2020 Enes Karaosman. All rights reserved.
 //
 
-import Foundation
-import RxSwift
-import RxCocoa
+import Combine
 import EKNetworkModule
 
 class BaseViewModel: BaseViewModelBehaviour {
     
-    let disposeBag = DisposeBag()
+    let cancellable = Set<AnyCancellable>()
 
     var api: APIClientProtocol?
     
-    var error = BehaviorRelay<(String?, ErrorPresentationType)>(value: (nil, .alert))
+    typealias ErrorTuple = (String?, ErrorPresentationType)
+    var error = PassthroughSubject<ErrorTuple, Never>()
 //    var noDataFoundScreen: BehaviorRelay<Bool>
 
     init(api: APIClientProtocol? = nil) {

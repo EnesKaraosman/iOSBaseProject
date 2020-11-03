@@ -7,13 +7,12 @@
 //
 
 import UIKit
-import RxCocoa
-import RxSwift
 import Toast
+import Combine
 
 class BaseViewController<VM: BaseViewModel>: UIViewController {
     
-    var disposeBag = DisposeBag()
+    var cancellable = Set<AnyCancellable>()
     let viewModel: VM
     
     init(viewModel: VM) {
@@ -45,22 +44,23 @@ class BaseViewController<VM: BaseViewModel>: UIViewController {
     func errorStateBinding() {
         Log.i("BASE: errorStateBinding")
         
-        var errorToastStyle = ToastStyle()
-        errorToastStyle.backgroundColor = UIColor.red.withAlphaComponent(0.7)
-        
         self.viewModel.error
-            .asDriver()
-            .filter({ $0.0 != nil })
-            .drive(onNext: { (args) in
-                let (errorMessage, errorPresentationType) = args
+            .filter { $0.0 != nil }
+            .receive(on: RunLoop.main)
+            .sink { (output) in
+                let (errorMessage, errorPresentationType) = output
                 switch errorPresentationType {
                 case .alert:
                     self.viewModel.showError(message: errorMessage!)
                 case .toast:
+                    var errorToastStyle = ToastStyle()
+                    errorToastStyle.backgroundColor = UIColor.red.withAlphaComponent(0.7)
                     self.view.makeToast(errorMessage, duration: 2, position: .bottom, title: nil, image: nil, style: errorToastStyle)
                 }
-            })
-            .disposed(by: disposeBag)
+
+            }
+            .store(in: &cancellable)
+
     }
 
 }

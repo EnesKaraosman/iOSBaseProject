@@ -12,10 +12,6 @@ You're gonna start to a new project and fed up doing same initialization every t
 - [x] SwiftyJSON
 - [x] Codable
 
-#### Reactive
-- [x] Rx Extensions (versions)
-- [ ] Moya: Consider using enumeration cases for api (service interfaces) ref: ios-base-swift-master/Services
-
 #### Tracking network activities
 - [x] External app: Bagel
 

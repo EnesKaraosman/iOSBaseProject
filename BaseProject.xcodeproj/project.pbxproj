@@ -84,9 +84,6 @@
 		F4D45B55243C734A005D4A6D /* AloeStackView in Frameworks */ = {isa = PBXBuildFile; productRef = F4D45B54243C734A005D4A6D /* AloeStackView */; };
 		F4D45B58243C73F6005D4A6D /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = F4D45B57243C73F6005D4A6D /* Toast */; };
 		F4D45B5E243C7936005D4A6D /* Localize_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = F4D45B5D243C7936005D4A6D /* Localize_Swift */; };
-		F4D45B61243C7A72005D4A6D /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = F4D45B60243C7A72005D4A6D /* RxRelay */; };
-		F4D45B63243C7A72005D4A6D /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F4D45B62243C7A72005D4A6D /* RxCocoa */; };
-		F4D45B65243C7A72005D4A6D /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F4D45B64243C7A72005D4A6D /* RxSwift */; };
 		F4DCBC492355F52300C3D892 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4DCBC472355F52300C3D892 /* Localizable.strings */; };
 		F4DCBC4D2355F66B00C3D892 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DCBC4C2355F66B00C3D892 /* String+Extensions.swift */; };
 		F4EB9CA725309D2600E25CCC /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB9CA625309D2600E25CCC /* UIFont+Extensions.swift */; };
@@ -193,13 +190,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4D45B61243C7A72005D4A6D /* RxRelay in Frameworks */,
 				F45A11BD243C9A7800469C3A /* EKNetworkModule in Frameworks */,
 				E1010DD2216F5F86A3CB35BD /* Pods_BaseProject.framework in Frameworks */,
-				F4D45B63243C7A72005D4A6D /* RxCocoa in Frameworks */,
 				F4D45B4F243C722B005D4A6D /* LBTATools in Frameworks */,
 				F4D45B5E243C7936005D4A6D /* Localize_Swift in Frameworks */,
-				F4D45B65243C7A72005D4A6D /* RxSwift in Frameworks */,
 				F4D45B44243C6827005D4A6D /* SnapKit in Frameworks */,
 				F4D45B4C243C6FCF005D4A6D /* NVActivityIndicatorView in Frameworks */,
 				F477DCCD246015A500BCFD7D /* SDWebImage in Frameworks */,
@@ -524,9 +518,6 @@
 				F4D45B54243C734A005D4A6D /* AloeStackView */,
 				F4D45B57243C73F6005D4A6D /* Toast */,
 				F4D45B5D243C7936005D4A6D /* Localize_Swift */,
-				F4D45B60243C7A72005D4A6D /* RxRelay */,
-				F4D45B62243C7A72005D4A6D /* RxCocoa */,
-				F4D45B64243C7A72005D4A6D /* RxSwift */,
 				F45A11BC243C9A7800469C3A /* EKNetworkModule */,
 				F477DCCC246015A500BCFD7D /* SDWebImage */,
 			);
@@ -567,7 +558,6 @@
 				F4D45B53243C734A005D4A6D /* XCRemoteSwiftPackageReference "AloeStackView" */,
 				F4D45B56243C73F6005D4A6D /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 				F4D45B5C243C7936005D4A6D /* XCRemoteSwiftPackageReference "Localize-Swift" */,
-				F4D45B5F243C7A72005D4A6D /* XCRemoteSwiftPackageReference "RxSwift" */,
 				F45A11BB243C9A7800469C3A /* XCRemoteSwiftPackageReference "EKNetworkModule" */,
 				F477DCCB246015A500BCFD7D /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
@@ -1029,14 +1019,6 @@
 				minimumVersion = 3.2.0;
 			};
 		};
-		F4D45B5F243C7A72005D4A6D /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.1.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1084,21 +1066,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F4D45B5C243C7936005D4A6D /* XCRemoteSwiftPackageReference "Localize-Swift" */;
 			productName = Localize_Swift;
-		};
-		F4D45B60243C7A72005D4A6D /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F4D45B5F243C7A72005D4A6D /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		F4D45B62243C7A72005D4A6D /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F4D45B5F243C7A72005D4A6D /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		F4D45B64243C7A72005D4A6D /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F4D45B5F243C7A72005D4A6D /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -28,8 +28,8 @@ class NetworkViewController: BaseViewController<NetworkViewModel> {
             .multiLined()
     }()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
         self.viewModel.networkTest(onSuccess: { (articles) in
             self.view.makeToast("\(articles.count)")
